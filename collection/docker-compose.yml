@@ -1,0 +1,139 @@
+# =============================================================================
+# AI-Code Collector - Docker Services
+#
+# Usage:
+#   docker compose run discover            # BigQuery: one month test
+#   docker compose run discover-full       # BigQuery: full year
+#   docker compose run scan                # Scan a single repo
+#   docker compose run batch-scan          # Batch scan from discover results
+#   docker compose run metadata            # Fetch GitHub metadata
+#   docker compose run tests               # Run detection tests
+#   docker compose run shell               # Interactive shell
+# =============================================================================
+
+x-common: &common
+  build: .
+  volumes:
+    # Persist results outside container
+    - ./result:/app/result
+    # GCP credentials (for BigQuery discover)
+    - ${GOOGLE_APPLICATION_CREDENTIALS:-~/.config/gcloud}:/root/.config/gcloud:ro
+  environment:
+    - GITHUB_TOKEN=${GITHUB_TOKEN:-}
+    - GOOGLE_APPLICATION_CREDENTIALS=${GOOGLE_APPLICATION_CREDENTIALS:-}
+
+services:
+  # ===========================================================================
+  # DISCOVER - Find AI repos via BigQuery
+  # ===========================================================================
+
+  # Quick test: one month, 100 rows
+  discover:
+    <<: *common
+    command: >
+      discover
+      --start-date ${START_DATE:-2025-06-01}
+      --end-date ${END_DATE:-2025-06-30}
+      --limit ${LIMIT:-100}
+      -v
+
+  # Full collection: entire date range with checkpointing
+  discover-full:
+    <<: *common
+    command: >
+      discover
+      --start-date ${START_DATE:-2024-01-01}
+      --end-date ${END_DATE:-2026-02-01}
+      --fetch-metadata
+      -v --log-file result/discover.log
+
+  # Dry run: show SQL without executing
+  discover-dry:
+    <<: *common
+    command: >
+      discover
+      --start-date ${START_DATE:-2025-01-01}
+      --end-date ${END_DATE:-2025-01-31}
+      --dry-run
+
+  # ===========================================================================
+  # SCAN - Deep scan a specific repo for AI commits
+  # ===========================================================================
+
+  # Scan a single repo (git clone mode, no API token needed)
+  scan:
+    <<: *common
+    volumes:
+      - ./result:/app/result
+      - ./tmp:/app/tmp
+    command: >
+      scan ${REPO:-Aider-AI/aider}
+      --git-clone
+      --limit ${LIMIT:-1000}
+      -v
+
+  # Scan using GitHub API (needs GITHUB_TOKEN)
+  scan-api:
+    <<: *common
+    command: >
+      scan ${REPO:-n8n-io/n8n}
+      --limit ${LIMIT:-500}
+      -v
+
+  # ===========================================================================
+  # BATCH-SCAN - Scan multiple repos from discover results
+  # ===========================================================================
+
+  batch-scan:
+    <<: *common
+    volumes:
+      - ./result:/app/result
+      - ./tmp:/app/tmp
+    command: >
+      batch-scan result/ai_repos.json
+      --min-stars ${MIN_STARS:-50}
+      --limit ${LIMIT:-20}
+      -v --log-file result/batch-scan.log
+
+  # ===========================================================================
+  # METADATA - Fetch GitHub stars/language/description
+  # ===========================================================================
+
+  metadata:
+    <<: *common
+    command: >
+      metadata result/ai_repos.json
+      -v
+
+  # Auto-retry metadata fetch (handles rate limits)
+  metadata-loop:
+    <<: *common
+    entrypoint: ["bash"]
+    command: ["/app/fetch_metadata_loop.sh", "result/ai_repos.json"]
+
+  # ===========================================================================
+  # UTILITIES
+  # ===========================================================================
+
+  # Run detection tests
+  tests:
+    <<: *common
+    entrypoint: ["python3"]
+    command: ["-m", "pytest", "tests/", "-v", "--tb=short"]
+
+  test-detection:
+    <<: *common
+    entrypoint: ["python3"]
+    command: ["tests/test_detection.py"]
+
+  test-audit:
+    <<: *common
+    entrypoint: ["python3"]
+    command: ["tests/audit_patterns.py"]
+
+  # Interactive shell for debugging
+  shell:
+    <<: *common
+    entrypoint: ["/bin/bash"]
+    stdin_open: true
+    tty: true

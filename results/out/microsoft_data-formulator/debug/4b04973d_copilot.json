@@ -1,0 +1,137 @@
+{
+  "commit_hash": "4b04973deaae6c063b69a0277d9d6d713dc2053d",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/4b04973deaae6c063b69a0277d9d6d713dc2053d",
+  "author": "",
+  "message": "Update py-src/data_formulator/data_loader/bigquery_data_loader.py\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+  "timestamp": "2025-12-08T15:35:59+05:00",
+  "debt_debug": {
+    "py-src/data_formulator/data_loader/bigquery_data_loader.py": {
+      "issues_added": [],
+      "issues_resolved": [
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 170,
+          "symbol": "reimported",
+          "message": "Reimport 'json' (imported line 1)",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 170,
+          "symbol": "import-outside-toplevel",
+          "message": "Import outside toplevel (json)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 170,
+          "symbol": "redefined-outer-name",
+          "message": "Redefining name 'json' from outer scope (line 1)",
+          "category": "maintainability",
+          "_is_low_severity": false
+        }
+      ]
+    }
+  },
+  "lifecycle_debug": {
+    "py-src/data_formulator/data_loader/bigquery_data_loader.py": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "py-src/data_formulator/data_loader/bigquery_data_loader.py",
+      "line_ranges": [],
+      "lines_added": 0,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 0,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 13,
+        "surviving_units": 2,
+        "modified_units": 6,
+        "deleted_units": 5,
+        "new_units": 2,
+        "semantic_survival_rate": 0.6154,
+        "exact_survival_rate": 0.1538,
+        "modification_rate": 0.4615,
+        "deletion_rate": 0.3846,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.6154,
+        "survived_names": [
+          "BigQueryDataLoader.list_params",
+          "add_field"
+        ],
+        "modified_names": [
+          "BigQueryDataLoader",
+          "BigQueryDataLoader.auth_instructions",
+          "BigQueryDataLoader.__init__",
+          "BigQueryDataLoader.list_tables",
+          "build_alias",
+          "process_field"
+        ],
+        "deleted_names": [
+          "BigQueryDataLoader._convert_bigquery_dtypes",
+          "safe_convert",
+          "BigQueryDataLoader.ingest_data",
+          "BigQueryDataLoader.view_query_sample",
+          "BigQueryDataLoader.ingest_data_from_query"
+        ]
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 3
+    },
+    "lifecycle": {
+      "files_analyzed": 1,
+      "files": [
+        {
+          "filepath": "py-src/data_formulator/data_loader/bigquery_data_loader.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 85.59552083333334,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.615,
+      "developer_valuation": "MEDIUM",
+      "lines_added": 0,
+      "lines_still_exist": 0
+    }
+  }
+}

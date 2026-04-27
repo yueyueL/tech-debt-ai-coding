@@ -1,0 +1,4679 @@
+[
+  {
+    "commit": "4f11b912ec2c",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "7567d4a083bf",
+    "files_analyzed": 7,
+    "total_lines_added": 358,
+    "lines_still_exist": 358,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 22,
+    "survival_rate": 1.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 3,
+    "semantic_units_surviving": 2,
+    "semantic_units_modified": 1,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.667,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "line_ranges": [
+          [
+            33,
+            33
+          ],
+          [
+            622,
+            628
+          ],
+          [
+            636,
+            636
+          ],
+          [
+            638,
+            638
+          ]
+        ],
+        "lines_added": 10,
+        "lines_exist": 10,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 4,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 14,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "SafetyClient._call_daytona_scan"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/prompts/__init__.py",
+        "line_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "lines_added": 3,
+        "lines_exist": 3,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 4,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/prompts/scan.py",
+        "line_ranges": [
+          [
+            1,
+            164
+          ]
+        ],
+        "lines_added": 164,
+        "lines_exist": 164,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "line_ranges": [
+          [
+            30,
+            30
+          ],
+          [
+            795,
+            802
+          ],
+          [
+            804,
+            804
+          ]
+        ],
+        "lines_added": 10,
+        "lines_exist": 10,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 4,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 4,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "SafetyClient"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/prompts/index.ts",
+        "line_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 1,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/prompts/scan.ts",
+        "line_ranges": [
+          [
+            1,
+            164
+          ]
+        ],
+        "lines_added": 164,
+        "lines_exist": 164,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "line_ranges": [
+          [
+            176,
+            179
+          ],
+          [
+            182,
+            183
+          ]
+        ],
+        "lines_added": 6,
+        "lines_exist": 6,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 2,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [
+            "callProvider"
+          ],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 14,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "SafetyClient._call_daytona_scan"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/prompts/__init__.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/prompts/scan.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 4,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "SafetyClient"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/prompts/index.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/prompts/scan.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 2,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [
+          "callProvider"
+        ],
+        "deleted_names": []
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "38681fbac0e4",
+    "files_analyzed": 1,
+    "total_lines_added": 1,
+    "lines_still_exist": 1,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 2,
+    "survival_rate": 1.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "sdk/typescript/src/prompts/index.ts",
+        "line_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 1,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "sdk/typescript/src/prompts/index.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "a58425c1468f",
+    "files_analyzed": 1,
+    "total_lines_added": 6,
+    "lines_still_exist": 6,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 2,
+    "survival_rate": 1.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 1,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 1,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "line_ranges": [
+          [
+            176,
+            179
+          ],
+          [
+            182,
+            183
+          ]
+        ],
+        "lines_added": 6,
+        "lines_exist": 6,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 2,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [
+            "callProvider"
+          ],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 2,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [
+          "callProvider"
+        ],
+        "deleted_names": []
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "b397c4d923e7",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "8de87e3c278e",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "d22c501e606a",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "7a9711d86395",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "7e77462d9ccd",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "f1690722f9ff",
+    "files_analyzed": 8,
+    "total_lines_added": 312,
+    "lines_still_exist": 309,
+    "lines_modified": 3,
+    "lines_deleted": 0,
+    "total_modifications": 44,
+    "survival_rate": 0.99,
+    "modification_rate": 0.01,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 14,
+    "semantic_units_surviving": 9,
+    "semantic_units_modified": 5,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.643,
+    "semantic_vs_syntactic_delta": 0.01,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "line_ranges": [
+          [
+            30,
+            30
+          ],
+          [
+            218,
+            222
+          ],
+          [
+            267,
+            269
+          ],
+          [
+            325,
+            327
+          ],
+          [
+            511,
+            513
+          ],
+          [
+            717,
+            719
+          ],
+          [
+            727,
+            730
+          ],
+          [
+            735,
+            749
+          ]
+        ],
+        "lines_added": 37,
+        "lines_exist": 34,
+        "lines_modified": 3,
+        "lines_deleted": 0,
+        "modification_count": 8,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 5,
+          "surviving_units": 2,
+          "modified_units": 3,
+          "deleted_units": 0,
+          "new_units": 10,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.4,
+          "modification_rate": 0.6,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.918918918918919,
+          "semantic_vs_syntactic_delta": 0.0811,
+          "survived_names": [
+            "SafetyClient.__init__",
+            "create_client"
+          ],
+          "modified_names": [
+            "SafetyClient._guard_single_text",
+            "SafetyClient._guard_image",
+            "SafetyClient.redact"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/__init__.py",
+        "line_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            23,
+            42
+          ],
+          [
+            106,
+            106
+          ],
+          [
+            133,
+            193
+          ],
+          [
+            218,
+            218
+          ]
+        ],
+        "lines_added": 85,
+        "lines_exist": 85,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 8,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 2,
+          "surviving_units": 1,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 2,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.5,
+          "modification_rate": 0.5,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "FallbackOptions"
+          ],
+          "modified_names": [
+            "call_provider"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/superagent.py",
+        "line_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            20,
+            36
+          ]
+        ],
+        "lines_added": 18,
+        "lines_exist": 18,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 5,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "get_fallback_url"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/types.py",
+        "line_ranges": [
+          [
+            21,
+            29
+          ]
+        ],
+        "lines_added": 9,
+        "lines_exist": 9,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 18,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "ClientConfig"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "line_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            424,
+            424
+          ],
+          [
+            434,
+            438
+          ],
+          [
+            485,
+            490
+          ],
+          [
+            554,
+            559
+          ],
+          [
+            688,
+            693
+          ]
+        ],
+        "lines_added": 25,
+        "lines_exist": 25,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 6,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 4,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "SafetyClient"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "line_ranges": [
+          [
+            11,
+            16
+          ],
+          [
+            19,
+            30
+          ],
+          [
+            61,
+            61
+          ],
+          [
+            70,
+            70
+          ],
+          [
+            86,
+            86
+          ],
+          [
+            99,
+            100
+          ],
+          [
+            109,
+            109
+          ],
+          [
+            116,
+            116
+          ],
+          [
+            124,
+            198
+          ]
+        ],
+        "lines_added": 100,
+        "lines_exist": 100,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 12,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 3,
+          "surviving_units": 2,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.6667,
+          "modification_rate": 0.3333,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "parseModel",
+            "getProvider"
+          ],
+          "modified_names": [
+            "callProvider"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/providers/superagent.ts",
+        "line_ranges": [
+          [
+            8,
+            36
+          ],
+          [
+            81,
+            81
+          ],
+          [
+            146,
+            146
+          ],
+          [
+            156,
+            156
+          ]
+        ],
+        "lines_added": 32,
+        "lines_exist": 32,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 5,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "getFallbackUrl"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/types.ts",
+        "line_ranges": [
+          [
+            7,
+            12
+          ]
+        ],
+        "lines_added": 6,
+        "lines_exist": 6,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 5,
+        "surviving_units": 2,
+        "modified_units": 3,
+        "deleted_units": 0,
+        "new_units": 10,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.4,
+        "modification_rate": 0.6,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.918918918918919,
+        "semantic_vs_syntactic_delta": 0.0811,
+        "survived_names": [
+          "SafetyClient.__init__",
+          "create_client"
+        ],
+        "modified_names": [
+          "SafetyClient._guard_single_text",
+          "SafetyClient._guard_image",
+          "SafetyClient.redact"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/__init__.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 1,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 2,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.5,
+        "modification_rate": 0.5,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "FallbackOptions"
+        ],
+        "modified_names": [
+          "call_provider"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/superagent.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 5,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "get_fallback_url"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/types.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 18,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "ClientConfig"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 4,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "SafetyClient"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 3,
+        "surviving_units": 2,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.6667,
+        "modification_rate": 0.3333,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "parseModel",
+          "getProvider"
+        ],
+        "modified_names": [
+          "callProvider"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/providers/superagent.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "getFallbackUrl"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/types.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "fc405c889d11",
+    "files_analyzed": 6,
+    "total_lines_added": 366,
+    "lines_still_exist": 364,
+    "lines_modified": 2,
+    "lines_deleted": 0,
+    "total_modifications": 31,
+    "survival_rate": 0.995,
+    "modification_rate": 0.005,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 3,
+    "semantic_units_surviving": 3,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 1.0,
+    "semantic_vs_syntactic_delta": 0.005,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "line_ranges": [
+          [
+            33,
+            33
+          ],
+          [
+            611,
+            617
+          ],
+          [
+            625,
+            625
+          ],
+          [
+            627,
+            627
+          ]
+        ],
+        "lines_added": 10,
+        "lines_exist": 10,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 4,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 14,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "SafetyClient._call_daytona_scan"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/prompts/__init__.py",
+        "line_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "lines_added": 3,
+        "lines_exist": 3,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 4,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/prompts/scan.py",
+        "line_ranges": [
+          [
+            1,
+            164
+          ]
+        ],
+        "lines_added": 164,
+        "lines_exist": 164,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "line_ranges": [
+          [
+            29,
+            29
+          ],
+          [
+            75,
+            75
+          ],
+          [
+            86,
+            86
+          ],
+          [
+            428,
+            428
+          ],
+          [
+            458,
+            458
+          ],
+          [
+            509,
+            509
+          ],
+          [
+            513,
+            513
+          ],
+          [
+            602,
+            602
+          ],
+          [
+            620,
+            621
+          ],
+          [
+            643,
+            643
+          ],
+          [
+            734,
+            734
+          ],
+          [
+            743,
+            743
+          ],
+          [
+            773,
+            780
+          ],
+          [
+            782,
+            782
+          ],
+          [
+            852,
+            853
+          ]
+        ],
+        "lines_added": 24,
+        "lines_exist": 22,
+        "lines_modified": 2,
+        "lines_deleted": 0,
+        "modification_count": 15,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 2,
+          "surviving_units": 2,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 3,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.9166666666666666,
+          "semantic_vs_syntactic_delta": 0.0833,
+          "survived_names": [
+            "aggregateGuardResults",
+            "SafetyClient"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/prompts/index.ts",
+        "line_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 1,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/prompts/scan.ts",
+        "line_ranges": [
+          [
+            1,
+            164
+          ]
+        ],
+        "lines_added": 164,
+        "lines_exist": 164,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 14,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "SafetyClient._call_daytona_scan"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/prompts/__init__.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/prompts/scan.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 2,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 3,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.9166666666666666,
+        "semantic_vs_syntactic_delta": 0.0833,
+        "survived_names": [
+          "aggregateGuardResults",
+          "SafetyClient"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/prompts/index.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/prompts/scan.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "2398fc482615",
+    "files_analyzed": 8,
+    "total_lines_added": 327,
+    "lines_still_exist": 321,
+    "lines_modified": 6,
+    "lines_deleted": 0,
+    "total_modifications": 57,
+    "survival_rate": 0.982,
+    "modification_rate": 0.018,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 15,
+    "semantic_units_surviving": 10,
+    "semantic_units_modified": 5,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.667,
+    "semantic_vs_syntactic_delta": 0.018,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "line_ranges": [
+          [
+            30,
+            30
+          ],
+          [
+            217,
+            221
+          ],
+          [
+            266,
+            268
+          ],
+          [
+            324,
+            326
+          ],
+          [
+            510,
+            512
+          ],
+          [
+            709,
+            711
+          ],
+          [
+            719,
+            722
+          ],
+          [
+            727,
+            741
+          ]
+        ],
+        "lines_added": 37,
+        "lines_exist": 34,
+        "lines_modified": 3,
+        "lines_deleted": 0,
+        "modification_count": 8,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 5,
+          "surviving_units": 2,
+          "modified_units": 3,
+          "deleted_units": 0,
+          "new_units": 10,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.4,
+          "modification_rate": 0.6,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.918918918918919,
+          "semantic_vs_syntactic_delta": 0.0811,
+          "survived_names": [
+            "SafetyClient.__init__",
+            "create_client"
+          ],
+          "modified_names": [
+            "SafetyClient._guard_single_text",
+            "SafetyClient._guard_image",
+            "SafetyClient.redact"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/__init__.py",
+        "line_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            23,
+            42
+          ],
+          [
+            106,
+            106
+          ],
+          [
+            133,
+            193
+          ],
+          [
+            218,
+            218
+          ]
+        ],
+        "lines_added": 85,
+        "lines_exist": 85,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 8,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 2,
+          "surviving_units": 1,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 2,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.5,
+          "modification_rate": 0.5,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "FallbackOptions"
+          ],
+          "modified_names": [
+            "call_provider"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/superagent.py",
+        "line_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            20,
+            36
+          ]
+        ],
+        "lines_added": 18,
+        "lines_exist": 18,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 5,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "get_fallback_url"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/types.py",
+        "line_ranges": [
+          [
+            21,
+            29
+          ]
+        ],
+        "lines_added": 9,
+        "lines_exist": 9,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 18,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "ClientConfig"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "line_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            75,
+            75
+          ],
+          [
+            86,
+            86
+          ],
+          [
+            423,
+            423
+          ],
+          [
+            429,
+            429
+          ],
+          [
+            433,
+            437
+          ],
+          [
+            464,
+            464
+          ],
+          [
+            484,
+            489
+          ],
+          [
+            520,
+            520
+          ],
+          [
+            524,
+            524
+          ],
+          [
+            553,
+            558
+          ],
+          [
+            618,
+            618
+          ],
+          [
+            636,
+            637
+          ],
+          [
+            659,
+            659
+          ],
+          [
+            687,
+            692
+          ],
+          [
+            755,
+            755
+          ],
+          [
+            764,
+            764
+          ],
+          [
+            796,
+            796
+          ],
+          [
+            866,
+            867
+          ]
+        ],
+        "lines_added": 40,
+        "lines_exist": 37,
+        "lines_modified": 3,
+        "lines_deleted": 0,
+        "modification_count": 19,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 2,
+          "surviving_units": 2,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 3,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.925,
+          "semantic_vs_syntactic_delta": 0.075,
+          "survived_names": [
+            "aggregateGuardResults",
+            "SafetyClient"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "line_ranges": [
+          [
+            11,
+            16
+          ],
+          [
+            19,
+            30
+          ],
+          [
+            61,
+            61
+          ],
+          [
+            70,
+            70
+          ],
+          [
+            86,
+            86
+          ],
+          [
+            99,
+            100
+          ],
+          [
+            109,
+            109
+          ],
+          [
+            116,
+            116
+          ],
+          [
+            124,
+            198
+          ]
+        ],
+        "lines_added": 100,
+        "lines_exist": 100,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 12,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 3,
+          "surviving_units": 2,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.6667,
+          "modification_rate": 0.3333,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "parseModel",
+            "getProvider"
+          ],
+          "modified_names": [
+            "callProvider"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/providers/superagent.ts",
+        "line_ranges": [
+          [
+            8,
+            36
+          ],
+          [
+            81,
+            81
+          ],
+          [
+            146,
+            146
+          ],
+          [
+            156,
+            156
+          ]
+        ],
+        "lines_added": 32,
+        "lines_exist": 32,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 5,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "getFallbackUrl"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/types.ts",
+        "line_ranges": [
+          [
+            7,
+            12
+          ]
+        ],
+        "lines_added": 6,
+        "lines_exist": 6,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 5,
+        "surviving_units": 2,
+        "modified_units": 3,
+        "deleted_units": 0,
+        "new_units": 10,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.4,
+        "modification_rate": 0.6,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.918918918918919,
+        "semantic_vs_syntactic_delta": 0.0811,
+        "survived_names": [
+          "SafetyClient.__init__",
+          "create_client"
+        ],
+        "modified_names": [
+          "SafetyClient._guard_single_text",
+          "SafetyClient._guard_image",
+          "SafetyClient.redact"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/__init__.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 1,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 2,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.5,
+        "modification_rate": 0.5,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "FallbackOptions"
+        ],
+        "modified_names": [
+          "call_provider"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/superagent.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 5,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "get_fallback_url"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/types.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 18,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "ClientConfig"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 2,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 3,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.925,
+        "semantic_vs_syntactic_delta": 0.075,
+        "survived_names": [
+          "aggregateGuardResults",
+          "SafetyClient"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 3,
+        "surviving_units": 2,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.6667,
+        "modification_rate": 0.3333,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "parseModel",
+          "getProvider"
+        ],
+        "modified_names": [
+          "callProvider"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/providers/superagent.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "getFallbackUrl"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/types.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "1066c79fa1d0",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "d12a6279357e",
+    "files_analyzed": 8,
+    "total_lines_added": 327,
+    "lines_still_exist": 321,
+    "lines_modified": 6,
+    "lines_deleted": 0,
+    "total_modifications": 57,
+    "survival_rate": 0.982,
+    "modification_rate": 0.018,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 15,
+    "semantic_units_surviving": 10,
+    "semantic_units_modified": 5,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.667,
+    "semantic_vs_syntactic_delta": 0.018,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "line_ranges": [
+          [
+            30,
+            30
+          ],
+          [
+            217,
+            221
+          ],
+          [
+            266,
+            268
+          ],
+          [
+            324,
+            326
+          ],
+          [
+            510,
+            512
+          ],
+          [
+            709,
+            711
+          ],
+          [
+            719,
+            722
+          ],
+          [
+            727,
+            741
+          ]
+        ],
+        "lines_added": 37,
+        "lines_exist": 34,
+        "lines_modified": 3,
+        "lines_deleted": 0,
+        "modification_count": 8,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 5,
+          "surviving_units": 2,
+          "modified_units": 3,
+          "deleted_units": 0,
+          "new_units": 10,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.4,
+          "modification_rate": 0.6,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.918918918918919,
+          "semantic_vs_syntactic_delta": 0.0811,
+          "survived_names": [
+            "SafetyClient.__init__",
+            "create_client"
+          ],
+          "modified_names": [
+            "SafetyClient._guard_single_text",
+            "SafetyClient._guard_image",
+            "SafetyClient.redact"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/__init__.py",
+        "line_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            23,
+            42
+          ],
+          [
+            106,
+            106
+          ],
+          [
+            133,
+            193
+          ],
+          [
+            218,
+            218
+          ]
+        ],
+        "lines_added": 85,
+        "lines_exist": 85,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 8,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 2,
+          "surviving_units": 1,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 2,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.5,
+          "modification_rate": 0.5,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "FallbackOptions"
+          ],
+          "modified_names": [
+            "call_provider"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/superagent.py",
+        "line_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            20,
+            36
+          ]
+        ],
+        "lines_added": 18,
+        "lines_exist": 18,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 5,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "get_fallback_url"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/types.py",
+        "line_ranges": [
+          [
+            21,
+            29
+          ]
+        ],
+        "lines_added": 9,
+        "lines_exist": 9,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 18,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "ClientConfig"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "line_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            75,
+            75
+          ],
+          [
+            86,
+            86
+          ],
+          [
+            423,
+            423
+          ],
+          [
+            429,
+            429
+          ],
+          [
+            433,
+            437
+          ],
+          [
+            464,
+            464
+          ],
+          [
+            484,
+            489
+          ],
+          [
+            520,
+            520
+          ],
+          [
+            524,
+            524
+          ],
+          [
+            553,
+            558
+          ],
+          [
+            618,
+            618
+          ],
+          [
+            636,
+            637
+          ],
+          [
+            659,
+            659
+          ],
+          [
+            687,
+            692
+          ],
+          [
+            755,
+            755
+          ],
+          [
+            764,
+            764
+          ],
+          [
+            796,
+            796
+          ],
+          [
+            866,
+            867
+          ]
+        ],
+        "lines_added": 40,
+        "lines_exist": 37,
+        "lines_modified": 3,
+        "lines_deleted": 0,
+        "modification_count": 19,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 2,
+          "surviving_units": 2,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 3,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.925,
+          "semantic_vs_syntactic_delta": 0.075,
+          "survived_names": [
+            "aggregateGuardResults",
+            "SafetyClient"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "line_ranges": [
+          [
+            11,
+            16
+          ],
+          [
+            19,
+            30
+          ],
+          [
+            61,
+            61
+          ],
+          [
+            70,
+            70
+          ],
+          [
+            86,
+            86
+          ],
+          [
+            99,
+            100
+          ],
+          [
+            109,
+            109
+          ],
+          [
+            116,
+            116
+          ],
+          [
+            124,
+            198
+          ]
+        ],
+        "lines_added": 100,
+        "lines_exist": 100,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 12,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 3,
+          "surviving_units": 2,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.6667,
+          "modification_rate": 0.3333,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "parseModel",
+            "getProvider"
+          ],
+          "modified_names": [
+            "callProvider"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/providers/superagent.ts",
+        "line_ranges": [
+          [
+            8,
+            36
+          ],
+          [
+            81,
+            81
+          ],
+          [
+            146,
+            146
+          ],
+          [
+            156,
+            156
+          ]
+        ],
+        "lines_added": 32,
+        "lines_exist": 32,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 5,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "getFallbackUrl"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/types.ts",
+        "line_ranges": [
+          [
+            7,
+            12
+          ]
+        ],
+        "lines_added": 6,
+        "lines_exist": 6,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 5,
+        "surviving_units": 2,
+        "modified_units": 3,
+        "deleted_units": 0,
+        "new_units": 10,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.4,
+        "modification_rate": 0.6,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.918918918918919,
+        "semantic_vs_syntactic_delta": 0.0811,
+        "survived_names": [
+          "SafetyClient.__init__",
+          "create_client"
+        ],
+        "modified_names": [
+          "SafetyClient._guard_single_text",
+          "SafetyClient._guard_image",
+          "SafetyClient.redact"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/__init__.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 1,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 2,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.5,
+        "modification_rate": 0.5,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "FallbackOptions"
+        ],
+        "modified_names": [
+          "call_provider"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/superagent.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 5,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "get_fallback_url"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/types.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 18,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "ClientConfig"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 2,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 3,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.925,
+        "semantic_vs_syntactic_delta": 0.075,
+        "survived_names": [
+          "aggregateGuardResults",
+          "SafetyClient"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 3,
+        "surviving_units": 2,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.6667,
+        "modification_rate": 0.3333,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "parseModel",
+          "getProvider"
+        ],
+        "modified_names": [
+          "callProvider"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/providers/superagent.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "getFallbackUrl"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/types.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "5f004c3b6331",
+    "files_analyzed": 7,
+    "total_lines_added": 171,
+    "lines_still_exist": 171,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 13,
+    "survival_rate": 1.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 6,
+    "semantic_units_surviving": 6,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 1.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "line_ranges": [
+          [
+            139,
+            144
+          ]
+        ],
+        "lines_added": 6,
+        "lines_exist": 6,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 14,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "_supports_structured_output"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/__init__.py",
+        "line_ranges": [
+          [
+            19,
+            19
+          ],
+          [
+            29,
+            29
+          ]
+        ],
+        "lines_added": 2,
+        "lines_exist": 2,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/openai_compatible.py",
+        "line_ranges": [
+          [
+            1,
+            83
+          ]
+        ],
+        "lines_added": 83,
+        "lines_exist": 83,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 4,
+          "surviving_units": 4,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 1,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "OpenAICompatibleProvider.auth_header",
+            "OpenAICompatibleProvider.build_url",
+            "OpenAICompatibleProvider.transform_request",
+            "OpenAICompatibleProvider.transform_response"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "line_ranges": [
+          [
+            121,
+            126
+          ]
+        ],
+        "lines_added": 6,
+        "lines_exist": 6,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 4,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "supportsStructuredOutput"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "line_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "lines_added": 2,
+        "lines_exist": 2,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/providers/openai-compatible.ts",
+        "line_ranges": [
+          [
+            1,
+            65
+          ]
+        ],
+        "lines_added": 65,
+        "lines_exist": 65,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "sdk/typescript/src/types.ts",
+        "line_ranges": [
+          [
+            46,
+            51
+          ],
+          [
+            785,
+            785
+          ]
+        ],
+        "lines_added": 7,
+        "lines_exist": 7,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "sdk/python/src/safety_agent/client.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 14,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "_supports_structured_output"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/__init__.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/python/src/safety_agent/providers/openai_compatible.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 4,
+        "surviving_units": 4,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 1,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "OpenAICompatibleProvider.auth_header",
+          "OpenAICompatibleProvider.build_url",
+          "OpenAICompatibleProvider.transform_request",
+          "OpenAICompatibleProvider.transform_response"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/client.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 4,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "supportsStructuredOutput"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/providers/index.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/providers/openai-compatible.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "sdk/typescript/src/types.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "708e7f510515",
+    "files_analyzed": 2,
+    "total_lines_added": 44,
+    "lines_still_exist": 44,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 10,
+    "survival_rate": 1.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 3,
+    "semantic_units_surviving": 3,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 1.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "cli/src/commands/guard.ts",
+        "line_ranges": [
+          [
+            16,
+            16
+          ],
+          [
+            25,
+            27
+          ],
+          [
+            70,
+            81
+          ],
+          [
+            138,
+            142
+          ]
+        ],
+        "lines_added": 21,
+        "lines_exist": 21,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 4,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 2,
+          "surviving_units": 2,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "showHelp",
+            "guardCommand"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "cli/src/commands/redact.ts",
+        "line_ranges": [
+          [
+            23,
+            36
+          ],
+          [
+            85,
+            85
+          ],
+          [
+            88,
+            88
+          ],
+          [
+            98,
+            100
+          ],
+          [
+            110,
+            112
+          ],
+          [
+            131,
+            131
+          ]
+        ],
+        "lines_added": 23,
+        "lines_exist": 23,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 6,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "redactCommand"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "cli/src/commands/guard.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 2,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "showHelp",
+          "guardCommand"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "cli/src/commands/redact.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "redactCommand"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "4bd6e8c34eda",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "c860a27986fe",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "eabf6064b82c",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "92f6d7357638",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "56263014a850",
+    "files_analyzed": 2,
+    "total_lines_added": 24,
+    "lines_still_exist": 10,
+    "lines_modified": 14,
+    "lines_deleted": 0,
+    "total_modifications": 7,
+    "survival_rate": 0.417,
+    "modification_rate": 0.583,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 1,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 1,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.583,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "cli/src/commands/guard.ts",
+        "line_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            45,
+            45
+          ],
+          [
+            51,
+            62
+          ]
+        ],
+        "lines_added": 23,
+        "lines_exist": 10,
+        "lines_modified": 13,
+        "lines_deleted": 0,
+        "modification_count": 6,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 1,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.43478260869565216,
+          "semantic_vs_syntactic_delta": 0.5652,
+          "survived_names": [],
+          "modified_names": [
+            "guardCommand"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "cli/src/index.ts",
+        "line_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 0,
+        "lines_modified": 1,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "cli/src/commands/guard.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 1,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.43478260869565216,
+        "semantic_vs_syntactic_delta": 0.5652,
+        "survived_names": [],
+        "modified_names": [
+          "guardCommand"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "cli/src/index.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "0473257e206d",
+    "files_analyzed": 2,
+    "total_lines_added": 52,
+    "lines_still_exist": 37,
+    "lines_modified": 15,
+    "lines_deleted": 0,
+    "total_modifications": 7,
+    "survival_rate": 0.712,
+    "modification_rate": 0.288,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 1,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 1,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.288,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "cli/src/commands/redact.ts",
+        "line_ranges": [
+          [
+            1,
+            47
+          ]
+        ],
+        "lines_added": 47,
+        "lines_exist": 33,
+        "lines_modified": 14,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.7021276595744681,
+          "semantic_vs_syntactic_delta": 0.2979,
+          "survived_names": [],
+          "modified_names": [
+            "redactCommand"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "cli/src/index.ts",
+        "line_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            13,
+            15
+          ],
+          [
+            19,
+            19
+          ]
+        ],
+        "lines_added": 5,
+        "lines_exist": 4,
+        "lines_modified": 1,
+        "lines_deleted": 0,
+        "modification_count": 4,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "cli/src/commands/redact.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.7021276595744681,
+        "semantic_vs_syntactic_delta": 0.2979,
+        "survived_names": [],
+        "modified_names": [
+          "redactCommand"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "cli/src/index.ts",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "46695d14622a",
+    "files_analyzed": 2,
+    "total_lines_added": 124,
+    "lines_still_exist": 11,
+    "lines_modified": 0,
+    "lines_deleted": 113,
+    "total_modifications": 0,
+    "survival_rate": 0.089,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.911,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "node/src/server.js",
+        "line_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            63,
+            106
+          ],
+          [
+            109,
+            110
+          ],
+          [
+            113,
+            123
+          ],
+          [
+            125,
+            126
+          ],
+          [
+            927,
+            938
+          ],
+          [
+            941,
+            941
+          ],
+          [
+            943,
+            943
+          ]
+        ],
+        "lines_added": 75,
+        "lines_exist": 11,
+        "lines_modified": 0,
+        "lines_deleted": 64,
+        "modification_count": 0
+      },
+      {
+        "file": "rust/src/server.rs",
+        "line_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            51,
+            51
+          ],
+          [
+            56,
+            65
+          ],
+          [
+            155,
+            160
+          ],
+          [
+            162,
+            164
+          ],
+          [
+            200,
+            204
+          ],
+          [
+            280,
+            301
+          ]
+        ],
+        "lines_added": 49,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 49,
+        "modification_count": 0
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "63b7272d968f",
+    "files_analyzed": 5,
+    "total_lines_added": 11,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 11,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 1.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "node/src/cli.js",
+        "line_ranges": [
+          [
+            18,
+            19
+          ]
+        ],
+        "lines_added": 2,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 2,
+        "modification_count": 0
+      },
+      {
+        "file": "node/src/server.js",
+        "line_ranges": [
+          [
+            542,
+            542
+          ],
+          [
+            545,
+            545
+          ],
+          [
+            583,
+            583
+          ],
+          [
+            586,
+            586
+          ]
+        ],
+        "lines_added": 4,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 4,
+        "modification_count": 0
+      },
+      {
+        "file": "rust/src/cli.rs",
+        "line_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "lines_added": 2,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 2,
+        "modification_count": 0
+      },
+      {
+        "file": "rust/src/main.rs",
+        "line_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 1,
+        "modification_count": 0
+      },
+      {
+        "file": "test.sh",
+        "line_ranges": [
+          [
+            18,
+            18
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "lines_added": 2,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 2,
+        "modification_count": 0
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "c35f7e3a80d4",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "8facd60b703e",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "6c2bcfd76c72",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "0ad774224f32",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "9e3460135918",
+    "files_analyzed": 1,
+    "total_lines_added": 1,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 1,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 1.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "rust/src/cli.rs",
+        "line_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 1,
+        "modification_count": 0
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "8d0e011e7831",
+    "files_analyzed": 2,
+    "total_lines_added": 12,
+    "lines_still_exist": 1,
+    "lines_modified": 0,
+    "lines_deleted": 11,
+    "total_modifications": 0,
+    "survival_rate": 0.083,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.917,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "node/src/cli.js",
+        "line_ranges": [
+          [
+            5,
+            7
+          ],
+          [
+            10,
+            13
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "lines_added": 8,
+        "lines_exist": 1,
+        "lines_modified": 0,
+        "lines_deleted": 7,
+        "modification_count": 0
+      },
+      {
+        "file": "node/src/config.js",
+        "line_ranges": [
+          [
+            8,
+            9
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "lines_added": 4,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 4,
+        "modification_count": 0
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "2dc5a09fd189",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "a955f7f4b263",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "bd43e1ea57e0",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "475366ad7508",
+    "files_analyzed": 1,
+    "total_lines_added": 5,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 5,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 1.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "test.sh",
+        "line_ranges": [
+          [
+            19,
+            19
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            35,
+            35
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "lines_added": 5,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 5,
+        "modification_count": 0
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  },
+  {
+    "commit": "1d78c2edade6",
+    "files_analyzed": 6,
+    "total_lines_added": 16,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 16,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 1.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "node/src/cli.js",
+        "line_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            111,
+            111
+          ]
+        ],
+        "lines_added": 4,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 4,
+        "modification_count": 0
+      },
+      {
+        "file": "node/src/config.js",
+        "line_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 1,
+        "modification_count": 0
+      },
+      {
+        "file": "node/src/index.js",
+        "line_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 1,
+        "modification_count": 0
+      },
+      {
+        "file": "node/src/server.js",
+        "line_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 1,
+        "modification_count": 0
+      },
+      {
+        "file": "rust/src/cli.rs",
+        "line_ranges": [
+          [
+            24,
+            25
+          ],
+          [
+            43,
+            44
+          ]
+        ],
+        "lines_added": 4,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 4,
+        "modification_count": 0
+      },
+      {
+        "file": "rust/src/config.rs",
+        "line_ranges": [
+          [
+            60,
+            60
+          ],
+          [
+            62,
+            62
+          ],
+          [
+            64,
+            64
+          ],
+          [
+            66,
+            66
+          ],
+          [
+            78,
+            78
+          ]
+        ],
+        "lines_added": 5,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 5,
+        "modification_count": 0
+      }
+    ],
+    "repo": "superagent-ai/superagent"
+  }
+]

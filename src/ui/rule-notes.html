@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Quality — Rule Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        .notes-section { margin-bottom: 2.5rem; }
+        .notes-section h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text-primary); }
+        .notes-section .section-desc { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.9rem; }
+        .notes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; }
+        .note-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; overflow-x: auto; }
+        .note-card h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.7rem; color: var(--text-secondary); }
+        .note-card .caption { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.6rem; font-style: italic; }
+        .paper-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; font-variant-numeric: tabular-nums; }
+        .paper-table th { padding: 0.5rem 0.7rem; text-align: left; border-bottom: 2px solid var(--border); color: var(--text-muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; white-space: nowrap; }
+        .paper-table td { padding: 0.45rem 0.7rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+        .paper-table tr:hover td { background: var(--bg-elevated); }
+        .paper-table .num { text-align: right; font-weight: 500; }
+        .mini-stat-grid { display:flex; gap:1rem; flex-wrap:wrap; margin-bottom: 1rem; }
+        .mini-stat { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.55rem 0.9rem; min-width: 120px; }
+        .mini-stat-value { font-size: 1.15rem; font-weight: 700; }
+        .mini-stat-label { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.15rem; }
+        .back-link { color: var(--accent-primary); text-decoration: none; font-size: 0.85rem; }
+        .back-link:hover { text-decoration: underline; }
+        #loading-msg { text-align: center; padding: 4rem; color: var(--text-muted); font-size: 1.1rem; }
+        .note-list { margin: 0; padding-left: 1.1rem; }
+        .note-list li { margin-bottom: 0.45rem; line-height: 1.5; }
+        code { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 4px; padding: 0.05rem 0.3rem; }
+    </style>
+</head>
+
+<body>
+    <nav class="top-nav" id="top-nav">
+        <div class="top-nav-inner">
+            <div class="nav-brand">
+                <span class="nav-brand-icon">AI</span>
+                <span>Rule Notes</span>
+            </div>
+            <div class="nav-links">
+                <a href="#policy" class="nav-link active">Policy</a>
+                <a href="#families" class="nav-link">Families</a>
+                <a href="#catalog" class="nav-link">Catalog</a>
+                <a href="#supplemental" class="nav-link">Other Tables</a>
+                <a href="paper-tables.html" data-preserve-dataset="true" class="back-link">Paper Tables</a>
+                <a href="overview.html" data-preserve-dataset="true" class="back-link">Overview</a>
+                <a href="dashboard.html" data-preserve-dataset="true" class="back-link">Per-Repo Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="header-row">
+                <div class="header-title">
+                    <h1>Rule Naming &amp; Family Notes</h1>
+                    <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.25rem;">
+                        Appendix-style notes for the paper-facing rule labels and family definitions.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <p class="section-desc" id="data-status-banner"></p>
+        <div id="loading-msg">Loading aggregate data...</div>
+        <div id="content" style="display:none;">
+            <section class="notes-section" id="policy">
+                <h2>Labeling Policy</h2>
+                <p class="section-desc">How the paper tables turn raw analyzer rule ids into reviewer-readable labels.</p>
+                <div class="mini-stat-grid" id="policy-stats"></div>
+                <div class="note-card">
+                    <ul class="note-list">
+                        <li>Main paper tables use a human-readable concept label first, not a raw analyzer id.</li>
+                        <li>Equivalent raw rules are merged when they represent the same concept across analyzers or language variants. For example, <code>no-unused-vars</code> and <code>@typescript-eslint/no-unused-vars</code> are shown as a single concept.</li>
+                        <li>Raw rule names and ids are preserved on this page only, so reviewers can audit exactly which analyzer rules are included.</li>
+                        <li>Issue families are derived semantically: <strong>Security</strong> for security analyzer findings, <strong>Bug</strong> for correctness/runtime bug rules, and <strong>Code Smell</strong> for the remaining actionable maintainability findings.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="notes-section" id="families">
+                <h2>Family Definitions</h2>
+                <p class="section-desc">Distinct repo and commit counts indicate how widely each family appears; they are coverage measures, not additive totals.</p>
+                <div class="note-card">
+                    <table class="paper-table" id="family-definitions-table"></table>
+                </div>
+            </section>
+
+            <section class="notes-section" id="catalog">
+                <h2>Rule Catalog by Family</h2>
+                <p class="section-desc">Merged display labels used in the paper, mapped back to the raw analyzer rules observed in the current focused dataset.</p>
+                <div class="notes-grid" id="family-catalog-grid"></div>
+            </section>
+
+            <section class="notes-section" id="supplemental">
+                <h2>Other Displayed Rule Concepts</h2>
+                <p class="section-desc">Additional labels used in the filtered-rules and top-surviving-rules tables. These may include low-signal or style-heavy rules that are not part of the actionable family catalogs above.</p>
+                <div class="notes-grid">
+                    <div class="note-card">
+                        <h3>Filtering Table Labels</h3>
+                        <p class="caption">Merged rule concepts shown in “Top Filtered Rules”.</p>
+                        <table class="paper-table" id="filtered-labels-table"></table>
+                    </div>
+                    <div class="note-card">
+                        <h3>Survival Table Labels</h3>
+                        <p class="caption">Merged rule concepts shown in “Top Surviving Rules”.</p>
+                        <table class="paper-table" id="survival-labels-table"></table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/rule-notes.js"></script>
+</body>
+
+</html>

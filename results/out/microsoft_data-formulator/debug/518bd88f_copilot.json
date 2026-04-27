@@ -1,0 +1,26 @@
+{
+  "commit_hash": "518bd88f1261ed8538173755e6c154283c07e356",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/518bd88f1261ed8538173755e6c154283c07e356",
+  "author": "",
+  "message": "Initial plan\n",
+  "timestamp": "2025-12-01T22:10:29+00:00",
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 0,
+      "files": []
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 0,
+      "lines_still_exist": 0
+    }
+  }
+}

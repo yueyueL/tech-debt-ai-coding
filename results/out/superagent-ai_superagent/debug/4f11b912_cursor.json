@@ -1,0 +1,26 @@
+{
+  "commit_hash": "4f11b912ec2ceca77f81fb591533003b28827284",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "cursor",
+  "url": "https://github.com/superagent-ai/superagent/commit/4f11b912ec2ceca77f81fb591533003b28827284",
+  "author": "",
+  "message": "fix: update default model test to allow 0 token usage on fallback\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+  "timestamp": "2026-02-03T09:56:15+01:00",
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 0,
+      "files": []
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 0,
+      "lines_still_exist": 0
+    }
+  }
+}

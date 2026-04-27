@@ -1,0 +1,2045 @@
+{
+  "commit_hash": "46695d14622a6c5de22315ce9514964d22e4d825",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "claude",
+  "url": "https://github.com/superagent-ai/superagent/commit/46695d14622a6c5de22315ce9514964d22e4d825",
+  "author": "",
+  "message": "feat: Add Redis connection pooling for proxy caching layers\nImplements connection pooling for both Rust and Node.js proxy implementations\nto improve performance and resource management in multitenant environments.\n\nRust changes:\n- Add connection-manager feature to Redis dependency\n- Replace single Redis client with ConnectionManager for true connection pooling\n- Update all Redis operations to use connection manager\n- Improve error handling and logging for connection pool\n\nNode.js changes:\n- Add ",
+  "timestamp": "2025-08-28T16:43:04+00:00",
+  "debt_debug": {
+    "node/src/server.js": {
+      "issues_added": [
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 75,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'family' should be before 'maxRetriesPerRequest'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 85,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'maxRetriesPerRequest' should be before 'retryStrategy'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 86,
+          "rule": "no-dupe-keys",
+          "message": "Duplicate key 'lazyConnect'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 92,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 6379.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 68,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'connectTimeout' should be before 'keepAlive'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 69,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'commandTimeout' should be before 'connectTimeout'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 86,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'lazyConnect' should be before 'maxRetriesPerRequest'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 67,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'keepAlive' should be before 'lazyConnect'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 64,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'const' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 81,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 1000.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 80,
+          "rule": "curly",
+          "message": "Expected { after 'if' condition.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 85,
+          "rule": "no-dupe-keys",
+          "message": "Duplicate key 'maxRetriesPerRequest'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 81,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 100.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 71,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'enableReadyCheck' should be before 'retryDelayOnFailover'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 6,
+          "rule": "sort-imports",
+          "message": "Imports should be sorted alphabetically.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 931,
+          "rule": "no-console",
+          "message": "Unexpected console statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 933,
+          "rule": "no-console",
+          "message": "Unexpected console statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 941,
+          "rule": "no-console",
+          "message": "Unexpected console statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 943,
+          "rule": "no-console",
+          "message": "Unexpected console statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 80,
+          "rule": "no-inline-comments",
+          "message": "Unexpected comment inline with code.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 76,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'db' should be before 'family'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 80,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 3.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": [
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 409,
+          "rule": "no-unused-vars",
+          "message": "'error' is defined but never used.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 823,
+          "rule": "no-unused-vars",
+          "message": "'error' is defined but never used.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 533,
+          "rule": "camelcase",
+          "message": "Identifier 'redaction_occurred' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 530,
+          "rule": "camelcase",
+          "message": "Identifier 'body_size_bytes' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 174,
+          "rule": "max-lines-per-function",
+          "message": "Async method 'handleConfigCacheUpdate' has too many lines (62). Maximum allowed is 50.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 527,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'method' should be before 'trace_id'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 539,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'method' should be before 'trace_id'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 341,
+          "rule": "max-statements",
+          "message": "Async method 'handleHttpRequest' has too many statements (17). Maximum allowed is 10.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 380,
+          "rule": "max-params",
+          "message": "Async method 'processRequestWithConfig' has too many parameters (6). Maximum allowed is 3.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 400,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'error' should be before 'event_type'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 519,
+          "rule": "no-unused-vars",
+          "message": "'e' is defined but never used.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 79,
+          "rule": "complexity",
+          "message": "Async method 'getConfigForMultitenant' has a complexity of 22. Maximum allowed is 20.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 660,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'text' should be before 'type'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 380,
+          "rule": "max-lines-per-function",
+          "message": "Async method 'processRequestWithConfig' has too many lines (375). Maximum allowed is 50.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 549,
+          "rule": "camelcase",
+          "message": "Identifier 'duration_ms' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 395,
+          "rule": "max-depth",
+          "message": "Blocks are nested too deeply (6). Maximum allowed is 4.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 252,
+          "rule": "no-else-return",
+          "message": "Unnecessary 'else' after 'return'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 259,
+          "rule": "no-unused-vars",
+          "message": "'redactionOccurred' is assigned a value but never used.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 434,
+          "rule": "camelcase",
+          "message": "Identifier 'rewritten_path' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 549,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'duration_ms' should be before 'status'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 823,
+          "rule": "no-empty",
+          "message": "Empty block statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 844,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'events' should be before 'source'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 815,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'contentType' should be before 'originator'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 484,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 443.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 798,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 443.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 259,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'let' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 383,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'let' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 384,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'let' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 416,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'let' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 510,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'let' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 511,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'let' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 610,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'let' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 811,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'headers' should be before 'targetUrl'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 556,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'model_routing' should be before 'target_url'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 511,
+          "rule": "prefer-const",
+          "message": "'redactionTime' is never reassigned. Use 'const' instead.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 600,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 6.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 552,
+          "rule": "camelcase",
+          "message": "Identifier 'input_redacted' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 79,
+          "rule": "max-statements",
+          "message": "Async method 'getConfigForMultitenant' has too many statements (41). Maximum allowed is 10.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 519,
+          "rule": "id-length",
+          "message": "Identifier name 'e' is too short (< 2).",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 803,
+          "rule": "max-params",
+          "message": "Method 'logRequestToAnalytics' has too many parameters (6). Maximum allowed is 3.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 553,
+          "rule": "camelcase",
+          "message": "Identifier 'output_redacted' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 79,
+          "rule": "max-lines-per-function",
+          "message": "Async method 'getConfigForMultitenant' has too many lines (94). Maximum allowed is 50.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 552,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'input_redacted' should be before 'is_sse'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 542,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'headers' should be before 'model'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 225,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 500.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 232,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 500.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 745,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 500.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 83,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 3600.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 206,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 3600.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 383,
+          "rule": "no-useless-assignment",
+          "message": "The value assigned to 'baseUrl' is not used in subsequent statements.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 469,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'config_id' should be before 'target_url'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 226,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'details' should be before 'error'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 233,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'details' should be before 'error'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 468,
+          "rule": "camelcase",
+          "message": "Identifier 'target_url' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 13,
+          "rule": "max-statements",
+          "message": "Constructor has too many statements (14). Maximum allowed is 10.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 485,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'path' should be before 'port'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 551,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'is_sse' should be before 'response_size_bytes'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "security",
+          "severity": "info",
+          "line": 142,
+          "symbol": "javascript.lang.security.audit.unsafe-formatstring.unsafe-formatstring",
+          "message": "Detected string concatenation with a non-literal variable in a util.format / console.log function. If an attacker injects a format specifier in the string, it will forge the log message. Try to use constant values for the format string.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": true
+        },
+        {
+          "type": "security",
+          "severity": "info",
+          "line": 231,
+          "symbol": "javascript.lang.security.audit.unsafe-formatstring.unsafe-formatstring",
+          "message": "Detected string concatenation with a non-literal variable in a util.format / console.log function. If an attacker injects a format specifier in the string, it will forge the log message. Try to use constant values for the format string.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 147,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'apiBase' should be before 'provider'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 174,
+          "rule": "require-await",
+          "message": "Async method 'handleConfigCacheUpdate' has no 'await' expression.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 530,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'body_size_bytes' should be before 'model'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "security",
+          "severity": "warning",
+          "line": 482,
+          "symbol": "problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification",
+          "message": "Checks for setting the environment variable NODE_TLS_REJECT_UNAUTHORIZED to 0, which disables TLS verification. This should only be used for debugging purposes. Setting the option rejectUnauthorized to false bypasses verification against the list of trusted CAs, which also leads to insecure transport. These options lead to vulnerability to MTM attacks, and should not be used.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 697,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'delta' should be before 'type'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 658,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'delta' should be before 'index'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 394,
+          "rule": "max-depth",
+          "message": "Blocks are nested too deeply (5). Maximum allowed is 4.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 220,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 503.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 556,
+          "rule": "no-implicit-coercion",
+          "message": "Unexpected implicit coercion encountered. Use `Boolean(extractedModel)` instead.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 486,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'method' should be before 'path'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 484,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 80.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 583,
+          "rule": "max-lines-per-function",
+          "message": "Arrow function has too many lines (129). Maximum allowed is 50.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 633,
+          "rule": "init-declarations",
+          "message": "Variable 'redactedContent' should be initialized on declaration.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 812,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'body' should be before 'headers'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 206,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'const' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 482,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'const' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 500,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'const' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 502,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'const' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 500,
+          "rule": "max-statements",
+          "message": "Arrow function has too many statements (28). Maximum allowed is 10.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 432,
+          "rule": "camelcase",
+          "message": "Identifier 'config_id' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 469,
+          "rule": "camelcase",
+          "message": "Identifier 'config_id' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 433,
+          "rule": "camelcase",
+          "message": "Identifier 'original_url' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 182,
+          "rule": "max-statements",
+          "message": "Async arrow function has too many statements (26). Maximum allowed is 10.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 544,
+          "rule": "dot-notation",
+          "message": "[\"originator\"] is better written in dot notation.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 814,
+          "rule": "dot-notation",
+          "message": "[\"originator\"] is better written in dot notation.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 591,
+          "rule": "complexity",
+          "message": "Arrow function has a complexity of 35. Maximum allowed is 20.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 814,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'originator' should be before 'userAgent'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 288,
+          "rule": "prefer-template",
+          "message": "Unexpected string concatenation.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 428,
+          "rule": "prefer-template",
+          "message": "Unexpected string concatenation.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 685,
+          "rule": "prefer-template",
+          "message": "Unexpected string concatenation.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 707,
+          "rule": "prefer-template",
+          "message": "Unexpected string concatenation.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 716,
+          "rule": "prefer-template",
+          "message": "Unexpected string concatenation.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 492,
+          "rule": "dot-notation",
+          "message": "[\"host\"] is better written in dot notation.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 598,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 7.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 556,
+          "rule": "camelcase",
+          "message": "Identifier 'model_routing' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 414,
+          "rule": "init-declarations",
+          "message": "Variable 'targetUrl' should be initialized on declaration.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 455,
+          "rule": "no-ternary",
+          "message": "Ternary operator used.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 812,
+          "rule": "no-ternary",
+          "message": "Ternary operator used.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 459,
+          "rule": "camelcase",
+          "message": "Identifier 'api_base' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 432,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'config_id' should be before 'event_type'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 275,
+          "rule": "curly",
+          "message": "Expected { after 'if' condition.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 500,
+          "rule": "max-lines-per-function",
+          "message": "Arrow function has too many lines (242). Maximum allowed is 50.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 529,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'model' should be before 'url'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 541,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'model' should be before 'url'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 216,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'message' should be before 'success'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 301,
+          "rule": "max-lines",
+          "message": "File has too many lines (904). Maximum allowed is 300.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 54,
+          "rule": "max-statements",
+          "message": "Async method 'initializeRedis' has too many statements (11). Maximum allowed is 10.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 812,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 10000.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 83,
+          "rule": "radix",
+          "message": "Missing radix parameter.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 206,
+          "rule": "radix",
+          "message": "Missing radix parameter.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 798,
+          "rule": "radix",
+          "message": "Missing radix parameter.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 357,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 1.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 526,
+          "rule": "camelcase",
+          "message": "Identifier 'trace_id' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 538,
+          "rule": "camelcase",
+          "message": "Identifier 'trace_id' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 244,
+          "rule": "no-await-in-loop",
+          "message": "Unexpected `await` inside a loop.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 396,
+          "rule": "no-await-in-loop",
+          "message": "Unexpected `await` inside a loop.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 213,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 200.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 345,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 200.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 625,
+          "rule": "no-lonely-if",
+          "message": "Unexpected if as the only statement in an else block.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 185,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 400.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 191,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 400.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 447,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 400.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 859,
+          "rule": "max-statements",
+          "message": "Async method 'stop' has too many statements (14). Maximum allowed is 10.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 455,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: -1.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 833,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 100.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 554,
+          "rule": "camelcase",
+          "message": "Identifier 'redaction_time_ms' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 794,
+          "rule": "class-methods-use-this",
+          "message": "Expected 'this' to be used by class method 'parseHostPort'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 357,
+          "rule": "prefer-destructuring",
+          "message": "Use array destructuring.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 127,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 287,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 426,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 427,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 657,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 812,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 833,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 591,
+          "rule": "max-statements",
+          "message": "Arrow function has too many statements (46). Maximum allowed is 10.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 73,
+          "rule": "no-console",
+          "message": "Unexpected console statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 98,
+          "rule": "no-console",
+          "message": "Unexpected console statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 878,
+          "rule": "no-console",
+          "message": "Unexpected console statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 880,
+          "rule": "no-console",
+          "message": "Unexpected console statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 439,
+          "rule": "init-declarations",
+          "message": "Variable 'modelConfig' should be initialized on declaration.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 487,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'headers' should be before 'method'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 838,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'headers' should be before 'method'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 808,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'method' should be before 'timestamp'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 488,
+          "rule": "no-inline-comments",
+          "message": "Unexpected comment inline with code.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 492,
+          "rule": "no-inline-comments",
+          "message": "Unexpected comment inline with code.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 833,
+          "rule": "no-inline-comments",
+          "message": "Unexpected comment inline with code.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 550,
+          "rule": "camelcase",
+          "message": "Identifier 'response_size_bytes' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 399,
+          "rule": "camelcase",
+          "message": "Identifier 'event_type' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 467,
+          "rule": "camelcase",
+          "message": "Identifier 'event_type' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 459,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'api_base' should be before 'model'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 362,
+          "rule": "no-plusplus",
+          "message": "Unary operator '++' used.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 757,
+          "rule": "no-plusplus",
+          "message": "Unary operator '++' used.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 349,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'timestamp' should be before 'uptime'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 544,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'originator' should be before 'user-agent'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 380,
+          "rule": "max-statements",
+          "message": "Async method 'processRequestWithConfig' has too many statements (53). Maximum allowed is 10.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 819,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'isSSE' should be before 'responseTime'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 856,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 5000.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 532,
+          "rule": "camelcase",
+          "message": "Identifier 'processed_body' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 591,
+          "rule": "max-lines-per-function",
+          "message": "Arrow function has too many lines (120). Maximum allowed is 50.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 350,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'requestCount' should be before 'timestamp'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 547,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'body_size_bytes' should be before 'headers'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 531,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'body' should be before 'body_size_bytes'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 551,
+          "rule": "camelcase",
+          "message": "Identifier 'is_sse' is not in camel case.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 545,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'content-type' should be before 'originator'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 817,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'responseHeaders' should be before 'responseStatus'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 125,
+          "rule": "no-magic-numbers",
+          "message": "No magic number: 2.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 657,
+          "rule": "sort-keys",
+          "message": "Expected object keys to be in ascending order. 'index' should be before 'type'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "node/src/server.js",
+      "line_ranges": [
+        [
+          6,
+          6
+        ],
+        [
+          26,
+          26
+        ],
+        [
+          63,
+          106
+        ],
+        [
+          109,
+          110
+        ],
+        [
+          113,
+          123
+        ],
+        [
+          125,
+          126
+        ],
+        [
+          927,
+          938
+        ],
+        [
+          941,
+          941
+        ],
+        [
+          943,
+          943
+        ]
+      ],
+      "lines_added": 75,
+      "lines_exist": 11,
+      "lines_modified": 0,
+      "lines_deleted": 64,
+      "modification_count": 0
+    },
+    {
+      "file": "rust/src/server.rs",
+      "line_ranges": [
+        [
+          14,
+          14
+        ],
+        [
+          33,
+          33
+        ],
+        [
+          51,
+          51
+        ],
+        [
+          56,
+          65
+        ],
+        [
+          155,
+          160
+        ],
+        [
+          162,
+          164
+        ],
+        [
+          200,
+          204
+        ],
+        [
+          280,
+          301
+        ]
+      ],
+      "lines_added": 49,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 49,
+      "modification_count": 0
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 22,
+      "issues_fixed": 167
+    },
+    "lifecycle": {
+      "files_analyzed": 2,
+      "files": [
+        {
+          "filepath": "node/src/server.js",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "rust/src/server.rs",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.089,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 124,
+      "lines_still_exist": 11
+    }
+  }
+}

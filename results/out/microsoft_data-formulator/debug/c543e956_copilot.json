@@ -1,0 +1,138 @@
+{
+  "commit_hash": "c543e95607016d7ad1c6d06ae3f9025780c8fb4a",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/c543e95607016d7ad1c6d06ae3f9025780c8fb4a",
+  "author": "",
+  "message": "Potential fix for code scanning alert no. 70: Full server-side request forgery\nCo-authored-by: Copilot Autofix powered by AI <62310815+github-advanced-security[bot]@users.noreply.github.com>",
+  "timestamp": "2025-10-30T17:33:18-07:00",
+  "debt_debug": {
+    "py-src/data_formulator/agents/web_utils.py": {
+      "issues_added": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 45,
+          "symbol": "import-outside-toplevel",
+          "message": "Import outside toplevel (ipaddress)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 44,
+          "symbol": "import-outside-toplevel",
+          "message": "Import outside toplevel (socket)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "refactor",
+          "line": 55,
+          "symbol": "too-many-boolean-expressions",
+          "message": "Too many boolean expressions in if statement (6/5)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 60,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ]
+    }
+  },
+  "lifecycle_debug": {
+    "py-src/data_formulator/agents/web_utils.py": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "py-src/data_formulator/agents/web_utils.py",
+      "line_ranges": [
+        [
+          38,
+          73
+        ]
+      ],
+      "lines_added": 36,
+      "lines_exist": 20,
+      "lines_modified": 16,
+      "lines_deleted": 0,
+      "modification_count": 1,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 7,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.5555555555555556,
+        "semantic_vs_syntactic_delta": 0.4444,
+        "survived_names": [],
+        "modified_names": [
+          "download_html_content"
+        ],
+        "deleted_names": []
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 3,
+      "issues_fixed": 1
+    },
+    "lifecycle": {
+      "files_analyzed": 1,
+      "files": [
+        {
+          "filepath": "py-src/data_formulator/agents/web_utils.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 124.01405092592593,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.556,
+      "semantic_survival_rate": 1.0,
+      "developer_valuation": "HIGH",
+      "lines_added": 36,
+      "lines_still_exist": 20
+    }
+  }
+}

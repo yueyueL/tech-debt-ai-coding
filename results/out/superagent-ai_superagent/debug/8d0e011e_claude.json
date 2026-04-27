@@ -1,0 +1,232 @@
+{
+  "commit_hash": "8d0e011e7831113c12703f0f635411ec376a2e19",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "claude",
+  "url": "https://github.com/superagent-ai/superagent/commit/8d0e011e7831113c12703f0f635411ec376a2e19",
+  "author": "",
+  "message": "Make CLI version consistent with package.json\n- Update CLI to read version from package.json instead of hardcoding\n- Update package.json version to match current tag (0.0.2-rc.12)\n- Now version will be automatically consistent with releases\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
+  "timestamp": "2025-08-20T11:49:59+02:00",
+  "debt_debug": {
+    "node/src/cli.js": {
+      "issues_added": [
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 6,
+          "rule": "sort-imports",
+          "message": "Expected 'multiple' syntax before 'single' syntax.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 10,
+          "rule": "no-underscore-dangle",
+          "message": "Unexpected dangling '_' in '__filename'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 12,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'const' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 11,
+          "rule": "no-underscore-dangle",
+          "message": "Unexpected dangling '_' in '__dirname'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": []
+    },
+    "node/src/config.js": {
+      "issues_added": [
+        {
+          "type": "security",
+          "severity": "warning",
+          "line": 19,
+          "symbol": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+          "message": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        }
+      ],
+      "issues_resolved": [
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 4,
+          "rule": "sort-imports",
+          "message": "Imports should be sorted alphabetically.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 5,
+          "rule": "sort-imports",
+          "message": "Imports should be sorted alphabetically.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 7,
+          "rule": "no-underscore-dangle",
+          "message": "Unexpected dangling '_' in '__filename'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 5,
+          "rule": "no-duplicate-imports",
+          "message": "'path' import is duplicated.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 8,
+          "rule": "no-underscore-dangle",
+          "message": "Unexpected dangling '_' in '__dirname'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 8,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'const' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 90,
+          "rule": "one-var",
+          "message": "Combine this with the previous 'const' statement.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "node/src/cli.js",
+      "line_ranges": [
+        [
+          5,
+          7
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          20,
+          20
+        ]
+      ],
+      "lines_added": 8,
+      "lines_exist": 1,
+      "lines_modified": 0,
+      "lines_deleted": 7,
+      "modification_count": 0
+    },
+    {
+      "file": "node/src/config.js",
+      "line_ranges": [
+        [
+          8,
+          9
+        ],
+        [
+          18,
+          19
+        ]
+      ],
+      "lines_added": 4,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 4,
+      "modification_count": 0
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 5,
+      "issues_fixed": 7
+    },
+    "lifecycle": {
+      "files_analyzed": 2,
+      "files": [
+        {
+          "filepath": "node/src/cli.js",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "node/src/config.js",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.083,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 12,
+      "lines_still_exist": 1
+    }
+  }
+}

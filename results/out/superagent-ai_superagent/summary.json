@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "repo": "superagent-ai/superagent",
+  "commits_analyzed": 35,
+  "commits_skipped_not_on_main": 0,
+  "commits_skipped_already_done": 0,
+  "errors": 0,
+  "total_issues_introduced": 72,
+  "total_issues_fixed": 184,
+  "net_debt_change": -112,
+  "output_dir": "outnew3/superagent-ai_superagent",
+  "save_details": true,
+  "deep_scan_enabled": false,
+  "debug_dir": "outnew3/superagent-ai_superagent/debug",
+  "issue_survival": {
+    "total_issues": 72,
+    "surviving_issues": 11,
+    "fixed_issues": 61,
+    "survival_rate": 0.1527777777777778
+  }
+}

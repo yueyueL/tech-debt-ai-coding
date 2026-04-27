@@ -1,0 +1,636 @@
+{
+  "commit_hash": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+  "author": "",
+  "message": "Refactor to recalculate_derived_data with Python-only support and disable for virtual tables\nCo-authored-by: Chenglong-MS <93549116+Chenglong-MS@users.noreply.github.com>",
+  "timestamp": "2026-01-16T21:31:59+00:00",
+  "debt_debug": {
+    "src/app/dfSlice.tsx": {
+      "issues_added": [],
+      "issues_resolved": [
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 495,
+          "rule": "@typescript-eslint/no-use-before-define",
+          "message": "'getDataFieldItems' was used before it was defined.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 762,
+          "rule": "@typescript-eslint/no-use-before-define",
+          "message": "'dfSelectors' was used before it was defined.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 927,
+          "rule": "@typescript-eslint/no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 953,
+          "rule": "@typescript-eslint/no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 551,
+          "rule": "prefer-const",
+          "message": "'table' is never reassigned. Use 'const' instead.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 989,
+          "rule": "@typescript-eslint/explicit-function-return-type",
+          "message": "Missing return type on function.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 676,
+          "rule": "prefer-const",
+          "message": "'chartId' is never reassigned. Use 'const' instead.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        }
+      ]
+    },
+    "py-src/data_formulator/tables_routes.py": {
+      "issues_added": [
+        {
+          "type": "security",
+          "severity": "error",
+          "line": 953,
+          "symbol": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 925,
+          "symbol": "line-too-long",
+          "message": "Line too long (107/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 995,
+          "symbol": "missing-final-newline",
+          "message": "Final newline missing",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 968,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 971,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 975,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 988,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 939,
+          "symbol": "import-outside-toplevel",
+          "message": "Import outside toplevel (data_formulator.py_sandbox.run_transform_in_sandbox2020)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "security",
+          "severity": "warning",
+          "line": 953,
+          "symbol": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "refactor",
+          "line": 969,
+          "symbol": "no-else-return",
+          "message": "Unnecessary \"else\" after \"return\", remove the \"else\" and de-indent the code inside it",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "refactor",
+          "line": 925,
+          "symbol": "too-many-locals",
+          "message": "Too many local variables (16/15)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 989,
+          "symbol": "broad-exception-caught",
+          "message": "Catching too general exception Exception",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 990,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 904,
+          "symbol": "line-too-long",
+          "message": "Line too long (101/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": [
+        {
+          "type": "security",
+          "severity": "error",
+          "line": 872,
+          "symbol": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "security",
+          "severity": "error",
+          "line": 904,
+          "symbol": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 910,
+          "symbol": "line-too-long",
+          "message": "Line too long (105/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "security",
+          "severity": "error",
+          "line": 904,
+          "symbol": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+          "message": "Detected user input used to manually construct a SQL string. This is usually bad practice because manual construction could accidentally result in a SQL injection. An attacker could use a SQL injection to steal or modify contents of the database. Instead, use a parameterized query which is available by default in most database engines. Alternatively, consider using the Django object-relational mappers (ORM) instead of raw SQL queries.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 872,
+          "symbol": "line-too-long",
+          "message": "Line too long (110/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "security",
+          "severity": "error",
+          "line": 904,
+          "symbol": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+          "message": "Detected user input used to manually construct a SQL string. This is usually bad practice because manual construction could accidentally result in a SQL injection. An attacker could use a SQL injection to steal or modify contents of the database. Instead, use a parameterized query which is available by default in most database engines. Alternatively, consider using an object-relational mapper (ORM) such as SQLAlchemy which will protect your queries.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 951,
+          "symbol": "missing-final-newline",
+          "message": "Final newline missing",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 914,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 918,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 851,
+          "symbol": "import-outside-toplevel",
+          "message": "Import outside toplevel (data_formulator.py_sandbox.run_transform_in_sandbox2020)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "security",
+          "severity": "warning",
+          "line": 872,
+          "symbol": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "security",
+          "severity": "warning",
+          "line": 904,
+          "symbol": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "refactor",
+          "line": 848,
+          "symbol": "too-many-locals",
+          "message": "Too many local variables (26/15)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ]
+    }
+  },
+  "lifecycle_debug": {
+    "py-src/data_formulator/tables_routes.py": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "src/app/dfSlice.tsx": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "src/views/DataThread.tsx": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "py-src/data_formulator/tables_routes.py",
+      "line_ranges": [
+        [
+          847,
+          849
+        ],
+        [
+          853,
+          855
+        ],
+        [
+          857,
+          858
+        ],
+        [
+          860,
+          861
+        ],
+        [
+          863,
+          864
+        ],
+        [
+          866,
+          871
+        ],
+        [
+          875,
+          876
+        ],
+        [
+          879,
+          881
+        ],
+        [
+          883,
+          884
+        ],
+        [
+          887,
+          888
+        ],
+        [
+          890,
+          901
+        ],
+        [
+          904,
+          904
+        ],
+        [
+          917,
+          917
+        ],
+        [
+          922,
+          995
+        ]
+      ],
+      "lines_added": 115,
+      "lines_exist": 36,
+      "lines_modified": 79,
+      "lines_deleted": 0,
+      "modification_count": 14,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 2,
+        "new_units": 31,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.3130434782608696,
+        "semantic_vs_syntactic_delta": -0.313,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "recalculate_derived_data",
+          "recalc_derived_data_py"
+        ]
+      }
+    },
+    {
+      "file": "src/app/dfSlice.tsx",
+      "line_ranges": [],
+      "lines_added": 0,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 0,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 2,
+        "deleted_units": 0,
+        "new_units": 1,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 1.0,
+        "survived_names": [],
+        "modified_names": [
+          "getUnrefedDerivedTableIds",
+          "deleteChartsRoutine"
+        ],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "src/views/DataThread.tsx",
+      "line_ranges": [
+        [
+          777,
+          777
+        ],
+        [
+          786,
+          786
+        ],
+        [
+          788,
+          790
+        ],
+        [
+          793,
+          794
+        ],
+        [
+          798,
+          798
+        ],
+        [
+          816,
+          817
+        ],
+        [
+          1076,
+          1084
+        ],
+        [
+          1086,
+          1086
+        ],
+        [
+          1091,
+          1092
+        ]
+      ],
+      "lines_added": 22,
+      "lines_exist": 5,
+      "lines_modified": 17,
+      "lines_deleted": 0,
+      "modification_count": 9,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 2,
+        "new_units": 47,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.22727272727272727,
+        "semantic_vs_syntactic_delta": -0.2273,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "handleRefreshData",
+          "buildTableCard"
+        ]
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 14,
+      "issues_fixed": 20
+    },
+    "lifecycle": {
+      "files_analyzed": 3,
+      "files": [
+        {
+          "filepath": "py-src/data_formulator/tables_routes.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 46.139965277777776,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "src/app/dfSlice.tsx",
+          "status": "MODIFIED",
+          "days_to_first_change": 46.139965277777776,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "src/views/DataThread.tsx",
+          "status": "MODIFIED",
+          "days_to_first_change": 46.139965277777776,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.299,
+      "semantic_survival_rate": 0.333,
+      "developer_valuation": "LOW",
+      "lines_added": 137,
+      "lines_still_exist": 41
+    }
+  }
+}

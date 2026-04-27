@@ -1,0 +1,92 @@
+{
+  "commit_hash": "f98309f0e8f11080cd0a317b1233c1005ff5d4c0",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/f98309f0e8f11080cd0a317b1233c1005ff5d4c0",
+  "author": "",
+  "message": "Update src/app/utils.tsx\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+  "timestamp": "2026-02-08T09:39:54-08:00",
+  "lifecycle_debug": {
+    "src/app/utils.tsx": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "src/app/utils.tsx",
+      "line_ranges": [
+        [
+          1085,
+          1086
+        ]
+      ],
+      "lines_added": 2,
+      "lines_exist": 0,
+      "lines_modified": 2,
+      "lines_deleted": 0,
+      "modification_count": 0,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 1,
+      "files": [
+        {
+          "filepath": "src/app/utils.tsx",
+          "status": "MODIFIED",
+          "days_to_first_change": 23.30113425925926,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 2,
+      "lines_still_exist": 0
+    }
+  }
+}

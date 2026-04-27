@@ -1,0 +1,227 @@
+{
+  "commit_hash": "d45d762bad353f6cb86d38a4d7887cdad4bb6d86",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/d45d762bad353f6cb86d38a4d7887cdad4bb6d86",
+  "author": "",
+  "message": "Address code review feedback: improve validation and fix efficiency issues\nCo-authored-by: Chenglong-MS <93549116+Chenglong-MS@users.noreply.github.com>",
+  "timestamp": "2026-01-15T23:54:28+00:00",
+  "debt_debug": {
+    "py-src/data_formulator/tables_routes.py": {
+      "issues_added": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 872,
+          "symbol": "line-too-long",
+          "message": "Line too long (110/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 882,
+          "symbol": "broad-exception-caught",
+          "message": "Catching too general exception Exception",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 883,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": [
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 867,
+          "symbol": "unused-variable",
+          "message": "Unused variable 'updated_columns'",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "refactor",
+          "line": 848,
+          "symbol": "too-many-locals",
+          "message": "Too many local variables (23/15)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ]
+    }
+  },
+  "lifecycle_debug": {
+    "py-src/data_formulator/tables_routes.py": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "src/views/DataThread.tsx": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "py-src/data_formulator/tables_routes.py",
+      "line_ranges": [
+        [
+          865,
+          865
+        ],
+        [
+          869,
+          884
+        ],
+        [
+          915,
+          916
+        ]
+      ],
+      "lines_added": 19,
+      "lines_exist": 7,
+      "lines_modified": 12,
+      "lines_deleted": 0,
+      "modification_count": 3,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 1,
+        "new_units": 31,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.3684210526315789,
+        "semantic_vs_syntactic_delta": -0.3684,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "refresh_derived_data"
+        ]
+      }
+    },
+    {
+      "file": "src/views/DataThread.tsx",
+      "line_ranges": [
+        [
+          234,
+          246
+        ],
+        [
+          356,
+          356
+        ],
+        [
+          778,
+          783
+        ]
+      ],
+      "lines_added": 20,
+      "lines_exist": 5,
+      "lines_modified": 15,
+      "lines_deleted": 0,
+      "modification_count": 3,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 2,
+        "new_units": 47,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.25,
+        "semantic_vs_syntactic_delta": -0.25,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "validateData",
+          "handleRefreshData"
+        ]
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 3,
+      "issues_fixed": 2
+    },
+    "lifecycle": {
+      "files_analyzed": 2,
+      "files": [
+        {
+          "filepath": "py-src/data_formulator/tables_routes.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 47.04101851851852,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "src/views/DataThread.tsx",
+          "status": "MODIFIED",
+          "days_to_first_change": 47.04101851851852,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.308,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 39,
+      "lines_still_exist": 12
+    }
+  }
+}

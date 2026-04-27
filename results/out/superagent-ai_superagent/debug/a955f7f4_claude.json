@@ -1,0 +1,26 @@
+{
+  "commit_hash": "a955f7f4b263945fead52ed2cd827e855932fc5a",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "claude",
+  "url": "https://github.com/superagent-ai/superagent/commit/a955f7f4b263945fead52ed2cd827e855932fc5a",
+  "author": "",
+  "message": "Fix GitHub Actions workflow to use vibekit.yaml\n- Update node-release.yml to copy vibekit.yaml instead of config.yaml\n- Fix both Unix and Windows copy commands\n- Update usage example in release notes template\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
+  "timestamp": "2025-08-20T11:32:52+02:00",
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 0,
+      "files": []
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 0,
+      "lines_still_exist": 0
+    }
+  }
+}

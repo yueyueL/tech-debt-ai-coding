@@ -1,0 +1,258 @@
+{
+  "commit_hash": "56263014a8509db923c64235f030b80c7e077067",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "claude",
+  "url": "https://github.com/superagent-ai/superagent/commit/56263014a8509db923c64235f030b80c7e077067",
+  "author": "",
+  "message": "refactor: convert redact command to --redact flag on guard command\n- Add --redact flag to guard command\n- Remove standalone redact command\n- Update README with new usage examples\n- Simplify CLI interface\n\nCo-authored-by: Ismail Pelaseyed <homanp@users.noreply.github.com>",
+  "timestamp": "2025-10-01T12:04:31+00:00",
+  "debt_debug": {
+    "cli/src/index.ts": {
+      "issues_added": [],
+      "issues_resolved": [
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 20,
+          "rule": "@typescript-eslint/no-magic-numbers",
+          "message": "No magic number: 1.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        }
+      ]
+    },
+    "cli/src/commands/guard.ts": {
+      "issues_added": [
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 57,
+          "rule": "@typescript-eslint/no-explicit-any",
+          "message": "Unexpected any. Specify a different type.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 6,
+          "rule": "@typescript-eslint/no-magic-numbers",
+          "message": "No magic number: -1.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 10,
+          "rule": "@typescript-eslint/no-magic-numbers",
+          "message": "No magic number: 1.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 56,
+          "rule": "@typescript-eslint/no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": []
+    }
+  },
+  "lifecycle_debug": {
+    "cli/src/commands/guard.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "cli/src/commands/redact.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "cli/src/index.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "cli/src/commands/guard.ts",
+      "line_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          45,
+          45
+        ],
+        [
+          51,
+          62
+        ]
+      ],
+      "lines_added": 23,
+      "lines_exist": 10,
+      "lines_modified": 13,
+      "lines_deleted": 0,
+      "modification_count": 6,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 1,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.43478260869565216,
+        "semantic_vs_syntactic_delta": 0.5652,
+        "survived_names": [],
+        "modified_names": [
+          "guardCommand"
+        ],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "cli/src/index.ts",
+      "line_ranges": [
+        [
+          14,
+          14
+        ]
+      ],
+      "lines_added": 1,
+      "lines_exist": 0,
+      "lines_modified": 1,
+      "lines_deleted": 0,
+      "modification_count": 1,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 4,
+      "issues_fixed": 1
+    },
+    "lifecycle": {
+      "files_analyzed": 3,
+      "files": [
+        {
+          "filepath": "cli/src/commands/guard.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 191.85416666666666,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "cli/src/commands/redact.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 191.85416666666666,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "cli/src/index.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 191.85416666666666,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.417,
+      "semantic_survival_rate": 1.0,
+      "developer_valuation": "HIGH",
+      "lines_added": 24,
+      "lines_still_exist": 10
+    }
+  }
+}

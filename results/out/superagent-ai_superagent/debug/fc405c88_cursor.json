@@ -1,0 +1,504 @@
+{
+  "commit_hash": "fc405c889d11eeac4e14f163744b99a773625b77",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "cursor",
+  "url": "https://github.com/superagent-ai/superagent/commit/fc405c889d11eeac4e14f163744b99a773625b77",
+  "author": "",
+  "message": "feat: add comprehensive security analysis prompt for scan function\nAdd detailed SCAN_SYSTEM_PROMPT with guidelines for SAST, LLM safety,\nprompt injection detection, and privacy violation analysis. Update\nclient to pipe prompt to opencode via stdin for proper execution.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+  "timestamp": "2026-02-03T08:54:59+01:00",
+  "debt_debug": {
+    "sdk/python/src/safety_agent/client.py": {
+      "issues_added": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 627,
+          "symbol": "line-too-long",
+          "message": "Line too long (111/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 619,
+          "symbol": "line-too-long",
+          "message": "Line too long (227/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ]
+    }
+  },
+  "lifecycle_debug": {
+    "sdk/python/src/safety_agent/client.py": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/python/src/safety_agent/prompts/__init__.py": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/python/src/safety_agent/prompts/scan.py": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/typescript/src/client.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/typescript/src/prompts/index.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/typescript/src/prompts/scan.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "sdk/python/src/safety_agent/client.py",
+      "line_ranges": [
+        [
+          33,
+          33
+        ],
+        [
+          611,
+          617
+        ],
+        [
+          625,
+          625
+        ],
+        [
+          627,
+          627
+        ]
+      ],
+      "lines_added": 10,
+      "lines_exist": 10,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 4,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 14,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "SafetyClient._call_daytona_scan"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/python/src/safety_agent/prompts/__init__.py",
+      "line_ranges": [
+        [
+          2,
+          2
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          24,
+          24
+        ]
+      ],
+      "lines_added": 3,
+      "lines_exist": 3,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 4,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/python/src/safety_agent/prompts/scan.py",
+      "line_ranges": [
+        [
+          1,
+          164
+        ]
+      ],
+      "lines_added": 164,
+      "lines_exist": 164,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 3,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/typescript/src/client.ts",
+      "line_ranges": [
+        [
+          29,
+          29
+        ],
+        [
+          75,
+          75
+        ],
+        [
+          86,
+          86
+        ],
+        [
+          428,
+          428
+        ],
+        [
+          458,
+          458
+        ],
+        [
+          509,
+          509
+        ],
+        [
+          513,
+          513
+        ],
+        [
+          602,
+          602
+        ],
+        [
+          620,
+          621
+        ],
+        [
+          643,
+          643
+        ],
+        [
+          734,
+          734
+        ],
+        [
+          743,
+          743
+        ],
+        [
+          773,
+          780
+        ],
+        [
+          782,
+          782
+        ],
+        [
+          852,
+          853
+        ]
+      ],
+      "lines_added": 24,
+      "lines_exist": 22,
+      "lines_modified": 2,
+      "lines_deleted": 0,
+      "modification_count": 15,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 2,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 3,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.9166666666666666,
+        "semantic_vs_syntactic_delta": 0.0833,
+        "survived_names": [
+          "aggregateGuardResults",
+          "SafetyClient"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/typescript/src/prompts/index.ts",
+      "line_ranges": [
+        [
+          3,
+          3
+        ]
+      ],
+      "lines_added": 1,
+      "lines_exist": 1,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 2,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/typescript/src/prompts/scan.ts",
+      "line_ranges": [
+        [
+          1,
+          164
+        ]
+      ],
+      "lines_added": 164,
+      "lines_exist": 164,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 3,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 1,
+      "issues_fixed": 1
+    },
+    "lifecycle": {
+      "files_analyzed": 6,
+      "files": [
+        {
+          "filepath": "sdk/python/src/safety_agent/client.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.0274537037037,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/python/src/safety_agent/prompts/__init__.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.0274537037037,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/python/src/safety_agent/prompts/scan.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.0274537037037,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/typescript/src/client.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.0274537037037,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/typescript/src/prompts/index.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.0274537037037,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/typescript/src/prompts/scan.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.0274537037037,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.995,
+      "semantic_survival_rate": 1.0,
+      "developer_valuation": "HIGH",
+      "lines_added": 366,
+      "lines_still_exist": 364
+    }
+  }
+}

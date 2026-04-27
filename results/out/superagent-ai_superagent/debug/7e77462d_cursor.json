@@ -1,0 +1,26 @@
+{
+  "commit_hash": "7e77462d9ccdd32f13c48eec85db5fdf1a64ef01",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "cursor",
+  "url": "https://github.com/superagent-ai/superagent/commit/7e77462d9ccdd32f13c48eec85db5fdf1a64ef01",
+  "author": "",
+  "message": "fix: update dependencies to resolve security vulnerabilities\n- Bump @daytonaio/sdk to 0.138.0 (fixes tar vulnerability)\n- Bump vitest to 4.0.18 (fixes esbuild vulnerability)\n- Add fast-xml-parser override to 5.3.4 (fixes DoS vulnerability)\n- Update scan test syntax for vitest 4.x API\n\nResolves all npm audit vulnerabilities (was 28 high/moderate, now 0)\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+  "timestamp": "2026-02-03T09:02:47+01:00",
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 0,
+      "files": []
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 0,
+      "lines_still_exist": 0
+    }
+  }
+}

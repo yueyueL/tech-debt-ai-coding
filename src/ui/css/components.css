@@ -1,0 +1,400 @@
+/* ==========================================================================
+   components.css — Summary Cards, Section Headers, Status Badges,
+   Progress Bar, Clickable Rows, Buttons, Tags, Semantic Survival,
+   Scroll-to-Top Button
+   (Sections 6–7, 14–16, 20, 23, 25, 29)
+   ========================================================================== */
+
+/* ---------- 6. Summary Cards ---------- */
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    position: relative;
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: all var(--duration-normal) var(--ease-out);
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+    opacity: 0;
+    transition: opacity var(--duration-normal);
+}
+
+.card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md), var(--shadow-glow);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card-icon {
+    font-size: 1.75rem;
+    margin-bottom: 0.4rem;
+    opacity: 0.9;
+}
+
+.card-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    font-variant-numeric: tabular-nums;
+}
+
+.card-label {
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+}
+
+/* Card accent colors */
+#card-commits .card-value { color: var(--accent-primary); }
+#card-commits::before { background: linear-gradient(90deg, transparent, var(--accent-primary), transparent); }
+
+#card-debt .card-value { color: var(--accent-warning); }
+#card-debt::before { background: linear-gradient(90deg, transparent, var(--accent-warning), transparent); }
+
+#card-survival .card-value { color: var(--accent-success); }
+#card-survival::before { background: linear-gradient(90deg, transparent, var(--accent-success), transparent); }
+
+#card-fixes .card-value { color: var(--accent-danger); }
+#card-fixes::before { background: linear-gradient(90deg, transparent, var(--accent-danger), transparent); }
+
+#card-churn::before { background: linear-gradient(90deg, transparent, var(--accent-info), transparent); }
+#card-reverts::before { background: linear-gradient(90deg, transparent, var(--accent-danger), transparent); }
+
+#card-semantic {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(167,139,250,0.06) 100%);
+    border-color: rgba(167,139,250,0.25);
+}
+#card-semantic::before { background: linear-gradient(90deg, transparent, var(--accent-secondary), transparent); }
+
+/* Semantic delta badge */
+.card-delta {
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+    font-weight: 500;
+    padding: 0.15rem 0.5rem;
+    border-radius: 99px;
+    display: inline-block;
+}
+
+.card-delta.positive {
+    color: var(--accent-success);
+    background: var(--accent-success-dim);
+}
+
+.card-delta.negative {
+    color: var(--accent-danger);
+    background: var(--accent-danger-dim);
+}
+
+/* ---------- 7. Section Headers ---------- */
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.section-header h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+/* ---------- 14. Status Badges ---------- */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.6rem;
+    border-radius: 99px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.badge-high {
+    background: var(--accent-success-dim);
+    color: var(--accent-success);
+}
+
+.badge-medium {
+    background: var(--accent-warning-dim);
+    color: var(--accent-warning);
+}
+
+.badge-low {
+    background: var(--accent-danger-dim);
+    color: var(--accent-danger);
+}
+
+.badge-stable {
+    background: var(--accent-success-dim);
+    color: var(--accent-success);
+}
+
+.badge-modified {
+    background: var(--accent-warning-dim);
+    color: var(--accent-warning);
+}
+
+/* Author role badges */
+.role-badge {
+    display: inline-flex; align-items: center;
+    padding: 0.1rem 0.45rem; border-radius: 99px;
+    font-size: 0.62rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
+}
+.role-badge-sole { background: rgba(52,211,153,0.15); color: var(--accent-success); }
+.role-badge-co   { background: rgba(251,146,60,0.15);  color: #fb923c; }
+.role-badge-unk  { background: rgba(113,113,122,0.15); color: var(--text-muted); }
+
+/* Role filter buttons in dashboard commit table */
+.role-filter-dash { display: flex; gap: 0.25rem; align-items: center; }
+.role-filter-dash-btn {
+    background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-muted);
+    padding: 0.2rem 0.55rem; border-radius: 5px; font-size: 0.72rem; font-weight: 600;
+    cursor: pointer; font-family: inherit; transition: all 150ms;
+}
+.role-filter-dash-btn:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+.role-filter-dash-btn.active { background: var(--accent-primary-dim); border-color: var(--accent-primary); color: var(--accent-primary); }
+.role-filter-dash-btn[data-drole="sole_author"].active { background: rgba(52,211,153,0.15); border-color: var(--accent-success); color: var(--accent-success); }
+.role-filter-dash-btn[data-drole="coauthor"].active    { background: rgba(251,146,60,0.15);  border-color: #fb923c; color: #fb923c; }
+
+/* Value colors */
+.positive { color: var(--accent-success); }
+.negative { color: var(--accent-danger); }
+.neutral  { color: var(--text-secondary); }
+.warning  { color: var(--accent-warning); }
+
+/* ---------- 15. Progress Bar ---------- */
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--bg-elevated);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.6s var(--ease-out);
+}
+
+.progress-fill.high   { background: var(--accent-success); }
+.progress-fill.medium { background: var(--accent-warning); }
+.progress-fill.low    { background: var(--accent-danger); }
+
+/* ---------- 16. Clickable Rows ---------- */
+.clickable-row {
+    cursor: pointer;
+    transition: background var(--duration-fast) var(--ease-out);
+}
+
+.clickable-row:hover {
+    background: rgba(129,140,248,0.08) !important;
+}
+
+.repo-name {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hint {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+/* ---------- 20. Buttons ---------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 1rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.82rem;
+    font-family: inherit;
+    transition: all var(--duration-fast) var(--ease-out);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background: var(--accent-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #6366f1;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(129,140,248,0.3);
+}
+
+.btn-export {
+    background: var(--bg-elevated);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    font-size: 0.78rem;
+}
+
+.btn-export:hover {
+    background: rgba(255,255,255,0.08);
+    color: var(--text-primary);
+    border-color: var(--accent-primary);
+}
+
+/* ---------- 23. Tags ---------- */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.12rem 0.45rem;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.tag-fix {
+    background: var(--accent-danger-dim);
+    color: var(--accent-danger);
+}
+
+.tag-refactor {
+    background: rgba(167,139,250,0.15);
+    color: var(--accent-secondary);
+}
+
+.hint-text {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-bottom: 0.65rem;
+}
+
+/* ---------- 25. Semantic Survival ---------- */
+.semantic-boost {
+    color: var(--accent-success) !important;
+    font-weight: 600;
+}
+
+.delta-indicator {
+    font-size: 0.65rem;
+    color: var(--accent-success);
+    background: var(--accent-success-dim);
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    margin-left: 0.25rem;
+    font-weight: 600;
+}
+
+.surviving-units {
+    font-size: 0.78rem;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.surviving-units code {
+    background: var(--accent-primary-dim);
+    padding: 0.08rem 0.3rem;
+    border-radius: 3px;
+    font-size: 0.72rem;
+}
+
+.semantic-units {
+    margin-top: 0.85rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--border);
+}
+
+.unit-group {
+    margin-bottom: 0.4rem;
+    font-size: 0.82rem;
+}
+
+.unit-group code {
+    background: var(--accent-success-dim);
+    color: var(--accent-success);
+    padding: 0.12rem 0.35rem;
+    border-radius: 4px;
+    margin: 0.1rem;
+    display: inline-block;
+    font-size: 0.75rem;
+}
+
+.unit-group.warning code {
+    background: var(--accent-warning-dim);
+    color: var(--accent-warning);
+}
+
+.unit-group.negative code {
+    background: var(--accent-danger-dim);
+    color: var(--accent-danger);
+}
+
+/* ---------- 29. Scroll-to-Top Button ---------- */
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all var(--duration-normal) var(--ease-out);
+    pointer-events: none;
+    box-shadow: var(--shadow-md);
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.scroll-top:hover {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Analysis Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="top-nav" id="top-nav">
+        <div class="top-nav-inner">
+            <div class="nav-brand">
+                <span class="nav-brand-icon">AI</span>
+                <span>Code Analysis</span>
+            </div>
+            <div class="nav-links">
+                <a href="overview.html" data-preserve-dataset="true" class="nav-link" style="padding-right:0.5rem;">All Repos</a>
+                <a href="paper-tables.html" data-preserve-dataset="true" class="nav-link" style="padding-right:0.5rem;">Paper Tables</a>
+                <a href="examples.html" data-preserve-dataset="true" class="nav-link" style="padding-right:0.5rem;">Examples</a>
+                <a href="false-positives.html" data-preserve-dataset="true" class="nav-link" style="border-right:1px solid var(--border); padding-right:0.75rem; margin-right:0.25rem;">False Positives</a>
+                <a href="#overview" class="nav-link active">Overview</a>
+                <a href="#issue-survival-section" class="nav-link">Survival</a>
+                <a href="#charts-section" class="nav-link">Charts</a>
+                <a href="#evolution-section" class="nav-link">Evolution</a>
+                <a href="#commits-section" class="nav-link">Commits</a>
+                <a href="#files-section" class="nav-link">Files</a>
+                <a href="#timeline-section" class="nav-link">Timeline</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="header-row">
+                <div class="header-title">
+                    <h1>AI Code Quality Research Dashboard</h1>
+                    <p class="subtitle">Comprehensive analysis of AI-generated code for research</p>
+                </div>
+                <div class="header-controls">
+                    <label for="repo-select">Repository</label>
+                    <input id="repo-search" type="search" placeholder="Filter repos..." aria-label="Filter repositories">
+                    <select id="repo-select" onchange="switchRepo(this.value)">
+                        <option value="">Loading...</option>
+                    </select>
+                    <div class="filter-group">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" id="show-low-severity" onchange="toggleLowSeverity(this.checked)">
+                            <span>Show Low Severity</span>
+                        </label>
+                    </div>
+                    <button class="btn btn-export" onclick="exportToCSV()">Export CSV</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Role Filter Bar (top-level) -->
+        <div class="role-filter-dash" style="margin-bottom:0.75rem;">
+            <span style="font-size:0.78rem;color:var(--text-muted);font-weight:500;margin-right:0.3rem;">Author Role:</span>
+            <button class="role-filter-dash-btn active" data-drole="all" onclick="setDashboardRoleFilter('all')">All</button>
+            <button class="role-filter-dash-btn" data-drole="sole_author" onclick="setDashboardRoleFilter('sole_author')">Single-Author</button>
+            <button class="role-filter-dash-btn" data-drole="coauthor" onclick="setDashboardRoleFilter('coauthor')">Multi-Author</button>
+        </div>
+
+        <!-- Summary Cards -->
+        <section class="summary-cards" id="overview">
+            <div class="card" id="card-commits">
+                <div class="card-icon">📊</div>
+                <div class="card-value" id="total-commits">-</div>
+                <div class="card-label">Total Commits</div>
+            </div>
+            <div class="card" id="card-debt">
+                <div class="card-icon">⚠️</div>
+                <div class="card-value" id="net-debt">-</div>
+                <div class="card-label">Issues Introduced</div>
+            </div>
+            <div class="card" id="card-survival">
+                <div class="card-icon">💚</div>
+                <div class="card-value" id="survival-rate">-</div>
+                <div class="card-label">Line Survival</div>
+            </div>
+            <div class="card" id="card-semantic">
+                <div class="card-icon">🧠</div>
+                <div class="card-value" id="semantic-rate">-</div>
+                <div class="card-label">Semantic Survival</div>
+                <div class="card-delta" id="semantic-delta"></div>
+            </div>
+            <div class="card" id="card-churn">
+                <div class="card-icon">🔄</div>
+                <div class="card-value" id="churn-rate">-</div>
+                <div class="card-label">Churn Rate</div>
+            </div>
+            <div class="card" id="card-reverts">
+                <div class="card-icon">⏪</div>
+                <div class="card-value" id="revert-count">-</div>
+                <div class="card-label">Reverts</div>
+            </div>
+            <div class="card" id="card-fixes">
+                <div class="card-icon">🔧</div>
+                <div class="card-value" id="fix-rate">-</div>
+                <div class="card-label">Fix Rate</div>
+            </div>
+        </section>
+
+        <!-- Issue Survival Analysis (KEY RESEARCH METRIC) -->
+        <section class="issue-survival-section reveal" id="issue-survival-section" style="display: none;">
+            <h2>Issue Survival Analysis <span class="hint">(Key Research Metric)</span></h2>
+            <p class="section-desc">Tracks which AI-introduced issues still exist at HEAD vs. were fixed by humans</p>
+            <div class="survival-cards">
+                <div class="card survival-card">
+                    <div class="card-icon">📊</div>
+                    <div class="card-value" id="survival-total-issues">-</div>
+                    <div class="card-label">Total AI Issues</div>
+                </div>
+                <div class="card survival-card">
+                    <div class="card-icon">⚠️</div>
+                    <div class="card-value warning" id="survival-surviving">-</div>
+                    <div class="card-label">Still Exist</div>
+                </div>
+                <div class="card survival-card">
+                    <div class="card-icon">✅</div>
+                    <div class="card-value positive" id="survival-fixed">-</div>
+                    <div class="card-label">Fixed</div>
+                </div>
+                <div class="card survival-card highlight">
+                    <div class="card-icon">📈</div>
+                    <div class="card-value" id="survival-rate-value">-</div>
+                    <div class="card-label">Survival Rate</div>
+                </div>
+            </div>
+            <div class="issue-survival-details" id="issue-survival-details">
+                <!-- Filled by JavaScript -->
+            </div>
+        </section>
+
+        <!-- High Severity Hotspots -->
+        <section class="high-sev-section reveal" id="high-sev-section" style="display: none;">
+            <h2>High Severity Hotspots <span class="hint">(Quick Locate)</span></h2>
+            <div class="high-sev-grid">
+                <div class="card high-sev-card">
+                    <h4>Commits</h4>
+                    <div id="high-sev-commits"></div>
+                </div>
+                <div class="card high-sev-card">
+                    <h4>Files</h4>
+                    <div id="high-sev-files"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Scan Results (CodeQL/SonarQube) -->
+        <section class="deep-scan-section reveal" id="deep-scan-section" style="display: none;">
+            <h2>Deep Scan Results <span class="hint">(CodeQL / SonarQube)</span></h2>
+            <div class="deep-scan-cards">
+                <div class="card deep-scan-card">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-value" id="deep-scan-mode">-</div>
+                    <div class="card-label">Analysis Mode</div>
+                </div>
+                <div class="card deep-scan-card">
+                    <div class="card-icon">📊</div>
+                    <div class="card-value" id="deep-scan-commits">-</div>
+                    <div class="card-label">Commits Scanned</div>
+                </div>
+                <div class="card deep-scan-card">
+                    <div class="card-icon">🔴</div>
+                    <div class="card-value negative" id="deep-scan-introduced">-</div>
+                    <div class="card-label">Issues Introduced</div>
+                </div>
+                <div class="card deep-scan-card">
+                    <div class="card-icon">🟢</div>
+                    <div class="card-value positive" id="deep-scan-fixed">-</div>
+                    <div class="card-label">Issues Fixed</div>
+                </div>
+                <div class="card deep-scan-card">
+                    <div class="card-icon">📈</div>
+                    <div class="card-value" id="deep-scan-net">-</div>
+                    <div class="card-label">Net Change</div>
+                </div>
+            </div>
+            <div class="deep-scan-details" id="deep-scan-details">
+                <!-- Filled by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Charts Row -->
+        <section class="charts-row" id="charts-section">
+            <div class="chart-container reveal">
+                <h3>Issues Over Time</h3>
+                <canvas id="debt-chart"></canvas>
+            </div>
+            <div class="chart-container reveal">
+                <h3>By AI Tool</h3>
+                <canvas id="tool-chart"></canvas>
+            </div>
+            <div class="chart-container reveal">
+                <h3>Code Survival</h3>
+                <canvas id="valuation-chart"></canvas>
+            </div>
+        </section>
+
+        <!-- AI Impact Evolution Timeline -->
+        <section class="evolution-timeline-section reveal" id="evolution-section">
+            <div class="card full-width evolution-card">
+                <div class="evolution-header">
+                    <h3>AI Impact Evolution</h3>
+                    <div class="evolution-legend">
+                        <span class="legend-item"><span class="legend-box intro"></span> Issues Added</span>
+                        <span class="legend-item"><span class="legend-box fix"></span> Issues Fixed</span>
+                        <span class="legend-item"><span class="legend-line trend"></span> Cumulative Debt</span>
+                    </div>
+                </div>
+                <div class="evolution-stats" id="evolution-stats">
+                    <!-- Filled by JS -->
+                </div>
+                <div class="evolution-container" id="evolution-container">
+                    <svg id="evolution-svg" class="evolution-svg"></svg>
+                    <div class="evolution-tooltip" id="evolution-tooltip"></div>
+                </div>
+                <div class="evolution-controls">
+                    <button class="evolution-btn" onclick="zoomEvolution('in')">+ Zoom</button>
+                    <button class="evolution-btn" onclick="zoomEvolution('out')">- Zoom</button>
+                    <button class="evolution-btn" onclick="zoomEvolution('fit')">Fit</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commits Table -->
+        <section class="commits-section reveal" id="commits-section">
+            <div class="commits-header">
+                <h2>Commit Analysis <span class="hint">(Click row for details)</span></h2>
+                <div class="commits-filters">
+                    <label class="filter-checkbox" title="Hide commits where +Added and -Fixed are both 0">
+                        <input type="checkbox" id="commits-debt-only" checked onchange="toggleCommitsDebtOnly(this.checked)">
+                        <span>Debt changes only</span>
+                    </label>
+                    <div class="role-filter-dash">
+                        <button class="role-filter-dash-btn active" data-drole="all" onclick="setDashboardRoleFilter('all')">All</button>
+                        <button class="role-filter-dash-btn" data-drole="sole_author" onclick="setDashboardRoleFilter('sole_author')">Single-Author</button>
+                        <button class="role-filter-dash-btn" data-drole="coauthor" onclick="setDashboardRoleFilter('coauthor')">Multi-Author</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table-container">
+                <table id="commits-table">
+                    <thead>
+                        <tr>
+                            <th>Commit</th>
+                            <th>Repo</th>
+                            <th>AI Tool</th>
+                            <th>Role</th>
+                            <th>Files</th>
+                            <th>+Added</th>
+                            <th>-Fixed</th>
+                            <th>Net</th>
+                            <th>Security</th>
+                            <th>Lines</th>
+                            <th>Semantic</th>
+                            <th>Valuation</th>
+                        </tr>
+                    </thead>
+                    <tbody id="commits-tbody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- File Stability (with summary + top files) -->
+        <section class="file-section reveal" id="files-section">
+            <div class="commits-header">
+                <h2>File Stability Analysis <span class="hint" id="file-table-count"></span></h2>
+                <div class="commits-filters">
+                    <select id="file-sort" onchange="renderFileTable()" title="Sort files by">
+                        <option value="most-changed">Most Changed First</option>
+                        <option value="lowest-survival">Lowest Survival First</option>
+                        <option value="most-lines">Most Lines Added</option>
+                        <option value="deleted-first">Deleted First</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Summary cards for file stability -->
+            <div id="file-stability-summary" class="survival-cards" style="margin-bottom:1rem;"></div>
+            <div class="file-table-container">
+                <table id="file-table">
+                    <thead>
+                        <tr>
+                            <th>Commit</th>
+                            <th>File</th>
+                            <th>Lines</th>
+                            <th>Exist</th>
+                            <th>Semantic</th>
+                            <th>Surviving Units</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="file-tbody">
+                    </tbody>
+                </table>
+            </div>
+            <div id="file-table-pagination" style="text-align:center; padding:0.75rem;"></div>
+        </section>
+
+        <!-- File Lifecycle Summary (replaces per-commit dropdown) -->
+        <section class="timeline-section reveal" id="timeline-section">
+            <div class="timeline-header">
+                <div>
+                    <h2>File Lifecycle Overview</h2>
+                    <p class="section-hint">Top files by modification frequency after AI commits</p>
+                </div>
+            </div>
+            <div id="lifecycle-summary-stats" class="survival-cards" style="margin-bottom:1rem;"></div>
+            <div class="timeline-chart-container">
+                <canvas id="timeline-chart"></canvas>
+            </div>
+            <div id="timeline-legend" class="timeline-legend">
+                <span class="legend-item"><span class="dot" style="background:#34d399"></span> Survived</span>
+                <span class="legend-item"><span class="dot" style="background:#fbbf24"></span> Modified</span>
+                <span class="legend-item"><span class="dot" style="background:#f87171"></span> Deleted</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>AI Code Quality Research Tool &middot; Data updated: <span id="last-updated"></span></p>
+        </footer>
+    </div>
+
+    <!-- Commit Details Modal -->
+    <div id="commit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-header">
+                <h2>Commit Details</h2>
+                <p id="modal-commit-info"></p>
+            </div>
+            <div id="modal-body">
+                <div class="modal-section">
+                    <h3>Issues Added <span id="issues-added-count" class="badge badge-low">0</span></h3>
+                    <div id="issues-added-list" class="issue-list"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>Issues Resolved <span id="issues-resolved-count" class="badge badge-high">0</span></h3>
+                    <div id="issues-resolved-list" class="issue-list"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>Files Changed</h3>
+                    <div id="files-changed-list" class="file-list"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a id="github-link" href="#" target="_blank" class="btn btn-primary">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- File Lifecycle Modal -->
+    <div id="file-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="document.getElementById('file-modal').style.display='none'">&times;</span>
+            <div id="file-modal-header">
+                <h2>File Lifecycle</h2>
+                <p id="file-modal-info"></p>
+            </div>
+            <div id="file-modal-body">
+                <div class="modal-section">
+                    <h3>Survival Stats</h3>
+                    <div id="file-survival-stats" class="stats-grid"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>Subsequent Changes <span id="changes-count" class="badge badge-medium">0</span></h3>
+                    <p class="hint-text">Commits that modified this file after the AI commit:</p>
+                    <div id="subsequent-commits-list" class="commits-list"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a id="file-github-link" href="#" target="_blank" class="btn btn-primary">View File on GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <!-- Dashboard JS modules (loaded in dependency order) -->
+    <script src="js/ui-enhancements.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/summary.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/tables.js"></script>
+    <script src="js/modals.js"></script>
+</body>
+
+</html>

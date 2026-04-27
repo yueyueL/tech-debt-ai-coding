@@ -1,0 +1,664 @@
+/* ==========================================================================
+   sections.css — Issue Survival, High Severity Hotspots, Deep Scan,
+   Charts, Evolution Timeline, Timeline Section, Footer, Severity Locator
+   (Sections 8–12, 26–27, 32)
+   ========================================================================== */
+
+/* ---------- 8. Issue Survival Section ---------- */
+.issue-survival-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(52, 211, 153, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.issue-survival-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-success), var(--accent-info));
+}
+
+.issue-survival-section h2 {
+    color: var(--accent-success);
+    margin-bottom: 0.35rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.section-desc {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    margin-bottom: 1.25rem;
+}
+
+.survival-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.survival-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    padding: 1rem;
+    text-align: center;
+}
+
+.survival-card.highlight {
+    background: linear-gradient(135deg, var(--bg-elevated) 0%, rgba(52,211,153,0.08) 100%);
+    border-color: rgba(52,211,153,0.3);
+}
+
+.survival-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.survival-panel {
+    background: var(--bg-elevated);
+    padding: 1.15rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+}
+
+.survival-panel h4 {
+    color: var(--accent-success);
+    margin-bottom: 0.65rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+.issue-survival-details .mini-table code {
+    background: var(--accent-success-dim);
+    color: var(--accent-success);
+}
+
+/* ---------- 9. High Severity Hotspots ---------- */
+.high-sev-section {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.high-sev-section h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.high-sev-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+.high-sev-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+}
+
+.high-sev-card h4 {
+    margin: 0 0 0.65rem 0;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.hotspot-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.55rem 0.75rem;
+    margin-bottom: 0.4rem;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--duration-fast) var(--ease-out);
+}
+
+.hotspot-item:hover {
+    border-color: var(--accent-danger);
+    background: var(--accent-danger-dim);
+}
+
+.hotspot-meta {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+}
+
+.hotspot-count {
+    font-weight: 700;
+    color: var(--accent-danger);
+    font-size: 0.9rem;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ---------- 10. Deep Scan Section ---------- */
+.deep-scan-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(167,139,250,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.deep-scan-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary));
+}
+
+.deep-scan-section h2 {
+    color: var(--accent-secondary);
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.deep-scan-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.deep-scan-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    padding: 1rem;
+    text-align: center;
+}
+
+.deep-scan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.deep-scan-panel {
+    background: var(--bg-elevated);
+    padding: 1.15rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+}
+
+.deep-scan-panel.wide {
+    grid-column: 1 / -1;
+}
+
+.deep-scan-panel h4 {
+    color: var(--accent-secondary);
+    margin-bottom: 0.65rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+.deep-scan-panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.deep-scan-panel li {
+    padding: 0.3rem 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* ---------- 11. Charts Section ---------- */
+.charts-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.chart-container {
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    padding: 1.35rem;
+    border: 1px solid var(--border);
+    transition: border-color var(--duration-normal);
+}
+
+.chart-container:hover {
+    border-color: var(--border-hover);
+}
+
+.chart-container h3 {
+    margin-bottom: 0.85rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+canvas {
+    max-height: 250px;
+}
+
+/* ---------- 12. Evolution Timeline ---------- */
+.evolution-timeline-section {
+    margin-bottom: 2rem;
+}
+
+.evolution-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.evolution-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem 1rem;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid var(--border);
+}
+
+.evolution-header h3 {
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.evolution-legend {
+    display: flex;
+    gap: 1.25rem;
+    font-size: 0.8rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+}
+
+.legend-box {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+}
+
+.legend-box.intro { background: #ef476f; }
+.legend-box.fix { background: #06d6a0; }
+
+.legend-line.trend {
+    width: 20px;
+    height: 2px;
+    background: var(--accent-primary);
+    border-radius: 2px;
+}
+
+.evolution-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.evolution-stat {
+    background: var(--bg-surface);
+    padding: 0.85rem;
+    text-align: center;
+}
+
+.evolution-stat-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+    font-variant-numeric: tabular-nums;
+}
+
+.evolution-stat-value.positive { color: #ef476f; }
+.evolution-stat-value.negative { color: #06d6a0; }
+.evolution-stat-value.neutral { color: var(--accent-primary); }
+
+.evolution-stat-label {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+.evolution-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: 1rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: var(--bg-base);
+}
+
+.evolution-svg {
+    width: 100%;
+    height: 100%;
+    min-width: 800px;
+}
+
+/* Evolution Chart Elements */
+.evo-axis-line {
+    stroke: rgba(255, 255, 255, 0.06);
+    stroke-width: 1;
+}
+
+.evo-axis-label {
+    fill: var(--text-muted);
+    font-size: 10px;
+    font-family: 'Inter', monospace;
+}
+
+.evo-zero-line {
+    stroke: rgba(255, 255, 255, 0.12);
+    stroke-width: 1;
+}
+
+.evo-bar-intro {
+    fill: #ef476f;
+    opacity: 0.8;
+    transition: opacity var(--duration-fast);
+}
+
+.evo-bar-fix {
+    fill: #06d6a0;
+    opacity: 0.8;
+    transition: opacity var(--duration-fast);
+}
+
+.evo-bar-intro:hover,
+.evo-bar-fix:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.evo-trend-line {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.evo-marker {
+    cursor: pointer;
+    transition: r var(--duration-fast);
+}
+
+.evo-marker:hover {
+    r: 6;
+}
+
+.evo-marker-circle {
+    fill: var(--bg-base);
+    stroke: var(--accent-primary);
+    stroke-width: 2;
+}
+
+/* Evolution Controls */
+.evolution-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: var(--bg-card);
+    border-top: 1px solid var(--border);
+}
+
+.evolution-btn {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    padding: 0.35rem 1rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-family: inherit;
+    font-weight: 500;
+    transition: all var(--duration-fast) var(--ease-out);
+}
+
+.evolution-btn:hover {
+    background: rgba(255,255,255,0.08);
+    color: var(--text-primary);
+    border-color: var(--accent-primary);
+}
+
+/* Evolution Tooltip */
+.evolution-tooltip {
+    position: fixed;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-accent);
+    border-radius: var(--radius-md);
+    padding: 0.85rem;
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 100ms;
+    min-width: 220px;
+    backdrop-filter: blur(12px);
+}
+
+.evolution-tooltip.visible {
+    opacity: 1;
+}
+
+.tooltip-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    font-size: 0.82rem;
+}
+
+.tooltip-row.header {
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.tooltip-val.pos { color: #ef476f; }
+.tooltip-val.neg { color: #06d6a0; }
+.tooltip-val.neutral { color: var(--accent-primary); }
+
+/* ---------- 26. Timeline Section ---------- */
+.timeline-section {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    margin-top: 0;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border);
+}
+
+.timeline-section h2 {
+    margin-bottom: 0.35rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.section-hint {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    margin-bottom: 1.25rem;
+}
+
+.timeline-chart-container {
+    height: 400px;
+    position: relative;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.timeline-controls label {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.82rem;
+}
+
+.timeline-controls select {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    padding: 0.45rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    font-family: inherit;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.timeline-controls select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px var(--accent-primary-dim);
+}
+
+.timeline-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--border);
+}
+
+.legend-item .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* ---------- 27. Footer ---------- */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/* ---------- 32. Severity Locator ---------- */
+.severity-locator-results {
+    margin-top: 0.75rem;
+}
+
+.severity-locator-panel {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-accent);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    animation: slideUp var(--duration-normal) var(--ease-out);
+}
+
+.severity-locator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.55rem 0.75rem;
+    background: var(--bg-base);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+}
+
+.severity-locator-close {
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    padding: 0 0.25rem;
+    line-height: 1;
+    transition: color var(--duration-fast);
+}
+
+.severity-locator-close:hover {
+    color: var(--accent-danger);
+}
+
+.severity-commit-item {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(63,63,70,0.25);
+}
+
+.severity-commit-item:last-child {
+    border-bottom: none;
+}
+
+/* Make severity rows in mini-table look clickable */
+.mini-table .severity-locator {
+    cursor: pointer;
+    transition: background var(--duration-fast);
+}
+
+.mini-table .severity-locator:hover {
+    background: rgba(129,140,248,0.08);
+}
+
+.mini-table .severity-locator td:first-child {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.mini-table .severity-locator td:first-child::before {
+    content: '';
+    position: absolute;
+    left: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid var(--text-muted);
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    opacity: 0;
+    transition: opacity var(--duration-fast);
+}
+
+.mini-table .severity-locator:hover td:first-child::before {
+    opacity: 1;
+}

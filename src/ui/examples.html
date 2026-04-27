@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Quality — Paper Examples</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        .example-section { margin-bottom: 3rem; }
+        .example-section h2 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--text-primary); }
+        .example-section .section-desc { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem; }
+
+        .cat-tag { font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; vertical-align: middle; margin-right: 0.5rem; }
+        .cat-security { background: rgba(239,68,68,0.15); color: #ef4444; }
+        .cat-bug { background: rgba(251,146,60,0.15); color: #fb923c; }
+        .cat-smell { background: rgba(129,140,248,0.15); color: #818cf8; }
+        .cat-lifecycle { background: rgba(52,211,153,0.15); color: #34d399; }
+        .cat-incomplete { background: rgba(251,191,36,0.15); color: #fbbf24; }
+        .cat-complexity { background: rgba(244,114,182,0.15); color: #f472b6; }
+        .cat-errorhandling { background: rgba(168,85,247,0.15); color: #a855f7; }
+        .cat-comparison { background: rgba(56,189,248,0.15); color: #38bdf8; }
+
+        .example-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); margin-bottom: 1.5rem; overflow: hidden; }
+        .example-header { padding: 1rem 1.25rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; }
+        .example-meta { flex: 1; min-width: 200px; }
+        .example-title { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+        .example-title .tool-badge { font-size: 0.7rem; padding: 0.1rem 0.45rem; border-radius: 3px; font-weight: 600; background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-muted); }
+        .example-desc { font-size: 0.78rem; color: var(--text-muted); line-height: 1.5; }
+        .example-links { display: flex; gap: 0.5rem; flex-shrink: 0; align-items: center; }
+        .example-links a { font-size: 0.72rem; color: var(--accent-primary); text-decoration: none; padding: 0.2rem 0.5rem; border: 1px solid var(--border); border-radius: 4px; white-space: nowrap; }
+        .example-links a:hover { border-color: var(--accent-primary); background: rgba(99,102,241,0.08); }
+
+        .code-block { margin: 0; padding: 1rem 1.25rem; background: #0d1117; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; line-height: 1.6; color: #c9d1d9; counter-reset: line; }
+        .code-block .line { display: block; }
+        .code-block .line-num { display: inline-block; width: 3.5em; text-align: right; padding-right: 1em; color: #484f58; user-select: none; }
+        .code-block .highlight-line { background: rgba(239,68,68,0.12); display: block; margin: 0 -1.25rem; padding: 0 1.25rem; border-left: 3px solid #ef4444; }
+        .code-block .kw { color: #ff7b72; }
+        .code-block .str { color: #a5d6ff; }
+        .code-block .cmt { color: #8b949e; font-style: italic; }
+        .code-block .fn { color: #d2a8ff; }
+        .code-block .num { color: #79c0ff; }
+        .code-block .op { color: #ff7b72; }
+
+        .example-footer { padding: 0.6rem 1.25rem; background: var(--bg-elevated); border-top: 1px solid var(--border); display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; }
+        .example-footer .tag { font-size: 0.68rem; padding: 0.1rem 0.4rem; border-radius: 3px; background: var(--bg-card); border: 1px solid var(--border); color: var(--text-muted); }
+        .example-footer .severity-high { border-color: #ef4444; color: #ef4444; }
+        .example-footer .severity-medium { border-color: #fb923c; color: #fb923c; }
+        .example-footer .severity-low { border-color: #fbbf24; color: #fbbf24; }
+
+        .example-annotation { padding: 0.8rem 1.25rem; background: rgba(99,102,241,0.06); border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--text-secondary); line-height: 1.65; }
+        .example-annotation strong { color: var(--text-primary); }
+        .example-annotation code { background: rgba(99,102,241,0.1); padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.74rem; font-family: 'JetBrains Mono', monospace; }
+        .example-annotation em { font-style: italic; color: var(--text-muted); }
+
+        .annotation-label { display: inline-block; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.12rem 0.45rem; border-radius: 3px; margin-right: 0.4rem; vertical-align: middle; }
+        .annotation-label.why-real { background: rgba(239,68,68,0.12); color: #ef4444; }
+        .annotation-label.impact { background: rgba(251,146,60,0.12); color: #fb923c; }
+
+        .copy-code-btn { background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-muted); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.68rem; font-weight: 600; cursor: pointer; font-family: inherit; transition: all 150ms; }
+        .copy-code-btn:hover { border-color: var(--accent-primary); color: var(--accent-primary); }
+        .copy-code-btn.copied { background: var(--accent-success-dim); border-color: var(--accent-success); color: var(--accent-success); }
+
+        .stat-summary { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .stat-mini { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.5rem 0.8rem; text-align: center; min-width: 100px; }
+        .stat-mini-value { font-size: 1.2rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .stat-mini-label { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.1rem; }
+
+        .filter-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .filter-btn { font-size: 0.75rem; padding: 0.3rem 0.7rem; border-radius: 5px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-muted); cursor: pointer; font-family: inherit; font-weight: 500; transition: all 150ms; }
+        .filter-btn:hover { border-color: var(--accent-primary); color: var(--accent-primary); }
+        .filter-btn.active { background: var(--accent-primary); border-color: var(--accent-primary); color: #fff; }
+    </style>
+</head>
+
+<body>
+    <nav class="top-nav" id="top-nav">
+        <div class="top-nav-inner">
+            <div class="nav-brand">
+                <span class="nav-brand-icon">AI</span>
+                <span>Paper Examples</span>
+            </div>
+            <div class="nav-links">
+                <a href="#security-examples" class="nav-link active">Security</a>
+                <a href="#bug-examples" class="nav-link">Bugs</a>
+                <a href="#smell-examples" class="nav-link">Smells</a>
+                <a href="#incomplete-examples" class="nav-link">Incomplete</a>
+                <a href="#complexity-examples" class="nav-link">Complexity</a>
+                <a href="#errorhandling-examples" class="nav-link">Error Handling</a>
+                <a href="#comparison-examples" class="nav-link">Comparison</a>
+                <a href="#lifecycle-examples" class="nav-link">Lifecycle</a>
+                <a href="overview.html" class="nav-link" style="opacity:0.6;">Overview</a>
+                <a href="paper-tables.html" class="nav-link" style="opacity:0.6;">Tables</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="header-row">
+                <div class="header-title">
+                    <h1>Paper Code Examples</h1>
+                    <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.25rem;">
+                        Curated real-world examples of AI-generated technical debt across 8 categories. Each example is verified by fetching the actual source code from the public GitHub commit.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <div class="stat-summary" id="overview-stats"></div>
+
+        <div class="filter-bar" id="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="security">Security</button>
+            <button class="filter-btn" data-filter="bug">Bugs</button>
+            <button class="filter-btn" data-filter="smell">Smells</button>
+            <button class="filter-btn" data-filter="incomplete">Incomplete</button>
+            <button class="filter-btn" data-filter="complexity">Complexity</button>
+            <button class="filter-btn" data-filter="errorhandling">Error Handling</button>
+            <button class="filter-btn" data-filter="comparison">Comparison</button>
+            <button class="filter-btn" data-filter="lifecycle">Lifecycle</button>
+        </div>
+
+        <div id="examples-container"></div>
+    </div>
+
+    <script src="js/examples.js"></script>
+</body>
+</html>

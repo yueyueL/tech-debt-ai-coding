@@ -1,0 +1,546 @@
+{
+  "commit_hash": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/8b0545072dbf4067386153cf5bb72d0680222fd0",
+  "author": "",
+  "message": "Add connection timeout and error handling for MySQL and PostgreSQL data loaders\nCo-authored-by: Chenglong-MS <93549116+Chenglong-MS@users.noreply.github.com>",
+  "timestamp": "2025-12-01T22:22:57+00:00",
+  "debt_debug": {
+    "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+      "issues_added": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 104,
+          "symbol": "line-too-long",
+          "message": "Line too long (151/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 28,
+          "symbol": "line-too-long",
+          "message": "Line too long (108/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 99,
+          "symbol": "line-too-long",
+          "message": "Line too long (109/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 97,
+          "symbol": "line-too-long",
+          "message": "Line too long (115/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 29,
+          "symbol": "line-too-long",
+          "message": "Line too long (152/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 85,
+          "symbol": "broad-exception-caught",
+          "message": "Catching too general exception Exception",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 97,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 117,
+          "symbol": "raise-missing-from",
+          "message": "Consider explicitly re-raising using 'raise ConnectionError(error_msg) from e'",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 110,
+          "symbol": "raise-missing-from",
+          "message": "Consider explicitly re-raising using 'except FuturesTimeoutError as exc' and 'raise ConnectionError(error_msg) from exc'",
+          "category": "maintainability",
+          "_is_low_severity": false
+        }
+      ],
+      "issues_resolved": [
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 68,
+          "symbol": "bare-except",
+          "message": "No exception type(s) specified",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "security",
+          "severity": "error",
+          "line": 72,
+          "symbol": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "security",
+          "severity": "error",
+          "line": 102,
+          "symbol": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 75,
+          "symbol": "f-string-without-interpolation",
+          "message": "Using an f-string that does not have any interpolated variables",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "security",
+          "severity": "warning",
+          "line": 72,
+          "symbol": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "security",
+          "severity": "warning",
+          "line": 75,
+          "symbol": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 102,
+          "symbol": "line-too-long",
+          "message": "Line too long (106/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 21,
+          "symbol": "line-too-long",
+          "message": "Line too long (107/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 74,
+          "symbol": "missing-function-docstring",
+          "message": "Missing function or method docstring",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 145,
+          "symbol": "missing-final-newline",
+          "message": "Final newline missing",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ]
+    },
+    "py-src/data_formulator/data_loader/postgresql_data_loader.py": {
+      "issues_added": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 28,
+          "symbol": "line-too-long",
+          "message": "Line too long (135/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 76,
+          "symbol": "line-too-long",
+          "message": "Line too long (105/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 65,
+          "symbol": "line-too-long",
+          "message": "Line too long (103/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 29,
+          "symbol": "line-too-long",
+          "message": "Line too long (152/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 59,
+          "symbol": "broad-exception-caught",
+          "message": "Catching too general exception Exception",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 71,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 107,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 141,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 147,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 91,
+          "symbol": "raise-missing-from",
+          "message": "Consider explicitly re-raising using 'raise ConnectionError(error_msg) from e'",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 71,
+          "symbol": "line-too-long",
+          "message": "Line too long (120/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 84,
+          "symbol": "raise-missing-from",
+          "message": "Consider explicitly re-raising using 'except FuturesTimeoutError as exc' and 'raise ConnectionError(error_msg) from exc'",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 78,
+          "symbol": "line-too-long",
+          "message": "Line too long (158/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": [
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 45,
+          "symbol": "bare-except",
+          "message": "No exception type(s) specified",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 20,
+          "symbol": "line-too-long",
+          "message": "Line too long (134/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ]
+    }
+  },
+  "lifecycle_debug": {
+    "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "py-src/data_formulator/data_loader/postgresql_data_loader.py": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+      "line_ranges": [
+        [
+          2,
+          3
+        ],
+        [
+          13,
+          17
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          64,
+          67
+        ],
+        [
+          70,
+          117
+        ]
+      ],
+      "lines_added": 61,
+      "lines_exist": 12,
+      "lines_modified": 49,
+      "lines_deleted": 0,
+      "modification_count": 6,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 1,
+        "new_units": 7,
+        "semantic_survival_rate": 0.5,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.5,
+        "deletion_rate": 0.5,
+        "syntactic_survival_rate": 0.19672131147540983,
+        "semantic_vs_syntactic_delta": 0.3033,
+        "survived_names": [],
+        "modified_names": [
+          "MySQLDataLoader.list_params"
+        ],
+        "deleted_names": [
+          "attach_mysql"
+        ]
+      }
+    },
+    {
+      "file": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+      "line_ranges": [
+        [
+          2,
+          3
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          41,
+          45
+        ],
+        [
+          51,
+          51
+        ],
+        [
+          59,
+          59
+        ],
+        [
+          62,
+          84
+        ],
+        [
+          86,
+          87
+        ],
+        [
+          89,
+          91
+        ],
+        [
+          107,
+          107
+        ],
+        [
+          141,
+          141
+        ],
+        [
+          147,
+          147
+        ]
+      ],
+      "lines_added": 48,
+      "lines_exist": 8,
+      "lines_modified": 40,
+      "lines_deleted": 0,
+      "modification_count": 13,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 3,
+        "surviving_units": 0,
+        "modified_units": 2,
+        "deleted_units": 1,
+        "new_units": 6,
+        "semantic_survival_rate": 0.6667,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.6667,
+        "deletion_rate": 0.3333,
+        "syntactic_survival_rate": 0.16666666666666666,
+        "semantic_vs_syntactic_delta": 0.5,
+        "survived_names": [],
+        "modified_names": [
+          "PostgreSQLDataLoader.list_params",
+          "PostgreSQLDataLoader.list_tables"
+        ],
+        "deleted_names": [
+          "attach_postgres"
+        ]
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 22,
+      "issues_fixed": 12
+    },
+    "lifecycle": {
+      "files_analyzed": 2,
+      "files": [
+        {
+          "filepath": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 92.10457175925926,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 92.10457175925926,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.183,
+      "semantic_survival_rate": 0.6,
+      "developer_valuation": "MEDIUM",
+      "lines_added": 109,
+      "lines_still_exist": 20
+    }
+  }
+}

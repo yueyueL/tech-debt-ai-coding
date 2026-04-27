@@ -1,0 +1,147 @@
+{
+  "commit_hash": "a3a2b7507739b9084bbd0d66b921f272cdb867e1",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/a3a2b7507739b9084bbd0d66b921f272cdb867e1",
+  "author": "",
+  "message": "Update py-src/data_formulator/data_loader/athena_data_loader.py\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+  "timestamp": "2026-01-29T11:39:21-08:00",
+  "debt_debug": {
+    "py-src/data_formulator/data_loader/athena_data_loader.py": {
+      "issues_added": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 210,
+          "symbol": "line-too-long",
+          "message": "Line too long (101/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 198,
+          "symbol": "raise-missing-from",
+          "message": "Consider explicitly re-raising using 'except (ValueError, TypeError) as exc' and 'raise ValueError(f'Invalid query_timeout value: {raw_timeout!r}. Expected a positive number (int or float-compatible string).') from exc'",
+          "category": "maintainability",
+          "_is_low_severity": false
+        }
+      ],
+      "issues_resolved": [
+        {
+          "type": "pylint",
+          "severity": "refactor",
+          "line": 163,
+          "symbol": "too-many-branches",
+          "message": "Too many branches (14/12)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 434,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "refactor",
+          "line": 163,
+          "symbol": "too-many-statements",
+          "message": "Too many statements (61/50)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ]
+    }
+  },
+  "lifecycle_debug": {
+    "py-src/data_formulator/data_loader/athena_data_loader.py": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "py-src/data_formulator/data_loader/athena_data_loader.py",
+      "line_ranges": [
+        [
+          183,
+          213
+        ]
+      ],
+      "lines_added": 31,
+      "lines_exist": 31,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 1,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 10,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [
+          "AthenaDataLoader.__init__"
+        ],
+        "deleted_names": []
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 2,
+      "issues_fixed": 3
+    },
+    "lifecycle": {
+      "files_analyzed": 1,
+      "files": [
+        {
+          "filepath": "py-src/data_formulator/data_loader/athena_data_loader.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 33.21818287037037,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 1.0,
+      "semantic_survival_rate": 1.0,
+      "developer_valuation": "HIGH",
+      "lines_added": 31,
+      "lines_still_exist": 31
+    }
+  }
+}

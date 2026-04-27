@@ -1,0 +1,3381 @@
+[
+  {
+    "commit": "fd7aa53c56eb",
+    "files_analyzed": 1,
+    "total_lines_added": 2,
+    "lines_still_exist": 0,
+    "lines_modified": 2,
+    "lines_deleted": 0,
+    "total_modifications": 2,
+    "survival_rate": 0.0,
+    "modification_rate": 1.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/agents/agent_data_rec.py",
+        "line_ranges": [
+          [
+            58,
+            58
+          ],
+          [
+            70,
+            70
+          ]
+        ],
+        "lines_added": 2,
+        "lines_exist": 0,
+        "lines_modified": 2,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/agents/agent_data_rec.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "86b2dc5dd915",
+    "files_analyzed": 1,
+    "total_lines_added": 13,
+    "lines_still_exist": 2,
+    "lines_modified": 11,
+    "lines_deleted": 0,
+    "total_modifications": 2,
+    "survival_rate": 0.154,
+    "modification_rate": 0.846,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 1,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 1,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": -0.154,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "src/components/ChartTemplates.tsx",
+        "line_ranges": [
+          [
+            86,
+            93
+          ],
+          [
+            95,
+            99
+          ]
+        ],
+        "lines_added": 13,
+        "lines_exist": 2,
+        "lines_modified": 11,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 1,
+          "new_units": 2,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.15384615384615385,
+          "semantic_vs_syntactic_delta": -0.1538,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "isMapChart"
+          ]
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "src/components/ChartTemplates.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 1,
+        "new_units": 2,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.15384615384615385,
+        "semantic_vs_syntactic_delta": -0.1538,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "isMapChart"
+        ]
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "824a40495e59",
+    "files_analyzed": 1,
+    "total_lines_added": 1,
+    "lines_still_exist": 0,
+    "lines_modified": 1,
+    "lines_deleted": 0,
+    "total_modifications": 1,
+    "survival_rate": 0.0,
+    "modification_rate": 1.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/agents/agent_data_rec.py",
+        "line_ranges": [
+          [
+            68,
+            68
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 0,
+        "lines_modified": 1,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/agents/agent_data_rec.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "f98309f0e8f1",
+    "files_analyzed": 1,
+    "total_lines_added": 2,
+    "lines_still_exist": 0,
+    "lines_modified": 2,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 1.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "src/app/utils.tsx",
+        "line_ranges": [
+          [
+            1085,
+            1086
+          ]
+        ],
+        "lines_added": 2,
+        "lines_exist": 0,
+        "lines_modified": 2,
+        "lines_deleted": 0,
+        "modification_count": 0,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "src/app/utils.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "0fed94cb0724",
+    "files_analyzed": 1,
+    "total_lines_added": 7,
+    "lines_still_exist": 7,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 2,
+    "survival_rate": 1.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 1,
+    "semantic_units_surviving": 1,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 1.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/athena_data_loader.py",
+        "line_ranges": [
+          [
+            369,
+            370
+          ],
+          [
+            374,
+            378
+          ]
+        ],
+        "lines_added": 7,
+        "lines_exist": 7,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 10,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [
+            "AthenaDataLoader._execute_query"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/athena_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 10,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "AthenaDataLoader._execute_query"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "a3a2b7507739",
+    "files_analyzed": 1,
+    "total_lines_added": 31,
+    "lines_still_exist": 31,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 1,
+    "survival_rate": 1.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 1,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 1,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/athena_data_loader.py",
+        "line_ranges": [
+          [
+            183,
+            213
+          ]
+        ],
+        "lines_added": 31,
+        "lines_exist": 31,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 10,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 1.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [
+            "AthenaDataLoader.__init__"
+          ],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/athena_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 10,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [
+          "AthenaDataLoader.__init__"
+        ],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "f611d1fafca3",
+    "files_analyzed": 3,
+    "total_lines_added": 137,
+    "lines_still_exist": 41,
+    "lines_modified": 96,
+    "lines_deleted": 0,
+    "total_modifications": 23,
+    "survival_rate": 0.299,
+    "modification_rate": 0.701,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 6,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 2,
+    "semantic_units_deleted": 4,
+    "semantic_survival_rate": 0.333,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.034,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/tables_routes.py",
+        "line_ranges": [
+          [
+            847,
+            849
+          ],
+          [
+            853,
+            855
+          ],
+          [
+            857,
+            858
+          ],
+          [
+            860,
+            861
+          ],
+          [
+            863,
+            864
+          ],
+          [
+            866,
+            871
+          ],
+          [
+            875,
+            876
+          ],
+          [
+            879,
+            881
+          ],
+          [
+            883,
+            884
+          ],
+          [
+            887,
+            888
+          ],
+          [
+            890,
+            901
+          ],
+          [
+            904,
+            904
+          ],
+          [
+            917,
+            917
+          ],
+          [
+            922,
+            995
+          ]
+        ],
+        "lines_added": 115,
+        "lines_exist": 36,
+        "lines_modified": 79,
+        "lines_deleted": 0,
+        "modification_count": 14,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 2,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 2,
+          "new_units": 31,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.3130434782608696,
+          "semantic_vs_syntactic_delta": -0.313,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "recalculate_derived_data",
+            "recalc_derived_data_py"
+          ]
+        }
+      },
+      {
+        "file": "src/app/dfSlice.tsx",
+        "line_ranges": [],
+        "lines_added": 0,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 0,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 2,
+          "surviving_units": 0,
+          "modified_units": 2,
+          "deleted_units": 0,
+          "new_units": 1,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 1.0,
+          "survived_names": [],
+          "modified_names": [
+            "getUnrefedDerivedTableIds",
+            "deleteChartsRoutine"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "src/views/DataThread.tsx",
+        "line_ranges": [
+          [
+            777,
+            777
+          ],
+          [
+            786,
+            786
+          ],
+          [
+            788,
+            790
+          ],
+          [
+            793,
+            794
+          ],
+          [
+            798,
+            798
+          ],
+          [
+            816,
+            817
+          ],
+          [
+            1076,
+            1084
+          ],
+          [
+            1086,
+            1086
+          ],
+          [
+            1091,
+            1092
+          ]
+        ],
+        "lines_added": 22,
+        "lines_exist": 5,
+        "lines_modified": 17,
+        "lines_deleted": 0,
+        "modification_count": 9,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 2,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 2,
+          "new_units": 47,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.22727272727272727,
+          "semantic_vs_syntactic_delta": -0.2273,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "handleRefreshData",
+            "buildTableCard"
+          ]
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/tables_routes.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 2,
+        "new_units": 31,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.3130434782608696,
+        "semantic_vs_syntactic_delta": -0.313,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "recalculate_derived_data",
+          "recalc_derived_data_py"
+        ]
+      },
+      {
+        "file": "src/app/dfSlice.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 2,
+        "deleted_units": 0,
+        "new_units": 1,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 1.0,
+        "survived_names": [],
+        "modified_names": [
+          "getUnrefedDerivedTableIds",
+          "deleteChartsRoutine"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "src/views/DataThread.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 2,
+        "new_units": 47,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.22727272727272727,
+        "semantic_vs_syntactic_delta": -0.2273,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "handleRefreshData",
+          "buildTableCard"
+        ]
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "e06101440d6a",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "d45d762bad35",
+    "files_analyzed": 2,
+    "total_lines_added": 39,
+    "lines_still_exist": 12,
+    "lines_modified": 27,
+    "lines_deleted": 0,
+    "total_modifications": 6,
+    "survival_rate": 0.308,
+    "modification_rate": 0.692,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 3,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 3,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": -0.308,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/tables_routes.py",
+        "line_ranges": [
+          [
+            865,
+            865
+          ],
+          [
+            869,
+            884
+          ],
+          [
+            915,
+            916
+          ]
+        ],
+        "lines_added": 19,
+        "lines_exist": 7,
+        "lines_modified": 12,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 1,
+          "new_units": 31,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.3684210526315789,
+          "semantic_vs_syntactic_delta": -0.3684,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "refresh_derived_data"
+          ]
+        }
+      },
+      {
+        "file": "src/views/DataThread.tsx",
+        "line_ranges": [
+          [
+            234,
+            246
+          ],
+          [
+            356,
+            356
+          ],
+          [
+            778,
+            783
+          ]
+        ],
+        "lines_added": 20,
+        "lines_exist": 5,
+        "lines_modified": 15,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 2,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 2,
+          "new_units": 47,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.25,
+          "semantic_vs_syntactic_delta": -0.25,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "validateData",
+            "handleRefreshData"
+          ]
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/tables_routes.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 1,
+        "new_units": 31,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.3684210526315789,
+        "semantic_vs_syntactic_delta": -0.3684,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "refresh_derived_data"
+        ]
+      },
+      {
+        "file": "src/views/DataThread.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 2,
+        "new_units": 47,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.25,
+        "semantic_vs_syntactic_delta": -0.25,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "validateData",
+          "handleRefreshData"
+        ]
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "d8549c0c8c13",
+    "files_analyzed": 3,
+    "total_lines_added": 522,
+    "lines_still_exist": 244,
+    "lines_modified": 278,
+    "lines_deleted": 0,
+    "total_modifications": 12,
+    "survival_rate": 0.467,
+    "modification_rate": 0.533,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 11,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 1,
+    "semantic_units_deleted": 10,
+    "semantic_survival_rate": 0.091,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": -0.376,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/tables_routes.py",
+        "line_ranges": [
+          [
+            844,
+            934
+          ]
+        ],
+        "lines_added": 91,
+        "lines_exist": 37,
+        "lines_modified": 54,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 2,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 1,
+          "new_units": 30,
+          "semantic_survival_rate": 0.5,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.5,
+          "deletion_rate": 0.5,
+          "syntactic_survival_rate": 0.4065934065934066,
+          "semantic_vs_syntactic_delta": 0.0934,
+          "survived_names": [],
+          "modified_names": [
+            "data_loader_ingest_data_from_query"
+          ],
+          "deleted_names": [
+            "refresh_derived_data"
+          ]
+        }
+      },
+      {
+        "file": "src/app/dfSlice.tsx",
+        "line_ranges": [
+          [
+            478,
+            497
+          ]
+        ],
+        "lines_added": 20,
+        "lines_exist": 11,
+        "lines_modified": 9,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "src/views/DataThread.tsx",
+        "line_ranges": [
+          [
+            25,
+            28
+          ],
+          [
+            52,
+            53
+          ],
+          [
+            204,
+            387
+          ],
+          [
+            682,
+            691
+          ],
+          [
+            721,
+            835
+          ],
+          [
+            990,
+            1007
+          ],
+          [
+            1009,
+            1029
+          ],
+          [
+            1046,
+            1094
+          ],
+          [
+            1260,
+            1267
+          ]
+        ],
+        "lines_added": 411,
+        "lines_exist": 196,
+        "lines_modified": 215,
+        "lines_deleted": 0,
+        "modification_count": 10,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 9,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 9,
+          "new_units": 47,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.4768856447688564,
+          "semantic_vs_syntactic_delta": -0.4769,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "validateData",
+            "handleFileChange",
+            "handleRefresh",
+            "handleOpenRefreshDataPopup",
+            "handleCloseRefreshDataPopup",
+            "handleRefreshData",
+            "handleMenuOpen",
+            "handleMenuClose",
+            "buildTableCard"
+          ]
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/tables_routes.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 1,
+        "new_units": 30,
+        "semantic_survival_rate": 0.5,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.5,
+        "deletion_rate": 0.5,
+        "syntactic_survival_rate": 0.4065934065934066,
+        "semantic_vs_syntactic_delta": 0.0934,
+        "survived_names": [],
+        "modified_names": [
+          "data_loader_ingest_data_from_query"
+        ],
+        "deleted_names": [
+          "refresh_derived_data"
+        ]
+      },
+      {
+        "file": "src/app/dfSlice.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "src/views/DataThread.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 9,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 9,
+        "new_units": 47,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.4768856447688564,
+        "semantic_vs_syntactic_delta": -0.4769,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "validateData",
+          "handleFileChange",
+          "handleRefresh",
+          "handleOpenRefreshDataPopup",
+          "handleCloseRefreshDataPopup",
+          "handleRefreshData",
+          "handleMenuOpen",
+          "handleMenuClose",
+          "buildTableCard"
+        ]
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "7d0570c27ec1",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "4b04973deaae",
+    "files_analyzed": 1,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 13,
+    "semantic_units_surviving": 2,
+    "semantic_units_modified": 6,
+    "semantic_units_deleted": 5,
+    "semantic_survival_rate": 0.615,
+    "exact_semantic_survival_rate": 0.154,
+    "semantic_vs_syntactic_delta": 0.615,
+    "developer_valuation": "MEDIUM",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/bigquery_data_loader.py",
+        "line_ranges": [],
+        "lines_added": 0,
+        "lines_exist": 0,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 0,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 13,
+          "surviving_units": 2,
+          "modified_units": 6,
+          "deleted_units": 5,
+          "new_units": 2,
+          "semantic_survival_rate": 0.6154,
+          "exact_survival_rate": 0.1538,
+          "modification_rate": 0.4615,
+          "deletion_rate": 0.3846,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.6154,
+          "survived_names": [
+            "BigQueryDataLoader.list_params",
+            "add_field"
+          ],
+          "modified_names": [
+            "BigQueryDataLoader",
+            "BigQueryDataLoader.auth_instructions",
+            "BigQueryDataLoader.__init__",
+            "BigQueryDataLoader.list_tables",
+            "build_alias",
+            "process_field"
+          ],
+          "deleted_names": [
+            "BigQueryDataLoader._convert_bigquery_dtypes",
+            "safe_convert",
+            "BigQueryDataLoader.ingest_data",
+            "BigQueryDataLoader.view_query_sample",
+            "BigQueryDataLoader.ingest_data_from_query"
+          ]
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/bigquery_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 13,
+        "surviving_units": 2,
+        "modified_units": 6,
+        "deleted_units": 5,
+        "new_units": 2,
+        "semantic_survival_rate": 0.6154,
+        "exact_survival_rate": 0.1538,
+        "modification_rate": 0.4615,
+        "deletion_rate": 0.3846,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.6154,
+        "survived_names": [
+          "BigQueryDataLoader.list_params",
+          "add_field"
+        ],
+        "modified_names": [
+          "BigQueryDataLoader",
+          "BigQueryDataLoader.auth_instructions",
+          "BigQueryDataLoader.__init__",
+          "BigQueryDataLoader.list_tables",
+          "build_alias",
+          "process_field"
+        ],
+        "deleted_names": [
+          "BigQueryDataLoader._convert_bigquery_dtypes",
+          "safe_convert",
+          "BigQueryDataLoader.ingest_data",
+          "BigQueryDataLoader.view_query_sample",
+          "BigQueryDataLoader.ingest_data_from_query"
+        ]
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "3017e363fb6a",
+    "files_analyzed": 2,
+    "total_lines_added": 8,
+    "lines_still_exist": 2,
+    "lines_modified": 6,
+    "lines_deleted": 0,
+    "total_modifications": 1,
+    "survival_rate": 0.25,
+    "modification_rate": 0.75,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 2,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 1,
+    "semantic_units_deleted": 1,
+    "semantic_survival_rate": 0.5,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.25,
+    "developer_valuation": "MEDIUM",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line_ranges": [
+          [
+            282,
+            286
+          ]
+        ],
+        "lines_added": 5,
+        "lines_exist": 2,
+        "lines_modified": 3,
+        "lines_deleted": 0,
+        "modification_count": 0,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 1,
+          "new_units": 8,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.4,
+          "semantic_vs_syntactic_delta": -0.4,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "MySQLDataLoader.__del__"
+          ]
+        }
+      },
+      {
+        "file": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line_ranges": [
+          [
+            72,
+            74
+          ]
+        ],
+        "lines_added": 3,
+        "lines_exist": 0,
+        "lines_modified": 3,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 7,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 1.0,
+          "survived_names": [],
+          "modified_names": [
+            "PostgreSQLDataLoader.__init__"
+          ],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 1,
+        "new_units": 8,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.4,
+        "semantic_vs_syntactic_delta": -0.4,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "MySQLDataLoader.__del__"
+        ]
+      },
+      {
+        "file": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 7,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 1.0,
+        "survived_names": [],
+        "modified_names": [
+          "PostgreSQLDataLoader.__init__"
+        ],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "0436063b2b65",
+    "files_analyzed": 1,
+    "total_lines_added": 9,
+    "lines_still_exist": 3,
+    "lines_modified": 6,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.333,
+    "modification_rate": 0.667,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 2,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 2,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": -0.333,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line_ranges": [
+          [
+            278,
+            286
+          ]
+        ],
+        "lines_added": 9,
+        "lines_exist": 3,
+        "lines_modified": 6,
+        "lines_deleted": 0,
+        "modification_count": 0,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 2,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 2,
+          "new_units": 8,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.3333333333333333,
+          "semantic_vs_syntactic_delta": -0.3333,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "MySQLDataLoader.__exit__",
+            "MySQLDataLoader.__del__"
+          ]
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 2,
+        "new_units": 8,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.3333333333333333,
+        "semantic_vs_syntactic_delta": -0.3333,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "MySQLDataLoader.__exit__",
+          "MySQLDataLoader.__del__"
+        ]
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "95dc5dac8714",
+    "files_analyzed": 2,
+    "total_lines_added": 11,
+    "lines_still_exist": 2,
+    "lines_modified": 9,
+    "lines_deleted": 0,
+    "total_modifications": 3,
+    "survival_rate": 0.182,
+    "modification_rate": 0.818,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 3,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 1,
+    "semantic_units_deleted": 2,
+    "semantic_survival_rate": 0.333,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.151,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line_ranges": [
+          [
+            278,
+            281
+          ]
+        ],
+        "lines_added": 4,
+        "lines_exist": 1,
+        "lines_modified": 3,
+        "lines_deleted": 0,
+        "modification_count": 0,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 2,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 2,
+          "new_units": 8,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.25,
+          "semantic_vs_syntactic_delta": -0.25,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "MySQLDataLoader.__exit__",
+            "MySQLDataLoader.__del__"
+          ]
+        }
+      },
+      {
+        "file": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line_ranges": [
+          [
+            47,
+            49
+          ],
+          [
+            56,
+            56
+          ],
+          [
+            71,
+            73
+          ]
+        ],
+        "lines_added": 7,
+        "lines_exist": 1,
+        "lines_modified": 6,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 7,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.14285714285714285,
+          "semantic_vs_syntactic_delta": 0.8571,
+          "survived_names": [],
+          "modified_names": [
+            "PostgreSQLDataLoader.__init__"
+          ],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 2,
+        "new_units": 8,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.25,
+        "semantic_vs_syntactic_delta": -0.25,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "MySQLDataLoader.__exit__",
+          "MySQLDataLoader.__del__"
+        ]
+      },
+      {
+        "file": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 7,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.14285714285714285,
+        "semantic_vs_syntactic_delta": 0.8571,
+        "survived_names": [],
+        "modified_names": [
+          "PostgreSQLDataLoader.__init__"
+        ],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "f4b2d7e4f8c3",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "350c138dc68c",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "72b65e71adb7",
+    "files_analyzed": 1,
+    "total_lines_added": 9,
+    "lines_still_exist": 0,
+    "lines_modified": 9,
+    "lines_deleted": 0,
+    "total_modifications": 3,
+    "survival_rate": 0.0,
+    "modification_rate": 1.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 1,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 1,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 1.0,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line_ranges": [
+          [
+            168,
+            174
+          ],
+          [
+            181,
+            181
+          ],
+          [
+            186,
+            186
+          ]
+        ],
+        "lines_added": 9,
+        "lines_exist": 0,
+        "lines_modified": 9,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 7,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 1.0,
+          "survived_names": [],
+          "modified_names": [
+            "MySQLDataLoader.list_tables"
+          ],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 7,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 1.0,
+        "survived_names": [],
+        "modified_names": [
+          "MySQLDataLoader.list_tables"
+        ],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "f280be6965c3",
+    "files_analyzed": 1,
+    "total_lines_added": 14,
+    "lines_still_exist": 4,
+    "lines_modified": 10,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.286,
+    "modification_rate": 0.714,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 3,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 3,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": -0.286,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line_ranges": [
+          [
+            264,
+            267
+          ],
+          [
+            269,
+            278
+          ]
+        ],
+        "lines_added": 14,
+        "lines_exist": 4,
+        "lines_modified": 10,
+        "lines_deleted": 0,
+        "modification_count": 0,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 3,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 3,
+          "new_units": 8,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.2857142857142857,
+          "semantic_vs_syntactic_delta": -0.2857,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "MySQLDataLoader.close",
+            "MySQLDataLoader.__enter__",
+            "MySQLDataLoader.__exit__"
+          ]
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 3,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 3,
+        "new_units": 8,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.2857142857142857,
+        "semantic_vs_syntactic_delta": -0.2857,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "MySQLDataLoader.close",
+          "MySQLDataLoader.__enter__",
+          "MySQLDataLoader.__exit__"
+        ]
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "c345c704b117",
+    "files_analyzed": 1,
+    "total_lines_added": 4,
+    "lines_still_exist": 0,
+    "lines_modified": 4,
+    "lines_deleted": 0,
+    "total_modifications": 1,
+    "survival_rate": 0.0,
+    "modification_rate": 1.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "src/views/VisualizationView.tsx",
+        "line_ranges": [
+          [
+            316,
+            319
+          ]
+        ],
+        "lines_added": 4,
+        "lines_exist": 0,
+        "lines_modified": 4,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "src/views/VisualizationView.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "0b0931a9a522",
+    "files_analyzed": 1,
+    "total_lines_added": 14,
+    "lines_still_exist": 3,
+    "lines_modified": 11,
+    "lines_deleted": 0,
+    "total_modifications": 3,
+    "survival_rate": 0.214,
+    "modification_rate": 0.786,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 1,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 1,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": -0.214,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line_ranges": [
+          [
+            213,
+            221
+          ],
+          [
+            224,
+            226
+          ],
+          [
+            228,
+            229
+          ]
+        ],
+        "lines_added": 14,
+        "lines_exist": 3,
+        "lines_modified": 11,
+        "lines_deleted": 0,
+        "modification_count": 3,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 1,
+          "new_units": 8,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.21428571428571427,
+          "semantic_vs_syntactic_delta": -0.2143,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "MySQLDataLoader.ingest_data"
+          ]
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 1,
+        "new_units": 8,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.21428571428571427,
+        "semantic_vs_syntactic_delta": -0.2143,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "MySQLDataLoader.ingest_data"
+        ]
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "77989522a28c",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "377e9dc620fe",
+    "files_analyzed": 1,
+    "total_lines_added": 3,
+    "lines_still_exist": 0,
+    "lines_modified": 3,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 1.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "src/views/DBTableManager.tsx",
+        "line_ranges": [
+          [
+            1180,
+            1180
+          ],
+          [
+            1208,
+            1208
+          ],
+          [
+            1440,
+            1440
+          ]
+        ],
+        "lines_added": 3,
+        "lines_exist": 0,
+        "lines_modified": 3,
+        "lines_deleted": 0,
+        "modification_count": 0,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "src/views/DBTableManager.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "4451f2543248",
+    "files_analyzed": 2,
+    "total_lines_added": 20,
+    "lines_still_exist": 2,
+    "lines_modified": 18,
+    "lines_deleted": 0,
+    "total_modifications": 4,
+    "survival_rate": 0.1,
+    "modification_rate": 0.9,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 2,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 2,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.9,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line_ranges": [
+          [
+            65,
+            72
+          ],
+          [
+            105,
+            106
+          ]
+        ],
+        "lines_added": 10,
+        "lines_exist": 1,
+        "lines_modified": 9,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 7,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.1,
+          "semantic_vs_syntactic_delta": 0.9,
+          "survived_names": [],
+          "modified_names": [
+            "MySQLDataLoader.__init__"
+          ],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line_ranges": [
+          [
+            42,
+            49
+          ],
+          [
+            79,
+            80
+          ]
+        ],
+        "lines_added": 10,
+        "lines_exist": 1,
+        "lines_modified": 9,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 7,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.1,
+          "semantic_vs_syntactic_delta": 0.9,
+          "survived_names": [],
+          "modified_names": [
+            "PostgreSQLDataLoader.__init__"
+          ],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 7,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.1,
+        "semantic_vs_syntactic_delta": 0.9,
+        "survived_names": [],
+        "modified_names": [
+          "MySQLDataLoader.__init__"
+        ],
+        "deleted_names": []
+      },
+      {
+        "file": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 7,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.1,
+        "semantic_vs_syntactic_delta": 0.9,
+        "survived_names": [],
+        "modified_names": [
+          "PostgreSQLDataLoader.__init__"
+        ],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "f186e1d6637e",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "72da44213e80",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "8b0545072dbf",
+    "files_analyzed": 2,
+    "total_lines_added": 109,
+    "lines_still_exist": 20,
+    "lines_modified": 89,
+    "lines_deleted": 0,
+    "total_modifications": 19,
+    "survival_rate": 0.183,
+    "modification_rate": 0.817,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 5,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 3,
+    "semantic_units_deleted": 2,
+    "semantic_survival_rate": 0.6,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.417,
+    "developer_valuation": "MEDIUM",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            13,
+            17
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            64,
+            67
+          ],
+          [
+            70,
+            117
+          ]
+        ],
+        "lines_added": 61,
+        "lines_exist": 12,
+        "lines_modified": 49,
+        "lines_deleted": 0,
+        "modification_count": 6,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 2,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 1,
+          "new_units": 7,
+          "semantic_survival_rate": 0.5,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.5,
+          "deletion_rate": 0.5,
+          "syntactic_survival_rate": 0.19672131147540983,
+          "semantic_vs_syntactic_delta": 0.3033,
+          "survived_names": [],
+          "modified_names": [
+            "MySQLDataLoader.list_params"
+          ],
+          "deleted_names": [
+            "attach_mysql"
+          ]
+        }
+      },
+      {
+        "file": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            13,
+            18
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            41,
+            45
+          ],
+          [
+            51,
+            51
+          ],
+          [
+            59,
+            59
+          ],
+          [
+            62,
+            84
+          ],
+          [
+            86,
+            87
+          ],
+          [
+            89,
+            91
+          ],
+          [
+            107,
+            107
+          ],
+          [
+            141,
+            141
+          ],
+          [
+            147,
+            147
+          ]
+        ],
+        "lines_added": 48,
+        "lines_exist": 8,
+        "lines_modified": 40,
+        "lines_deleted": 0,
+        "modification_count": 13,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 3,
+          "surviving_units": 0,
+          "modified_units": 2,
+          "deleted_units": 1,
+          "new_units": 6,
+          "semantic_survival_rate": 0.6667,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.6667,
+          "deletion_rate": 0.3333,
+          "syntactic_survival_rate": 0.16666666666666666,
+          "semantic_vs_syntactic_delta": 0.5,
+          "survived_names": [],
+          "modified_names": [
+            "PostgreSQLDataLoader.list_params",
+            "PostgreSQLDataLoader.list_tables"
+          ],
+          "deleted_names": [
+            "attach_postgres"
+          ]
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 1,
+        "new_units": 7,
+        "semantic_survival_rate": 0.5,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.5,
+        "deletion_rate": 0.5,
+        "syntactic_survival_rate": 0.19672131147540983,
+        "semantic_vs_syntactic_delta": 0.3033,
+        "survived_names": [],
+        "modified_names": [
+          "MySQLDataLoader.list_params"
+        ],
+        "deleted_names": [
+          "attach_mysql"
+        ]
+      },
+      {
+        "file": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 3,
+        "surviving_units": 0,
+        "modified_units": 2,
+        "deleted_units": 1,
+        "new_units": 6,
+        "semantic_survival_rate": 0.6667,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.6667,
+        "deletion_rate": 0.3333,
+        "syntactic_survival_rate": 0.16666666666666666,
+        "semantic_vs_syntactic_delta": 0.5,
+        "survived_names": [],
+        "modified_names": [
+          "PostgreSQLDataLoader.list_params",
+          "PostgreSQLDataLoader.list_tables"
+        ],
+        "deleted_names": [
+          "attach_postgres"
+        ]
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "518bd88f1261",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "dd6b7a35a090",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "62de69d599cc",
+    "files_analyzed": 3,
+    "total_lines_added": 636,
+    "lines_still_exist": 326,
+    "lines_modified": 310,
+    "lines_deleted": 0,
+    "total_modifications": 8,
+    "survival_rate": 0.513,
+    "modification_rate": 0.487,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 2,
+    "semantic_units_surviving": 1,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 1,
+    "semantic_survival_rate": 0.5,
+    "exact_semantic_survival_rate": 0.5,
+    "semantic_vs_syntactic_delta": -0.013,
+    "developer_valuation": "MEDIUM",
+    "file_details": [
+      {
+        "file": "src/app/utils.tsx",
+        "line_ranges": [
+          [
+            919,
+            929
+          ]
+        ],
+        "lines_added": 11,
+        "lines_exist": 4,
+        "lines_modified": 7,
+        "lines_deleted": 0,
+        "modification_count": 0,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 1,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 11,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 1.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.36363636363636365,
+          "semantic_vs_syntactic_delta": 0.6364,
+          "survived_names": [
+            "hashCode"
+          ],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      },
+      {
+        "file": "src/views/ChartifactDialog.tsx",
+        "line_ranges": [
+          [
+            1,
+            590
+          ]
+        ],
+        "lines_added": 590,
+        "lines_exist": 300,
+        "lines_modified": 290,
+        "lines_deleted": 0,
+        "modification_count": 0,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 1,
+          "new_units": 3,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 1.0,
+          "syntactic_survival_rate": 0.5084745762711864,
+          "semantic_vs_syntactic_delta": -0.5085,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": [
+            "initializeSandbox"
+          ]
+        }
+      },
+      {
+        "file": "src/views/ReportView.tsx",
+        "line_ranges": [
+          [
+            32,
+            32
+          ],
+          [
+            53,
+            53
+          ],
+          [
+            236,
+            236
+          ],
+          [
+            1114,
+            1114
+          ],
+          [
+            1116,
+            1134
+          ],
+          [
+            1252,
+            1263
+          ]
+        ],
+        "lines_added": 35,
+        "lines_exist": 22,
+        "lines_modified": 13,
+        "lines_deleted": 0,
+        "modification_count": 8,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "src/app/utils.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 11,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.36363636363636365,
+        "semantic_vs_syntactic_delta": 0.6364,
+        "survived_names": [
+          "hashCode"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      },
+      {
+        "file": "src/views/ChartifactDialog.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 1,
+        "new_units": 3,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.5084745762711864,
+        "semantic_vs_syntactic_delta": -0.5085,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "initializeSandbox"
+        ]
+      },
+      {
+        "file": "src/views/ReportView.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "c543e9560701",
+    "files_analyzed": 1,
+    "total_lines_added": 36,
+    "lines_still_exist": 20,
+    "lines_modified": 16,
+    "lines_deleted": 0,
+    "total_modifications": 1,
+    "survival_rate": 0.556,
+    "modification_rate": 0.444,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 1,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 1,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.444,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "py-src/data_formulator/agents/web_utils.py",
+        "line_ranges": [
+          [
+            38,
+            73
+          ]
+        ],
+        "lines_added": 36,
+        "lines_exist": 20,
+        "lines_modified": 16,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "python",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 7,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.5555555555555556,
+          "semantic_vs_syntactic_delta": 0.4444,
+          "survived_names": [],
+          "modified_names": [
+            "download_html_content"
+          ],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "py-src/data_formulator/agents/web_utils.py",
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 7,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.5555555555555556,
+        "semantic_vs_syntactic_delta": 0.4444,
+        "survived_names": [],
+        "modified_names": [
+          "download_html_content"
+        ],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "2e4dc7c24bbf",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "909be45752d9",
+    "files_analyzed": 0,
+    "total_lines_added": 0,
+    "lines_still_exist": 0,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "a2884074623a",
+    "files_analyzed": 1,
+    "total_lines_added": 1,
+    "lines_still_exist": 1,
+    "lines_modified": 0,
+    "lines_deleted": 0,
+    "total_modifications": 1,
+    "survival_rate": 1.0,
+    "modification_rate": 0.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "src/views/VisualizationView.tsx",
+        "line_ranges": [
+          [
+            878,
+            878
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 1,
+        "lines_modified": 0,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "src/views/VisualizationView.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "6a5a602c0566",
+    "files_analyzed": 1,
+    "total_lines_added": 3,
+    "lines_still_exist": 1,
+    "lines_modified": 2,
+    "lines_deleted": 0,
+    "total_modifications": 1,
+    "survival_rate": 0.333,
+    "modification_rate": 0.667,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 1,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 1,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 1.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.667,
+    "developer_valuation": "HIGH",
+    "file_details": [
+      {
+        "file": "src/views/ChartRecBox.tsx",
+        "line_ranges": [
+          [
+            253,
+            255
+          ]
+        ],
+        "lines_added": 3,
+        "lines_exist": 1,
+        "lines_modified": 2,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 1,
+          "surviving_units": 0,
+          "modified_units": 1,
+          "deleted_units": 0,
+          "new_units": 3,
+          "semantic_survival_rate": 1.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 1.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.3333333333333333,
+          "semantic_vs_syntactic_delta": 0.6667,
+          "survived_names": [],
+          "modified_names": [
+            "deriveDataFromNL"
+          ],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "src/views/ChartRecBox.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 3,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.3333333333333333,
+        "semantic_vs_syntactic_delta": 0.6667,
+        "survived_names": [],
+        "modified_names": [
+          "deriveDataFromNL"
+        ],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "b2f93981b2cc",
+    "files_analyzed": 1,
+    "total_lines_added": 1,
+    "lines_still_exist": 0,
+    "lines_modified": 1,
+    "lines_deleted": 0,
+    "total_modifications": 1,
+    "survival_rate": 0.0,
+    "modification_rate": 1.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "src/views/ModelSelectionDialog.tsx",
+        "line_ranges": [
+          [
+            326,
+            326
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 0,
+        "lines_modified": 1,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "src/views/ModelSelectionDialog.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "a80a29d701e1",
+    "files_analyzed": 1,
+    "total_lines_added": 1,
+    "lines_still_exist": 0,
+    "lines_modified": 1,
+    "lines_deleted": 0,
+    "total_modifications": 0,
+    "survival_rate": 0.0,
+    "modification_rate": 1.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "src/views/DBTableManager.tsx",
+        "line_ranges": [
+          [
+            1098,
+            1098
+          ]
+        ],
+        "lines_added": 1,
+        "lines_exist": 0,
+        "lines_modified": 1,
+        "lines_deleted": 0,
+        "modification_count": 0,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "src/views/DBTableManager.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "5c0e2869045d",
+    "files_analyzed": 1,
+    "total_lines_added": 2,
+    "lines_still_exist": 0,
+    "lines_modified": 2,
+    "lines_deleted": 0,
+    "total_modifications": 1,
+    "survival_rate": 0.0,
+    "modification_rate": 1.0,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "src/views/TableSelectionView.tsx",
+        "line_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            672,
+            672
+          ]
+        ],
+        "lines_added": 2,
+        "lines_exist": 0,
+        "lines_modified": 2,
+        "lines_deleted": 0,
+        "modification_count": 1,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "src/views/TableSelectionView.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  },
+  {
+    "commit": "7d142f63740c",
+    "files_analyzed": 1,
+    "total_lines_added": 7,
+    "lines_still_exist": 1,
+    "lines_modified": 6,
+    "lines_deleted": 0,
+    "total_modifications": 2,
+    "survival_rate": 0.143,
+    "modification_rate": 0.857,
+    "deletion_rate": 0.0,
+    "semantic_units_original": 0,
+    "semantic_units_surviving": 0,
+    "semantic_units_modified": 0,
+    "semantic_units_deleted": 0,
+    "semantic_survival_rate": 0.0,
+    "exact_semantic_survival_rate": 0.0,
+    "semantic_vs_syntactic_delta": 0.0,
+    "developer_valuation": "LOW",
+    "file_details": [
+      {
+        "file": "src/views/TableSelectionView.tsx",
+        "line_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            669,
+            674
+          ]
+        ],
+        "lines_added": 7,
+        "lines_exist": 1,
+        "lines_modified": 6,
+        "lines_deleted": 0,
+        "modification_count": 2,
+        "semantic": {
+          "supported": true,
+          "language": "typescript",
+          "original_units": 0,
+          "surviving_units": 0,
+          "modified_units": 0,
+          "deleted_units": 0,
+          "new_units": 0,
+          "semantic_survival_rate": 0.0,
+          "exact_survival_rate": 0.0,
+          "modification_rate": 0.0,
+          "deletion_rate": 0.0,
+          "syntactic_survival_rate": 0.0,
+          "semantic_vs_syntactic_delta": 0.0,
+          "survived_names": [],
+          "modified_names": [],
+          "deleted_names": []
+        }
+      }
+    ],
+    "semantic_details": [
+      {
+        "file": "src/views/TableSelectionView.tsx",
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    ],
+    "repo": "microsoft/data-formulator"
+  }
+]

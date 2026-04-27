@@ -1,0 +1,1852 @@
+{
+  "total_issues": 96,
+  "surviving_issues": 26,
+  "fixed_issues": 70,
+  "survival_rate": 0.2708333333333333,
+  "by_severity": {
+    "CONVENTION": {
+      "total": 50,
+      "surviving": 4,
+      "rate": 0.08
+    },
+    "WARNING": {
+      "total": 33,
+      "surviving": 19,
+      "rate": 0.5757575757575758
+    },
+    "ERROR": {
+      "total": 7,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "REFACTOR": {
+      "total": 4,
+      "surviving": 1,
+      "rate": 0.25
+    },
+    "MEDIUM": {
+      "total": 2,
+      "surviving": 2,
+      "rate": 1.0
+    }
+  },
+  "by_rule": {
+    "line-too-long": {
+      "total": 22,
+      "surviving": 4,
+      "rate": 0.18181818181818182
+    },
+    "raise-missing-from": {
+      "total": 8,
+      "surviving": 1,
+      "rate": 0.125
+    },
+    "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query": {
+      "total": 2,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "missing-final-newline": {
+      "total": 1,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "trailing-whitespace": {
+      "total": 21,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "import-outside-toplevel": {
+      "total": 4,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "python.lang.security.audit.formatted-sql-query.formatted-sql-query": {
+      "total": 2,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "no-else-return": {
+      "total": 1,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "too-many-locals": {
+      "total": 2,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "broad-exception-caught": {
+      "total": 8,
+      "surviving": 8,
+      "rate": 1.0
+    },
+    "logging-fstring-interpolation": {
+      "total": 14,
+      "surviving": 10,
+      "rate": 0.7142857142857143
+    },
+    "python.flask.security.injection.tainted-sql-string.tainted-sql-string": {
+      "total": 1,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "python.django.security.injection.tainted-sql-string.tainted-sql-string": {
+      "total": 1,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "unused-variable": {
+      "total": 1,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "eslint": {
+      "total": 2,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "too-many-function-args": {
+      "total": 1,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "consider-using-f-string": {
+      "total": 2,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "B608": {
+      "total": 2,
+      "surviving": 2,
+      "rate": 1.0
+    },
+    "too-many-boolean-expressions": {
+      "total": 1,
+      "surviving": 1,
+      "rate": 1.0
+    }
+  },
+  "issues": [
+    {
+      "original": {
+        "commit_sha": "a3a2b7507739b9084bbd0d66b921f272cdb867e1",
+        "file_path": "py-src/data_formulator/data_loader/athena_data_loader.py",
+        "line": 210,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (101/100)"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 129,
+        "symbol": "line-too-long",
+        "message": "Line too long (101/100)",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "py-src/data_formulator/data_loader/athena_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "a3a2b7507739b9084bbd0d66b921f272cdb867e1",
+        "file_path": "py-src/data_formulator/data_loader/athena_data_loader.py",
+        "line": 198,
+        "rule_id": "raise-missing-from",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Consider explicitly re-raising using 'except (ValueError, TypeError) as exc' and 'raise ValueError(f'Invalid query_timeout value: {raw_timeout!r}. Expected a positive number (int or float-compatible string).') from exc'"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 117,
+        "symbol": "raise-missing-from",
+        "message": "Consider explicitly re-raising using 'except (ValueError, TypeError) as exc' and 'raise ValueError(f'Invalid query_timeout value: {raw_timeout!r}. Expected a positive number (int or float-compatible string).') from exc'",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "py-src/data_formulator/data_loader/athena_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 953,
+        "rule_id": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+        "type": "security",
+        "severity": "error",
+        "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 925,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (107/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 995,
+        "rule_id": "missing-final-newline",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Final newline missing"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 968,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 971,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 975,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 988,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 939,
+        "rule_id": "import-outside-toplevel",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Import outside toplevel (data_formulator.py_sandbox.run_transform_in_sandbox2020)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 953,
+        "rule_id": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+        "type": "security",
+        "severity": "warning",
+        "message": "Detected possible formatted SQL query. Use parameterized queries instead."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 969,
+        "rule_id": "no-else-return",
+        "type": "pylint",
+        "severity": "refactor",
+        "message": "Unnecessary \"else\" after \"return\", remove the \"else\" and de-indent the code inside it"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 925,
+        "rule_id": "too-many-locals",
+        "type": "pylint",
+        "severity": "refactor",
+        "message": "Too many local variables (16/15)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 989,
+        "rule_id": "broad-exception-caught",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Catching too general exception Exception"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 180,
+        "symbol": "broad-exception-caught",
+        "message": "Catching too general exception Exception",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 990,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 234,
+        "symbol": "logging-fstring-interpolation",
+        "message": "Use lazy % formatting in logging functions",
+        "category": "maintainability"
+      },
+      "match_score": 0.84,
+      "match_reason": "message-and-line-similar",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 904,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (101/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d45d762bad353f6cb86d38a4d7887cdad4bb6d86",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 872,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (110/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d45d762bad353f6cb86d38a4d7887cdad4bb6d86",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 882,
+        "rule_id": "broad-exception-caught",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Catching too general exception Exception"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 237,
+        "symbol": "broad-exception-caught",
+        "message": "Catching too general exception Exception",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d45d762bad353f6cb86d38a4d7887cdad4bb6d86",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 883,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 888,
+        "rule_id": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+        "type": "security",
+        "severity": "error",
+        "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 894,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (105/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 888,
+        "rule_id": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+        "type": "security",
+        "severity": "error",
+        "message": "Detected user input used to manually construct a SQL string. This is usually bad practice because manual construction could accidentally result in a SQL injection. An attacker could use a SQL injection to steal or modify contents of the database. Instead, use a parameterized query which is available by default in most database engines. Alternatively, consider using an object-relational mapper (ORM) such as SQLAlchemy which will protect your queries."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 851,
+        "rule_id": "import-outside-toplevel",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Import outside toplevel (data_formulator.py_sandbox.run_transform_in_sandbox2020)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 888,
+        "rule_id": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+        "type": "security",
+        "severity": "warning",
+        "message": "Detected possible formatted SQL query. Use parameterized queries instead."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 917,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 348,
+        "symbol": "logging-fstring-interpolation",
+        "message": "Use lazy % formatting in logging functions",
+        "category": "maintainability"
+      },
+      "match_score": 0.84,
+      "match_reason": "message-and-line-similar",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 930,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 393,
+        "symbol": "logging-fstring-interpolation",
+        "message": "Use lazy % formatting in logging functions",
+        "category": "maintainability"
+      },
+      "match_score": 0.92,
+      "match_reason": "line-text-similar",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 888,
+        "rule_id": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+        "type": "security",
+        "severity": "error",
+        "message": "Detected user input used to manually construct a SQL string. This is usually bad practice because manual construction could accidentally result in a SQL injection. An attacker could use a SQL injection to steal or modify contents of the database. Instead, use a parameterized query which is available by default in most database engines. Alternatively, consider using the Django object-relational mappers (ORM) instead of raw SQL queries."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 852,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 854,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 858,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 861,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 864,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 868,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 870,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 877,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 880,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 890,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 892,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 895,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 898,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 902,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 915,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 923,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 928,
+        "rule_id": "trailing-whitespace",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Trailing whitespace"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 867,
+        "rule_id": "unused-variable",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Unused variable 'updated_columns'"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 916,
+        "rule_id": "broad-exception-caught",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Catching too general exception Exception"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 233,
+        "symbol": "broad-exception-caught",
+        "message": "Catching too general exception Exception",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 929,
+        "rule_id": "broad-exception-caught",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Catching too general exception Exception"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 347,
+        "symbol": "broad-exception-caught",
+        "message": "Catching too general exception Exception",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "py-src/data_formulator/tables_routes.py",
+        "line": 848,
+        "rule_id": "too-many-locals",
+        "type": "pylint",
+        "severity": "refactor",
+        "message": "Too many local variables (23/15)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/tables_routes.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "src/app/dfSlice.tsx",
+        "line": 480,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "'rows' is never reassigned. Use 'const' instead."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "src/app/dfSlice.tsx"
+    },
+    {
+      "original": {
+        "commit_sha": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+        "file_path": "src/app/dfSlice.tsx",
+        "line": 495,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "'getDataFieldItems' was used before it was defined."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "src/app/dfSlice.tsx"
+    },
+    {
+      "original": {
+        "commit_sha": "3017e363fb6a5a746feab25bfc65f7bd184ca06d",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 284,
+        "rule_id": "broad-exception-caught",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Catching too general exception Exception"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 113,
+        "symbol": "broad-exception-caught",
+        "message": "Catching too general exception Exception",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "0436063b2b65ef45997255671e0b00c27f40d85d",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 284,
+        "rule_id": "broad-exception-caught",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Catching too general exception Exception"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 236,
+        "symbol": "broad-exception-caught",
+        "message": "Catching too general exception Exception",
+        "category": "maintainability"
+      },
+      "match_score": 0.92,
+      "match_reason": "line-text-similar",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "72b65e71adb75ef2b42de5faef726c28414d6f2d",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 174,
+        "rule_id": "too-many-function-args",
+        "type": "pylint",
+        "severity": "error",
+        "message": "Too many positional arguments for method call"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "72b65e71adb75ef2b42de5faef726c28414d6f2d",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 181,
+        "rule_id": "consider-using-f-string",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Formatting a regular string which could be an f-string"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "72b65e71adb75ef2b42de5faef726c28414d6f2d",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 186,
+        "rule_id": "consider-using-f-string",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Formatting a regular string which could be an f-string"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f280be6965c3a5f9b0958a9237ac62ceb46e321d",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 270,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 149,
+        "symbol": "logging-fstring-interpolation",
+        "message": "Use lazy % formatting in logging functions",
+        "category": "maintainability"
+      },
+      "match_score": 0.84,
+      "match_reason": "message-and-line-similar",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "0b0931a9a52215c7f8af1f888c85f67f1df65166",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 220,
+        "rule_id": "raise-missing-from",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Consider explicitly re-raising using 'except Exception as exc' and 'raise ValueError('Size parameter must be a positive integer.') from exc'"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "0b0931a9a52215c7f8af1f888c85f67f1df65166",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 226,
+        "rule_id": "B608",
+        "type": "security",
+        "severity": "medium",
+        "message": "Possible SQL injection vector through string-based query construction."
+      },
+      "survived": true,
+      "current": {
+        "line": 135,
+        "severity": "medium",
+        "rule_id": "B608",
+        "rule": "B608",
+        "message": "Possible SQL injection vector through string-based query construction.",
+        "type": "security",
+        "detected_by": "bandit"
+      },
+      "match_score": 0.84,
+      "match_reason": "message-and-line-similar",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "0b0931a9a52215c7f8af1f888c85f67f1df65166",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 229,
+        "rule_id": "B608",
+        "type": "security",
+        "severity": "medium",
+        "message": "Possible SQL injection vector through string-based query construction."
+      },
+      "survived": true,
+      "current": {
+        "line": 138,
+        "severity": "medium",
+        "rule_id": "B608",
+        "rule": "B608",
+        "message": "Possible SQL injection vector through string-based query construction.",
+        "type": "security",
+        "detected_by": "bandit"
+      },
+      "match_score": 0.84,
+      "match_reason": "message-and-line-similar",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "4451f2543248194763c017b8d2bb660c787820cc",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 72,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (110/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "4451f2543248194763c017b8d2bb660c787820cc",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 69,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 76,
+        "symbol": "logging-fstring-interpolation",
+        "message": "Use lazy % formatting in logging functions",
+        "category": "maintainability"
+      },
+      "match_score": 0.62,
+      "match_reason": "message-and-line-window",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "4451f2543248194763c017b8d2bb660c787820cc",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 72,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 78,
+        "symbol": "logging-fstring-interpolation",
+        "message": "Use lazy % formatting in logging functions",
+        "category": "maintainability"
+      },
+      "match_score": 0.62,
+      "match_reason": "message-and-line-window",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "4451f2543248194763c017b8d2bb660c787820cc",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 69,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (127/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 104,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (151/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 28,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (108/100)"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 19,
+        "symbol": "line-too-long",
+        "message": "Line too long (117/100)",
+        "category": "maintainability"
+      },
+      "match_score": 0.92,
+      "match_reason": "line-text-similar",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 99,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (109/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 97,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (115/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 29,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (152/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 85,
+        "rule_id": "broad-exception-caught",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Catching too general exception Exception"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 230,
+        "symbol": "broad-exception-caught",
+        "message": "Catching too general exception Exception",
+        "category": "maintainability"
+      },
+      "match_score": 0.92,
+      "match_reason": "line-text-similar",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 97,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 117,
+        "rule_id": "raise-missing-from",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Consider explicitly re-raising using 'raise ConnectionError(error_msg) from e'"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "line": 110,
+        "rule_id": "raise-missing-from",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Consider explicitly re-raising using 'except FuturesTimeoutError as exc' and 'raise ConnectionError(error_msg) from exc'"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/mysql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "3017e363fb6a5a746feab25bfc65f7bd184ca06d",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 74,
+        "rule_id": "raise-missing-from",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Consider explicitly re-raising using 'raise ValueError(f\"Failed to connect to PostgreSQL database '{database}' on host '{host}': {error_type}\") from e'"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "3017e363fb6a5a746feab25bfc65f7bd184ca06d",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 74,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (117/100)"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 66,
+        "symbol": "line-too-long",
+        "message": "Line too long (125/100)",
+        "category": "maintainability"
+      },
+      "match_score": 0.92,
+      "match_reason": "line-text-similar",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "95dc5dac87144ff20207d49e9b65a7b1a58fcf80",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 73,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (123/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "95dc5dac87144ff20207d49e9b65a7b1a58fcf80",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 73,
+        "rule_id": "raise-missing-from",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Consider explicitly re-raising using 'raise ValueError(f\"Failed to connect to PostgreSQL database '{database}' on host '{host}': {type(e).__name__}\") from e'"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "4451f2543248194763c017b8d2bb660c787820cc",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 49,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (110/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "4451f2543248194763c017b8d2bb660c787820cc",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 46,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "4451f2543248194763c017b8d2bb660c787820cc",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 49,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "4451f2543248194763c017b8d2bb660c787820cc",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 46,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (127/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 28,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (135/100)"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 19,
+        "symbol": "line-too-long",
+        "message": "Line too long (126/100)",
+        "category": "maintainability"
+      },
+      "match_score": 0.92,
+      "match_reason": "line-text-similar",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 76,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (105/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 65,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (103/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 29,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (152/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 59,
+        "rule_id": "broad-exception-caught",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Catching too general exception Exception"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 101,
+        "symbol": "broad-exception-caught",
+        "message": "Catching too general exception Exception",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 71,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 65,
+        "symbol": "logging-fstring-interpolation",
+        "message": "Use lazy % formatting in logging functions",
+        "category": "maintainability"
+      },
+      "match_score": 0.62,
+      "match_reason": "message-and-line-window",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 107,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 172,
+        "symbol": "logging-fstring-interpolation",
+        "message": "Use lazy % formatting in logging functions",
+        "category": "maintainability"
+      },
+      "match_score": 0.92,
+      "match_reason": "line-text-similar",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 141,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 230,
+        "symbol": "logging-fstring-interpolation",
+        "message": "Use lazy % formatting in logging functions",
+        "category": "maintainability"
+      },
+      "match_score": 0.92,
+      "match_reason": "line-text-similar",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 147,
+        "rule_id": "logging-fstring-interpolation",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Use lazy % formatting in logging functions"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 236,
+        "symbol": "logging-fstring-interpolation",
+        "message": "Use lazy % formatting in logging functions",
+        "category": "maintainability"
+      },
+      "match_score": 0.92,
+      "match_reason": "line-text-similar",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 91,
+        "rule_id": "raise-missing-from",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Consider explicitly re-raising using 'raise ConnectionError(error_msg) from e'"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 71,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (120/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 84,
+        "rule_id": "raise-missing-from",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Consider explicitly re-raising using 'except FuturesTimeoutError as exc' and 'raise ConnectionError(error_msg) from exc'"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+        "file_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "line": 78,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (158/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+    },
+    {
+      "original": {
+        "commit_sha": "c543e95607016d7ad1c6d06ae3f9025780c8fb4a",
+        "file_path": "py-src/data_formulator/agents/web_utils.py",
+        "line": 45,
+        "rule_id": "import-outside-toplevel",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Import outside toplevel (ipaddress)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/agents/web_utils.py"
+    },
+    {
+      "original": {
+        "commit_sha": "c543e95607016d7ad1c6d06ae3f9025780c8fb4a",
+        "file_path": "py-src/data_formulator/agents/web_utils.py",
+        "line": 44,
+        "rule_id": "import-outside-toplevel",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Import outside toplevel (socket)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "py-src/data_formulator/agents/web_utils.py"
+    },
+    {
+      "original": {
+        "commit_sha": "c543e95607016d7ad1c6d06ae3f9025780c8fb4a",
+        "file_path": "py-src/data_formulator/agents/web_utils.py",
+        "line": 55,
+        "rule_id": "too-many-boolean-expressions",
+        "type": "pylint",
+        "severity": "refactor",
+        "message": "Too many boolean expressions in if statement (6/5)"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "refactor",
+        "line": 31,
+        "symbol": "too-many-boolean-expressions",
+        "message": "Too many boolean expressions in if statement (6/5)",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "py-src/data_formulator/agents/web_utils.py"
+    }
+  ]
+}

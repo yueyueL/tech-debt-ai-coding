@@ -1,0 +1,270 @@
+{
+  "commit_hash": "0473257e206d73959771c6d8c363f45b742684f7",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "claude",
+  "url": "https://github.com/superagent-ai/superagent/commit/0473257e206d73959771c6d8c363f45b742684f7",
+  "author": "",
+  "message": "feat: add redact command to CLI\n- Added new `redact` command to CLI for redacting sensitive data\n- Uses existing `redactSensitiveData` function from superagent-ai SDK\n- Supports both command line arguments and stdin input\n- Updated README with usage examples and documentation\n- Closes #1045\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.ai/code)\n\nCo-authored-by: Ismail Pelaseyed <homanp@users.noreply.github.com>",
+  "timestamp": "2025-10-01T11:55:10+00:00",
+  "debt_debug": {
+    "cli/src/commands/redact.ts": {
+      "issues_added": [
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 43,
+          "rule": "@typescript-eslint/no-explicit-any",
+          "message": "Unexpected any. Specify a different type.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 23,
+          "rule": "@typescript-eslint/no-magic-numbers",
+          "message": "No magic number: 2.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 45,
+          "rule": "@typescript-eslint/no-magic-numbers",
+          "message": "No magic number: 2.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 32,
+          "rule": "@typescript-eslint/no-magic-numbers",
+          "message": "No magic number: 1.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 3,
+          "rule": "@typescript-eslint/explicit-function-return-type",
+          "message": "Missing return type on function.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 5,
+          "rule": "@typescript-eslint/no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 42,
+          "rule": "@typescript-eslint/no-magic-numbers",
+          "message": "No magic number: 0.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 7,
+          "rule": "@typescript-eslint/init-declarations",
+          "message": "Variable 'text' should be initialized on declaration.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "warning",
+          "line": 11,
+          "rule": "@typescript-eslint/no-unused-vars",
+          "message": "'isStdin' is assigned a value but never used. Allowed unused vars must match /^_/u.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 3,
+          "rule": "@typescript-eslint/explicit-module-boundary-types",
+          "message": "Missing return type on function.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": []
+    }
+  },
+  "lifecycle_debug": {
+    "cli/src/commands/redact.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "cli/src/index.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "cli/src/commands/redact.ts",
+      "line_ranges": [
+        [
+          1,
+          47
+        ]
+      ],
+      "lines_added": 47,
+      "lines_exist": 33,
+      "lines_modified": 14,
+      "lines_deleted": 0,
+      "modification_count": 3,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.7021276595744681,
+        "semantic_vs_syntactic_delta": 0.2979,
+        "survived_names": [],
+        "modified_names": [
+          "redactCommand"
+        ],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "cli/src/index.ts",
+      "line_ranges": [
+        [
+          4,
+          4
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          19,
+          19
+        ]
+      ],
+      "lines_added": 5,
+      "lines_exist": 4,
+      "lines_modified": 1,
+      "lines_deleted": 0,
+      "modification_count": 4,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 10,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 2,
+      "files": [
+        {
+          "filepath": "cli/src/commands/redact.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 191.8606597222222,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "cli/src/index.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 191.8606597222222,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.712,
+      "semantic_survival_rate": 1.0,
+      "developer_valuation": "HIGH",
+      "lines_added": 52,
+      "lines_still_exist": 37
+    }
+  }
+}

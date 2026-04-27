@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Quality — Research Overview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        /* Overview-specific layout */
+        .overview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+        .overview-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; }
+        .overview-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 1rem; color: var(--text-primary); }
+        .overview-card canvas { max-height: 280px; }
+        .overview-card-wide { grid-column: 1 / -1; }
+        .rq-section { margin-bottom: 2.5rem; }
+        .rq-header { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1rem; }
+        .rq-header h2 { font-size: 1.2rem; font-weight: 700; }
+        .rq-tag { font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+        .rq-tag-rq1 { background: var(--accent-primary-dim); color: var(--accent-primary); }
+        .rq-tag-rq2 { background: var(--accent-warning-dim); color: var(--accent-warning); }
+        .rq-tag-rq3 { background: var(--accent-success-dim); color: var(--accent-success); }
+        .stat-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .stat-box { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.6rem 1rem; text-align: center; min-width: 90px; flex: 1; }
+        .stat-box-value { font-size: 1.3rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .stat-box-label { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 500; margin-top: 0.1rem; }
+        .rule-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+        .rule-table th, .rule-table td { padding: 0.4rem 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+        .rule-table th { color: var(--text-muted); font-weight: 500; font-size: 0.7rem; text-transform: uppercase; }
+        .rule-table code { background: var(--accent-primary-dim); padding: 0.1rem 0.3rem; border-radius: 3px; color: var(--accent-primary); font-size: 0.75rem; }
+        .bar-inline { display: inline-block; height: 6px; border-radius: 3px; vertical-align: middle; margin-left: 0.5rem; }
+        /* Three-column rule layout */
+        .rule-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .rule-col h4 { font-size: 0.82rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-secondary); }
+        /* Time range buttons */
+        .time-range-bar { display: flex; gap: 0.3rem; }
+        .time-range-btn { background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-muted); padding: 0.25rem 0.6rem; border-radius: 5px; font-size: 0.72rem; font-weight: 600; cursor: pointer; font-family: inherit; transition: all 150ms; }
+        .time-range-btn:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+        .time-range-btn.active { background: var(--accent-primary-dim); border-color: var(--accent-primary); color: var(--accent-primary); }
+        .gen-info { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; }
+        #loading-msg { text-align: center; padding: 4rem; color: var(--text-muted); font-size: 1.1rem; }
+        .back-link { color: var(--accent-primary); text-decoration: none; font-size: 0.85rem; }
+        .back-link:hover { text-decoration: underline; }
+        /* Severity filter buttons */
+        .sev-filter-bar { display: flex; gap: 0.35rem; margin-left: auto; }
+        .sev-filter-btn { background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-muted); padding: 0.3rem 0.7rem; border-radius: 6px; font-size: 0.75rem; font-weight: 600; cursor: pointer; font-family: inherit; transition: all 150ms; }
+        .sev-filter-btn:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+        .sev-filter-btn.active { background: var(--accent-primary-dim); border-color: var(--accent-primary); color: var(--accent-primary); }
+        /* Role filter buttons */
+        .role-filter-bar { display: flex; gap: 0.35rem; }
+        .role-filter-btn { background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-muted); padding: 0.3rem 0.7rem; border-radius: 6px; font-size: 0.75rem; font-weight: 600; cursor: pointer; font-family: inherit; transition: all 150ms; }
+        .role-filter-btn:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+        .role-filter-btn.active { background: var(--accent-primary-dim); border-color: var(--accent-primary); color: var(--accent-primary); }
+        .role-filter-btn[data-role="sole_author"].active { background: rgba(52,211,153,0.15); border-color: var(--accent-success); color: var(--accent-success); }
+        .role-filter-btn[data-role="coauthor"].active { background: rgba(251,146,60,0.15); border-color: #fb923c; color: #fb923c; }
+        .role-split-bar { display: flex; height: 5px; border-radius: 3px; overflow: hidden; margin-top: 2px; }
+        .role-split-bar .sole { background: var(--accent-success); }
+        .role-split-bar .co { background: #fb923c; }
+        /* Role comparison panel */
+        .role-compare-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 0.5rem; align-items: start; }
+        .role-compare-col { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 1rem; }
+        .role-compare-col h4 { font-size: 0.82rem; font-weight: 600; margin-bottom: 0.6rem; }
+        .role-compare-col.sole { border-color: var(--accent-success); }
+        .role-compare-col.co { border-color: #fb923c; }
+        .role-compare-vs { display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; color: var(--text-muted); }
+        .role-metric-row { display: flex; justify-content: space-between; padding: 0.25rem 0; border-bottom: 1px solid var(--border); font-size: 0.8rem; }
+        .role-metric-row:last-child { border-bottom: none; }
+        .role-metric-label { color: var(--text-muted); }
+        .role-metric-value { font-weight: 600; font-variant-numeric: tabular-nums; }
+        .role-metric-better { color: var(--accent-success); }
+        .role-metric-worse { color: var(--accent-danger); }
+        /* Repo browser */
+        .repo-summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.6rem; margin-bottom: 1.25rem; }
+        .repo-browser-toolbar { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-bottom: 0.9rem; }
+        .repo-browser-toolbar input[type=search] { flex: 1; min-width: 160px; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 6px; padding: 0.35rem 0.65rem; color: var(--text-primary); font-size: 0.82rem; font-family: inherit; outline: none; }
+        .repo-browser-toolbar input[type=search]:focus { border-color: var(--accent-primary); }
+        .repo-filter-btn { background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-muted); padding: 0.3rem 0.65rem; border-radius: 6px; font-size: 0.75rem; font-weight: 600; cursor: pointer; font-family: inherit; white-space: nowrap; transition: all 150ms; }
+        .repo-filter-btn:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+        .repo-filter-btn.active { background: var(--accent-primary-dim); border-color: var(--accent-primary); color: var(--accent-primary); }
+        .repo-filter-btn[data-rf="security"].active { background: var(--accent-danger-dim); border-color: var(--accent-danger); color: var(--accent-danger); }
+        .repo-filter-btn[data-rf="high"].active { background: var(--accent-warning-dim); border-color: var(--accent-warning); color: var(--accent-warning); }
+        .repo-filter-btn[data-rf="high-rate"].active { background: rgba(251,146,60,0.15); border-color: #fb923c; color: #fb923c; }
+        .repo-table-wrap { overflow-x: auto; }
+        .repo-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+        .repo-table th { padding: 0.45rem 0.6rem; text-align: left; border-bottom: 1px solid var(--border); color: var(--text-muted); font-size: 0.7rem; text-transform: uppercase; font-weight: 500; cursor: pointer; user-select: none; white-space: nowrap; }
+        .repo-table th:hover { color: var(--text-primary); }
+        .repo-table th .sort-arrow { opacity: 0.4; margin-left: 0.2rem; }
+        .repo-table th.sorted .sort-arrow { opacity: 1; }
+        .repo-table td { padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); }
+        .repo-table tr:hover td { background: var(--bg-elevated); }
+        .repo-table .repo-link { color: var(--accent-primary); text-decoration: none; font-weight: 500; }
+        .repo-table .repo-link:hover { text-decoration: underline; }
+        .repo-pagination { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.75rem; font-size: 0.8rem; color: var(--text-muted); }
+        .repo-pagination button { background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-primary); padding: 0.25rem 0.6rem; border-radius: 5px; cursor: pointer; font-family: inherit; font-size: 0.78rem; }
+        .repo-pagination button:disabled { opacity: 0.35; cursor: default; }
+        .muted-text { color: var(--text-muted); }
+    </style>
+</head>
+
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="top-nav" id="top-nav">
+        <div class="top-nav-inner">
+            <div class="nav-brand">
+                <span class="nav-brand-icon">AI</span>
+                <span>Research Overview</span>
+            </div>
+            <div class="nav-links">
+                <a href="#totals" class="nav-link active">Totals</a>
+                <a href="#rq1" class="nav-link">RQ1: Debt</a>
+                <a href="#rq2" class="nav-link">RQ2: Tools</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#rq3" class="nav-link">RQ3: Survival</a>
+                <a href="#notable" class="nav-link">Notable</a>
+                <a href="#repo-browser" class="nav-link">Repos</a>
+                <a href="rule-notes.html" data-preserve-dataset="true" class="back-link">Rule Notes</a>
+                <a href="paper-tables.html" data-preserve-dataset="true" class="back-link">Paper Tables</a>
+                <a href="examples.html" data-preserve-dataset="true" class="back-link">Examples</a>
+                <a href="false-positives.html" data-preserve-dataset="true" class="back-link">False Positives</a>
+                <a href="dashboard.html" data-preserve-dataset="true" class="back-link">Per-Repo Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="header-row">
+                <div class="header-title">
+                    <h1>AI Code Quality — Research Overview</h1>
+                </div>
+                <div class="role-filter-bar">
+                    <button class="role-filter-btn active" data-role="all">All</button>
+                    <button class="role-filter-btn" data-role="sole_author">Single-Author</button>
+                    <button class="role-filter-btn" data-role="coauthor">Multi-Author</button>
+                </div>
+                <div class="sev-filter-bar" style="margin-left:1rem;">
+                    <span style="font-size:0.72rem;color:var(--text-muted);margin-right:0.3rem;">Scope:</span>
+                    <button class="sev-filter-btn active" data-focus="top5" onclick="setFocusedMode(true)">Top 5 Tools</button>
+                    <button class="sev-filter-btn" data-focus="all" onclick="setFocusedMode(false)">All Tools</button>
+                </div>
+            </div>
+        </header>
+        <p class="gen-info" id="data-status-banner"></p>
+
+        <div id="loading-msg">Loading aggregate data...</div>
+        <div id="overview-content" style="display:none;">
+
+            <!-- Global Totals -->
+            <section id="totals">
+                <div class="stat-row" id="global-stats"></div>
+            </section>
+
+            <!-- Repo-level Summary -->
+            <section class="rq-section" id="repo-summary" style="margin-top:0.5rem;">
+                <div class="rq-header">
+                    <h2>Repository-Level Breakdown</h2>
+                </div>
+                <div class="repo-summary-grid" id="repo-summary-grid"></div>
+            </section>
+
+            <!-- Interaction Modality Comparison -->
+            <section class="rq-section" id="role-comparison" style="margin-top:0;">
+                <div class="rq-header">
+                    <h2>Author Count — Single-Author vs Multi-Author</h2>
+                </div>
+                <div id="role-comparison-panel"></div>
+            </section>
+
+            <!-- RQ1: What issues does AI code introduce? -->
+            <section class="rq-section" id="rq1">
+                <div class="rq-header">
+                    <span class="rq-tag rq-tag-rq1">RQ1</span>
+                    <h2>What issues does AI-generated code introduce?</h2>
+                </div>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <h3>Issue Family Share</h3>
+                        <canvas id="chart-severity"></canvas>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Family Reach (Repos / Commits)</h3>
+                        <canvas id="chart-type"></canvas>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Issues by Language</h3>
+                        <canvas id="chart-language"></canvas>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Filtered vs Visible</h3>
+                        <div id="filtering-summary-table"></div>
+                    </div>
+                    <div class="overview-card overview-card-wide">
+                        <h3>Top Rules by Family</h3>
+                        <div id="top-rules-table"></div>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Issue Rate by Star Count</h3>
+                        <canvas id="chart-by-stars"></canvas>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Issue Rate by Language</h3>
+                        <canvas id="chart-by-language-family"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RQ2: How do AI tools compare? -->
+            <section class="rq-section" id="rq2">
+                <div class="rq-header">
+                    <span class="rq-tag rq-tag-rq2">RQ2</span>
+                    <h2>How do different AI tools compare?</h2>
+                </div>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <h3>Commits by Tool</h3>
+                        <canvas id="chart-tool-commits"></canvas>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Issues per Commit by Tool</h3>
+                        <canvas id="chart-tool-rate"></canvas>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Issues/File by Coding Tool <span class="gen-info">(normalized)</span></h3>
+                        <canvas id="chart-tool-ipf"></canvas>
+                    </div>
+                    <div class="overview-card overview-card-wide">
+                        <h3>Single-Author vs Multi-Author — Issues/File by Coding Tool <span class="gen-info">(normalized, controls for commit size)</span></h3>
+                        <canvas id="chart-role-comparison" style="max-height:240px;"></canvas>
+                    </div>
+                    <div class="overview-card overview-card-wide">
+                        <h3>Coding Tool Comparison (with Role Breakdown)</h3>
+                        <div id="tool-comparison-table"></div>
+                    </div>
+                    <div class="overview-card overview-card-wide">
+                        <h3>Focused Coding Tools — Repos Covered and Commits</h3>
+                        <div id="focused-agent-table"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Time Series -->
+            <section class="rq-section" id="timeline">
+                <div class="rq-header">
+                    <h2>Coding Tool Activity Over Time</h2>
+                    <div class="time-range-bar">
+                        <button class="time-range-btn active" data-range="all">All Time</button>
+                        <button class="time-range-btn" data-range="12m">12 Months</button>
+                        <button class="time-range-btn" data-range="6m">6 Months</button>
+                        <button class="time-range-btn" data-range="3m">3 Months</button>
+                    </div>
+                </div>
+                <div class="overview-grid">
+                    <div class="overview-card overview-card-wide">
+                        <h3>Monthly Issues and Commits</h3>
+                        <canvas id="chart-timeline" style="max-height:320px;"></canvas>
+                    </div>
+                    <div class="overview-card overview-card-wide">
+                        <h3>Coding Tool Commits Over Time</h3>
+                        <canvas id="chart-tool-timeline" style="max-height:280px;"></canvas>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Issues by Coding Tool Over Time</h3>
+                        <canvas id="chart-tool-issues" style="max-height:280px;"></canvas>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Issues/Commit Rate by Coding Tool Over Time</h3>
+                        <canvas id="chart-tool-rate-time" style="max-height:280px;"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RQ3: Do issues survive? -->
+            <section class="rq-section" id="rq3">
+                <div class="rq-header">
+                    <span class="rq-tag rq-tag-rq3">RQ3</span>
+                    <h2>Do AI-introduced issues survive over time?</h2>
+                </div>
+                <div class="stat-row" id="survival-stats"></div>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <h3>Issue Survival by Family</h3>
+                        <canvas id="chart-survival-family"></canvas>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Code Survival (Line &amp; Semantic)</h3>
+                        <canvas id="chart-line-survival"></canvas>
+                    </div>
+                    <div class="overview-card">
+                        <h3>File Lifecycle (Post-Commit Fate)</h3>
+                        <canvas id="chart-file-lifecycle"></canvas>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Most Persistent Rules</h3>
+                        <div id="surviving-rules-table"></div>
+                    </div>
+                    <div class="overview-card overview-card-wide">
+                        <h3>Issue Survival Rate by Tool <span class="gen-info">(RQ2 × RQ3)</span></h3>
+                        <canvas id="chart-survival-tool" style="max-height:240px;"></canvas>
+                    </div>
+                    <div class="overview-card overview-card-wide">
+                        <h3>Cumulative AI-Introduced Issues Over Time</h3>
+                        <canvas id="chart-introduced-over-time" style="max-height:260px;"></canvas>
+                    </div>
+                    <div class="overview-card overview-card-wide">
+                        <h3>Survival Rate by Introduction Month</h3>
+                        <canvas id="chart-survival-over-time" style="max-height:260px;"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Methodology Notes -->
+            <section class="rq-section" id="methodology" style="margin-top:1rem;">
+                <div class="rq-header">
+                    <h2>Methodology Notes</h2>
+                </div>
+                <div class="overview-card overview-card-wide" style="font-size:0.82rem;color:var(--text-secondary);line-height:1.6;">
+                    <div id="methodology-notes"></div>
+                </div>
+            </section>
+
+            <!-- Notable -->
+            <section class="rq-section" id="notable">
+                <div class="rq-header">
+                    <h2>Notable Findings</h2>
+                </div>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <h3>Highest-Severity Commits</h3>
+                        <div id="high-debt-table"></div>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Top Repos by Issues</h3>
+                        <div id="top-repos-table"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Repo Browser -->
+            <section class="rq-section" id="repo-browser">
+                <div class="rq-header">
+                    <h2>Repository Browser</h2>
+                </div>
+                <div class="overview-card overview-card-wide">
+                    <div class="repo-browser-toolbar">
+                        <input type="search" id="repo-browser-search" placeholder="Search repo name…" autocomplete="off">
+                        <button class="repo-filter-btn active" data-rf="all">All</button>
+                        <button class="repo-filter-btn" data-rf="security">Has Security</button>
+                        <button class="repo-filter-btn" data-rf="high">Has HIGH</button>
+                        <button class="repo-filter-btn" data-rf="high-rate">High Rate (&gt;5/commit)</button>
+                        <button class="repo-filter-btn" data-rf="zero">Zero Issues</button>
+                        <span style="width:1px;background:var(--border);align-self:stretch;margin:0 0.1rem;"></span>
+                        <button class="repo-filter-btn" data-stars="100">≥100 ★</button>
+                        <button class="repo-filter-btn" data-stars="1000">≥1K ★</button>
+                        <button class="repo-filter-btn" data-stars="10000">≥10K ★</button>
+                        <span style="width:1px;background:var(--border);align-self:stretch;margin:0 0.1rem;"></span>
+                        <button class="repo-filter-btn" data-role-f="all">All Roles</button>
+                        <button class="repo-filter-btn" data-role-f="sole_author">Single-Author</button>
+                        <button class="repo-filter-btn" data-role-f="coauthor">Multi-Author</button>
+                    </div>
+                    <div class="repo-table-wrap">
+                        <table class="repo-table" id="repo-table">
+                            <thead>
+                                <tr>
+                                    <th data-col="name">Repo <span class="sort-arrow">↕</span></th>
+                                    <th data-col="stars">★ Stars <span class="sort-arrow">↕</span></th>
+                                    <th data-col="language">Lang <span class="sort-arrow">↕</span></th>
+                                    <th data-col="tool">Tool <span class="sort-arrow">↕</span></th>
+                                    <th data-col="commits">Commits <span class="sort-arrow">↕</span></th>
+                                    <th data-col="issues_introduced">Issues <span class="sort-arrow">↕</span></th>
+                                    <th data-col="issues_high">HIGH <span class="sort-arrow">↕</span></th>
+                                    <th data-col="issues_security">Security <span class="sort-arrow">↕</span></th>
+                                    <th data-col="issues_per_commit">Rate <span class="sort-arrow">↕</span></th>
+                                    <th data-col="issues_fixed">Fixed <span class="sort-arrow">↕</span></th>
+                                    <th data-col="pct_sole">AI Solo% <span class="sort-arrow">↕</span></th>
+                                    <th>Link</th>
+                                </tr>
+                            </thead>
+                            <tbody id="repo-table-body"></tbody>
+                        </table>
+                    </div>
+                    <div class="repo-pagination">
+                        <button id="repo-page-prev" onclick="repoPageChange(-1)">← Prev</button>
+                        <span id="repo-page-info"></span>
+                        <button id="repo-page-next" onclick="repoPageChange(1)">Next →</button>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>AI Code Quality Research Tool</p>
+                <p class="gen-info" id="gen-info"></p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/overview.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+{
+  "commit_hash": "86b2dc5dd915e4dc73ed5bec9895a7301883a951",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/86b2dc5dd915e4dc73ed5bec9895a7301883a951",
+  "author": "",
+  "message": "Update src/components/ChartTemplates.tsx\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+  "timestamp": "2026-02-08T09:41:34-08:00",
+  "lifecycle_debug": {
+    "src/components/ChartTemplates.tsx": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "src/components/ChartTemplates.tsx",
+      "line_ranges": [
+        [
+          86,
+          93
+        ],
+        [
+          95,
+          99
+        ]
+      ],
+      "lines_added": 13,
+      "lines_exist": 2,
+      "lines_modified": 11,
+      "lines_deleted": 0,
+      "modification_count": 2,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 1,
+        "new_units": 2,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.15384615384615385,
+        "semantic_vs_syntactic_delta": -0.1538,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "isMapChart"
+        ]
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 1,
+      "files": [
+        {
+          "filepath": "src/components/ChartTemplates.tsx",
+          "status": "MODIFIED",
+          "days_to_first_change": 23.299976851851852,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.154,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 13,
+      "lines_still_exist": 2
+    }
+  }
+}

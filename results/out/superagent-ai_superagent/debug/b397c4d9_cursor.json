@@ -1,0 +1,26 @@
+{
+  "commit_hash": "b397c4d923e73dba88ddc3e2cc5ef166e130e89b",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "cursor",
+  "url": "https://github.com/superagent-ai/superagent/commit/b397c4d923e73dba88ddc3e2cc5ef166e130e89b",
+  "author": "",
+  "message": "docs: add fallback configuration options to SDK documentation\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+  "timestamp": "2026-02-03T09:07:48+01:00",
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 0,
+      "files": []
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 0,
+      "lines_still_exist": 0
+    }
+  }
+}

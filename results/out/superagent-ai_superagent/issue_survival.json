@@ -1,0 +1,1286 @@
+{
+  "total_issues": 72,
+  "surviving_issues": 11,
+  "fixed_issues": 61,
+  "survival_rate": 0.1527777777777778,
+  "by_severity": {
+    "CONVENTION": {
+      "total": 16,
+      "surviving": 9,
+      "rate": 0.5625
+    },
+    "WARNING": {
+      "total": 9,
+      "surviving": 2,
+      "rate": 0.2222222222222222
+    },
+    "ERROR": {
+      "total": 47,
+      "surviving": 0,
+      "rate": 0.0
+    }
+  },
+  "by_rule": {
+    "line-too-long": {
+      "total": 12,
+      "surviving": 5,
+      "rate": 0.4166666666666667
+    },
+    "eslint": {
+      "total": 51,
+      "surviving": 0,
+      "rate": 0.0
+    },
+    "raise-missing-from": {
+      "total": 3,
+      "surviving": 1,
+      "rate": 0.3333333333333333
+    },
+    "unused-argument": {
+      "total": 1,
+      "surviving": 1,
+      "rate": 1.0
+    },
+    "missing-function-docstring": {
+      "total": 4,
+      "surviving": 4,
+      "rate": 1.0
+    },
+    "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal": {
+      "total": 1,
+      "surviving": 0,
+      "rate": 0.0
+    }
+  },
+  "issues": [
+    {
+      "original": {
+        "commit_sha": "7567d4a083bf3589b28e546779eda666a4332c15",
+        "file_path": "sdk/python/src/safety_agent/client.py",
+        "line": 638,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (111/100)"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 646,
+        "symbol": "line-too-long",
+        "message": "Line too long (111/100)",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "sdk/python/src/safety_agent/client.py"
+    },
+    {
+      "original": {
+        "commit_sha": "fc405c889d11eeac4e14f163744b99a773625b77",
+        "file_path": "sdk/python/src/safety_agent/client.py",
+        "line": 627,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (111/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/python/src/safety_agent/client.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f1690722f9ff8be31b02821e1890188b33755d9a",
+        "file_path": "sdk/typescript/src/providers/index.ts",
+        "line": 15,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "warning",
+        "message": "'DEFAULT_FALLBACK_URL' is defined but never used. Allowed unused vars must match /^_/u."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/typescript/src/providers/index.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "2398fc4826155260730033df876ec4ba484da21b",
+        "file_path": "sdk/typescript/src/providers/index.ts",
+        "line": 15,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "warning",
+        "message": "'DEFAULT_FALLBACK_URL' is defined but never used. Allowed unused vars must match /^_/u."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/typescript/src/providers/index.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "d12a6279357e4c0fe4e49eca9bb07e32bc00f19b",
+        "file_path": "sdk/typescript/src/providers/index.ts",
+        "line": 15,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "warning",
+        "message": "'DEFAULT_FALLBACK_URL' is defined but never used. Allowed unused vars must match /^_/u."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/typescript/src/providers/index.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "f1690722f9ff8be31b02821e1890188b33755d9a",
+        "file_path": "sdk/python/src/safety_agent/types.py",
+        "line": 22,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (109/100)"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 22,
+        "symbol": "line-too-long",
+        "message": "Line too long (109/100)",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "sdk/python/src/safety_agent/types.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f1690722f9ff8be31b02821e1890188b33755d9a",
+        "file_path": "sdk/python/src/safety_agent/types.py",
+        "line": 28,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (105/100)"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 28,
+        "symbol": "line-too-long",
+        "message": "Line too long (105/100)",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "sdk/python/src/safety_agent/types.py"
+    },
+    {
+      "original": {
+        "commit_sha": "2398fc4826155260730033df876ec4ba484da21b",
+        "file_path": "sdk/python/src/safety_agent/types.py",
+        "line": 22,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (109/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/python/src/safety_agent/types.py"
+    },
+    {
+      "original": {
+        "commit_sha": "2398fc4826155260730033df876ec4ba484da21b",
+        "file_path": "sdk/python/src/safety_agent/types.py",
+        "line": 28,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (105/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/python/src/safety_agent/types.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d12a6279357e4c0fe4e49eca9bb07e32bc00f19b",
+        "file_path": "sdk/python/src/safety_agent/types.py",
+        "line": 22,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (109/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/python/src/safety_agent/types.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d12a6279357e4c0fe4e49eca9bb07e32bc00f19b",
+        "file_path": "sdk/python/src/safety_agent/types.py",
+        "line": 28,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (105/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/python/src/safety_agent/types.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f1690722f9ff8be31b02821e1890188b33755d9a",
+        "file_path": "sdk/python/src/safety_agent/providers/__init__.py",
+        "line": 185,
+        "rule_id": "raise-missing-from",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Consider explicitly re-raising using 'except Exception as exc' and 'raise RuntimeError(f'Fallback provider API error ({fallback_response.status_code}): {fallback_response.text}') from exc'"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 208,
+        "symbol": "raise-missing-from",
+        "message": "Consider explicitly re-raising using 'except Exception as exc' and 'raise RuntimeError(f'Fallback provider API error ({fallback_response.status_code}): {fallback_response.text}') from exc'",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "sdk/python/src/safety_agent/providers/__init__.py"
+    },
+    {
+      "original": {
+        "commit_sha": "f1690722f9ff8be31b02821e1890188b33755d9a",
+        "file_path": "sdk/python/src/safety_agent/providers/__init__.py",
+        "line": 136,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (115/100)"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 144,
+        "symbol": "line-too-long",
+        "message": "Line too long (115/100)",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "sdk/python/src/safety_agent/providers/__init__.py"
+    },
+    {
+      "original": {
+        "commit_sha": "2398fc4826155260730033df876ec4ba484da21b",
+        "file_path": "sdk/python/src/safety_agent/providers/__init__.py",
+        "line": 185,
+        "rule_id": "raise-missing-from",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Consider explicitly re-raising using 'except Exception as exc' and 'raise RuntimeError(f'Fallback provider API error ({fallback_response.status_code}): {fallback_response.text}') from exc'"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/python/src/safety_agent/providers/__init__.py"
+    },
+    {
+      "original": {
+        "commit_sha": "2398fc4826155260730033df876ec4ba484da21b",
+        "file_path": "sdk/python/src/safety_agent/providers/__init__.py",
+        "line": 136,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (115/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/python/src/safety_agent/providers/__init__.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d12a6279357e4c0fe4e49eca9bb07e32bc00f19b",
+        "file_path": "sdk/python/src/safety_agent/providers/__init__.py",
+        "line": 185,
+        "rule_id": "raise-missing-from",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Consider explicitly re-raising using 'except Exception as exc' and 'raise RuntimeError(f'Fallback provider API error ({fallback_response.status_code}): {fallback_response.text}') from exc'"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/python/src/safety_agent/providers/__init__.py"
+    },
+    {
+      "original": {
+        "commit_sha": "d12a6279357e4c0fe4e49eca9bb07e32bc00f19b",
+        "file_path": "sdk/python/src/safety_agent/providers/__init__.py",
+        "line": 136,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (115/100)"
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "sdk/python/src/safety_agent/providers/__init__.py"
+    },
+    {
+      "original": {
+        "commit_sha": "5f004c3b63311998a9699d993a7b3999634e3afc",
+        "file_path": "sdk/python/src/safety_agent/providers/openai_compatible.py",
+        "line": 27,
+        "rule_id": "line-too-long",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Line too long (104/100)"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 27,
+        "symbol": "line-too-long",
+        "message": "Line too long (104/100)",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "sdk/python/src/safety_agent/providers/openai_compatible.py"
+    },
+    {
+      "original": {
+        "commit_sha": "5f004c3b63311998a9699d993a7b3999634e3afc",
+        "file_path": "sdk/python/src/safety_agent/providers/openai_compatible.py",
+        "line": 24,
+        "rule_id": "unused-argument",
+        "type": "pylint",
+        "severity": "warning",
+        "message": "Unused argument 'model'"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "warning",
+        "line": 24,
+        "symbol": "unused-argument",
+        "message": "Unused argument 'model'",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "sdk/python/src/safety_agent/providers/openai_compatible.py"
+    },
+    {
+      "original": {
+        "commit_sha": "5f004c3b63311998a9699d993a7b3999634e3afc",
+        "file_path": "sdk/python/src/safety_agent/providers/openai_compatible.py",
+        "line": 18,
+        "rule_id": "missing-function-docstring",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Missing function or method docstring"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 18,
+        "symbol": "missing-function-docstring",
+        "message": "Missing function or method docstring",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "sdk/python/src/safety_agent/providers/openai_compatible.py"
+    },
+    {
+      "original": {
+        "commit_sha": "5f004c3b63311998a9699d993a7b3999634e3afc",
+        "file_path": "sdk/python/src/safety_agent/providers/openai_compatible.py",
+        "line": 24,
+        "rule_id": "missing-function-docstring",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Missing function or method docstring"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 24,
+        "symbol": "missing-function-docstring",
+        "message": "Missing function or method docstring",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "sdk/python/src/safety_agent/providers/openai_compatible.py"
+    },
+    {
+      "original": {
+        "commit_sha": "5f004c3b63311998a9699d993a7b3999634e3afc",
+        "file_path": "sdk/python/src/safety_agent/providers/openai_compatible.py",
+        "line": 34,
+        "rule_id": "missing-function-docstring",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Missing function or method docstring"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 34,
+        "symbol": "missing-function-docstring",
+        "message": "Missing function or method docstring",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "sdk/python/src/safety_agent/providers/openai_compatible.py"
+    },
+    {
+      "original": {
+        "commit_sha": "5f004c3b63311998a9699d993a7b3999634e3afc",
+        "file_path": "sdk/python/src/safety_agent/providers/openai_compatible.py",
+        "line": 56,
+        "rule_id": "missing-function-docstring",
+        "type": "pylint",
+        "severity": "convention",
+        "message": "Missing function or method docstring"
+      },
+      "survived": true,
+      "current": {
+        "type": "pylint",
+        "severity": "convention",
+        "line": 56,
+        "symbol": "missing-function-docstring",
+        "message": "Missing function or method docstring",
+        "category": "maintainability"
+      },
+      "match_score": 1.0,
+      "match_reason": "line-text-near-exact",
+      "resolved_path": "sdk/python/src/safety_agent/providers/openai_compatible.py"
+    },
+    {
+      "original": {
+        "commit_sha": "708e7f510515e37d70114d428143c6bed4175e46",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 25,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Variable 'model' should be initialized on declaration."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "708e7f510515e37d70114d428143c6bed4175e46",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 34,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 2."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "708e7f510515e37d70114d428143c6bed4175e46",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 28,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 1."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "0473257e206d73959771c6d8c363f45b742684f7",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 43,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Unexpected any. Specify a different type."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "0473257e206d73959771c6d8c363f45b742684f7",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 23,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 2."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "0473257e206d73959771c6d8c363f45b742684f7",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 45,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 2."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "0473257e206d73959771c6d8c363f45b742684f7",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 32,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 1."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "0473257e206d73959771c6d8c363f45b742684f7",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 3,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Missing return type on function."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "0473257e206d73959771c6d8c363f45b742684f7",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 5,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 0."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "0473257e206d73959771c6d8c363f45b742684f7",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 42,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 0."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "0473257e206d73959771c6d8c363f45b742684f7",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 7,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Variable 'text' should be initialized on declaration."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "0473257e206d73959771c6d8c363f45b742684f7",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 11,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "warning",
+        "message": "'isStdin' is assigned a value but never used. Allowed unused vars must match /^_/u."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "0473257e206d73959771c6d8c363f45b742684f7",
+        "file_path": "cli/src/commands/redact.ts",
+        "line": 3,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Missing return type on function."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/redact.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "708e7f510515e37d70114d428143c6bed4175e46",
+        "file_path": "cli/src/commands/guard.ts",
+        "line": 141,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Unexpected any. Specify a different type."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/guard.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "708e7f510515e37d70114d428143c6bed4175e46",
+        "file_path": "cli/src/commands/guard.ts",
+        "line": 71,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Variable 'model' should be initialized on declaration."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/guard.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "708e7f510515e37d70114d428143c6bed4175e46",
+        "file_path": "cli/src/commands/guard.ts",
+        "line": 73,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: -1."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/guard.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "708e7f510515e37d70114d428143c6bed4175e46",
+        "file_path": "cli/src/commands/guard.ts",
+        "line": 74,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 1."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/guard.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "708e7f510515e37d70114d428143c6bed4175e46",
+        "file_path": "cli/src/commands/guard.ts",
+        "line": 77,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 1."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/guard.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "56263014a8509db923c64235f030b80c7e077067",
+        "file_path": "cli/src/commands/guard.ts",
+        "line": 57,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Unexpected any. Specify a different type."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/guard.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "56263014a8509db923c64235f030b80c7e077067",
+        "file_path": "cli/src/commands/guard.ts",
+        "line": 6,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: -1."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/guard.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "56263014a8509db923c64235f030b80c7e077067",
+        "file_path": "cli/src/commands/guard.ts",
+        "line": 10,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 1."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/guard.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "56263014a8509db923c64235f030b80c7e077067",
+        "file_path": "cli/src/commands/guard.ts",
+        "line": 56,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 0."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "cli/src/commands/guard.ts"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 75,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Expected object keys to be in ascending order. 'family' should be before 'maxRetriesPerRequest'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 85,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Expected object keys to be in ascending order. 'maxRetriesPerRequest' should be before 'retryStrategy'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 86,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Duplicate key 'lazyConnect'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 92,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 6379."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 68,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Expected object keys to be in ascending order. 'connectTimeout' should be before 'keepAlive'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 69,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Expected object keys to be in ascending order. 'commandTimeout' should be before 'connectTimeout'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 86,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Expected object keys to be in ascending order. 'lazyConnect' should be before 'maxRetriesPerRequest'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 67,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Expected object keys to be in ascending order. 'keepAlive' should be before 'lazyConnect'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 64,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Combine this with the previous 'const' statement."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 81,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 1000."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 80,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Expected { after 'if' condition."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 85,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Duplicate key 'maxRetriesPerRequest'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 81,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 100."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 71,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Expected object keys to be in ascending order. 'enableReadyCheck' should be before 'retryDelayOnFailover'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 6,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Imports should be sorted alphabetically."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 931,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Unexpected console statement."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 933,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Unexpected console statement."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 941,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Unexpected console statement."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 943,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Unexpected console statement."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 80,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Unexpected comment inline with code."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 76,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Expected object keys to be in ascending order. 'db' should be before 'family'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "46695d14622a6c5de22315ce9514964d22e4d825",
+        "file_path": "node/src/server.js",
+        "line": 80,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "No magic number: 3."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/server.js"
+    },
+    {
+      "original": {
+        "commit_sha": "8d0e011e7831113c12703f0f635411ec376a2e19",
+        "file_path": "node/src/cli.js",
+        "line": 6,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Expected 'multiple' syntax before 'single' syntax."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/cli.js"
+    },
+    {
+      "original": {
+        "commit_sha": "8d0e011e7831113c12703f0f635411ec376a2e19",
+        "file_path": "node/src/cli.js",
+        "line": 10,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Unexpected dangling '_' in '__filename'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/cli.js"
+    },
+    {
+      "original": {
+        "commit_sha": "8d0e011e7831113c12703f0f635411ec376a2e19",
+        "file_path": "node/src/cli.js",
+        "line": 12,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Combine this with the previous 'const' statement."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/cli.js"
+    },
+    {
+      "original": {
+        "commit_sha": "8d0e011e7831113c12703f0f635411ec376a2e19",
+        "file_path": "node/src/cli.js",
+        "line": 11,
+        "rule_id": "eslint",
+        "type": "eslint",
+        "severity": "error",
+        "message": "Unexpected dangling '_' in '__dirname'."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/cli.js"
+    },
+    {
+      "original": {
+        "commit_sha": "8d0e011e7831113c12703f0f635411ec376a2e19",
+        "file_path": "node/src/config.js",
+        "line": 19,
+        "rule_id": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+        "type": "security",
+        "severity": "warning",
+        "message": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first."
+      },
+      "survived": false,
+      "current": null,
+      "match_score": 0.0,
+      "match_reason": "no-match",
+      "resolved_path": "node/src/config.js"
+    }
+  ]
+}

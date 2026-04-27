@@ -1,0 +1,3048 @@
+{
+  "_generated_at": "2026-04-27T05:41:04Z",
+  "_elapsed_seconds": 0.0,
+  "_repos_scanned": 2,
+  "totals": {
+    "repos": 2,
+    "repos_with_code": 2,
+    "commits": 74,
+    "issues_introduced": 163,
+    "issues_fixed": 224,
+    "net_debt": -61,
+    "files_analyzed": 100,
+    "files_per_commit": 1.35,
+    "issues_per_file": 1.63,
+    "fix_rate": 137.4,
+    "actionable_introduced": 38,
+    "actionable_fixed": 46,
+    "actionable_by_severity": {
+      "medium": 30,
+      "high": 7,
+      "low": 1
+    },
+    "actionable_fixed_by_severity": {
+      "low": 5,
+      "high": 29,
+      "medium": 12
+    },
+    "actionable_net_debt": -8,
+    "actionable_by_type": {
+      "pylint": 23,
+      "security": 9,
+      "eslint": 6
+    },
+    "actionable_by_language": {
+      "python": 31,
+      "typescript": 4,
+      "javascript": 3
+    }
+  },
+  "rq1_debt_types": {
+    "by_severity": {
+      "low": 70,
+      "medium": 44,
+      "high": 49
+    },
+    "by_family": {
+      "code_smell": 27,
+      "security": 9,
+      "bug": 2
+    },
+    "by_type": {
+      "pylint": 106,
+      "eslint": 48,
+      "security": 9
+    },
+    "by_language": {
+      "python": 114,
+      "typescript": 27,
+      "javascript": 22
+    },
+    "top_rules": [
+      {
+        "name": "raise-missing-from",
+        "description": "",
+        "count": 11,
+        "high": 0,
+        "medium": 11,
+        "low": 0
+      },
+      {
+        "name": "broad-exception-caught",
+        "description": "",
+        "count": 8,
+        "high": 0,
+        "medium": 8,
+        "low": 0
+      },
+      {
+        "name": "@typescript-eslint/no-unused-vars",
+        "description": "",
+        "count": 4,
+        "high": 0,
+        "medium": 4,
+        "low": 0
+      },
+      {
+        "name": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+        "description": "",
+        "count": 2,
+        "high": 2,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+        "description": "",
+        "count": 2,
+        "high": 0,
+        "medium": 2,
+        "low": 0
+      },
+      {
+        "name": "B608",
+        "description": "SQL Injection via String Format",
+        "count": 2,
+        "high": 0,
+        "medium": 2,
+        "low": 0
+      },
+      {
+        "name": "no-dupe-keys",
+        "description": "",
+        "count": 2,
+        "high": 2,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "name": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+        "description": "",
+        "count": 1,
+        "high": 1,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "name": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+        "description": "",
+        "count": 1,
+        "high": 1,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "name": "unused-variable",
+        "description": "",
+        "count": 1,
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      {
+        "name": "too-many-function-args",
+        "description": "",
+        "count": 1,
+        "high": 1,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "name": "too-many-boolean-expressions",
+        "description": "",
+        "count": 1,
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      {
+        "name": "unused-argument",
+        "description": "",
+        "count": 1,
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      {
+        "name": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+        "description": "",
+        "count": 1,
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      }
+    ],
+    "security_total": 9,
+    "security_pct": 5.5
+  },
+  "time_series": [
+    {
+      "month": "2024-10",
+      "commits": 2,
+      "issues": 0,
+      "high_issues": 0,
+      "tool_claude": 0,
+      "issues_claude": 0,
+      "high_claude": 0,
+      "rate_claude": 0,
+      "tool_copilot": 2,
+      "issues_copilot": 0,
+      "high_copilot": 0,
+      "rate_copilot": 0.0,
+      "tool_cursor": 0,
+      "issues_cursor": 0,
+      "high_cursor": 0,
+      "rate_cursor": 0
+    },
+    {
+      "month": "2025-06",
+      "commits": 1,
+      "issues": 0,
+      "high_issues": 0,
+      "tool_claude": 0,
+      "issues_claude": 0,
+      "high_claude": 0,
+      "rate_claude": 0,
+      "tool_copilot": 1,
+      "issues_copilot": 0,
+      "high_copilot": 0,
+      "rate_copilot": 0.0,
+      "tool_cursor": 0,
+      "issues_cursor": 0,
+      "high_cursor": 0,
+      "rate_cursor": 0
+    },
+    {
+      "month": "2025-07",
+      "commits": 3,
+      "issues": 0,
+      "high_issues": 0,
+      "tool_claude": 0,
+      "issues_claude": 0,
+      "high_claude": 0,
+      "rate_claude": 0,
+      "tool_copilot": 3,
+      "issues_copilot": 0,
+      "high_copilot": 0,
+      "rate_copilot": 0.0,
+      "tool_cursor": 0,
+      "issues_cursor": 0,
+      "high_cursor": 0,
+      "rate_cursor": 0
+    },
+    {
+      "month": "2025-08",
+      "commits": 13,
+      "issues": 22,
+      "high_issues": 21,
+      "tool_claude": 13,
+      "issues_claude": 22,
+      "high_claude": 21,
+      "rate_claude": 1.69,
+      "tool_copilot": 0,
+      "issues_copilot": 0,
+      "high_copilot": 0,
+      "rate_copilot": 0,
+      "tool_cursor": 0,
+      "issues_cursor": 0,
+      "high_cursor": 0,
+      "rate_cursor": 0
+    },
+    {
+      "month": "2025-09",
+      "commits": 2,
+      "issues": 0,
+      "high_issues": 0,
+      "tool_claude": 0,
+      "issues_claude": 0,
+      "high_claude": 0,
+      "rate_claude": 0,
+      "tool_copilot": 2,
+      "issues_copilot": 0,
+      "high_copilot": 0,
+      "rate_copilot": 0.0,
+      "tool_cursor": 0,
+      "issues_cursor": 0,
+      "high_cursor": 0,
+      "rate_cursor": 0
+    },
+    {
+      "month": "2025-10",
+      "commits": 5,
+      "issues": 17,
+      "high_issues": 13,
+      "tool_claude": 4,
+      "issues_claude": 14,
+      "high_claude": 13,
+      "rate_claude": 3.5,
+      "tool_copilot": 1,
+      "issues_copilot": 3,
+      "high_copilot": 0,
+      "rate_copilot": 3.0,
+      "tool_cursor": 0,
+      "issues_cursor": 0,
+      "high_cursor": 0,
+      "rate_cursor": 0
+    },
+    {
+      "month": "2025-11",
+      "commits": 1,
+      "issues": 0,
+      "high_issues": 0,
+      "tool_claude": 0,
+      "issues_claude": 0,
+      "high_claude": 0,
+      "rate_claude": 0,
+      "tool_copilot": 1,
+      "issues_copilot": 0,
+      "high_copilot": 0,
+      "rate_copilot": 0.0,
+      "tool_cursor": 0,
+      "issues_cursor": 0,
+      "high_cursor": 0,
+      "rate_cursor": 0
+    },
+    {
+      "month": "2025-12",
+      "commits": 18,
+      "issues": 43,
+      "high_issues": 1,
+      "tool_claude": 0,
+      "issues_claude": 0,
+      "high_claude": 0,
+      "rate_claude": 0,
+      "tool_copilot": 18,
+      "issues_copilot": 43,
+      "high_copilot": 1,
+      "rate_copilot": 2.39,
+      "tool_cursor": 0,
+      "issues_cursor": 0,
+      "high_cursor": 0,
+      "rate_cursor": 0
+    },
+    {
+      "month": "2026-01",
+      "commits": 9,
+      "issues": 50,
+      "high_issues": 6,
+      "tool_claude": 0,
+      "issues_claude": 0,
+      "high_claude": 0,
+      "rate_claude": 0,
+      "tool_copilot": 7,
+      "issues_copilot": 50,
+      "high_copilot": 6,
+      "rate_copilot": 7.14,
+      "tool_cursor": 2,
+      "issues_cursor": 0,
+      "high_cursor": 0,
+      "rate_cursor": 0.0
+    },
+    {
+      "month": "2026-02",
+      "commits": 20,
+      "issues": 31,
+      "high_issues": 8,
+      "tool_claude": 0,
+      "issues_claude": 0,
+      "high_claude": 0,
+      "rate_claude": 0,
+      "tool_copilot": 4,
+      "issues_copilot": 0,
+      "high_copilot": 0,
+      "rate_copilot": 0.0,
+      "tool_cursor": 16,
+      "issues_cursor": 31,
+      "high_cursor": 8,
+      "rate_cursor": 1.94
+    }
+  ],
+  "by_role": {
+    "unknown": {
+      "commits": 74,
+      "issues": 163,
+      "issues_fixed": 224,
+      "issues_high": 49,
+      "issues_security": 9,
+      "issues_per_commit": 2.2,
+      "net_debt": -61,
+      "files_analyzed": 100,
+      "files_per_commit": 1.35,
+      "issues_per_file": 1.63,
+      "high_per_file": 0.49,
+      "security_per_file": 0.09,
+      "zero_issue_commits": 50,
+      "zero_issue_pct": 67.6,
+      "fix_rate": 137.4,
+      "by_severity": {
+        "low": 70,
+        "medium": 44,
+        "high": 49
+      },
+      "by_type": {
+        "pylint": 106,
+        "eslint": 48,
+        "security": 9
+      },
+      "by_language": {
+        "python": 114,
+        "typescript": 27,
+        "javascript": 22
+      },
+      "top_rules": [
+        {
+          "name": "raise-missing-from",
+          "count": 11,
+          "high": 0,
+          "medium": 11,
+          "low": 0
+        },
+        {
+          "name": "broad-exception-caught",
+          "count": 8,
+          "high": 0,
+          "medium": 8,
+          "low": 0
+        },
+        {
+          "name": "@typescript-eslint/no-unused-vars",
+          "count": 4,
+          "high": 0,
+          "medium": 4,
+          "low": 0
+        },
+        {
+          "name": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "count": 2,
+          "high": 2,
+          "medium": 0,
+          "low": 0
+        },
+        {
+          "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "count": 2,
+          "high": 0,
+          "medium": 2,
+          "low": 0
+        },
+        {
+          "name": "B608",
+          "count": 2,
+          "high": 0,
+          "medium": 2,
+          "low": 0
+        },
+        {
+          "name": "no-dupe-keys",
+          "count": 2,
+          "high": 2,
+          "medium": 0,
+          "low": 0
+        },
+        {
+          "name": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+          "count": 1,
+          "high": 1,
+          "medium": 0,
+          "low": 0
+        },
+        {
+          "name": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+          "count": 1,
+          "high": 1,
+          "medium": 0,
+          "low": 0
+        },
+        {
+          "name": "unused-variable",
+          "count": 1,
+          "high": 0,
+          "medium": 1,
+          "low": 0
+        },
+        {
+          "name": "too-many-function-args",
+          "count": 1,
+          "high": 1,
+          "medium": 0,
+          "low": 0
+        },
+        {
+          "name": "too-many-boolean-expressions",
+          "count": 1,
+          "high": 0,
+          "medium": 0,
+          "low": 1
+        },
+        {
+          "name": "unused-argument",
+          "count": 1,
+          "high": 0,
+          "medium": 1,
+          "low": 0
+        },
+        {
+          "name": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+          "count": 1,
+          "high": 0,
+          "medium": 1,
+          "low": 0
+        }
+      ],
+      "by_tool": {
+        "claude": {
+          "commits": 17,
+          "issues_total": 36,
+          "issues_per_commit_mean": 2.12,
+          "issues_per_commit_median": 0,
+          "files_analyzed": 13,
+          "files_per_commit": 0.76,
+          "issues_per_file": 2.77,
+          "zero_issue_pct": 76.5
+        },
+        "copilot": {
+          "commits": 39,
+          "issues_total": 96,
+          "issues_per_commit_mean": 2.46,
+          "issues_per_commit_median": 0,
+          "files_analyzed": 39,
+          "files_per_commit": 1.0,
+          "issues_per_file": 2.46,
+          "zero_issue_pct": 66.7
+        },
+        "cursor": {
+          "commits": 18,
+          "issues_total": 31,
+          "issues_per_commit_mean": 1.72,
+          "issues_per_commit_median": 0,
+          "files_analyzed": 48,
+          "files_per_commit": 2.67,
+          "issues_per_file": 0.65,
+          "zero_issue_pct": 61.1
+        }
+      },
+      "time_series": [
+        {
+          "month": "2024-10",
+          "commits": 2,
+          "issues": 0,
+          "high_issues": 0
+        },
+        {
+          "month": "2025-06",
+          "commits": 1,
+          "issues": 0,
+          "high_issues": 0
+        },
+        {
+          "month": "2025-07",
+          "commits": 3,
+          "issues": 0,
+          "high_issues": 0
+        },
+        {
+          "month": "2025-08",
+          "commits": 13,
+          "issues": 22,
+          "high_issues": 21
+        },
+        {
+          "month": "2025-09",
+          "commits": 2,
+          "issues": 0,
+          "high_issues": 0
+        },
+        {
+          "month": "2025-10",
+          "commits": 5,
+          "issues": 17,
+          "high_issues": 13
+        },
+        {
+          "month": "2025-11",
+          "commits": 1,
+          "issues": 0,
+          "high_issues": 0
+        },
+        {
+          "month": "2025-12",
+          "commits": 18,
+          "issues": 43,
+          "high_issues": 1
+        },
+        {
+          "month": "2026-01",
+          "commits": 9,
+          "issues": 50,
+          "high_issues": 6
+        },
+        {
+          "month": "2026-02",
+          "commits": 20,
+          "issues": 31,
+          "high_issues": 8
+        }
+      ]
+    }
+  },
+  "rq2_tool_comparison": {
+    "by_tool": {
+      "claude": {
+        "commits": 17,
+        "issues_total": 36,
+        "issues_high": 34,
+        "issues_security": 1,
+        "issues_per_commit_mean": 2.12,
+        "issues_per_commit_median": 0,
+        "high_pct": 94.4,
+        "security_pct": 2.8,
+        "files_analyzed": 13,
+        "files_per_commit": 0.76,
+        "issues_per_file": 2.77,
+        "zero_issue_pct": 76.5,
+        "zero_issue_commits": 13,
+        "repos": 0,
+        "sole_author_commits": 0,
+        "coauthor_commits": 0,
+        "sole_author_issues": 0,
+        "coauthor_issues": 0,
+        "sole_issues_per_commit": 0,
+        "co_issues_per_commit": 0,
+        "sole_issues_per_file": 0,
+        "co_issues_per_file": 0,
+        "sole_files_per_commit": 0,
+        "co_files_per_commit": 0,
+        "sole_issues_per_commit_median": 0,
+        "co_issues_per_commit_median": 0,
+        "pct_sole_author": 0.0,
+        "actionable_issues": 4,
+        "repos_with_code": 1,
+        "actionable_files": 13,
+        "bugs": 2,
+        "smells": 1,
+        "security_issues": 1,
+        "bugs_per_commit": 0.118,
+        "smells_per_commit": 0.059,
+        "security_per_commit": 0.059,
+        "actionable_per_commit": 0.235,
+        "actionable_per_file": 0.308,
+        "bugs_per_file": 0.1538,
+        "smells_per_file": 0.0769,
+        "security_per_file": 0.0769
+      },
+      "copilot": {
+        "commits": 39,
+        "issues_total": 96,
+        "issues_high": 7,
+        "issues_security": 8,
+        "issues_per_commit_mean": 2.46,
+        "issues_per_commit_median": 0,
+        "high_pct": 7.3,
+        "security_pct": 8.3,
+        "files_analyzed": 39,
+        "files_per_commit": 1.0,
+        "issues_per_file": 2.46,
+        "zero_issue_pct": 66.7,
+        "zero_issue_commits": 26,
+        "repos": 1,
+        "sole_author_commits": 0,
+        "coauthor_commits": 0,
+        "sole_author_issues": 0,
+        "coauthor_issues": 0,
+        "sole_issues_per_commit": 0,
+        "co_issues_per_commit": 0,
+        "sole_issues_per_file": 0,
+        "co_issues_per_file": 0,
+        "sole_files_per_commit": 0,
+        "co_files_per_commit": 0,
+        "sole_issues_per_commit_median": 0,
+        "co_issues_per_commit_median": 0,
+        "pct_sole_author": 0.0,
+        "actionable_issues": 27,
+        "repos_with_code": 1,
+        "actionable_files": 39,
+        "bugs": 0,
+        "smells": 19,
+        "security_issues": 8,
+        "bugs_per_commit": 0.0,
+        "smells_per_commit": 0.487,
+        "security_per_commit": 0.205,
+        "actionable_per_commit": 0.692,
+        "actionable_per_file": 0.692,
+        "bugs_per_file": 0.0,
+        "smells_per_file": 0.4872,
+        "security_per_file": 0.2051
+      },
+      "cursor": {
+        "commits": 18,
+        "issues_total": 31,
+        "issues_high": 8,
+        "issues_security": 0,
+        "issues_per_commit_mean": 1.72,
+        "issues_per_commit_median": 0,
+        "high_pct": 25.8,
+        "security_pct": 0.0,
+        "files_analyzed": 48,
+        "files_per_commit": 2.67,
+        "issues_per_file": 0.65,
+        "zero_issue_pct": 61.1,
+        "zero_issue_commits": 11,
+        "repos": 1,
+        "sole_author_commits": 0,
+        "coauthor_commits": 0,
+        "sole_author_issues": 0,
+        "coauthor_issues": 0,
+        "sole_issues_per_commit": 0,
+        "co_issues_per_commit": 0,
+        "sole_issues_per_file": 0,
+        "co_issues_per_file": 0,
+        "sole_files_per_commit": 0,
+        "co_files_per_commit": 0,
+        "sole_issues_per_commit_median": 0,
+        "co_issues_per_commit_median": 0,
+        "pct_sole_author": 0.0,
+        "actionable_issues": 7,
+        "repos_with_code": 1,
+        "actionable_files": 48,
+        "bugs": 0,
+        "smells": 7,
+        "security_issues": 0,
+        "bugs_per_commit": 0.0,
+        "smells_per_commit": 0.389,
+        "security_per_commit": 0.0,
+        "actionable_per_commit": 0.389,
+        "actionable_per_file": 0.146,
+        "bugs_per_file": 0.0,
+        "smells_per_file": 0.1458,
+        "security_per_file": 0.0
+      }
+    },
+    "tools_ranked_by_issues_per_commit": [
+      {
+        "tool": "copilot",
+        "rate": 2.46
+      },
+      {
+        "tool": "claude",
+        "rate": 2.12
+      },
+      {
+        "tool": "cursor",
+        "rate": 1.72
+      }
+    ]
+  },
+  "rq3_survival": {
+    "issue_survival": {
+      "total_tracked": 38,
+      "surviving": 14,
+      "fixed": 24,
+      "survival_rate": 0.3684
+    },
+    "by_severity": {
+      "ERROR": {
+        "total": 7,
+        "surviving": 0,
+        "rate": 0.0
+      },
+      "MEDIUM": {
+        "total": 2,
+        "surviving": 2,
+        "rate": 1.0
+      },
+      "REFACTOR": {
+        "total": 1,
+        "surviving": 1,
+        "rate": 1.0
+      },
+      "WARNING": {
+        "total": 28,
+        "surviving": 11,
+        "rate": 0.3929
+      }
+    },
+    "by_family": {
+      "bug": {
+        "total": 2,
+        "surviving": 0,
+        "fixed": 2,
+        "rate": 0.0
+      },
+      "code_smell": {
+        "total": 27,
+        "surviving": 12,
+        "fixed": 15,
+        "rate": 0.4444
+      },
+      "security": {
+        "total": 9,
+        "surviving": 2,
+        "fixed": 7,
+        "rate": 0.2222
+      }
+    },
+    "by_tool": {
+      "copilot": {
+        "total": 27,
+        "surviving": 12,
+        "rate": 0.4444
+      },
+      "cursor": {
+        "total": 11,
+        "surviving": 2,
+        "rate": 0.1818
+      }
+    },
+    "top_surviving_rules": [
+      {
+        "rule": "broad-exception-caught",
+        "description": "",
+        "surviving": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      {
+        "rule": "raise-missing-from",
+        "description": "",
+        "surviving": 2,
+        "total": 11,
+        "rate": 0.182
+      },
+      {
+        "rule": "B608",
+        "description": "SQL Injection via String Format",
+        "surviving": 2,
+        "total": 2,
+        "rate": 1.0
+      },
+      {
+        "rule": "too-many-boolean-expressions",
+        "description": "",
+        "surviving": 1,
+        "total": 1,
+        "rate": 1.0
+      },
+      {
+        "rule": "unused-argument",
+        "description": "",
+        "surviving": 1,
+        "total": 1,
+        "rate": 1.0
+      },
+      {
+        "rule": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+        "description": "",
+        "surviving": 0,
+        "total": 2,
+        "rate": 0.0
+      },
+      {
+        "rule": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+        "description": "",
+        "surviving": 0,
+        "total": 2,
+        "rate": 0.0
+      },
+      {
+        "rule": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+        "description": "",
+        "surviving": 0,
+        "total": 1,
+        "rate": 0.0
+      },
+      {
+        "rule": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+        "description": "",
+        "surviving": 0,
+        "total": 1,
+        "rate": 0.0
+      },
+      {
+        "rule": "unused-variable",
+        "description": "",
+        "surviving": 0,
+        "total": 1,
+        "rate": 0.0
+      },
+      {
+        "rule": "too-many-function-args",
+        "description": "",
+        "surviving": 0,
+        "total": 1,
+        "rate": 0.0
+      },
+      {
+        "rule": "@typescript-eslint/no-unused-vars",
+        "description": "",
+        "surviving": 0,
+        "total": 4,
+        "rate": 0.0
+      },
+      {
+        "rule": "no-dupe-keys",
+        "description": "",
+        "surviving": 0,
+        "total": 2,
+        "rate": 0.0
+      },
+      {
+        "rule": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+        "description": "",
+        "surviving": 0,
+        "total": 1,
+        "rate": 0.0
+      }
+    ],
+    "survival_over_time": [
+      {
+        "month": "2025-08",
+        "total": 3,
+        "surviving": 0,
+        "cum_total": 3,
+        "cum_surviving": 0,
+        "cum_survival_rate": 0.0,
+        "monthly_survival_rate": 0.0
+      },
+      {
+        "month": "2025-10",
+        "total": 2,
+        "surviving": 1,
+        "cum_total": 5,
+        "cum_surviving": 1,
+        "cum_survival_rate": 0.2,
+        "monthly_survival_rate": 0.5
+      },
+      {
+        "month": "2025-12",
+        "total": 14,
+        "surviving": 6,
+        "cum_total": 19,
+        "cum_surviving": 7,
+        "cum_survival_rate": 0.3684,
+        "monthly_survival_rate": 0.4286
+      },
+      {
+        "month": "2026-01",
+        "total": 12,
+        "surviving": 5,
+        "cum_total": 31,
+        "cum_surviving": 12,
+        "cum_survival_rate": 0.3871,
+        "monthly_survival_rate": 0.4167
+      },
+      {
+        "month": "2026-02",
+        "total": 7,
+        "surviving": 2,
+        "cum_total": 38,
+        "cum_surviving": 14,
+        "cum_survival_rate": 0.3684,
+        "monthly_survival_rate": 0.2857
+      }
+    ],
+    "survival_by_age": [
+      {
+        "label": "> 9 months",
+        "total": 0,
+        "surviving": 0,
+        "fixed": 0,
+        "commits": 0,
+        "survival_rate": 0,
+        "surviving_per_100_commits": 0
+      },
+      {
+        "label": "6\u20139 months",
+        "total": 3,
+        "surviving": 0,
+        "fixed": 3,
+        "commits": 13,
+        "survival_rate": 0.0,
+        "surviving_per_100_commits": 0.0
+      },
+      {
+        "label": "3\u20136 months",
+        "total": 2,
+        "surviving": 1,
+        "fixed": 1,
+        "commits": 5,
+        "survival_rate": 0.5,
+        "surviving_per_100_commits": 20.0
+      },
+      {
+        "label": "< 3 months",
+        "total": 33,
+        "surviving": 13,
+        "fixed": 20,
+        "commits": 47,
+        "survival_rate": 0.3939,
+        "surviving_per_100_commits": 27.66
+      }
+    ],
+    "line_survival": {
+      "mean": 0.3993,
+      "median": 0.286,
+      "p25": 0.0,
+      "p75": 0.982,
+      "min": 0.0,
+      "max": 1.0,
+      "count": 44
+    },
+    "semantic_survival": {
+      "mean": 0.6776,
+      "median": 1.0,
+      "p25": 0.333,
+      "p75": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "count": 28
+    },
+    "per_repo_survival_distribution": {
+      "mean": 0.3131,
+      "median": 0.4444,
+      "p25": 0.1818,
+      "p75": 0.4444,
+      "min": 0.1818,
+      "max": 0.4444,
+      "count": 2
+    }
+  },
+  "file_lifecycle": {
+    "total_files": 101,
+    "survived": 0,
+    "modified": 84,
+    "deleted": 17,
+    "had_fixes": 0,
+    "refactored": 0
+  },
+  "distributions": {
+    "issues_per_repo": {
+      "mean": 2.1879,
+      "median": 2.4615,
+      "p25": 1.9143,
+      "p75": 2.4615,
+      "min": 1.9143,
+      "max": 2.4615,
+      "count": 2
+    },
+    "line_survival_per_commit": {
+      "mean": 0.3993,
+      "median": 0.286,
+      "p25": 0.0,
+      "p75": 0.982,
+      "min": 0.0,
+      "max": 1.0,
+      "count": 44
+    },
+    "semantic_survival_per_commit": {
+      "mean": 0.6776,
+      "median": 1.0,
+      "p25": 0.333,
+      "p75": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "count": 28
+    }
+  },
+  "false_positive_patterns": {
+    "summary": {
+      "total_issues": 163,
+      "likely_false_positive": 0,
+      "low_signal": 126,
+      "filtered_total": 126,
+      "filtered_rate": 77.3,
+      "visible_by_default": 37,
+      "visible_rate": 22.7
+    },
+    "patterns": [],
+    "low_signal_rules": [
+      {
+        "name": "line-too-long",
+        "description": "",
+        "count": 34,
+        "share_pct": 20.9,
+        "sample_paths": [
+          "py-src/data_formulator/data_loader/athena_data_loader.py",
+          "py-src/data_formulator/tables_routes.py",
+          "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+          "py-src/data_formulator/data_loader/mysql_data_loader.py",
+          "sdk/python/src/safety_agent/client.py"
+        ]
+      },
+      {
+        "name": "trailing-whitespace",
+        "description": "",
+        "count": 21,
+        "share_pct": 12.9,
+        "sample_paths": [
+          "py-src/data_formulator/tables_routes.py"
+        ]
+      },
+      {
+        "name": "logging-fstring-interpolation",
+        "description": "",
+        "count": 14,
+        "share_pct": 8.6,
+        "sample_paths": [
+          "py-src/data_formulator/tables_routes.py",
+          "py-src/data_formulator/data_loader/mysql_data_loader.py",
+          "py-src/data_formulator/data_loader/postgresql_data_loader.py"
+        ]
+      },
+      {
+        "name": "@typescript-eslint/no-magic-numbers",
+        "description": "",
+        "count": 13,
+        "share_pct": 8.0,
+        "sample_paths": [
+          "cli/src/commands/redact.ts",
+          "cli/src/commands/guard.ts"
+        ]
+      },
+      {
+        "name": "sort-keys",
+        "description": "",
+        "count": 8,
+        "share_pct": 4.9,
+        "sample_paths": [
+          "node/src/server.js"
+        ]
+      },
+      {
+        "name": "import-outside-toplevel",
+        "description": "",
+        "count": 4,
+        "share_pct": 2.5,
+        "sample_paths": [
+          "py-src/data_formulator/tables_routes.py",
+          "py-src/data_formulator/agents/web_utils.py"
+        ]
+      },
+      {
+        "name": "missing-function-docstring",
+        "description": "",
+        "count": 4,
+        "share_pct": 2.5,
+        "sample_paths": [
+          "sdk/python/src/safety_agent/providers/openai_compatible.py"
+        ]
+      },
+      {
+        "name": "no-magic-numbers",
+        "description": "",
+        "count": 4,
+        "share_pct": 2.5,
+        "sample_paths": [
+          "node/src/server.js"
+        ]
+      },
+      {
+        "name": "@typescript-eslint/init-declarations",
+        "description": "",
+        "count": 3,
+        "share_pct": 1.8,
+        "sample_paths": [
+          "cli/src/commands/redact.ts",
+          "cli/src/commands/guard.ts"
+        ]
+      },
+      {
+        "name": "@typescript-eslint/no-explicit-any",
+        "description": "",
+        "count": 3,
+        "share_pct": 1.8,
+        "sample_paths": [
+          "cli/src/commands/guard.ts",
+          "cli/src/commands/redact.ts"
+        ]
+      },
+      {
+        "name": "too-many-locals",
+        "description": "",
+        "count": 2,
+        "share_pct": 1.2,
+        "sample_paths": [
+          "py-src/data_formulator/tables_routes.py"
+        ]
+      },
+      {
+        "name": "consider-using-f-string",
+        "description": "",
+        "count": 2,
+        "share_pct": 1.2,
+        "sample_paths": [
+          "py-src/data_formulator/data_loader/mysql_data_loader.py"
+        ]
+      },
+      {
+        "name": "one-var",
+        "description": "",
+        "count": 2,
+        "share_pct": 1.2,
+        "sample_paths": [
+          "node/src/server.js",
+          "node/src/cli.js"
+        ]
+      },
+      {
+        "name": "sort-imports",
+        "description": "",
+        "count": 2,
+        "share_pct": 1.2,
+        "sample_paths": [
+          "node/src/server.js",
+          "node/src/cli.js"
+        ]
+      },
+      {
+        "name": "no-underscore-dangle",
+        "description": "",
+        "count": 2,
+        "share_pct": 1.2,
+        "sample_paths": [
+          "node/src/cli.js"
+        ]
+      }
+    ]
+  },
+  "notable": {
+    "high_debt_commits": [
+      {
+        "repo": "superagent-ai/superagent",
+        "commit": "46695d14622a",
+        "tool": "claude",
+        "author_role": "unknown",
+        "issues": 17,
+        "high": 17,
+        "security": 0,
+        "month": "2025-08"
+      },
+      {
+        "repo": "superagent-ai/superagent",
+        "commit": "0473257e206d",
+        "tool": "claude",
+        "author_role": "unknown",
+        "issues": 10,
+        "high": 9,
+        "security": 0,
+        "month": "2025-10"
+      },
+      {
+        "repo": "superagent-ai/superagent",
+        "commit": "708e7f510515",
+        "tool": "cursor",
+        "author_role": "unknown",
+        "issues": 8,
+        "high": 8,
+        "security": 0,
+        "month": "2026-02"
+      },
+      {
+        "repo": "microsoft/data-formulator",
+        "commit": "d8549c0c8c13",
+        "tool": "copilot",
+        "author_role": "unknown",
+        "issues": 31,
+        "high": 5,
+        "security": 4,
+        "month": "2026-01"
+      },
+      {
+        "repo": "superagent-ai/superagent",
+        "commit": "8d0e011e7831",
+        "tool": "claude",
+        "author_role": "unknown",
+        "issues": 5,
+        "high": 4,
+        "security": 1,
+        "month": "2025-08"
+      },
+      {
+        "repo": "microsoft/data-formulator",
+        "commit": "f611d1fafca3",
+        "tool": "copilot",
+        "author_role": "unknown",
+        "issues": 14,
+        "high": 1,
+        "security": 2,
+        "month": "2026-01"
+      },
+      {
+        "repo": "microsoft/data-formulator",
+        "commit": "8b0545072dbf",
+        "tool": "copilot",
+        "author_role": "unknown",
+        "issues": 22,
+        "high": 0,
+        "security": 0,
+        "month": "2025-12"
+      },
+      {
+        "repo": "microsoft/data-formulator",
+        "commit": "4451f2543248",
+        "tool": "copilot",
+        "author_role": "unknown",
+        "issues": 8,
+        "high": 0,
+        "security": 0,
+        "month": "2025-12"
+      },
+      {
+        "repo": "superagent-ai/superagent",
+        "commit": "5f004c3b6331",
+        "tool": "cursor",
+        "author_role": "unknown",
+        "issues": 6,
+        "high": 0,
+        "security": 0,
+        "month": "2026-02"
+      },
+      {
+        "repo": "superagent-ai/superagent",
+        "commit": "f1690722f9ff",
+        "tool": "cursor",
+        "author_role": "unknown",
+        "issues": 5,
+        "high": 0,
+        "security": 0,
+        "month": "2026-02"
+      },
+      {
+        "repo": "superagent-ai/superagent",
+        "commit": "2398fc482615",
+        "tool": "cursor",
+        "author_role": "unknown",
+        "issues": 5,
+        "high": 0,
+        "security": 0,
+        "month": "2026-02"
+      },
+      {
+        "repo": "superagent-ai/superagent",
+        "commit": "d12a6279357e",
+        "tool": "cursor",
+        "author_role": "unknown",
+        "issues": 5,
+        "high": 0,
+        "security": 0,
+        "month": "2026-02"
+      }
+    ],
+    "top_repos_by_issues": [
+      {
+        "name": "microsoft/data-formulator",
+        "has_code": true,
+        "commits": 39,
+        "issues_introduced": 96,
+        "issues_fixed": 45,
+        "issues_high": 7,
+        "issues_security": 8,
+        "issues_per_commit": 2.46,
+        "tool": "copilot",
+        "stars": 14828,
+        "language": "TypeScript",
+        "github_url": "https://github.com/microsoft/data-formulator",
+        "issues_sole_author": 0,
+        "issues_coauthor": 0,
+        "fixed_sole_author": 0,
+        "fixed_coauthor": 0,
+        "pct_sole": 0.0
+      },
+      {
+        "name": "superagent-ai/superagent",
+        "has_code": true,
+        "commits": 35,
+        "issues_introduced": 67,
+        "issues_fixed": 179,
+        "issues_high": 42,
+        "issues_security": 1,
+        "issues_per_commit": 1.91,
+        "tool": "cursor",
+        "stars": 6408,
+        "language": "TypeScript",
+        "github_url": "https://github.com/superagent-ai/superagent",
+        "issues_sole_author": 0,
+        "issues_coauthor": 0,
+        "fixed_sole_author": 0,
+        "fixed_coauthor": 0,
+        "pct_sole": 0.0
+      }
+    ],
+    "repos_zero_issues": 0,
+    "all_repos": [
+      {
+        "name": "microsoft/data-formulator",
+        "has_code": true,
+        "commits": 39,
+        "issues_introduced": 96,
+        "issues_fixed": 45,
+        "issues_high": 7,
+        "issues_security": 8,
+        "issues_per_commit": 2.46,
+        "tool": "copilot",
+        "stars": 14828,
+        "language": "TypeScript",
+        "github_url": "https://github.com/microsoft/data-formulator",
+        "issues_sole_author": 0,
+        "issues_coauthor": 0,
+        "fixed_sole_author": 0,
+        "fixed_coauthor": 0,
+        "pct_sole": 0.0
+      },
+      {
+        "name": "superagent-ai/superagent",
+        "has_code": true,
+        "commits": 35,
+        "issues_introduced": 67,
+        "issues_fixed": 179,
+        "issues_high": 42,
+        "issues_security": 1,
+        "issues_per_commit": 1.91,
+        "tool": "cursor",
+        "stars": 6408,
+        "language": "TypeScript",
+        "github_url": "https://github.com/superagent-ai/superagent",
+        "issues_sole_author": 0,
+        "issues_coauthor": 0,
+        "fixed_sole_author": 0,
+        "fixed_coauthor": 0,
+        "pct_sole": 0.0
+      }
+    ]
+  },
+  "focused": {
+    "tools": [
+      "claude",
+      "copilot",
+      "cursor",
+      "devin",
+      "gemini"
+    ],
+    "totals": {
+      "repos": 2,
+      "repos_with_code": 2,
+      "repos_all": 2,
+      "commits": 74,
+      "issues_introduced": 163,
+      "issues_fixed": 224,
+      "issues_fixed_by_severity": {
+        "low": 25,
+        "medium": 13,
+        "high": 186
+      },
+      "net_debt": -61,
+      "files_analyzed": 100,
+      "files_per_commit": 1.35,
+      "issues_per_file": 1.63,
+      "fix_rate": 137.4,
+      "zero_issue_pct": 67.6,
+      "actionable_introduced": 38,
+      "actionable_fixed": 46,
+      "actionable_by_severity": {
+        "medium": 30,
+        "high": 7,
+        "low": 1
+      },
+      "actionable_fixed_by_severity": {
+        "low": 5,
+        "high": 29,
+        "medium": 12
+      },
+      "actionable_net_debt": -8,
+      "repos_with_issues": 2,
+      "commits_with_issues": 18
+    },
+    "by_severity": {
+      "low": 70,
+      "medium": 44,
+      "high": 49
+    },
+    "by_family": {
+      "bug": {
+        "issues": 2,
+        "fixed": 0,
+        "net": 2,
+        "repos": 1,
+        "commits": 1
+      },
+      "code_smell": {
+        "issues": 27,
+        "fixed": 33,
+        "net": -6,
+        "repos": 2,
+        "commits": 16
+      },
+      "security": {
+        "issues": 9,
+        "fixed": 13,
+        "net": -4,
+        "repos": 2,
+        "commits": 4
+      }
+    },
+    "top_rules_by_family": {
+      "bug": [
+        {
+          "name": "no-dupe-keys",
+          "count": 2,
+          "description": ""
+        }
+      ],
+      "code_smell": [
+        {
+          "name": "raise-missing-from",
+          "count": 11,
+          "description": ""
+        },
+        {
+          "name": "broad-exception-caught",
+          "count": 8,
+          "description": ""
+        },
+        {
+          "name": "@typescript-eslint/no-unused-vars",
+          "count": 4,
+          "description": ""
+        },
+        {
+          "name": "unused-variable",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "too-many-function-args",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "too-many-boolean-expressions",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "unused-argument",
+          "count": 1,
+          "description": ""
+        }
+      ],
+      "security": [
+        {
+          "name": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "count": 2,
+          "description": ""
+        },
+        {
+          "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "count": 2,
+          "description": ""
+        },
+        {
+          "name": "B608",
+          "count": 2,
+          "description": "SQL Injection via String Format"
+        },
+        {
+          "name": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+          "count": 1,
+          "description": ""
+        }
+      ]
+    },
+    "all_rules_by_family": {
+      "bug": [
+        {
+          "name": "no-dupe-keys",
+          "count": 2,
+          "description": ""
+        }
+      ],
+      "code_smell": [
+        {
+          "name": "raise-missing-from",
+          "count": 11,
+          "description": ""
+        },
+        {
+          "name": "broad-exception-caught",
+          "count": 8,
+          "description": ""
+        },
+        {
+          "name": "@typescript-eslint/no-unused-vars",
+          "count": 4,
+          "description": ""
+        },
+        {
+          "name": "unused-variable",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "too-many-function-args",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "too-many-boolean-expressions",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "unused-argument",
+          "count": 1,
+          "description": ""
+        }
+      ],
+      "security": [
+        {
+          "name": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "count": 2,
+          "description": ""
+        },
+        {
+          "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "count": 2,
+          "description": ""
+        },
+        {
+          "name": "B608",
+          "count": 2,
+          "description": "SQL Injection via String Format"
+        },
+        {
+          "name": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+          "count": 1,
+          "description": ""
+        }
+      ]
+    },
+    "by_type": {
+      "pylint": 23,
+      "security": 9,
+      "eslint": 6
+    },
+    "by_language": {
+      "python": 31,
+      "typescript": 4,
+      "javascript": 3
+    },
+    "top_rules_by_language": {
+      "python": [
+        {
+          "name": "raise-missing-from",
+          "count": 11,
+          "description": ""
+        },
+        {
+          "name": "broad-exception-caught",
+          "count": 8,
+          "description": ""
+        },
+        {
+          "name": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "count": 2,
+          "description": ""
+        },
+        {
+          "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "count": 2,
+          "description": ""
+        },
+        {
+          "name": "B608",
+          "count": 2,
+          "description": "SQL Injection via String Format"
+        },
+        {
+          "name": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "unused-variable",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "too-many-function-args",
+          "count": 1,
+          "description": ""
+        },
+        {
+          "name": "too-many-boolean-expressions",
+          "count": 1,
+          "description": ""
+        }
+      ],
+      "javascript": [
+        {
+          "name": "@typescript-eslint/no-unused-vars",
+          "count": 4,
+          "description": ""
+        },
+        {
+          "name": "no-dupe-keys",
+          "count": 2,
+          "description": ""
+        },
+        {
+          "name": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+          "count": 1,
+          "description": ""
+        }
+      ]
+    },
+    "family_by_language": {
+      "python": {
+        "code_smell": 23,
+        "security": 8
+      },
+      "javascript": {
+        "code_smell": 4,
+        "bug": 2,
+        "security": 1
+      }
+    },
+    "top_rules": [
+      {
+        "name": "raise-missing-from",
+        "description": "",
+        "count": 11,
+        "high": 0,
+        "medium": 11,
+        "low": 0
+      },
+      {
+        "name": "broad-exception-caught",
+        "description": "",
+        "count": 8,
+        "high": 0,
+        "medium": 8,
+        "low": 0
+      },
+      {
+        "name": "@typescript-eslint/no-unused-vars",
+        "description": "",
+        "count": 4,
+        "high": 0,
+        "medium": 4,
+        "low": 0
+      },
+      {
+        "name": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+        "description": "",
+        "count": 2,
+        "high": 2,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+        "description": "",
+        "count": 2,
+        "high": 0,
+        "medium": 2,
+        "low": 0
+      },
+      {
+        "name": "B608",
+        "description": "SQL Injection via String Format",
+        "count": 2,
+        "high": 0,
+        "medium": 2,
+        "low": 0
+      },
+      {
+        "name": "no-dupe-keys",
+        "description": "",
+        "count": 2,
+        "high": 2,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "name": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+        "description": "",
+        "count": 1,
+        "high": 1,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "name": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+        "description": "",
+        "count": 1,
+        "high": 1,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "name": "unused-variable",
+        "description": "",
+        "count": 1,
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      {
+        "name": "too-many-function-args",
+        "description": "",
+        "count": 1,
+        "high": 1,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "name": "too-many-boolean-expressions",
+        "description": "",
+        "count": 1,
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      {
+        "name": "unused-argument",
+        "description": "",
+        "count": 1,
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      {
+        "name": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+        "description": "",
+        "count": 1,
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      }
+    ],
+    "by_stars": [
+      {
+        "label": "5K-10K",
+        "repos": 1,
+        "commits": 35,
+        "bugs": 2,
+        "smells": 8,
+        "security": 1,
+        "bugs_per_commit": 0.0571,
+        "smells_per_commit": 0.2286,
+        "security_per_commit": 0.0286,
+        "total_per_commit": 0.3143
+      },
+      {
+        "label": "10K-50K",
+        "repos": 1,
+        "commits": 39,
+        "bugs": 0,
+        "smells": 19,
+        "security": 8,
+        "bugs_per_commit": 0.0,
+        "smells_per_commit": 0.4872,
+        "security_per_commit": 0.2051,
+        "total_per_commit": 0.6923
+      }
+    ],
+    "by_language_breakdown": [],
+    "security_total": 9,
+    "by_tool": {
+      "claude": {
+        "commits": 17,
+        "issues_total": 36,
+        "issues_high": 34,
+        "issues_security": 1,
+        "issues_per_commit_mean": 2.12,
+        "issues_per_commit_median": 0,
+        "high_pct": 94.4,
+        "security_pct": 2.8,
+        "files_analyzed": 13,
+        "files_per_commit": 0.76,
+        "issues_per_file": 2.77,
+        "zero_issue_pct": 76.5,
+        "zero_issue_commits": 13,
+        "repos": 0,
+        "sole_author_commits": 0,
+        "coauthor_commits": 0,
+        "sole_author_issues": 0,
+        "coauthor_issues": 0,
+        "sole_issues_per_commit": 0,
+        "co_issues_per_commit": 0,
+        "sole_issues_per_file": 0,
+        "co_issues_per_file": 0,
+        "sole_files_per_commit": 0,
+        "co_files_per_commit": 0,
+        "sole_issues_per_commit_median": 0,
+        "co_issues_per_commit_median": 0,
+        "pct_sole_author": 0.0,
+        "actionable_issues": 4,
+        "repos_with_code": 1,
+        "actionable_files": 13,
+        "bugs": 2,
+        "smells": 1,
+        "security_issues": 1,
+        "bugs_per_commit": 0.118,
+        "smells_per_commit": 0.059,
+        "security_per_commit": 0.059,
+        "actionable_per_commit": 0.235,
+        "actionable_per_file": 0.308,
+        "bugs_per_file": 0.1538,
+        "smells_per_file": 0.0769,
+        "security_per_file": 0.0769
+      },
+      "copilot": {
+        "commits": 39,
+        "issues_total": 96,
+        "issues_high": 7,
+        "issues_security": 8,
+        "issues_per_commit_mean": 2.46,
+        "issues_per_commit_median": 0,
+        "high_pct": 7.3,
+        "security_pct": 8.3,
+        "files_analyzed": 39,
+        "files_per_commit": 1.0,
+        "issues_per_file": 2.46,
+        "zero_issue_pct": 66.7,
+        "zero_issue_commits": 26,
+        "repos": 1,
+        "sole_author_commits": 0,
+        "coauthor_commits": 0,
+        "sole_author_issues": 0,
+        "coauthor_issues": 0,
+        "sole_issues_per_commit": 0,
+        "co_issues_per_commit": 0,
+        "sole_issues_per_file": 0,
+        "co_issues_per_file": 0,
+        "sole_files_per_commit": 0,
+        "co_files_per_commit": 0,
+        "sole_issues_per_commit_median": 0,
+        "co_issues_per_commit_median": 0,
+        "pct_sole_author": 0.0,
+        "actionable_issues": 27,
+        "repos_with_code": 1,
+        "actionable_files": 39,
+        "bugs": 0,
+        "smells": 19,
+        "security_issues": 8,
+        "bugs_per_commit": 0.0,
+        "smells_per_commit": 0.487,
+        "security_per_commit": 0.205,
+        "actionable_per_commit": 0.692,
+        "actionable_per_file": 0.692,
+        "bugs_per_file": 0.0,
+        "smells_per_file": 0.4872,
+        "security_per_file": 0.2051
+      },
+      "cursor": {
+        "commits": 18,
+        "issues_total": 31,
+        "issues_high": 8,
+        "issues_security": 0,
+        "issues_per_commit_mean": 1.72,
+        "issues_per_commit_median": 0,
+        "high_pct": 25.8,
+        "security_pct": 0.0,
+        "files_analyzed": 48,
+        "files_per_commit": 2.67,
+        "issues_per_file": 0.65,
+        "zero_issue_pct": 61.1,
+        "zero_issue_commits": 11,
+        "repos": 1,
+        "sole_author_commits": 0,
+        "coauthor_commits": 0,
+        "sole_author_issues": 0,
+        "coauthor_issues": 0,
+        "sole_issues_per_commit": 0,
+        "co_issues_per_commit": 0,
+        "sole_issues_per_file": 0,
+        "co_issues_per_file": 0,
+        "sole_files_per_commit": 0,
+        "co_files_per_commit": 0,
+        "sole_issues_per_commit_median": 0,
+        "co_issues_per_commit_median": 0,
+        "pct_sole_author": 0.0,
+        "actionable_issues": 7,
+        "repos_with_code": 1,
+        "actionable_files": 48,
+        "bugs": 0,
+        "smells": 7,
+        "security_issues": 0,
+        "bugs_per_commit": 0.0,
+        "smells_per_commit": 0.389,
+        "security_per_commit": 0.0,
+        "actionable_per_commit": 0.389,
+        "actionable_per_file": 0.146,
+        "bugs_per_file": 0.0,
+        "smells_per_file": 0.1458,
+        "security_per_file": 0.0
+      }
+    },
+    "filtering": {
+      "summary": {
+        "total_issues": 163,
+        "likely_false_positive": 0,
+        "low_signal": 126,
+        "filtered_total": 126,
+        "filtered_rate": 77.3,
+        "visible_by_default": 37,
+        "visible_rate": 22.7
+      },
+      "filtered_rules": [
+        {
+          "name": "line-too-long",
+          "description": "",
+          "count": 34,
+          "share_pct": 20.9,
+          "filtered_share_pct": 27.0
+        },
+        {
+          "name": "trailing-whitespace",
+          "description": "",
+          "count": 21,
+          "share_pct": 12.9,
+          "filtered_share_pct": 16.7
+        },
+        {
+          "name": "logging-fstring-interpolation",
+          "description": "",
+          "count": 14,
+          "share_pct": 8.6,
+          "filtered_share_pct": 11.1
+        },
+        {
+          "name": "@typescript-eslint/no-magic-numbers",
+          "description": "",
+          "count": 13,
+          "share_pct": 8.0,
+          "filtered_share_pct": 10.3
+        },
+        {
+          "name": "sort-keys",
+          "description": "",
+          "count": 8,
+          "share_pct": 4.9,
+          "filtered_share_pct": 6.3
+        },
+        {
+          "name": "import-outside-toplevel",
+          "description": "",
+          "count": 4,
+          "share_pct": 2.5,
+          "filtered_share_pct": 3.2
+        },
+        {
+          "name": "missing-function-docstring",
+          "description": "",
+          "count": 4,
+          "share_pct": 2.5,
+          "filtered_share_pct": 3.2
+        },
+        {
+          "name": "no-magic-numbers",
+          "description": "",
+          "count": 4,
+          "share_pct": 2.5,
+          "filtered_share_pct": 3.2
+        },
+        {
+          "name": "@typescript-eslint/init-declarations",
+          "description": "",
+          "count": 3,
+          "share_pct": 1.8,
+          "filtered_share_pct": 2.4
+        },
+        {
+          "name": "@typescript-eslint/no-explicit-any",
+          "description": "",
+          "count": 3,
+          "share_pct": 1.8,
+          "filtered_share_pct": 2.4
+        },
+        {
+          "name": "too-many-locals",
+          "description": "",
+          "count": 2,
+          "share_pct": 1.2,
+          "filtered_share_pct": 1.6
+        },
+        {
+          "name": "consider-using-f-string",
+          "description": "",
+          "count": 2,
+          "share_pct": 1.2,
+          "filtered_share_pct": 1.6
+        },
+        {
+          "name": "one-var",
+          "description": "",
+          "count": 2,
+          "share_pct": 1.2,
+          "filtered_share_pct": 1.6
+        },
+        {
+          "name": "sort-imports",
+          "description": "",
+          "count": 2,
+          "share_pct": 1.2,
+          "filtered_share_pct": 1.6
+        },
+        {
+          "name": "no-underscore-dangle",
+          "description": "",
+          "count": 2,
+          "share_pct": 1.2,
+          "filtered_share_pct": 1.6
+        }
+      ]
+    },
+    "time_series": [
+      {
+        "month": "2024-10",
+        "commits": 2,
+        "issues": 0,
+        "tool_claude": 0,
+        "tool_copilot": 2,
+        "tool_cursor": 0,
+        "tool_devin": 0,
+        "tool_gemini": 0,
+        "issues_claude": 0,
+        "issues_copilot": 0,
+        "issues_cursor": 0,
+        "issues_devin": 0,
+        "issues_gemini": 0,
+        "rate_claude": 0,
+        "rate_copilot": 0.0,
+        "rate_cursor": 0,
+        "rate_devin": 0,
+        "rate_gemini": 0
+      },
+      {
+        "month": "2025-06",
+        "commits": 1,
+        "issues": 0,
+        "tool_claude": 0,
+        "tool_copilot": 1,
+        "tool_cursor": 0,
+        "tool_devin": 0,
+        "tool_gemini": 0,
+        "issues_claude": 0,
+        "issues_copilot": 0,
+        "issues_cursor": 0,
+        "issues_devin": 0,
+        "issues_gemini": 0,
+        "rate_claude": 0,
+        "rate_copilot": 0.0,
+        "rate_cursor": 0,
+        "rate_devin": 0,
+        "rate_gemini": 0
+      },
+      {
+        "month": "2025-07",
+        "commits": 3,
+        "issues": 0,
+        "tool_claude": 0,
+        "tool_copilot": 3,
+        "tool_cursor": 0,
+        "tool_devin": 0,
+        "tool_gemini": 0,
+        "issues_claude": 0,
+        "issues_copilot": 0,
+        "issues_cursor": 0,
+        "issues_devin": 0,
+        "issues_gemini": 0,
+        "rate_claude": 0,
+        "rate_copilot": 0.0,
+        "rate_cursor": 0,
+        "rate_devin": 0,
+        "rate_gemini": 0
+      },
+      {
+        "month": "2025-08",
+        "commits": 13,
+        "issues": 3,
+        "tool_claude": 13,
+        "tool_copilot": 0,
+        "tool_cursor": 0,
+        "tool_devin": 0,
+        "tool_gemini": 0,
+        "issues_claude": 3,
+        "issues_copilot": 0,
+        "issues_cursor": 0,
+        "issues_devin": 0,
+        "issues_gemini": 0,
+        "rate_claude": 0.23,
+        "rate_copilot": 0,
+        "rate_cursor": 0,
+        "rate_devin": 0,
+        "rate_gemini": 0
+      },
+      {
+        "month": "2025-09",
+        "commits": 2,
+        "issues": 0,
+        "tool_claude": 0,
+        "tool_copilot": 2,
+        "tool_cursor": 0,
+        "tool_devin": 0,
+        "tool_gemini": 0,
+        "issues_claude": 0,
+        "issues_copilot": 0,
+        "issues_cursor": 0,
+        "issues_devin": 0,
+        "issues_gemini": 0,
+        "rate_claude": 0,
+        "rate_copilot": 0.0,
+        "rate_cursor": 0,
+        "rate_devin": 0,
+        "rate_gemini": 0
+      },
+      {
+        "month": "2025-10",
+        "commits": 5,
+        "issues": 2,
+        "tool_claude": 4,
+        "tool_copilot": 1,
+        "tool_cursor": 0,
+        "tool_devin": 0,
+        "tool_gemini": 0,
+        "issues_claude": 1,
+        "issues_copilot": 1,
+        "issues_cursor": 0,
+        "issues_devin": 0,
+        "issues_gemini": 0,
+        "rate_claude": 0.25,
+        "rate_copilot": 1.0,
+        "rate_cursor": 0,
+        "rate_devin": 0,
+        "rate_gemini": 0
+      },
+      {
+        "month": "2025-11",
+        "commits": 1,
+        "issues": 0,
+        "tool_claude": 0,
+        "tool_copilot": 1,
+        "tool_cursor": 0,
+        "tool_devin": 0,
+        "tool_gemini": 0,
+        "issues_claude": 0,
+        "issues_copilot": 0,
+        "issues_cursor": 0,
+        "issues_devin": 0,
+        "issues_gemini": 0,
+        "rate_claude": 0,
+        "rate_copilot": 0.0,
+        "rate_cursor": 0,
+        "rate_devin": 0,
+        "rate_gemini": 0
+      },
+      {
+        "month": "2025-12",
+        "commits": 18,
+        "issues": 14,
+        "tool_claude": 0,
+        "tool_copilot": 18,
+        "tool_cursor": 0,
+        "tool_devin": 0,
+        "tool_gemini": 0,
+        "issues_claude": 0,
+        "issues_copilot": 14,
+        "issues_cursor": 0,
+        "issues_devin": 0,
+        "issues_gemini": 0,
+        "rate_claude": 0,
+        "rate_copilot": 0.78,
+        "rate_cursor": 0,
+        "rate_devin": 0,
+        "rate_gemini": 0
+      },
+      {
+        "month": "2026-01",
+        "commits": 9,
+        "issues": 12,
+        "tool_claude": 0,
+        "tool_copilot": 7,
+        "tool_cursor": 2,
+        "tool_devin": 0,
+        "tool_gemini": 0,
+        "issues_claude": 0,
+        "issues_copilot": 12,
+        "issues_cursor": 0,
+        "issues_devin": 0,
+        "issues_gemini": 0,
+        "rate_claude": 0,
+        "rate_copilot": 1.71,
+        "rate_cursor": 0.0,
+        "rate_devin": 0,
+        "rate_gemini": 0
+      },
+      {
+        "month": "2026-02",
+        "commits": 20,
+        "issues": 7,
+        "tool_claude": 0,
+        "tool_copilot": 4,
+        "tool_cursor": 16,
+        "tool_devin": 0,
+        "tool_gemini": 0,
+        "issues_claude": 0,
+        "issues_copilot": 0,
+        "issues_cursor": 7,
+        "issues_devin": 0,
+        "issues_gemini": 0,
+        "rate_claude": 0,
+        "rate_copilot": 0.0,
+        "rate_cursor": 0.44,
+        "rate_devin": 0,
+        "rate_gemini": 0
+      }
+    ],
+    "survival": {
+      "total_tracked": 38,
+      "surviving": 14,
+      "fixed": 24,
+      "survival_rate": 0.3684,
+      "issue_survival": {
+        "total_tracked": 38,
+        "surviving": 14,
+        "fixed": 24,
+        "survival_rate": 0.3684
+      },
+      "by_severity": {
+        "ERROR": {
+          "total": 7,
+          "surviving": 0,
+          "rate": 0.0
+        },
+        "MEDIUM": {
+          "total": 2,
+          "surviving": 2,
+          "rate": 1.0
+        },
+        "REFACTOR": {
+          "total": 1,
+          "surviving": 1,
+          "rate": 1.0
+        },
+        "WARNING": {
+          "total": 28,
+          "surviving": 11,
+          "rate": 0.3929
+        }
+      },
+      "by_family": {
+        "bug": {
+          "total": 2,
+          "surviving": 0,
+          "fixed": 2,
+          "rate": 0.0
+        },
+        "code_smell": {
+          "total": 27,
+          "surviving": 12,
+          "fixed": 15,
+          "rate": 0.4444
+        },
+        "security": {
+          "total": 9,
+          "surviving": 2,
+          "fixed": 7,
+          "rate": 0.2222
+        }
+      },
+      "by_tool": {
+        "cursor": {
+          "total": 11,
+          "surviving": 2,
+          "rate": 0.1818
+        },
+        "copilot": {
+          "total": 27,
+          "surviving": 12,
+          "rate": 0.4444
+        }
+      },
+      "top_surviving_rules": [
+        {
+          "rule": "broad-exception-caught",
+          "description": "",
+          "surviving": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        {
+          "rule": "raise-missing-from",
+          "description": "",
+          "surviving": 2,
+          "total": 11,
+          "rate": 0.182
+        },
+        {
+          "rule": "B608",
+          "description": "SQL Injection via String Format",
+          "surviving": 2,
+          "total": 2,
+          "rate": 1.0
+        },
+        {
+          "rule": "too-many-boolean-expressions",
+          "description": "",
+          "surviving": 1,
+          "total": 1,
+          "rate": 1.0
+        },
+        {
+          "rule": "unused-argument",
+          "description": "",
+          "surviving": 1,
+          "total": 1,
+          "rate": 1.0
+        },
+        {
+          "rule": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "description": "",
+          "surviving": 0,
+          "total": 2,
+          "rate": 0.0
+        },
+        {
+          "rule": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "description": "",
+          "surviving": 0,
+          "total": 2,
+          "rate": 0.0
+        },
+        {
+          "rule": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+          "description": "",
+          "surviving": 0,
+          "total": 1,
+          "rate": 0.0
+        },
+        {
+          "rule": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+          "description": "",
+          "surviving": 0,
+          "total": 1,
+          "rate": 0.0
+        },
+        {
+          "rule": "unused-variable",
+          "description": "",
+          "surviving": 0,
+          "total": 1,
+          "rate": 0.0
+        },
+        {
+          "rule": "too-many-function-args",
+          "description": "",
+          "surviving": 0,
+          "total": 1,
+          "rate": 0.0
+        },
+        {
+          "rule": "@typescript-eslint/no-unused-vars",
+          "description": "",
+          "surviving": 0,
+          "total": 4,
+          "rate": 0.0
+        },
+        {
+          "rule": "no-dupe-keys",
+          "description": "",
+          "surviving": 0,
+          "total": 2,
+          "rate": 0.0
+        },
+        {
+          "rule": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+          "description": "",
+          "surviving": 0,
+          "total": 1,
+          "rate": 0.0
+        }
+      ],
+      "survival_over_time": [
+        {
+          "month": "2025-08",
+          "total": 3,
+          "surviving": 0,
+          "cum_total": 3,
+          "cum_surviving": 0,
+          "cum_survival_rate": 0.0,
+          "monthly_survival_rate": 0.0,
+          "by_family": {
+            "bug": {
+              "total": 2,
+              "surviving": 0,
+              "monthly_rate": 0.0,
+              "cum_total": 2,
+              "cum_surviving": 0,
+              "cum_rate": 0.0
+            },
+            "code_smell": {
+              "total": 0,
+              "surviving": 0,
+              "monthly_rate": 0,
+              "cum_total": 0,
+              "cum_surviving": 0,
+              "cum_rate": 0
+            },
+            "security": {
+              "total": 1,
+              "surviving": 0,
+              "monthly_rate": 0.0,
+              "cum_total": 1,
+              "cum_surviving": 0,
+              "cum_rate": 0.0
+            }
+          }
+        },
+        {
+          "month": "2025-10",
+          "total": 2,
+          "surviving": 1,
+          "cum_total": 5,
+          "cum_surviving": 1,
+          "cum_survival_rate": 0.2,
+          "monthly_survival_rate": 0.5,
+          "by_family": {
+            "bug": {
+              "total": 0,
+              "surviving": 0,
+              "monthly_rate": 0,
+              "cum_total": 2,
+              "cum_surviving": 0,
+              "cum_rate": 0.0
+            },
+            "code_smell": {
+              "total": 2,
+              "surviving": 1,
+              "monthly_rate": 0.5,
+              "cum_total": 2,
+              "cum_surviving": 1,
+              "cum_rate": 0.5
+            },
+            "security": {
+              "total": 0,
+              "surviving": 0,
+              "monthly_rate": 0,
+              "cum_total": 1,
+              "cum_surviving": 0,
+              "cum_rate": 0.0
+            }
+          }
+        },
+        {
+          "month": "2025-12",
+          "total": 14,
+          "surviving": 6,
+          "cum_total": 19,
+          "cum_surviving": 7,
+          "cum_survival_rate": 0.3684,
+          "monthly_survival_rate": 0.4286,
+          "by_family": {
+            "bug": {
+              "total": 0,
+              "surviving": 0,
+              "monthly_rate": 0,
+              "cum_total": 2,
+              "cum_surviving": 0,
+              "cum_rate": 0.0
+            },
+            "code_smell": {
+              "total": 12,
+              "surviving": 4,
+              "monthly_rate": 0.3333,
+              "cum_total": 14,
+              "cum_surviving": 5,
+              "cum_rate": 0.3571
+            },
+            "security": {
+              "total": 2,
+              "surviving": 2,
+              "monthly_rate": 1.0,
+              "cum_total": 3,
+              "cum_surviving": 2,
+              "cum_rate": 0.6667
+            }
+          }
+        },
+        {
+          "month": "2026-01",
+          "total": 12,
+          "surviving": 5,
+          "cum_total": 31,
+          "cum_surviving": 12,
+          "cum_survival_rate": 0.3871,
+          "monthly_survival_rate": 0.4167,
+          "by_family": {
+            "bug": {
+              "total": 0,
+              "surviving": 0,
+              "monthly_rate": 0,
+              "cum_total": 2,
+              "cum_surviving": 0,
+              "cum_rate": 0.0
+            },
+            "code_smell": {
+              "total": 6,
+              "surviving": 5,
+              "monthly_rate": 0.8333,
+              "cum_total": 20,
+              "cum_surviving": 10,
+              "cum_rate": 0.5
+            },
+            "security": {
+              "total": 6,
+              "surviving": 0,
+              "monthly_rate": 0.0,
+              "cum_total": 9,
+              "cum_surviving": 2,
+              "cum_rate": 0.2222
+            }
+          }
+        },
+        {
+          "month": "2026-02",
+          "total": 7,
+          "surviving": 2,
+          "cum_total": 38,
+          "cum_surviving": 14,
+          "cum_survival_rate": 0.3684,
+          "monthly_survival_rate": 0.2857,
+          "by_family": {
+            "bug": {
+              "total": 0,
+              "surviving": 0,
+              "monthly_rate": 0,
+              "cum_total": 2,
+              "cum_surviving": 0,
+              "cum_rate": 0.0
+            },
+            "code_smell": {
+              "total": 7,
+              "surviving": 2,
+              "monthly_rate": 0.2857,
+              "cum_total": 27,
+              "cum_surviving": 12,
+              "cum_rate": 0.4444
+            },
+            "security": {
+              "total": 0,
+              "surviving": 0,
+              "monthly_rate": 0,
+              "cum_total": 9,
+              "cum_surviving": 2,
+              "cum_rate": 0.2222
+            }
+          }
+        }
+      ],
+      "survival_by_age": [
+        {
+          "label": "> 9 months",
+          "total": 0,
+          "surviving": 0,
+          "fixed": 0,
+          "commits": 0,
+          "survival_rate": 0,
+          "surviving_per_100_commits": 0,
+          "by_family": {
+            "bug": {
+              "total": 0,
+              "surviving": 0,
+              "rate": 0,
+              "surviving_per_100_commits": 0
+            },
+            "code_smell": {
+              "total": 0,
+              "surviving": 0,
+              "rate": 0,
+              "surviving_per_100_commits": 0
+            },
+            "security": {
+              "total": 0,
+              "surviving": 0,
+              "rate": 0,
+              "surviving_per_100_commits": 0
+            }
+          }
+        },
+        {
+          "label": "6\u20139 months",
+          "total": 3,
+          "surviving": 0,
+          "fixed": 3,
+          "commits": 13,
+          "survival_rate": 0.0,
+          "surviving_per_100_commits": 0.0,
+          "by_family": {
+            "bug": {
+              "total": 2,
+              "surviving": 0,
+              "rate": 0.0,
+              "surviving_per_100_commits": 0.0
+            },
+            "code_smell": {
+              "total": 0,
+              "surviving": 0,
+              "rate": 0,
+              "surviving_per_100_commits": 0.0
+            },
+            "security": {
+              "total": 1,
+              "surviving": 0,
+              "rate": 0.0,
+              "surviving_per_100_commits": 0.0
+            }
+          }
+        },
+        {
+          "label": "3\u20136 months",
+          "total": 2,
+          "surviving": 1,
+          "fixed": 1,
+          "commits": 5,
+          "survival_rate": 0.5,
+          "surviving_per_100_commits": 20.0,
+          "by_family": {
+            "bug": {
+              "total": 0,
+              "surviving": 0,
+              "rate": 0,
+              "surviving_per_100_commits": 0.0
+            },
+            "code_smell": {
+              "total": 2,
+              "surviving": 1,
+              "rate": 0.5,
+              "surviving_per_100_commits": 20.0
+            },
+            "security": {
+              "total": 0,
+              "surviving": 0,
+              "rate": 0,
+              "surviving_per_100_commits": 0.0
+            }
+          }
+        },
+        {
+          "label": "< 3 months",
+          "total": 33,
+          "surviving": 13,
+          "fixed": 20,
+          "commits": 47,
+          "survival_rate": 0.3939,
+          "surviving_per_100_commits": 27.66,
+          "by_family": {
+            "bug": {
+              "total": 0,
+              "surviving": 0,
+              "rate": 0,
+              "surviving_per_100_commits": 0.0
+            },
+            "code_smell": {
+              "total": 25,
+              "surviving": 11,
+              "rate": 0.44,
+              "surviving_per_100_commits": 23.4
+            },
+            "security": {
+              "total": 8,
+              "surviving": 2,
+              "rate": 0.25,
+              "surviving_per_100_commits": 4.26
+            }
+          }
+        }
+      ],
+      "line_survival": {
+        "mean": 0.3993,
+        "median": 0.286,
+        "p25": 0.0,
+        "p75": 0.982,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 44
+      },
+      "semantic_survival": {
+        "mean": 0.6776,
+        "median": 1.0,
+        "p25": 0.333,
+        "p75": 1.0,
+        "min": 0.0,
+        "max": 1.0,
+        "count": 28
+      },
+      "per_repo_survival_distribution": {
+        "mean": 0.3131,
+        "median": 0.4444,
+        "p25": 0.1818,
+        "p75": 0.4444,
+        "min": 0.1818,
+        "max": 0.4444,
+        "count": 2
+      }
+    },
+    "by_role": {
+      "unknown": {
+        "commits": 74,
+        "issues": 163,
+        "issues_fixed": 224,
+        "issues_high": 49,
+        "issues_security": 9,
+        "issues_per_commit": 2.2,
+        "net_debt": -61,
+        "files_analyzed": 100,
+        "files_per_commit": 1.35,
+        "issues_per_file": 1.63,
+        "high_per_file": 0.49,
+        "security_per_file": 0.09,
+        "zero_issue_commits": 50,
+        "zero_issue_pct": 67.6,
+        "fix_rate": 137.4,
+        "by_severity": {
+          "low": 70,
+          "medium": 44,
+          "high": 49
+        },
+        "by_type": {
+          "pylint": 106,
+          "eslint": 48,
+          "security": 9
+        },
+        "by_language": {
+          "python": 114,
+          "typescript": 27,
+          "javascript": 22
+        },
+        "top_rules": [
+          {
+            "name": "raise-missing-from",
+            "count": 11,
+            "high": 0,
+            "medium": 11,
+            "low": 0
+          },
+          {
+            "name": "broad-exception-caught",
+            "count": 8,
+            "high": 0,
+            "medium": 8,
+            "low": 0
+          },
+          {
+            "name": "@typescript-eslint/no-unused-vars",
+            "count": 4,
+            "high": 0,
+            "medium": 4,
+            "low": 0
+          },
+          {
+            "name": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+            "count": 2,
+            "high": 2,
+            "medium": 0,
+            "low": 0
+          },
+          {
+            "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+            "count": 2,
+            "high": 0,
+            "medium": 2,
+            "low": 0
+          },
+          {
+            "name": "B608",
+            "count": 2,
+            "high": 0,
+            "medium": 2,
+            "low": 0
+          },
+          {
+            "name": "no-dupe-keys",
+            "count": 2,
+            "high": 2,
+            "medium": 0,
+            "low": 0
+          },
+          {
+            "name": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+            "count": 1,
+            "high": 1,
+            "medium": 0,
+            "low": 0
+          },
+          {
+            "name": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+            "count": 1,
+            "high": 1,
+            "medium": 0,
+            "low": 0
+          },
+          {
+            "name": "unused-variable",
+            "count": 1,
+            "high": 0,
+            "medium": 1,
+            "low": 0
+          },
+          {
+            "name": "too-many-function-args",
+            "count": 1,
+            "high": 1,
+            "medium": 0,
+            "low": 0
+          },
+          {
+            "name": "too-many-boolean-expressions",
+            "count": 1,
+            "high": 0,
+            "medium": 0,
+            "low": 1
+          },
+          {
+            "name": "unused-argument",
+            "count": 1,
+            "high": 0,
+            "medium": 1,
+            "low": 0
+          },
+          {
+            "name": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+            "count": 1,
+            "high": 0,
+            "medium": 1,
+            "low": 0
+          }
+        ],
+        "by_tool": {
+          "claude": {
+            "commits": 17,
+            "issues_total": 36,
+            "issues_per_commit_mean": 2.12,
+            "issues_per_commit_median": 0,
+            "files_analyzed": 13,
+            "files_per_commit": 0.76,
+            "issues_per_file": 2.77,
+            "zero_issue_pct": 76.5
+          },
+          "copilot": {
+            "commits": 39,
+            "issues_total": 96,
+            "issues_per_commit_mean": 2.46,
+            "issues_per_commit_median": 0,
+            "files_analyzed": 39,
+            "files_per_commit": 1.0,
+            "issues_per_file": 2.46,
+            "zero_issue_pct": 66.7
+          },
+          "cursor": {
+            "commits": 18,
+            "issues_total": 31,
+            "issues_per_commit_mean": 1.72,
+            "issues_per_commit_median": 0,
+            "files_analyzed": 48,
+            "files_per_commit": 2.67,
+            "issues_per_file": 0.65,
+            "zero_issue_pct": 61.1
+          }
+        },
+        "time_series": [
+          {
+            "month": "2024-10",
+            "commits": 2,
+            "issues": 0,
+            "high_issues": 0
+          },
+          {
+            "month": "2025-06",
+            "commits": 1,
+            "issues": 0,
+            "high_issues": 0
+          },
+          {
+            "month": "2025-07",
+            "commits": 3,
+            "issues": 0,
+            "high_issues": 0
+          },
+          {
+            "month": "2025-08",
+            "commits": 13,
+            "issues": 22,
+            "high_issues": 21
+          },
+          {
+            "month": "2025-09",
+            "commits": 2,
+            "issues": 0,
+            "high_issues": 0
+          },
+          {
+            "month": "2025-10",
+            "commits": 5,
+            "issues": 17,
+            "high_issues": 13
+          },
+          {
+            "month": "2025-11",
+            "commits": 1,
+            "issues": 0,
+            "high_issues": 0
+          },
+          {
+            "month": "2025-12",
+            "commits": 18,
+            "issues": 43,
+            "high_issues": 1
+          },
+          {
+            "month": "2026-01",
+            "commits": 9,
+            "issues": 50,
+            "high_issues": 6
+          },
+          {
+            "month": "2026-02",
+            "commits": 20,
+            "issues": 31,
+            "high_issues": 8
+          }
+        ]
+      }
+    },
+    "file_lifecycle": {
+      "total_files": 101,
+      "survived": 0,
+      "modified": 84,
+      "deleted": 17,
+      "had_fixes": 0,
+      "refactored": 0
+    }
+  }
+}

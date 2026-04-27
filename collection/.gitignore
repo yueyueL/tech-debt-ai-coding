@@ -1,0 +1,14 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated output (created at runtime by main.py)
+result/
+tmp/
+
+# Logs
+*.log
+
+# Macros
+.DS_Store

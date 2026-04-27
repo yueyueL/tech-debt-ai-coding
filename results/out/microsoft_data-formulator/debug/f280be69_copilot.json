@@ -1,0 +1,116 @@
+{
+  "commit_hash": "f280be6965c3a5f9b0958a9237ac62ceb46e321d",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/f280be6965c3a5f9b0958a9237ac62ceb46e321d",
+  "author": "",
+  "message": "Update py-src/data_formulator/data_loader/mysql_data_loader.py\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+  "timestamp": "2025-12-04T17:46:49-08:00",
+  "debt_debug": {
+    "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+      "issues_added": [
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 270,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": []
+    }
+  },
+  "lifecycle_debug": {
+    "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+      "line_ranges": [
+        [
+          264,
+          267
+        ],
+        [
+          269,
+          278
+        ]
+      ],
+      "lines_added": 14,
+      "lines_exist": 4,
+      "lines_modified": 10,
+      "lines_deleted": 0,
+      "modification_count": 0,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 3,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 3,
+        "new_units": 8,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.2857142857142857,
+        "semantic_vs_syntactic_delta": -0.2857,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "MySQLDataLoader.close",
+          "MySQLDataLoader.__enter__",
+          "MySQLDataLoader.__exit__"
+        ]
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 1,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 1,
+      "files": [
+        {
+          "filepath": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 88.96299768518519,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.286,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 14,
+      "lines_still_exist": 4
+    }
+  }
+}

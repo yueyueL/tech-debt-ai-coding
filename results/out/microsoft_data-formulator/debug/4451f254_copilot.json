@@ -1,0 +1,259 @@
+{
+  "commit_hash": "4451f2543248194763c017b8d2bb660c787820cc",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/4451f2543248194763c017b8d2bb660c787820cc",
+  "author": "",
+  "message": "Address code review: improve timeout validation and fix comments\nCo-authored-by: Chenglong-MS <93549116+Chenglong-MS@users.noreply.github.com>",
+  "timestamp": "2025-12-01T22:28:42+00:00",
+  "debt_debug": {
+    "py-src/data_formulator/data_loader/postgresql_data_loader.py": {
+      "issues_added": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 49,
+          "symbol": "line-too-long",
+          "message": "Line too long (110/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 46,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 49,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 46,
+          "symbol": "line-too-long",
+          "message": "Line too long (127/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": []
+    },
+    "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+      "issues_added": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 72,
+          "symbol": "line-too-long",
+          "message": "Line too long (110/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 69,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 72,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 69,
+          "symbol": "line-too-long",
+          "message": "Line too long (127/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 99,
+          "symbol": "line-too-long",
+          "message": "Line too long (109/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ]
+    }
+  },
+  "lifecycle_debug": {
+    "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "py-src/data_formulator/data_loader/postgresql_data_loader.py": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+      "line_ranges": [
+        [
+          65,
+          72
+        ],
+        [
+          105,
+          106
+        ]
+      ],
+      "lines_added": 10,
+      "lines_exist": 1,
+      "lines_modified": 9,
+      "lines_deleted": 0,
+      "modification_count": 2,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 7,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.1,
+        "semantic_vs_syntactic_delta": 0.9,
+        "survived_names": [],
+        "modified_names": [
+          "MySQLDataLoader.__init__"
+        ],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+      "line_ranges": [
+        [
+          42,
+          49
+        ],
+        [
+          79,
+          80
+        ]
+      ],
+      "lines_added": 10,
+      "lines_exist": 1,
+      "lines_modified": 9,
+      "lines_deleted": 0,
+      "modification_count": 2,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 7,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.1,
+        "semantic_vs_syntactic_delta": 0.9,
+        "survived_names": [],
+        "modified_names": [
+          "PostgreSQLDataLoader.__init__"
+        ],
+        "deleted_names": []
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 8,
+      "issues_fixed": 1
+    },
+    "lifecycle": {
+      "files_analyzed": 2,
+      "files": [
+        {
+          "filepath": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 92.1005787037037,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 92.1005787037037,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.1,
+      "semantic_survival_rate": 1.0,
+      "developer_valuation": "HIGH",
+      "lines_added": 20,
+      "lines_still_exist": 2
+    }
+  }
+}

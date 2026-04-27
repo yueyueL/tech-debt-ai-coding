@@ -1,0 +1,98 @@
+{
+  "commit_hash": "a58425c1468f6a827595f3650b98875af6d20103",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "cursor",
+  "url": "https://github.com/superagent-ai/superagent/commit/a58425c1468f6a827595f3650b98875af6d20103",
+  "author": "",
+  "message": "fix: resolve Content-Length mismatch in fallback requests\n- Create fresh headers for fallback to avoid cached Content-Length\n- Update tests to allow 0 token usage when fallback endpoint is used\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+  "timestamp": "2026-02-03T09:17:40+01:00",
+  "lifecycle_debug": {
+    "sdk/typescript/src/providers/index.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "sdk/typescript/src/providers/index.ts",
+      "line_ranges": [
+        [
+          176,
+          179
+        ],
+        [
+          182,
+          183
+        ]
+      ],
+      "lines_added": 6,
+      "lines_exist": 6,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 2,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 2,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 1.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [
+          "callProvider"
+        ],
+        "deleted_names": []
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 1,
+      "files": [
+        {
+          "filepath": "sdk/typescript/src/providers/index.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.0117013888889,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 1.0,
+      "semantic_survival_rate": 1.0,
+      "developer_valuation": "HIGH",
+      "lines_added": 6,
+      "lines_still_exist": 6
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "commit_hash": "4bd6e8c34edacd5ee847d62651a611db2048170d",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "cursor",
+  "url": "https://github.com/superagent-ai/superagent/commit/4bd6e8c34edacd5ee847d62651a611db2048170d",
+  "author": "",
+  "message": "Add Claude Code Hooks documentation and example (#1094)\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>\nCo-authored-by: ismail <ismail@superagent.sh>",
+  "timestamp": "2026-01-04T12:15:33+01:00",
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 0,
+      "files": []
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 0,
+      "lines_still_exist": 0
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "commit_hash": "8facd60b703ee2141627dd5e7e532962f2ea02b7",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "claude",
+  "url": "https://github.com/superagent-ai/superagent/commit/8facd60b703ee2141627dd5e7e532962f2ea02b7",
+  "author": "",
+  "message": "Fix hyper stream feature flag for Body::wrap_stream\nAdd back \"stream\" feature for hyper to support Body::wrap_stream usage\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
+  "timestamp": "2025-08-20T12:13:53+02:00",
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 0,
+      "files": []
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 0,
+      "lines_still_exist": 0
+    }
+  }
+}

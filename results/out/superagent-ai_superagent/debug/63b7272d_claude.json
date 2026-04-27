@@ -1,0 +1,194 @@
+{
+  "commit_hash": "63b7272d968f570ffefa5fa65545e9f665dc5891",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "claude",
+  "url": "https://github.com/superagent-ai/superagent/commit/63b7272d968f570ffefa5fa65545e9f665dc5891",
+  "author": "",
+  "message": "Rename vibekit-proxy to ai-proxy and rebrand as Superagent\n- Renamed package from vibekit-proxy to ai-proxy\n- Updated all references in codebase, workflows, and documentation\n- Changed branding from VibeKit to Superagent in user-facing text\n- Updated version to 0.0.1 for both Node.js and Rust packages\n- Maintained vibekit.yaml config file name for compatibility\n- Fixed Rust crate imports for new package name\n- Updated GitHub workflows for ai-proxy artifacts\n- Both Node.js and Rust implementation",
+  "timestamp": "2025-08-26T12:43:00+02:00",
+  "destiny_debug": [
+    {
+      "file": "node/src/cli.js",
+      "line_ranges": [
+        [
+          18,
+          19
+        ]
+      ],
+      "lines_added": 2,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 2,
+      "modification_count": 0
+    },
+    {
+      "file": "node/src/server.js",
+      "line_ranges": [
+        [
+          542,
+          542
+        ],
+        [
+          545,
+          545
+        ],
+        [
+          583,
+          583
+        ],
+        [
+          586,
+          586
+        ]
+      ],
+      "lines_added": 4,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 4,
+      "modification_count": 0
+    },
+    {
+      "file": "rust/src/cli.rs",
+      "line_ranges": [
+        [
+          8,
+          8
+        ],
+        [
+          10,
+          10
+        ]
+      ],
+      "lines_added": 2,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 2,
+      "modification_count": 0
+    },
+    {
+      "file": "rust/src/main.rs",
+      "line_ranges": [
+        [
+          2,
+          2
+        ]
+      ],
+      "lines_added": 1,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 1,
+      "modification_count": 0
+    },
+    {
+      "file": "test.sh",
+      "line_ranges": [
+        [
+          18,
+          18
+        ],
+        [
+          48,
+          48
+        ]
+      ],
+      "lines_added": 2,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 2,
+      "modification_count": 0
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 5,
+      "files": [
+        {
+          "filepath": "node/src/cli.js",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "node/src/server.js",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "rust/src/cli.rs",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "rust/src/main.rs",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "test.sh",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 11,
+      "lines_still_exist": 0
+    }
+  }
+}

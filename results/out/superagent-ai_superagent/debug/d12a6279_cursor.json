@@ -1,0 +1,800 @@
+{
+  "commit_hash": "d12a6279357e4c0fe4e49eca9bb07e32bc00f19b",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "cursor",
+  "url": "https://github.com/superagent-ai/superagent/commit/d12a6279357e4c0fe4e49eca9bb07e32bc00f19b",
+  "author": "",
+  "message": "feat: add cold start fallback for superagent models\nAdd automatic fallback to always-on endpoint when primary Cloud Run\nendpoints experience cold starts.\n\n- Add timeout-based fallback (default 5s) using AbortController (TS) / asyncio (Python)\n- Add DEFAULT_FALLBACK_URL constant pointing to https://superagent.sh/api/fallback\n- Add getFallbackUrl() helper with priority: client option > env var > default\n- Add FallbackOptions interface/dataclass for configuration\n- Add enableFallback, fallbackTimeo",
+  "timestamp": "2026-02-03T08:26:13+01:00",
+  "debt_debug": {
+    "sdk/typescript/src/providers/index.ts": {
+      "issues_added": [
+        {
+          "type": "eslint",
+          "severity": "warning",
+          "line": 15,
+          "rule": "@typescript-eslint/no-unused-vars",
+          "message": "'DEFAULT_FALLBACK_URL' is defined but never used. Allowed unused vars must match /^_/u.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": false
+        }
+      ],
+      "issues_resolved": []
+    },
+    "sdk/python/src/safety_agent/types.py": {
+      "issues_added": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 22,
+          "symbol": "line-too-long",
+          "message": "Line too long (109/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 28,
+          "symbol": "line-too-long",
+          "message": "Line too long (105/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": []
+    },
+    "sdk/typescript/src/client.ts": {
+      "issues_added": [],
+      "issues_resolved": [
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 454,
+          "rule": "@typescript-eslint/class-methods-use-this",
+          "message": "Expected 'this' to be used by class async method 'guardSingleText'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 505,
+          "rule": "@typescript-eslint/class-methods-use-this",
+          "message": "Expected 'this' to be used by class async method 'guardImage'.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        }
+      ]
+    },
+    "sdk/python/src/safety_agent/providers/__init__.py": {
+      "issues_added": [
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 185,
+          "symbol": "raise-missing-from",
+          "message": "Consider explicitly re-raising using 'except Exception as exc' and 'raise RuntimeError(f'Fallback provider API error ({fallback_response.status_code}): {fallback_response.text}') from exc'",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 136,
+          "symbol": "line-too-long",
+          "message": "Line too long (115/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": []
+    }
+  },
+  "lifecycle_debug": {
+    "sdk/python/src/safety_agent/client.py": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/python/src/safety_agent/providers/__init__.py": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/python/src/safety_agent/providers/superagent.py": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/python/src/safety_agent/types.py": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/typescript/src/client.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/typescript/src/providers/index.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/typescript/src/providers/superagent.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "sdk/typescript/src/types.ts": {
+      "subsequent_commits": [
+        {
+          "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+          "author": "CDrake",
+          "email": "63809370+frankentini@users.noreply.github.com",
+          "timestamp": 1775896471,
+          "message": "test: add comprehensive structured output support tests (#1140)",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "sdk/python/src/safety_agent/client.py",
+      "line_ranges": [
+        [
+          30,
+          30
+        ],
+        [
+          217,
+          221
+        ],
+        [
+          266,
+          268
+        ],
+        [
+          324,
+          326
+        ],
+        [
+          510,
+          512
+        ],
+        [
+          709,
+          711
+        ],
+        [
+          719,
+          722
+        ],
+        [
+          727,
+          741
+        ]
+      ],
+      "lines_added": 37,
+      "lines_exist": 34,
+      "lines_modified": 3,
+      "lines_deleted": 0,
+      "modification_count": 8,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 5,
+        "surviving_units": 2,
+        "modified_units": 3,
+        "deleted_units": 0,
+        "new_units": 10,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.4,
+        "modification_rate": 0.6,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.918918918918919,
+        "semantic_vs_syntactic_delta": 0.0811,
+        "survived_names": [
+          "SafetyClient.__init__",
+          "create_client"
+        ],
+        "modified_names": [
+          "SafetyClient._guard_single_text",
+          "SafetyClient._guard_image",
+          "SafetyClient.redact"
+        ],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/python/src/safety_agent/providers/__init__.py",
+      "line_ranges": [
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          23,
+          42
+        ],
+        [
+          106,
+          106
+        ],
+        [
+          133,
+          193
+        ],
+        [
+          218,
+          218
+        ]
+      ],
+      "lines_added": 85,
+      "lines_exist": 85,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 8,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 1,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 2,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.5,
+        "modification_rate": 0.5,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "FallbackOptions"
+        ],
+        "modified_names": [
+          "call_provider"
+        ],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/python/src/safety_agent/providers/superagent.py",
+      "line_ranges": [
+        [
+          6,
+          6
+        ],
+        [
+          20,
+          36
+        ]
+      ],
+      "lines_added": 18,
+      "lines_exist": 18,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 3,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 5,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "get_fallback_url"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/python/src/safety_agent/types.py",
+      "line_ranges": [
+        [
+          21,
+          29
+        ]
+      ],
+      "lines_added": 9,
+      "lines_exist": 9,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 1,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 18,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "ClientConfig"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/typescript/src/client.ts",
+      "line_ranges": [
+        [
+          20,
+          20
+        ],
+        [
+          75,
+          75
+        ],
+        [
+          86,
+          86
+        ],
+        [
+          423,
+          423
+        ],
+        [
+          429,
+          429
+        ],
+        [
+          433,
+          437
+        ],
+        [
+          464,
+          464
+        ],
+        [
+          484,
+          489
+        ],
+        [
+          520,
+          520
+        ],
+        [
+          524,
+          524
+        ],
+        [
+          553,
+          558
+        ],
+        [
+          618,
+          618
+        ],
+        [
+          636,
+          637
+        ],
+        [
+          659,
+          659
+        ],
+        [
+          687,
+          692
+        ],
+        [
+          755,
+          755
+        ],
+        [
+          764,
+          764
+        ],
+        [
+          796,
+          796
+        ],
+        [
+          866,
+          867
+        ]
+      ],
+      "lines_added": 40,
+      "lines_exist": 37,
+      "lines_modified": 3,
+      "lines_deleted": 0,
+      "modification_count": 19,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 2,
+        "surviving_units": 2,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 3,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.925,
+        "semantic_vs_syntactic_delta": 0.075,
+        "survived_names": [
+          "aggregateGuardResults",
+          "SafetyClient"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/typescript/src/providers/index.ts",
+      "line_ranges": [
+        [
+          11,
+          16
+        ],
+        [
+          19,
+          30
+        ],
+        [
+          61,
+          61
+        ],
+        [
+          70,
+          70
+        ],
+        [
+          86,
+          86
+        ],
+        [
+          99,
+          100
+        ],
+        [
+          109,
+          109
+        ],
+        [
+          116,
+          116
+        ],
+        [
+          124,
+          198
+        ]
+      ],
+      "lines_added": 100,
+      "lines_exist": 100,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 12,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 3,
+        "surviving_units": 2,
+        "modified_units": 1,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 0.6667,
+        "modification_rate": 0.3333,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "parseModel",
+          "getProvider"
+        ],
+        "modified_names": [
+          "callProvider"
+        ],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/typescript/src/providers/superagent.ts",
+      "line_ranges": [
+        [
+          8,
+          36
+        ],
+        [
+          81,
+          81
+        ],
+        [
+          146,
+          146
+        ],
+        [
+          156,
+          156
+        ]
+      ],
+      "lines_added": 32,
+      "lines_exist": 32,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 5,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 1.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [
+          "getFallbackUrl"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "sdk/typescript/src/types.ts",
+      "line_ranges": [
+        [
+          7,
+          12
+        ]
+      ],
+      "lines_added": 6,
+      "lines_exist": 6,
+      "lines_modified": 0,
+      "lines_deleted": 0,
+      "modification_count": 1,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 5,
+      "issues_fixed": 2
+    },
+    "lifecycle": {
+      "files_analyzed": 8,
+      "files": [
+        {
+          "filepath": "sdk/python/src/safety_agent/client.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.04743055555555,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/python/src/safety_agent/providers/__init__.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.04743055555555,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/python/src/safety_agent/providers/superagent.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.04743055555555,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/python/src/safety_agent/types.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.04743055555555,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/typescript/src/client.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.04743055555555,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/typescript/src/providers/index.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.04743055555555,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/typescript/src/providers/superagent.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.04743055555555,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "sdk/typescript/src/types.ts",
+          "status": "MODIFIED",
+          "days_to_first_change": 67.04743055555555,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.982,
+      "semantic_survival_rate": 1.0,
+      "developer_valuation": "HIGH",
+      "lines_added": 327,
+      "lines_still_exist": 321
+    }
+  }
+}

@@ -1,0 +1,1878 @@
+[
+  {
+    "commit_hash": "4f11b912ec2ceca77f81fb591533003b28827284",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "7567d4a083bf3589b28e546779eda666a4332c15",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 17,
+    "code_files_analyzed": 7,
+    "files": [
+      {
+        "filepath": "sdk/python/src/safety_agent/client.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 66.99699074074074,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/prompts/__init__.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 66.99699074074074,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/prompts/scan.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 66.99699074074074,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/client.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 66.99699074074074,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/prompts/index.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 66.99699074074074,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/prompts/scan.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 66.99699074074074,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/providers/index.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 66.99699074074074,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "sdk/python/src/safety_agent/client.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/prompts/__init__.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/prompts/scan.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/client.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/prompts/index.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/prompts/scan.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/providers/index.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "38681fbac0e4e4675bc7dae51758c05618c111b4",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 6,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "sdk/typescript/src/prompts/index.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 66.99914351851852,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "sdk/typescript/src/prompts/index.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "a58425c1468f6a827595f3650b98875af6d20103",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "sdk/typescript/src/providers/index.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.0117013888889,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "sdk/typescript/src/providers/index.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "b397c4d923e73dba88ddc3e2cc5ef166e130e89b",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "8de87e3c278ecbeef551d05b6e0c2fe629edfe93",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "d22c501e606a41df7ba8fbb1109fb22336960bcc",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "7a9711d86395685da20140966e23d8b55256e6e4",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "7e77462d9ccdd32f13c48eec85db5fdf1a64ef01",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 5,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "f1690722f9ff8be31b02821e1890188b33755d9a",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 0,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "fc405c889d11eeac4e14f163744b99a773625b77",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 6,
+    "code_files_analyzed": 6,
+    "files": [
+      {
+        "filepath": "sdk/python/src/safety_agent/client.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.0274537037037,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/prompts/__init__.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.0274537037037,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/prompts/scan.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.0274537037037,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/client.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.0274537037037,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/prompts/index.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.0274537037037,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/prompts/scan.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.0274537037037,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "sdk/python/src/safety_agent/client.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/prompts/__init__.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/prompts/scan.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/client.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/prompts/index.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/prompts/scan.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "2398fc4826155260730033df876ec4ba484da21b",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 16,
+    "code_files_analyzed": 8,
+    "files": [
+      {
+        "filepath": "sdk/python/src/safety_agent/client.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.03475694444444,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/providers/__init__.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.03475694444444,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/providers/superagent.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.03475694444444,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/types.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.03475694444444,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/client.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.03475694444444,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/providers/index.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.03475694444444,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/providers/superagent.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.03475694444444,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/types.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.03475694444444,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "sdk/python/src/safety_agent/client.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/providers/__init__.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/providers/superagent.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/types.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/client.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/providers/index.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/providers/superagent.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/types.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "1066c79fa1d0c69fdad453e7b314c4f2b715397e",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 4,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "d12a6279357e4c0fe4e49eca9bb07e32bc00f19b",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 12,
+    "code_files_analyzed": 8,
+    "files": [
+      {
+        "filepath": "sdk/python/src/safety_agent/client.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.04743055555555,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/providers/__init__.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.04743055555555,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/providers/superagent.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.04743055555555,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/types.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.04743055555555,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/client.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.04743055555555,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/providers/index.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.04743055555555,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/providers/superagent.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.04743055555555,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/types.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 67.04743055555555,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "sdk/python/src/safety_agent/client.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/providers/__init__.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/providers/superagent.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/types.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/client.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/providers/index.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/providers/superagent.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/types.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "5f004c3b63311998a9699d993a7b3999634e3afc",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 23,
+    "code_files_analyzed": 7,
+    "files": [
+      {
+        "filepath": "sdk/python/src/safety_agent/client.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 68.02519675925926,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/providers/__init__.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 68.02519675925926,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/python/src/safety_agent/providers/openai_compatible.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 68.02519675925926,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/client.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 68.02519675925926,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/providers/index.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 68.02519675925926,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/providers/openai-compatible.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 68.02519675925926,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "sdk/typescript/src/types.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 68.02519675925926,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "sdk/python/src/safety_agent/client.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/providers/__init__.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/python/src/safety_agent/providers/openai_compatible.py": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/client.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/providers/index.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/providers/openai-compatible.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "sdk/typescript/src/types.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "708e7f510515e37d70114d428143c6bed4175e46",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 5,
+    "code_files_analyzed": 2,
+    "files": [
+      {
+        "filepath": "cli/src/commands/guard.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 68.04862268518518,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "cli/src/commands/redact.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 68.04862268518518,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "cli/src/commands/guard.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "cli/src/commands/redact.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "4bd6e8c34edacd5ee847d62651a611db2048170d",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 3,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "c860a27986fe02d2843ee435e4fa56ccbe262099",
+    "ai_tool": "cursor",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 3,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "eabf6064b82c169cc204de02db5a4fc5d3a0a0e8",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 3,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "92f6d73576383a50426e1cdaa9e4a21be4ce2712",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "56263014a8509db923c64235f030b80c7e077067",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 4,
+    "code_files_analyzed": 3,
+    "files": [
+      {
+        "filepath": "cli/src/commands/guard.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 191.85416666666666,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "cli/src/commands/redact.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 191.85416666666666,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "cli/src/index.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 191.85416666666666,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "cli/src/commands/guard.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "cli/src/commands/redact.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "cli/src/index.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "0473257e206d73959771c6d8c363f45b742684f7",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 3,
+    "code_files_analyzed": 2,
+    "files": [
+      {
+        "filepath": "cli/src/commands/redact.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 191.8606597222222,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "cli/src/index.ts",
+        "status": "MODIFIED",
+        "days_to_first_change": 191.8606597222222,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "cli/src/commands/redact.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "cli/src/index.ts": {
+        "subsequent_commits": [
+          {
+            "sha": "5adc62db2c209b32ac0e273e9b92b62d41ce0a35",
+            "author": "CDrake",
+            "email": "63809370+frankentini@users.noreply.github.com",
+            "timestamp": 1775896471,
+            "message": "test: add comprehensive structured output support tests (#1140)",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "46695d14622a6c5de22315ce9514964d22e4d825",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 4,
+    "code_files_analyzed": 2,
+    "files": [
+      {
+        "filepath": "node/src/server.js",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "rust/src/server.rs",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ]
+  },
+  {
+    "commit_hash": "63b7272d968f570ffefa5fa65545e9f665dc5891",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 15,
+    "code_files_analyzed": 5,
+    "files": [
+      {
+        "filepath": "node/src/cli.js",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "node/src/server.js",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "rust/src/cli.rs",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "rust/src/main.rs",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "test.sh",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ]
+  },
+  {
+    "commit_hash": "c35f7e3a80d438cd54af6b7c0eb08b996ff2c4d2",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "8facd60b703ee2141627dd5e7e532962f2ea02b7",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "6c2bcfd76c720025417fbf2ac1af87a960bd75df",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "0ad774224f329d0ccab4b8a9fadd101fb3bd85c3",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "9e3460135918bd62d71162c1778ab19f761874fa",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "rust/src/cli.rs",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ]
+  },
+  {
+    "commit_hash": "8d0e011e7831113c12703f0f635411ec376a2e19",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 3,
+    "code_files_analyzed": 2,
+    "files": [
+      {
+        "filepath": "node/src/cli.js",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "node/src/config.js",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ]
+  },
+  {
+    "commit_hash": "2dc5a09fd18959bea15ec6439dc9d13481628de8",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "a955f7f4b263945fead52ed2cd827e855932fc5a",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "bd43e1ea57e030529dbae70126d4b0e7f7dfa5ea",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "475366ad75083f63efb9aa479291a3ab32f6e2f2",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 7,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "test.sh",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ]
+  },
+  {
+    "commit_hash": "1d78c2edade652d1fa4c9ed58c700951d975dc7f",
+    "ai_tool": "claude",
+    "repo": "superagent-ai/superagent",
+    "total_files_in_commit": 8,
+    "code_files_analyzed": 6,
+    "files": [
+      {
+        "filepath": "node/src/cli.js",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "node/src/config.js",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "node/src/index.js",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "node/src/server.js",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "rust/src/cli.rs",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "rust/src/config.rs",
+        "status": "DELETED",
+        "days_to_first_change": null,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": true,
+        "num_changes": 0,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ]
+  }
+]

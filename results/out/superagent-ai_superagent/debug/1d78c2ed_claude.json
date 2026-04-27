@@ -1,0 +1,235 @@
+{
+  "commit_hash": "1d78c2edade652d1fa4c9ed58c700951d975dc7f",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "claude",
+  "url": "https://github.com/superagent-ai/superagent/commit/1d78c2edade652d1fa4c9ed58c700951d975dc7f",
+  "author": "",
+  "message": "Standardize config filename to vibekit.yaml\n- Update Node.js and Rust implementations to use vibekit.yaml as default\n- Rename config.yaml to vibekit.yaml for consistency\n- Fix config path resolution issues in Node.js version\n- Update CLI help text and default values across both implementations\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
+  "timestamp": "2025-08-20T11:19:00+02:00",
+  "destiny_debug": [
+    {
+      "file": "node/src/cli.js",
+      "line_ranges": [
+        [
+          15,
+          15
+        ],
+        [
+          21,
+          21
+        ],
+        [
+          32,
+          32
+        ],
+        [
+          111,
+          111
+        ]
+      ],
+      "lines_added": 4,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 4,
+      "modification_count": 0
+    },
+    {
+      "file": "node/src/config.js",
+      "line_ranges": [
+        [
+          14,
+          14
+        ]
+      ],
+      "lines_added": 1,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 1,
+      "modification_count": 0
+    },
+    {
+      "file": "node/src/index.js",
+      "line_ranges": [
+        [
+          9,
+          9
+        ]
+      ],
+      "lines_added": 1,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 1,
+      "modification_count": 0
+    },
+    {
+      "file": "node/src/server.js",
+      "line_ranges": [
+        [
+          11,
+          11
+        ]
+      ],
+      "lines_added": 1,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 1,
+      "modification_count": 0
+    },
+    {
+      "file": "rust/src/cli.rs",
+      "line_ranges": [
+        [
+          24,
+          25
+        ],
+        [
+          43,
+          44
+        ]
+      ],
+      "lines_added": 4,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 4,
+      "modification_count": 0
+    },
+    {
+      "file": "rust/src/config.rs",
+      "line_ranges": [
+        [
+          60,
+          60
+        ],
+        [
+          62,
+          62
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          66,
+          66
+        ],
+        [
+          78,
+          78
+        ]
+      ],
+      "lines_added": 5,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 5,
+      "modification_count": 0
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 6,
+      "files": [
+        {
+          "filepath": "node/src/cli.js",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "node/src/config.js",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "node/src/index.js",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "node/src/server.js",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "rust/src/cli.rs",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "rust/src/config.rs",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 16,
+      "lines_still_exist": 0
+    }
+  }
+}

@@ -1,0 +1,567 @@
+{
+  "commit_hash": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/d8549c0c8c139531ee5bf266609f7e5352384c5f",
+  "author": "",
+  "message": "Add refresh data feature with backend endpoint and UI components\nCo-authored-by: Chenglong-MS <93549116+Chenglong-MS@users.noreply.github.com>",
+  "timestamp": "2026-01-15T23:49:15+00:00",
+  "debt_debug": {
+    "src/app/dfSlice.tsx": {
+      "issues_added": [
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 480,
+          "rule": "prefer-const",
+          "message": "'rows' is never reassigned. Use 'const' instead.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        },
+        {
+          "type": "eslint",
+          "severity": "error",
+          "line": 495,
+          "rule": "@typescript-eslint/no-use-before-define",
+          "message": "'getDataFieldItems' was used before it was defined.",
+          "category": "maintainability",
+          "detected_by": "eslint",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": []
+    },
+    "py-src/data_formulator/tables_routes.py": {
+      "issues_added": [
+        {
+          "type": "security",
+          "severity": "error",
+          "line": 888,
+          "symbol": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+          "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 894,
+          "symbol": "line-too-long",
+          "message": "Line too long (105/100)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "security",
+          "severity": "error",
+          "line": 888,
+          "symbol": "python.flask.security.injection.tainted-sql-string.tainted-sql-string",
+          "message": "Detected user input used to manually construct a SQL string. This is usually bad practice because manual construction could accidentally result in a SQL injection. An attacker could use a SQL injection to steal or modify contents of the database. Instead, use a parameterized query which is available by default in most database engines. Alternatively, consider using an object-relational mapper (ORM) such as SQLAlchemy which will protect your queries.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 851,
+          "symbol": "import-outside-toplevel",
+          "message": "Import outside toplevel (data_formulator.py_sandbox.run_transform_in_sandbox2020)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "security",
+          "severity": "warning",
+          "line": 888,
+          "symbol": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+          "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 917,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 930,
+          "symbol": "logging-fstring-interpolation",
+          "message": "Use lazy % formatting in logging functions",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "security",
+          "severity": "error",
+          "line": 888,
+          "symbol": "python.django.security.injection.tainted-sql-string.tainted-sql-string",
+          "message": "Detected user input used to manually construct a SQL string. This is usually bad practice because manual construction could accidentally result in a SQL injection. An attacker could use a SQL injection to steal or modify contents of the database. Instead, use a parameterized query which is available by default in most database engines. Alternatively, consider using the Django object-relational mappers (ORM) instead of raw SQL queries.",
+          "category": "vulnerability",
+          "detected_by": "semgrep",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 852,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 854,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 858,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 861,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 864,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 868,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 870,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 877,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 880,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 890,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 892,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 895,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 898,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 902,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 915,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 923,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 928,
+          "symbol": "trailing-whitespace",
+          "message": "Trailing whitespace",
+          "category": "maintainability",
+          "_is_low_severity": true
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 867,
+          "symbol": "unused-variable",
+          "message": "Unused variable 'updated_columns'",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 916,
+          "symbol": "broad-exception-caught",
+          "message": "Catching too general exception Exception",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "warning",
+          "line": 929,
+          "symbol": "broad-exception-caught",
+          "message": "Catching too general exception Exception",
+          "category": "maintainability",
+          "_is_low_severity": false
+        },
+        {
+          "type": "pylint",
+          "severity": "refactor",
+          "line": 848,
+          "symbol": "too-many-locals",
+          "message": "Too many local variables (23/15)",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ],
+      "issues_resolved": [
+        {
+          "type": "pylint",
+          "severity": "convention",
+          "line": 844,
+          "symbol": "missing-final-newline",
+          "message": "Final newline missing",
+          "category": "maintainability",
+          "_is_low_severity": true
+        }
+      ]
+    }
+  },
+  "lifecycle_debug": {
+    "py-src/data_formulator/tables_routes.py": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "src/app/dfSlice.tsx": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "src/views/DataThread.tsx": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "py-src/data_formulator/tables_routes.py",
+      "line_ranges": [
+        [
+          844,
+          934
+        ]
+      ],
+      "lines_added": 91,
+      "lines_exist": 37,
+      "lines_modified": 54,
+      "lines_deleted": 0,
+      "modification_count": 1,
+      "semantic": {
+        "supported": true,
+        "language": "python",
+        "original_units": 2,
+        "surviving_units": 0,
+        "modified_units": 1,
+        "deleted_units": 1,
+        "new_units": 30,
+        "semantic_survival_rate": 0.5,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.5,
+        "deletion_rate": 0.5,
+        "syntactic_survival_rate": 0.4065934065934066,
+        "semantic_vs_syntactic_delta": 0.0934,
+        "survived_names": [],
+        "modified_names": [
+          "data_loader_ingest_data_from_query"
+        ],
+        "deleted_names": [
+          "refresh_derived_data"
+        ]
+      }
+    },
+    {
+      "file": "src/app/dfSlice.tsx",
+      "line_ranges": [
+        [
+          478,
+          497
+        ]
+      ],
+      "lines_added": 20,
+      "lines_exist": 11,
+      "lines_modified": 9,
+      "lines_deleted": 0,
+      "modification_count": 1,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "src/views/DataThread.tsx",
+      "line_ranges": [
+        [
+          25,
+          28
+        ],
+        [
+          52,
+          53
+        ],
+        [
+          204,
+          387
+        ],
+        [
+          682,
+          691
+        ],
+        [
+          721,
+          835
+        ],
+        [
+          990,
+          1007
+        ],
+        [
+          1009,
+          1029
+        ],
+        [
+          1046,
+          1094
+        ],
+        [
+          1260,
+          1267
+        ]
+      ],
+      "lines_added": 411,
+      "lines_exist": 196,
+      "lines_modified": 215,
+      "lines_deleted": 0,
+      "modification_count": 10,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 9,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 9,
+        "new_units": 47,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.4768856447688564,
+        "semantic_vs_syntactic_delta": -0.4769,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "validateData",
+          "handleFileChange",
+          "handleRefresh",
+          "handleOpenRefreshDataPopup",
+          "handleCloseRefreshDataPopup",
+          "handleRefreshData",
+          "handleMenuOpen",
+          "handleMenuClose",
+          "buildTableCard"
+        ]
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 31,
+      "issues_fixed": 1
+    },
+    "lifecycle": {
+      "files_analyzed": 3,
+      "files": [
+        {
+          "filepath": "py-src/data_formulator/tables_routes.py",
+          "status": "MODIFIED",
+          "days_to_first_change": 47.044641203703705,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "src/app/dfSlice.tsx",
+          "status": "MODIFIED",
+          "days_to_first_change": 47.044641203703705,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "src/views/DataThread.tsx",
+          "status": "MODIFIED",
+          "days_to_first_change": 47.044641203703705,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.467,
+      "semantic_survival_rate": 0.091,
+      "developer_valuation": "LOW",
+      "lines_added": 522,
+      "lines_still_exist": 244
+    }
+  }
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Quality — Paper Tables</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        /* Paper tables page styles */
+        .paper-section { margin-bottom: 3rem; }
+        .paper-section h2 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--text-primary); }
+        .paper-section .section-desc { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem; }
+        .rq-tag { font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; vertical-align: middle; margin-right: 0.5rem; }
+        .rq-tag-overview { background: rgba(56,189,248,0.15); color: #38bdf8; }
+        .rq-tag-rq1 { background: rgba(129,140,248,0.15); color: #818cf8; }
+        .rq-tag-rq2 { background: rgba(251,191,36,0.15); color: #fbbf24; }
+        .rq-tag-rq3 { background: rgba(52,211,153,0.15); color: #34d399; }
+        .table-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; margin-bottom: 1.5rem; overflow-x: auto; }
+        .table-card h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--text-secondary); }
+        .table-card .table-caption { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.6rem; font-style: italic; }
+        .paper-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; font-variant-numeric: tabular-nums; }
+        .paper-table th { padding: 0.5rem 0.7rem; text-align: left; border-bottom: 2px solid var(--border); color: var(--text-muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; white-space: nowrap; }
+        .paper-table td { padding: 0.45rem 0.7rem; border-bottom: 1px solid var(--border); }
+        .paper-table tr:hover td { background: var(--bg-elevated); }
+        .paper-table .num { text-align: right; font-weight: 500; }
+        .paper-table .bold { font-weight: 700; }
+        .paper-table .muted { color: var(--text-muted); }
+        .paper-table .highlight-best { color: var(--accent-success); font-weight: 700; }
+        .paper-table .highlight-worst { color: var(--accent-danger); font-weight: 700; }
+        .paper-table .separator td { border-bottom: 2px solid var(--border); padding: 0; height: 2px; }
+        .paper-table tfoot td { font-weight: 600; border-top: 2px solid var(--border); }
+        .copy-btn { background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-muted); padding: 0.25rem 0.6rem; border-radius: 5px; font-size: 0.72rem; font-weight: 600; cursor: pointer; font-family: inherit; float: right; transition: all 150ms; }
+        .copy-btn:hover { border-color: var(--accent-primary); color: var(--accent-primary); }
+        .copy-btn.copied { background: var(--accent-success-dim); border-color: var(--accent-success); color: var(--accent-success); }
+        .stat-summary { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .stat-mini { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.5rem 0.8rem; text-align: center; min-width: 100px; }
+        .stat-mini-value { font-size: 1.2rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .stat-mini-label { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.1rem; }
+        #loading-msg { text-align: center; padding: 4rem; color: var(--text-muted); font-size: 1.1rem; }
+        .back-link { color: var(--accent-primary); text-decoration: none; font-size: 0.85rem; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+
+<body>
+    <nav class="top-nav" id="top-nav">
+        <div class="top-nav-inner">
+            <div class="nav-brand">
+                <span class="nav-brand-icon">AI</span>
+                <span>Paper Tables</span>
+            </div>
+            <div class="nav-links">
+                <a href="#dataset" class="nav-link active">Dataset</a>
+                <a href="#rq1-tables" class="nav-link">RQ1</a>
+                <a href="#rq2-tables" class="nav-link">RQ2</a>
+                <a href="#rq3-tables" class="nav-link">RQ3</a>
+                <a href="#filtering-tables" class="nav-link">Filtering</a>
+                <a href="rule-notes.html" data-preserve-dataset="true" class="back-link">Rule Notes</a>
+                <a href="overview.html" data-preserve-dataset="true" class="back-link">Overview Dashboard</a>
+                <a href="examples.html" data-preserve-dataset="true" class="back-link">Examples</a>
+                <a href="dashboard.html" data-preserve-dataset="true" class="back-link">Per-Repo Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="header-row">
+                <div class="header-title">
+                    <h1>Paper Tables &amp; Statistics</h1>
+                    <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.25rem;">
+                        Publication-ready tables for research paper. Click "Copy LaTeX" to export.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <p class="section-desc" id="data-status-banner" style="margin-top:-0.4rem;margin-bottom:1rem;"></p>
+
+        <div id="loading-msg">Loading aggregate data...</div>
+        <div id="paper-content" style="display:none;">
+
+            <!-- ============================================================ -->
+            <!-- DATASET OVERVIEW -->
+            <!-- ============================================================ -->
+            <section class="paper-section" id="dataset">
+                <h2><span class="rq-tag rq-tag-overview">Dataset</span> Data Collection Summary</h2>
+                <p class="section-desc">Overview of the filtered dataset for the five focused coding tools.</p>
+                <div class="stat-summary" id="dataset-stats"></div>
+                <div class="table-card" id="tc-dataset">
+                    <h3>Table 1: Dataset Overview by Coding Tool</h3>
+                    <p class="table-caption">Summary of filtered commits collected for the five focused coding tools, including repository count and issue statistics.</p>
+                    <button class="copy-btn" onclick="copyLatex('dataset-tool-table')">Copy LaTeX</button>
+                    <div id="dataset-tool-table"></div>
+                </div>
+                <div class="table-card" id="tc-dataset-lang">
+                    <h3>Table 2: Dataset by Programming Language</h3>
+                    <p class="table-caption">Distribution of AI-authored commits across programming languages (top 15).</p>
+                    <button class="copy-btn" onclick="copyLatex('dataset-lang-table')">Copy LaTeX</button>
+                    <div id="dataset-lang-table"></div>
+                </div>
+                <div class="table-card" id="tc-monthly-dist">
+                    <h3>Table 3: AI Commit Monthly Distribution</h3>
+                    <p class="table-caption">Monthly breakdown of AI-authored commits showing temporal trends in adoption.</p>
+                    <button class="copy-btn" onclick="copyLatex('dataset-monthly-table')">Copy LaTeX</button>
+                    <div id="dataset-monthly-table"></div>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- RQ1: TECHNICAL DEBT TYPES -->
+            <!-- ============================================================ -->
+            <section class="paper-section" id="rq1-tables">
+                <h2><span class="rq-tag rq-tag-rq1">RQ1</span> What types of technical debt do AI coding agents introduce?</h2>
+                <p class="section-desc">Characterization of code quality issues: by severity, type, and specific rules.</p>
+
+                <div class="table-card">
+                    <h3>Table 4: Issues by Family</h3>
+                    <p class="table-caption">Distribution of actionable issues by derived family: Bug (runtime errors), Code Smell (maintainability), and Security (vulnerabilities). Repos and commits count distinct repositories and commits that contain at least one issue from the family, so those columns are coverage measures and are not additive.</p>
+                    <button class="copy-btn" onclick="copyLatex('rq1-severity-table')">Copy LaTeX</button>
+                    <div id="rq1-severity-table"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 5: Top Rules by Family</h3>
+                    <p class="table-caption">Most frequent rules within each issue family, showing what specific patterns AI tools introduce.</p>
+                    <div id="rq1-family-rules-table"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 6: Top Rules by Language</h3>
+                    <p class="table-caption">Most frequent actionable rules in Python vs JavaScript/TypeScript, with family breakdown per language.</p>
+                    <div id="rq1-lang-rules-table"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 7: Top 20 Most Frequent Rules (Overall)</h3>
+                    <p class="table-caption">Most frequently triggered code quality rules across all AI tools and languages.</p>
+                    <button class="copy-btn" onclick="copyLatex('rq1-rules-table')">Copy LaTeX</button>
+                    <div id="rq1-rules-table"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 8: Solo-AI vs Multi-Author Comparison</h3>
+                    <p class="table-caption">Quality comparison: commits where AI is the sole author vs. co-authored with a human developer.</p>
+                    <button class="copy-btn" onclick="copyLatex('rq1-role-table')">Copy LaTeX</button>
+                    <div id="rq1-role-table"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 9: Issue Rate by Repository Star Count</h3>
+                    <p class="table-caption">Issues per commit broken down by issue family across repository star-count buckets. Shows whether higher-profile projects see different debt patterns.</p>
+                    <button class="copy-btn" onclick="copyLatex('rq1-by-stars-table')">Copy LaTeX</button>
+                    <div id="rq1-by-stars-table"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 10: Issue Rate by Repository Language</h3>
+                    <p class="table-caption">Issues per commit broken down by issue family across the primary language of each repository. Only languages with ≥5 repositories are shown.</p>
+                    <button class="copy-btn" onclick="copyLatex('rq1-by-language-table')">Copy LaTeX</button>
+                    <div id="rq1-by-language-table"></div>
+                </div>
+
+                <div id="rule-normalization-note"></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- RQ2: TOOL COMPARISON -->
+            <!-- ============================================================ -->
+            <section class="paper-section" id="rq2-tables">
+                <h2><span class="rq-tag rq-tag-rq2">RQ2</span> Do different AI tools introduce different levels of technical debt?</h2>
+                <p class="section-desc">Comparison of the five focused coding tools by issue rates, severity distribution, and quality metrics.</p>
+
+                <div class="table-card">
+                    <h3>Monthly Tool Activity &amp; Issue Rates</h3>
+                    <p class="table-caption">Per-tool commits, issues, and issues/commit rate over time (monthly). Shows adoption trends and quality changes.</p>
+                    <div id="rq2-monthly-tool-table" style="max-height:500px;overflow-y:auto;"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Coding Tool Comparison — Issue Rates</h3>
+                    <p class="table-caption">Filtered per-tool statistics: overall rates and breakdown by issue family (bug, code smell, security).</p>
+                    <div id="rq2-tool-table"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 9: Coding Tool Comparison — Sole Author vs Co-Author</h3>
+                    <p class="table-caption">Issue rates when the coding tool is sole author versus co-author, for the five focused coding tools.</p>
+                    <button class="copy-btn" onclick="copyLatex('rq2-role-tool-table')">Copy LaTeX</button>
+                    <div id="rq2-role-tool-table"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 10: Tool Ranking</h3>
+                    <p class="table-caption">Tools ranked by mean issues per commit (lower is better).</p>
+                    <button class="copy-btn" onclick="copyLatex('rq2-ranking-table')">Copy LaTeX</button>
+                    <div id="rq2-ranking-table"></div>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- RQ3: CODE LIFECYCLE -->
+            <!-- ============================================================ -->
+            <section class="paper-section" id="rq3-tables">
+                <h2><span class="rq-tag rq-tag-rq3">RQ3</span> What happens to AI-generated code over time?</h2>
+                <p class="section-desc">Lifecycle analysis: issue survival, line survival, file lifecycle, and code churn.</p>
+
+                <div class="table-card">
+                    <h3>Table 11: Issue Survival Overview</h3>
+                    <p class="table-caption">Proportion of issues that survive (remain unfixed) at HEAD.</p>
+                    <button class="copy-btn" onclick="copyLatex('rq3-survival-overview')">Copy LaTeX</button>
+                    <div id="rq3-survival-overview"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 12: Issue Survival by Family</h3>
+                    <p class="table-caption">Survival rates broken down by issue family (bug, code smell, security).</p>
+                    <button class="copy-btn" onclick="copyLatex('rq3-survival-family')">Copy LaTeX</button>
+                    <div id="rq3-survival-family"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 12b: Survival Rate by Issue Age</h3>
+                    <p class="table-caption">Survival rates grouped by how long ago issues were introduced. Older cohorts have had more time to be remediated. Rates broken down by issue family.</p>
+                    <button class="copy-btn" onclick="copyLatex('rq3-survival-by-age')">Copy LaTeX</button>
+                    <div id="rq3-survival-by-age"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 12c: Cumulative Surviving Technical Debt Over Time</h3>
+                    <p class="table-caption">Number of AI-introduced issues still present at HEAD, grouped by family and the month they were introduced. Shows how technical debt accumulates over time.</p>
+                    <button class="copy-btn" onclick="copyLatex('rq3-cumulative-debt')">Copy LaTeX</button>
+                    <div id="rq3-cumulative-debt"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 13: Issue Survival by Coding Tool</h3>
+                    <p class="table-caption">Filtered issue survival rates for the five focused coding tools.</p>
+                    <button class="copy-btn" onclick="copyLatex('rq3-survival-tool')">Copy LaTeX</button>
+                    <div id="rq3-survival-tool"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 14: Line Survival Statistics</h3>
+                    <p class="table-caption">Distribution statistics for line-level code survival (proportion of AI-added lines still present at HEAD).</p>
+                    <button class="copy-btn" onclick="copyLatex('rq3-line-survival')">Copy LaTeX</button>
+                    <div id="rq3-line-survival"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 15: File Lifecycle</h3>
+                    <p class="table-caption">Fate of files touched by AI commits: survived, modified, deleted, fixed, or refactored.</p>
+                    <button class="copy-btn" onclick="copyLatex('rq3-file-lifecycle')">Copy LaTeX</button>
+                    <div id="rq3-file-lifecycle"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 16: Top Surviving Rules</h3>
+                    <p class="table-caption">Code quality rules with the highest survival rates (most persistent technical debt).</p>
+                    <button class="copy-btn" onclick="copyLatex('rq3-surviving-rules')">Copy LaTeX</button>
+                    <div id="rq3-surviving-rules"></div>
+                </div>
+            </section>
+
+            <section class="paper-section" id="filtering-tables">
+                <h2><span class="rq-tag rq-tag-overview">Filtering</span> Filtered vs Visible Findings</h2>
+                <p class="section-desc">How many findings are hidden by false-positive and low-signal filtering, and which rules dominate the filtered set.</p>
+
+                <div class="table-card">
+                    <h3>Table 17: Filtering Summary</h3>
+                    <p class="table-caption">Counts and rates for visible findings versus findings hidden by filtering.</p>
+                    <button class="copy-btn" onclick="copyLatex('filtering-summary-table-paper')">Copy LaTeX</button>
+                    <div id="filtering-summary-table-paper"></div>
+                </div>
+
+                <div class="table-card">
+                    <h3>Table 18: Top Filtered Rules</h3>
+                    <p class="table-caption">Rules most frequently hidden by low-signal or false-positive filtering.</p>
+                    <button class="copy-btn" onclick="copyLatex('filtering-rules-table')">Copy LaTeX</button>
+                    <div id="filtering-rules-table"></div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="js/paper-tables.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "commit_hash": "9e3460135918bd62d71162c1778ab19f761874fa",
+  "repo": "superagent-ai/superagent",
+  "ai_tool": "claude",
+  "url": "https://github.com/superagent-ai/superagent/commit/9e3460135918bd62d71162c1778ab19f761874fa",
+  "author": "",
+  "message": "Fix Rust version to use CARGO_PKG_VERSION\n\ud83e\udd16 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
+  "timestamp": "2025-08-20T12:01:53+02:00",
+  "destiny_debug": [
+    {
+      "file": "rust/src/cli.rs",
+      "line_ranges": [
+        [
+          9,
+          9
+        ]
+      ],
+      "lines_added": 1,
+      "lines_exist": 0,
+      "lines_modified": 0,
+      "lines_deleted": 1,
+      "modification_count": 0
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 1,
+      "files": [
+        {
+          "filepath": "rust/src/cli.rs",
+          "status": "DELETED",
+          "days_to_first_change": null,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": true,
+          "num_changes": 0,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.0,
+      "semantic_survival_rate": 0.0,
+      "developer_valuation": "LOW",
+      "lines_added": 1,
+      "lines_still_exist": 0
+    }
+  }
+}

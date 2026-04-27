@@ -1,0 +1,1529 @@
+[
+  {
+    "commit_hash": "fd7aa53c56ebf2d3e46c55e134b87436981578f2",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/agents/agent_data_rec.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 23.298206018518517,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/agents/agent_data_rec.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "86b2dc5dd915e4dc73ed5bec9895a7301883a951",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "src/components/ChartTemplates.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 23.299976851851852,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "src/components/ChartTemplates.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "824a40495e594ae9ad2f6907628da8d48622a9fb",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/agents/agent_data_rec.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 23.300219907407406,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/agents/agent_data_rec.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "f98309f0e8f11080cd0a317b1233c1005ff5d4c0",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "src/app/utils.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 23.30113425925926,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "src/app/utils.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "0fed94cb0724c968b2e68834de06cbc719333b01",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/data_loader/athena_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 33.21792824074074,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/data_loader/athena_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "a3a2b7507739b9084bbd0d66b921f272cdb867e1",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/data_loader/athena_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 33.21818287037037,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/data_loader/athena_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "f611d1fafca3d79040160c8a2d5ad3aaf7dd7b0d",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 3,
+    "code_files_analyzed": 3,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/tables_routes.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 46.139965277777776,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "src/app/dfSlice.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 46.139965277777776,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "src/views/DataThread.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 46.139965277777776,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/tables_routes.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "src/app/dfSlice.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "src/views/DataThread.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "e06101440d6a154b0c177d13901943a9a7a52818",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 7,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "d45d762bad353f6cb86d38a4d7887cdad4bb6d86",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 8,
+    "code_files_analyzed": 2,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/tables_routes.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 47.04101851851852,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "src/views/DataThread.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 47.04101851851852,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/tables_routes.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "src/views/DataThread.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "d8549c0c8c139531ee5bf266609f7e5352384c5f",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 4,
+    "code_files_analyzed": 3,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/tables_routes.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 47.044641203703705,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "src/app/dfSlice.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 47.044641203703705,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "src/views/DataThread.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 47.044641203703705,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/tables_routes.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "src/app/dfSlice.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "src/views/DataThread.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "7d0570c27ec1ae8d91481d939f046431d84679d7",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 0,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "4b04973deaae6c063b69a0277d9d6d713dc2053d",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/data_loader/bigquery_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 85.59552083333334,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/data_loader/bigquery_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "3017e363fb6a5a746feab25bfc65f7bd184ca06d",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 2,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 88.91319444444444,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 88.91319444444444,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "py-src/data_formulator/data_loader/postgresql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "0436063b2b65ef45997255671e0b00c27f40d85d",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 88.91380787037038,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "95dc5dac87144ff20207d49e9b65a7b1a58fcf80",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 2,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 88.91388888888889,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 88.91388888888889,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "py-src/data_formulator/data_loader/postgresql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "f4b2d7e4f8c3742220977b499eb79d4a76e2179d",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 0,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "350c138dc68c2baf58265404ea33ada3e5d0e148",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 0,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "72b65e71adb75ef2b42de5faef726c28414d6f2d",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 88.91678240740741,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "f280be6965c3a5f9b0958a9237ac62ceb46e321d",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 88.96299768518519,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "c345c704b117ec529044f173e59e6071d3505e40",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "src/views/VisualizationView.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 88.96362268518519,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "src/views/VisualizationView.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "0b0931a9a52215c7f8af1f888c85f67f1df65166",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 88.96424768518519,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "77989522a28c1bbbc1637cafe5a29db8c7b96529",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 7,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "377e9dc620fe8e6f769c38fa985d4cf96c009935",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 7,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "src/views/DBTableManager.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 92.10011574074075,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "src/views/DBTableManager.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "4451f2543248194763c017b8d2bb660c787820cc",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 2,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 92.1005787037037,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 92.1005787037037,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "py-src/data_formulator/data_loader/postgresql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "f186e1d6637e8df6847051a82128b3ebfa4040a2",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "72da44213e8099c3e864bc0526b2d8d115fcf8f8",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 7,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "8b0545072dbf4067386153cf5bb72d0680222fd0",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 10,
+    "code_files_analyzed": 2,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/data_loader/mysql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 92.10457175925926,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "py-src/data_formulator/data_loader/postgresql_data_loader.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 92.10457175925926,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/data_loader/mysql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "py-src/data_formulator/data_loader/postgresql_data_loader.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "518bd88f1261ed8538173755e6c154283c07e356",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 0,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "dd6b7a35a09074e6fee1c408e568e4c03477c5a1",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 0,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "62de69d599cc9649e3f596ee171b438dd7961847",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 3,
+    "code_files_analyzed": 3,
+    "files": [
+      {
+        "filepath": "src/app/utils.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 108.9444212962963,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "src/views/ChartifactDialog.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 108.9444212962963,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      },
+      {
+        "filepath": "src/views/ReportView.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 108.9444212962963,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "src/app/utils.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "src/views/ChartifactDialog.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      },
+      "src/views/ReportView.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "c543e95607016d7ad1c6d06ae3f9025780c8fb4a",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "py-src/data_formulator/agents/web_utils.py",
+        "status": "MODIFIED",
+        "days_to_first_change": 124.01405092592593,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "py-src/data_formulator/agents/web_utils.py": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "2e4dc7c24bbf9fb3cb6d1db5f5f7d83619696e4c",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 3,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "909be45752d91859b0c9aef9559aa5ba136fb65f",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 0,
+    "code_files_analyzed": 0,
+    "files": []
+  },
+  {
+    "commit_hash": "a2884074623afde33a87955251bb7075fa15fb85",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "src/views/VisualizationView.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 236.03425925925927,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "src/views/VisualizationView.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "6a5a602c0566ac40737bd5e15f9c3e070b84331e",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "src/views/ChartRecBox.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 236.03439814814814,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "src/views/ChartRecBox.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "b2f93981b2cc30ec7d2aa6c39564a2d1267e9fd6",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "src/views/ModelSelectionDialog.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 244.2787962962963,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "src/views/ModelSelectionDialog.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "a80a29d701e1a773e4f152e10d6df5b7cb3e7920",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 1,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "src/views/DBTableManager.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 256.34729166666665,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "src/views/DBTableManager.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "5c0e2869045df01069dfdb7241f5c1f27b4e3fee",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "src/views/TableSelectionView.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 510.02557870370373,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "src/views/TableSelectionView.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "commit_hash": "7d142f63740cabf59d31035493b7e853bd09182d",
+    "ai_tool": "copilot",
+    "repo": "microsoft/data-formulator",
+    "total_files_in_commit": 2,
+    "code_files_analyzed": 1,
+    "files": [
+      {
+        "filepath": "src/views/TableSelectionView.tsx",
+        "status": "MODIFIED",
+        "days_to_first_change": 510.02858796296294,
+        "was_fixed": false,
+        "was_refactored": false,
+        "was_reverted": false,
+        "was_deleted": false,
+        "num_changes": 1,
+        "num_fix_commits": 0,
+        "num_refactor_commits": 0,
+        "num_revert_commits": 0,
+        "time_to_first_fix_days": null,
+        "time_to_first_refactor_days": null
+      }
+    ],
+    "_debug": {
+      "src/views/TableSelectionView.tsx": {
+        "subsequent_commits": [
+          {
+            "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+            "author": "Chenglong Wang",
+            "email": "chenglong.wang@microsoft.com",
+            "timestamp": 1772585612,
+            "message": "Merge pull request #246 from microsoft/dev",
+            "is_fix": false,
+            "is_refactor": false,
+            "is_revert": false
+          }
+        ]
+      }
+    }
+  }
+]

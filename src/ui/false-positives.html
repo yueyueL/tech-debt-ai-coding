@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Known Noise Patterns</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        .page-grid { display: grid; gap: 1rem; margin-top: 1rem; }
+        .panel { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
+        .panel h2 { font-size: 1rem; margin-bottom: 0.75rem; }
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; }
+        .mini-stat { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.9rem; }
+        .mini-stat-value { font-size: 1.4rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .mini-stat-label { margin-top: 0.2rem; color: var(--text-muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; }
+        .pattern-list { display: grid; gap: 0.85rem; }
+        .pattern-card { border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 1rem; background: var(--bg-elevated); }
+        .pattern-card h3 { font-size: 0.92rem; margin-bottom: 0.3rem; }
+        .pattern-meta { color: var(--text-muted); font-size: 0.78rem; margin-bottom: 0.6rem; }
+        .chip { display: inline-flex; align-items: center; padding: 0.15rem 0.45rem; border-radius: 999px; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+        .chip.fp { background: rgba(248, 113, 113, 0.14); color: var(--accent-danger); }
+        .chip.low { background: rgba(251, 191, 36, 0.14); color: var(--accent-warning); }
+        .path-list, .rule-list { margin: 0.6rem 0 0; padding-left: 1rem; color: var(--text-secondary); font-size: 0.8rem; }
+        .path-list code, .rule-list code { color: var(--accent-primary); }
+        .empty-state { color: var(--text-muted); }
+    </style>
+</head>
+
+<body>
+    <nav class="top-nav" id="top-nav">
+        <div class="top-nav-inner">
+            <div class="nav-brand">
+                <span class="nav-brand-icon">AI</span>
+                <span>Noise Patterns</span>
+            </div>
+            <div class="nav-links">
+                <a href="overview.html" data-preserve-dataset="true" class="nav-link">Overview</a>
+                <a href="dashboard.html" data-preserve-dataset="true" class="nav-link">Per-Repo Dashboard</a>
+                <a href="paper-tables.html" data-preserve-dataset="true" class="nav-link">Paper Tables</a>
+                <a href="examples.html" data-preserve-dataset="true" class="nav-link">Examples</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="header-row">
+                <div class="header-title">
+                    <h1>Known False-Positive and Low-Signal Patterns</h1>
+                    <p class="subtitle">Cross-repo suppression patterns derived from aggregate analysis</p>
+                </div>
+            </div>
+        </header>
+
+        <div id="loading-msg">Loading aggregate data...</div>
+
+        <div id="content" style="display:none;">
+            <section class="page-grid">
+                <div class="panel">
+                    <h2>Summary</h2>
+                    <div class="summary-grid" id="summary-grid"></div>
+                </div>
+
+                <div class="panel">
+                    <h2>Likely False-Positive Patterns</h2>
+                    <div id="pattern-list" class="pattern-list"></div>
+                </div>
+
+                <div class="panel">
+                    <h2>Low-Signal Rules</h2>
+                    <div id="low-signal-list" class="pattern-list"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/false-positives.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "repo": "microsoft/data-formulator",
+  "commits_analyzed": 39,
+  "commits_skipped_not_on_main": 0,
+  "commits_skipped_already_done": 0,
+  "errors": 0,
+  "total_issues_introduced": 96,
+  "total_issues_fixed": 45,
+  "net_debt_change": 51,
+  "output_dir": "outnew3/microsoft_data-formulator",
+  "save_details": true,
+  "deep_scan_enabled": false,
+  "debug_dir": "outnew3/microsoft_data-formulator/debug",
+  "issue_survival": {
+    "total_issues": 96,
+    "surviving_issues": 26,
+    "fixed_issues": 70,
+    "survival_rate": 0.2708333333333333
+  }
+}

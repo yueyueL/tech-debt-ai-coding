@@ -1,0 +1,238 @@
+{
+  "commit_hash": "62de69d599cc9649e3f596ee171b438dd7961847",
+  "repo": "microsoft/data-formulator",
+  "ai_tool": "copilot",
+  "url": "https://github.com/microsoft/data-formulator/commit/62de69d599cc9649e3f596ee171b438dd7961847",
+  "author": "",
+  "message": "Add Chartifact dialog with automatic markdown to Chartifact conversion and CSS styling (#1)\n* Initial plan\n\n* Initial exploration - understanding report types structure\n\nCo-authored-by: danmarshall <11507384+danmarshall@users.noreply.github.com>\n\n* Add Chartifact report type with large dialog box\n\nCo-authored-by: danmarshall <11507384+danmarshall@users.noreply.github.com>\n\n* Refactor Chartifact: Move to separate dialog, add Create button, remove from report types\n\nCo-authored-by: danmarshall <11",
+  "timestamp": "2025-11-14T18:13:34-08:00",
+  "lifecycle_debug": {
+    "src/app/utils.tsx": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "src/views/ChartifactDialog.tsx": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    },
+    "src/views/ReportView.tsx": {
+      "subsequent_commits": [
+        {
+          "sha": "676e7225c0605ed7600b040eda72b37d2e385f7b",
+          "author": "Chenglong Wang",
+          "email": "chenglong.wang@microsoft.com",
+          "timestamp": 1772585612,
+          "message": "Merge pull request #246 from microsoft/dev",
+          "is_fix": false,
+          "is_refactor": false,
+          "is_revert": false
+        }
+      ]
+    }
+  },
+  "destiny_debug": [
+    {
+      "file": "src/app/utils.tsx",
+      "line_ranges": [
+        [
+          919,
+          929
+        ]
+      ],
+      "lines_added": 11,
+      "lines_exist": 4,
+      "lines_modified": 7,
+      "lines_deleted": 0,
+      "modification_count": 0,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 1,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 11,
+        "semantic_survival_rate": 1.0,
+        "exact_survival_rate": 1.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.36363636363636365,
+        "semantic_vs_syntactic_delta": 0.6364,
+        "survived_names": [
+          "hashCode"
+        ],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    },
+    {
+      "file": "src/views/ChartifactDialog.tsx",
+      "line_ranges": [
+        [
+          1,
+          590
+        ]
+      ],
+      "lines_added": 590,
+      "lines_exist": 300,
+      "lines_modified": 290,
+      "lines_deleted": 0,
+      "modification_count": 0,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 1,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 1,
+        "new_units": 3,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 1.0,
+        "syntactic_survival_rate": 0.5084745762711864,
+        "semantic_vs_syntactic_delta": -0.5085,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": [
+          "initializeSandbox"
+        ]
+      }
+    },
+    {
+      "file": "src/views/ReportView.tsx",
+      "line_ranges": [
+        [
+          32,
+          32
+        ],
+        [
+          53,
+          53
+        ],
+        [
+          236,
+          236
+        ],
+        [
+          1114,
+          1114
+        ],
+        [
+          1116,
+          1134
+        ],
+        [
+          1252,
+          1263
+        ]
+      ],
+      "lines_added": 35,
+      "lines_exist": 22,
+      "lines_modified": 13,
+      "lines_deleted": 0,
+      "modification_count": 8,
+      "semantic": {
+        "supported": true,
+        "language": "typescript",
+        "original_units": 0,
+        "surviving_units": 0,
+        "modified_units": 0,
+        "deleted_units": 0,
+        "new_units": 0,
+        "semantic_survival_rate": 0.0,
+        "exact_survival_rate": 0.0,
+        "modification_rate": 0.0,
+        "deletion_rate": 0.0,
+        "syntactic_survival_rate": 0.0,
+        "semantic_vs_syntactic_delta": 0.0,
+        "survived_names": [],
+        "modified_names": [],
+        "deleted_names": []
+      }
+    }
+  ],
+  "analysis_summary": {
+    "debt": {
+      "issues_introduced": 0,
+      "issues_fixed": 0
+    },
+    "lifecycle": {
+      "files_analyzed": 3,
+      "files": [
+        {
+          "filepath": "src/app/utils.tsx",
+          "status": "MODIFIED",
+          "days_to_first_change": 108.9444212962963,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "src/views/ChartifactDialog.tsx",
+          "status": "MODIFIED",
+          "days_to_first_change": 108.9444212962963,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        },
+        {
+          "filepath": "src/views/ReportView.tsx",
+          "status": "MODIFIED",
+          "days_to_first_change": 108.9444212962963,
+          "was_fixed": false,
+          "was_refactored": false,
+          "was_reverted": false,
+          "was_deleted": false,
+          "num_changes": 1,
+          "num_fix_commits": 0,
+          "num_refactor_commits": 0,
+          "num_revert_commits": 0,
+          "time_to_first_fix_days": null,
+          "time_to_first_refactor_days": null
+        }
+      ]
+    },
+    "destiny": {
+      "survival_rate": 0.513,
+      "semantic_survival_rate": 0.5,
+      "developer_valuation": "MEDIUM",
+      "lines_added": 636,
+      "lines_still_exist": 326
+    }
+  }
+}
