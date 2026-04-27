@@ -119,10 +119,10 @@ def _load_repo_meta() -> Dict[str, Dict]:
     except Exception as exc:
         logger.warning("Failed to load repo metadata: %s", exc)
 
-    # Fallback: load from repos_to_rerun_all.json for repos missing from CSV
+    # Fallback: load from focused_repos.json for repos missing from CSV
     rerun_candidates = [
-        Path("data/repos_to_rerun_all.json"),
-        Path(__file__).parent.parent.parent / "data" / "repos_to_rerun_all.json",
+        Path("data/focused_repos.json"),
+        Path(__file__).parent.parent.parent / "data" / "focused_repos.json",
     ]
     for rp in rerun_candidates:
         if not rp.exists():

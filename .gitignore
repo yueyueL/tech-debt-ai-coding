@@ -1,0 +1,32 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Generated runtime artifacts
+data/repos/                 # cloned repository cache (very large)
+data/pipeline_settings.json # CLI auto-generated settings
+*.log
+
+# Large data not committed (downloaded from Google Drive — see data/README.md)
+# Demo files in data/commits/ ARE committed; the rest are generated/downloaded.
+data/commits/[A-Za-z0-9]*_commits.json
+!data/commits/superagent-ai_superagent_commits.json
+!data/commits/microsoft_data-formulator_commits.json
+
+# Don't accidentally commit the 46MB+ zip bundles destined for Google Drive
+data/commits.zip
+results-out.zip
+*.tar.zst
+
+# Pipeline output (per-repo); demo subset under results/out/{superagent-ai_superagent,microsoft_data-formulator} IS committed.
+results/out/*/
+!results/out/superagent-ai_superagent/
+!results/out/microsoft_data-formulator/

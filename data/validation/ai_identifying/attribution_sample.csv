@@ -1,0 +1,910 @@
+id,ai_tool,repo,sha,url,detection_method,ai_identifier,ai_identifier_type,author_name,author_email,author_role,message,date,stars,label_rater1,label_rater2,label_final,notes
+1,devin,finos/legend,0c1f1359d6c2c8ecb9e6551b5b57f3e72bb43bf7,https://github.com/finos/legend/commit/0c1f1359d6c2c8ecb9e6551b5b57f3e72bb43bf7,author_name,Devin AI,author_name,Devin AI,devin-ai-integration[bot]@users.noreply.github.com,sole_author,"Fix hosted service syntax: correct indentation in array format
+",2025-03-12T20:30:22+00:00,1474,,,,
+2,gemini,ant-design/md-editor,b323a49f55cf921629404c014a8444486e8743d8,https://github.com/ant-design/md-editor/commit/b323a49f55cf921629404c014a8444486e8743d8,coauthor,%gemini-code-assist%@%,coauthor_email,Grassandgrass,32213021+Grassandgrass@users.noreply.github.com,coauthor,"feat: 完成代码编辑 (#144)
+* feat: 工作空间-实时跟随代码编辑器onetoken
+
+* feat: 接入工作空间-实时跟随代码编辑器onetoken
+
+* fix: 撤销修改
+
+* Update src/Workspace/RealtimeFollow/index.tsx
+
+Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+
+* fix: 修正extra样式传入&修改buttom token
+
+* fix: 代码浏览样式修复",2025-10-11T15:33:32+08:00,172,,,,
+3,cursor,Zion-Holdings/zion.app,936330f232ff750bf5160a7b9fbf743095dcdb54,https://github.com/Zion-Holdings/zion.app/commit/936330f232ff750bf5160a7b9fbf743095dcdb54,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"fix: restore src from origin/main to resolve broken merges
+",2025-09-23T14:24:38+00:00,0,,,,
+4,claude,connectbot/connectbot,4b321519bfd33bdda329300c9c97dc336d003cdc,https://github.com/connectbot/connectbot/commit/4b321519bfd33bdda329300c9c97dc336d003cdc,coauthor,noreply@anthropic.com,coauthor_email,nindanaoto,matsuoka.kotaro@gmail.com,coauthor,"Add OSC8 hyperlink support
+- Use local termlib via composite build for OSC8 support
+- Add onHyperlinkClick callback to open URLs in browser
+- Integrate hyperlink handling in ConsoleScreen
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>",2026-01-11T13:54:31+09:00,3020,,,,
+5,copilot,sunarya-thito/shadcn_flutter,6124120d90760a16a7623a21b8f1da9515399b0a,https://github.com/sunarya-thito/shadcn_flutter/commit/6124120d90760a16a7623a21b8f1da9515399b0a,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Document form validation results and FormKey, update part_1.md progress
+Co-authored-by: sunarya-thito <64018564+sunarya-thito@users.noreply.github.com>",2025-10-30T03:46:20+00:00,789,,,,
+6,copilot,Azure/autorest.typescript,da054280744674e576001d69784686f0154cb295,https://github.com/Azure/autorest.typescript/commit/da054280744674e576001d69784686f0154cb295,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Update tcgc to 0.59.0-dev.9 and fix initial TypeScript errors
+Co-authored-by: v-jiaodi <80496810+v-jiaodi@users.noreply.github.com>",2025-07-29T07:07:43+00:00,184,,,,
+7,cursor,elizaOS/eliza,b009636f54edc9635465ff77c086adf52b73ac76,https://github.com/elizaOS/eliza/commit/b009636f54edc9635465ff77c086adf52b73ac76,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Fix Windows CI issues with comprehensive Bun, process, and test reliability scripts
+Co-authored-by: sayonara <sayonara@elizalabs.ai>",2025-06-30T20:31:02+00:00,17505,,,,
+8,devin,airbytehq/airbyte,90aebfcbfaf025f1a116aac60e07a16615ee5a1b,https://github.com/airbytehq/airbyte/commit/90aebfcbfaf025f1a116aac60e07a16615ee5a1b,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"feat(cdk): Add WORKSPACE_ID and CONNECTION_ID path variables for object storage destinations
+Add support for ${WORKSPACE_ID} and ${CONNECTION_ID} path variables in the S3 path format configuration. These variables allow users to organize their data by workspace and connection, which is useful for mu",2026-01-14T20:54:29+00:00,20675,,,,
+9,gemini,spellshift/realm,071882cd5ce0f49cf344e326a4d48273632b3c53,https://github.com/spellshift/realm/commit/071882cd5ce0f49cf344e326a4d48273632b3c53,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Refactor imixv2 to use Tokio for task execution and implement subtask API
+Replaced `std::thread::spawn` with `tokio::task::spawn_blocking` in `imixv2` to better integrate with the async agent loop. Introduced cooperative cancellation for the synchronous `eldritch-core` interpreter by injecting an `A",2025-12-05T04:09:45+00:00,592,,,,
+10,devin,aidenybai/bippy,cc1dce5d1bc7d5792623226a8eba0d7d1a2a0ab5,https://github.com/aidenybai/bippy/commit/cc1dce5d1bc7d5792623226a8eba0d7d1a2a0ab5,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"Add Fumadocs documentation site with DeepWiki styling
+Co-Authored-By: Aiden Bai <aiden.bai05@gmail.com>",2025-05-15T00:54:32+00:00,1211,,,,
+11,gemini,rush86999/atom,95824bb897bb830f28b5601b2475eb74e2c1236b,https://github.com/rush86999/atom/commit/95824bb897bb830f28b5601b2475eb74e2c1236b,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Enhance RDS reliability with Multi-AZ, backups, and deletion protection
+- Enabled Multi-AZ deployment for the RDS PostgreSQL instance for high availability.
+- Configured automated backup retention to 14 days.
+- Enabled deletion protection for the RDS instance.
+- Updated `deployment/aws/README.md` to",2025-07-01T22:36:43+00:00,696,,,,
+12,devin,drivly/ai,ae52bc7943ee34454148a151cc6ed9731e9a8393,https://github.com/drivly/ai/commit/ae52bc7943ee34454148a151cc6ed9731e9a8393,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"docs: add SDK readiness assessment and dependency graph
+Co-Authored-By: Nathan Clevenger <nateclev@gmail.com>",2025-04-05T08:42:08+00:00,0,,,,
+13,cursor,Zion-Holdings/zion.app,65f26b5675d36494d8d31a8def7528b4d797ba78,https://github.com/Zion-Holdings/zion.app/commit/65f26b5675d36494d8d31a8def7528b4d797ba78,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"docs: add comprehensive redundancy implementation summary - mission accomplished
+",2025-08-19T16:37:06+00:00,0,,,,
+14,devin,theopenco/openllm,f0b3313396cf82afe2115b57e3d4c9b42edb18c1,https://github.com/theopenco/openllm/commit/f0b3313396cf82afe2115b57e3d4c9b42edb18c1,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,devin-ai-integration[bot],158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"feat: implement hybrid project mode with api-keys and credits fallback (#169)
+# Implement Hybrid Project Mode
+
+This PR implements a hybrid project mode which uses an API key if it is
+set, but falls back to credits if no API key is available. It only
+errors if no provider key exists and credits are <",2025-05-22T15:56:25+00:00,861,,,,
+15,copilot,microsoft/vscode,34b44e33a876a571a7570698d3641b3a2d6ec45e,https://github.com/microsoft/vscode/commit/34b44e33a876a571a7570698d3641b3a2d6ec45e,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Add test for git: scheme URI support in notebook diffs
+Co-authored-by: DonJayamanne <1948812+DonJayamanne@users.noreply.github.com>",2025-12-10T21:51:17+00:00,181581,,,,
+16,gemini,allenai/open-instruct,48e8c0736456e22254548699ed0bf4921ccaa008,https://github.com/allenai/open-instruct/commit/48e8c0736456e22254548699ed0bf4921ccaa008,coauthor,%gemini-code-assist%@%,coauthor_email,Finbarr Timbers,finbarrtimbers@gmail.com,coauthor,"Change scripts to use the `{WEKA,GCP}_CLUSTERS` from `mason.py` instead of having their own definitions. (#1178)
+* clusters are defined once
+
+* Removed separate definitions of clusters
+
+* Update open_instruct/utils.py
+
+Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.",2025-11-12T17:48:14-07:00,3573,,,,
+17,claude,Zipstack/unstract,3ce965d072a02704a0585b3451e4c7f6dac230e7,https://github.com/Zipstack/unstract/commit/3ce965d072a02704a0585b3451e4c7f6dac230e7,coauthor,noreply@anthropic.com,coauthor_email,jagadeeswaran-zipstack,jagadeeswaran@zipstack.com,coauthor,"UN-2455 [FEAT] Cross-Organization Export/Import for Prompt Studio (#1400)
+* UN-2455 implemented cross org export for prompt studio
+
+* UN-2455 code refactor
+
+* UN-2455 code refactor
+
+* UN-2455 unified url for import and export
+
+* UN-2455 moved default values into constant
+
+* removed css to external f",2025-07-07T11:29:08+05:30,6108,,,,
+18,cursor,Zion-Holdings/zion.app,a1ef7dfac152731ae975bb9d0c88ceccc9a9c23f,https://github.com/Zion-Holdings/zion.app/commit/a1ef7dfac152731ae975bb9d0c88ceccc9a9c23f,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Complete website audit and improvements
+- Fixed corrupted main page, navigation, and footer components
+- Created comprehensive About, Contact, AI Services, IT Services, and 5G Implementation pages
+- Improved navigation with organized dropdown menus and mobile responsiveness
+- Enhanced footer with co",2025-10-12T01:50:36+00:00,0,,,,
+19,devin,crewAIInc/crewAI,92293836da76dd1eb206916cc781267a9b6b710e,https://github.com/crewAIInc/crewAI/commit/92293836da76dd1eb206916cc781267a9b6b710e,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"Fix Jinja2 templating for loop variables and mixed syntax
+Co-Authored-By: Joe Moura <joao@crewai.com>",2025-04-20T14:56:53+00:00,43908,,,,
+20,copilot,kornia/kornia-rs,e98daea73326589de35cc15d7bb71ffd5c8d07b2,https://github.com/kornia/kornia-rs/commit/e98daea73326589de35cc15d7bb71ffd5c8d07b2,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Apply consistent improvements to Chinese README
+Co-authored-by: edgarriba <5157099+edgarriba@users.noreply.github.com>",2025-11-02T06:30:41+00:00,574,,,,
+21,claude,helixml/helix,d65c95a499203d9fa5c63b1c550ff5250ed7df25,https://github.com/helixml/helix/commit/d65c95a499203d9fa5c63b1c550ff5250ed7df25,coauthor,noreply@anthropic.com,coauthor_email,Luke Marsden,me@lukemarsden.net,coauthor,"docs: Document successful Docker GPU access test
+Verified Venus/Vulkan working end-to-end:
+- Docker containers can access /dev/dri devices
+- Containers use ""Virtio-GPU Venus (Apple M3 Ultra)""
+- GPU acceleration confirmed inside dev containers
+
+This validates the full stack for Helix desktop containe",2026-02-03T17:03:50+00:00,713,,,,
+22,cursor,Zion-Holdings/zion.app,ce5575f6c7bc6b8ae69232f7a378171382760cc7,https://github.com/Zion-Holdings/zion.app/commit/ce5575f6c7bc6b8ae69232f7a378171382760cc7,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"fix: update package-lock.json with security fixes
+- Updated dependencies to address security vulnerabilities
+- Build process verified and working correctly
+- Netlify build configuration is properly set up",2025-09-08T16:47:14+00:00,0,,,,
+23,claude,civitai/civitai,040ad177df7134a94636233af5c2cb012b80fde7,https://github.com/civitai/civitai/commit/040ad177df7134a94636233af5c2cb012b80fde7,coauthor,noreply@anthropic.com,coauthor_email,Justin Maier,Zipp425@gmail.com,coauthor,"feat: US-002 - Add quantTypes and componentTypes constants
+Added modelFileQuantTypes and modelFileComponentTypes constant arrays
+to src/server/common/constants.ts for use in UI selectors.
+
+Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>",2026-01-15T18:26:13-07:00,7011,,,,
+24,copilot,Kinneyzhang/emacs-block,033ea41fdbea648e4f999a245fe6afcfc22e3c0e,https://github.com/Kinneyzhang/emacs-block/commit/033ea41fdbea648e4f999a245fe6afcfc22e3c0e,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"删除冗余代码：注释掉的函数和未完成的代码
+Co-authored-by: Kinneyzhang <38454496+Kinneyzhang@users.noreply.github.com>",2025-11-27T07:23:58+00:00,123,,,,
+25,gemini,OliverZhaohaibin/iPhotos-LocalPhotoAlbumManager,c8fb91d8eb5a4b0ce67e2750411a87be607a7ddf,https://github.com/OliverZhaohaibin/iPhotos-LocalPhotoAlbumManager/commit/c8fb91d8eb5a4b0ce67e2750411a87be607a7ddf,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Address PR review: update sidebar in optimized path
+- Added `self._sidebar.select_static_node(title)` to the optimized navigation path in `NavigationController.open_static_collection` to ensure the sidebar UI reflects the current virtual collection even when skipping the full album reload.",2025-12-10T09:06:31+00:00,100,,,,
+26,claude,bikeindex/bike_index,962033f6ec0bae90bf5089cc2514b9644abd52c5,https://github.com/bikeindex/bike_index/commit/962033f6ec0bae90bf5089cc2514b9644abd52c5,coauthor,noreply@anthropic.com,coauthor_email,Seth Herr,seth.william.herr@gmail.com,coauthor,"Tempo email snippet (#3037)
+Co-authored-by: Claude Opus 4.5 <noreply@anthropic.com>",2026-01-14T18:35:39-08:00,301,,,,
+27,devin,different-ai/note-companion,4caeec67c06610da1262d367f4fa7340bbd96735,https://github.com/different-ai/note-companion/commit/4caeec67c06610da1262d367f4fa7340bbd96735,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"test: Add top-up API route tests with Stripe mocking
+Co-Authored-By: ben <ben@prologe.io>",2025-01-10T09:56:58+00:00,800,,,,
+28,claude,cloudshipai/station,f1fd3b552a35ef3852b8a1d3c84c34e7261f9610,https://github.com/cloudshipai/station/commit/f1fd3b552a35ef3852b8a1d3c84c34e7261f9610,coauthor,noreply@anthropic.com,coauthor_email,epuerta,epuer94@gmail.com,coauthor,"Fix hardcoded './stn' path in intelligent agent creator
+The intelligent agent creation was failing because it was trying to execute
+'./stn' (local relative path) instead of the globally installed 'stn' binary.
+
+## Problem
+```
+failed to start command: fork/exec ./stn: no such file or directory
+```
+
+W",2025-08-08T11:48:12-05:00,380,,,,
+29,cursor,Zion-Holdings/zion.app,f21c24c7d58e8eed3e244b9b164bed744168774a,https://github.com/Zion-Holdings/zion.app/commit/f21c24c7d58e8eed3e244b9b164bed744168774a,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"feat: Add new AI 2026 content and promotional banners
+- Created neural interface revolution content page with complete implementation guide
+- Added neural interface business transformation blog post with case studies
+- Created autonomous systems revolution content page with industry applications
+- A",2025-09-16T05:49:57+00:00,0,,,,
+30,claude,evmts/guillotine,13073cf7e939612c741a37b3a22c381d36ceefa7,https://github.com/evmts/guillotine/commit/13073cf7e939612c741a37b3a22c381d36ceefa7,coauthor,noreply@anthropic.com,coauthor_email,William Cory,williamcory@Williams-Mac-mini.local,coauthor,"🔨 build: Add comprehensive test filtering support
+- Add global -Dtest-filter option for all test types
+- Reorganize test step dependencies (opcodes -> specs -> others)
+- Add TEST_FILTER environment variable support for spec tests
+- Improve test execution order and filtering capabilities
+
+🤖 Generated",2025-09-26T21:03:21-07:00,163,,,,
+31,devin,fern-api/fern,1470d9a351c8ba39a35f59f72643f60302662d59,https://github.com/fern-api/fern/commit/1470d9a351c8ba39a35f59f72643f60302662d59,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"chore(seed): add ir-to-jsonschema snapshot for ts-passthrough-additional-properties fixture
+Co-Authored-By: judah@buildwithfern.com <jsklan.development@gmail.com>",2026-01-08T18:41:45+00:00,3500,,,,
+32,gemini,theovilardo/PixelPlayer,d05c53d471f696ff6017376aba839f47baf90eb3,https://github.com/theovilardo/PixelPlayer/commit/d05c53d471f696ff6017376aba839f47baf90eb3,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Feat: Add scale overshoot to player and bottom predictive padding
+- Implemented a vertical scale overshoot/undershoot effect for the player content upon completing expansion and collapse animations. This is achieved using a secondary Animatable (`visualOvershootScaleY`) with keyframes, applied via `",2025-06-28T22:24:16+00:00,2749,,,,
+33,claude,dyoshikawa/rulesync,075541c3399628b92f5aa3e6d25d769c54ce2663,https://github.com/dyoshikawa/rulesync/commit/075541c3399628b92f5aa3e6d25d769c54ce2663,coauthor,noreply@anthropic.com,coauthor_email,dyoshikawa,34151621+dyoshikawa@users.noreply.github.com,coauthor,"chore: add DISABLE_AUTOUPDATER environment variable and bump version to 0.72.0 (#249)
+* chore: bump version to 0.72.0
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+
+* chore(settings.json): add DISABLE_AUTOUPDATER environment variable to contr",2025-09-08T15:50:04+09:00,774,,,,
+34,claude,browserbase/stagehand,943d8d11a0e2b3ce1b80770382eadf2cc06dced5,https://github.com/browserbase/stagehand/commit/943d8d11a0e2b3ce1b80770382eadf2cc06dced5,coauthor,noreply@anthropic.com,coauthor_email,Shrey Pandya,shrey@browserbase.com,coauthor,"revert: restore original card titles in observability.mdx
+Keep only the leading slash fix, revert title/icon changes.
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>",2026-01-07T00:20:12-08:00,21018,,,,
+35,gemini,google-gemini/gemini-cli,9fc01273a0b21f1a93fbd2fd381757c07a206565,https://github.com/google-gemini/gemini-cli/commit/9fc01273a0b21f1a93fbd2fd381757c07a206565,author_email,gemini-cli-robot@google.com,author_email,gemini-cli-robot,gemini-cli-robot@google.com,sole_author,"chore(release): v0.21.0-nightly.20251207.025e450ac
+",2025-12-07T00:48:04+00:00,94130,,,,
+36,gemini,ant-design/ant-design,fbfc09901ed06faac0b67857324ef2f6ec0ffe97,https://github.com/ant-design/ant-design/commit/fbfc09901ed06faac0b67857324ef2f6ec0ffe97,coauthor,%gemini-code-assist%@%,coauthor_email,lijianan,574980606@qq.com,coauthor,"chore: use classNames (#55571)
+* chore: use classNames
+
+* Update components/table/hooks/useSorter.tsx
+
+Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+Signed-off-by: lijianan <574980606@qq.com>
+
+---------
+
+Signed-off-by: lijianan <574980606@qq.com",2025-11-02T20:41:41+08:00,97477,,,,
+37,claude,DavidWells/markdown-magic,a2efc8ef064eab74746a1a4170d5ea9d81177ec5,https://github.com/DavidWells/markdown-magic/commit/a2efc8ef064eab74746a1a4170d5ea9d81177ec5,author_email,%+claude[bot]@users.noreply.github.com,author_email_like,claude[bot],41898282+claude[bot]@users.noreply.github.com,sole_author,"Add generic migration utility to core utils
+Created a reusable migration utility based on update-syntax.js with the following features:
+- Generic migrateMarkdownFiles() function with configurable replacements
+- Support for both regex and string-based replacements
+- Dry-run mode for testing changes b",2025-10-24T23:35:15+00:00,854,,,,
+38,claude,DigiByte-Core/digibyte,c38554a9cbd52bc5fc26a46c86cb6b55ee46bff1,https://github.com/DigiByte-Core/digibyte/commit/c38554a9cbd52bc5fc26a46c86cb6b55ee46bff1,coauthor,noreply@anthropic.com,coauthor_email,DigiSwarm,245904857+DigiSwarm@users.noreply.github.com,coauthor,"test(digidollar): Comprehensive v8 test script with stats index support
+Major update to the DigiDollar Qt testnet script for comprehensive v8
+testing including the new stats index infrastructure.
+
+Test Script Enhancements (test_digidollar_qt_testnet.sh):
+- Added DigiDollarStatsIndex lifecycle testin",2025-12-09T15:32:43-07:00,148,,,,
+39,cursor,ryokun6/ryos,d3d4b39f6990bb77ed2450814a756ead8b05ce52,https://github.com/ryokun6/ryos/commit/d3d4b39f6990bb77ed2450814a756ead8b05ce52,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"fix: add rewrites for subdirectory index routes
+The song and chat-rooms APIs have index.ts files in subdirectories.
+vite-plugin-vercel was not correctly routing /api/song and /api/chat-rooms
+to their respective index handlers. Added explicit rewrites to fix this.
+
+Co-authored-by: ryo <ryo@anysphere.",2026-01-17T15:59:56+00:00,1075,,,,
+40,cursor,dadoonet/fscrawler,15b1ea3b44af08ae2d983686c341a2884c5d6964,https://github.com/dadoonet/fscrawler/commit/15b1ea3b44af08ae2d983686c341a2884c5d6964,coauthor,cursoragent@cursor.com,coauthor_email,David Pilato,david@pilato.fr,coauthor,"Remove PipelinePluginsManager; use FsCrawlerPluginsManager everywhere
+Co-authored-by: Cursor <cursoragent@cursor.com>",2026-02-06T11:25:50+01:00,1429,,,,
+41,copilot,rnwood/smtp4dev,b35d128e3f95518e1c44c3a41941a942515fea12,https://github.com/rnwood/smtp4dev/commit/b35d128e3f95518e1c44c3a41941a942515fea12,author_email,Copilot@users.noreply.github.com,author_email,Copilot,198982749+Copilot@users.noreply.github.com,sole_author,"feat: improved console output with colours  (#1933)
+* Initial plan
+
+* Initial plan for emoji removal from console output
+
+Co-authored-by: rnwood <1327895+rnwood@users.noreply.github.com>
+
+* Remove emojis from standard console messages, keep for errors/warnings/fatal
+
+- Add ConsoleHelper for emoji re",2025-12-05T22:23:14+00:00,3799,,,,
+42,claude,ModelEngine-Group/fit-framework,4013ff6ec39b0d3c35bdc7c90f924e87e56f32a6,https://github.com/ModelEngine-Group/fit-framework/commit/4013ff6ec39b0d3c35bdc7c90f924e87e56f32a6,coauthor,noreply@anthropic.com,coauthor_email,CodeCaster,codecaster365@outlook.com,coauthor,"fix(actuator): 修复健康检查逻辑并新增 /actuator/health 端点
+问题原因：
+- 脚本使用 curl 的退出码判断健康检查，而非 HTTP 状态码
+- 即使返回 404，curl 也会返回成功，导致误报""健康检查通过""
+- /actuator/health 端点不存在，访问时返回 404
+
+修复内容：
+- 新增 /actuator/health 健康检查端点
+- 修复 fit-service.sh 和 run-test.sh 中的健康检查逻辑
+- 使用 curl -w ""%{http_code}"" 获取 HTTP 状态码进行判断
+
+Co-Authored-By: C",2026-01-26T14:28:17+08:00,2102,,,,
+43,devin,neondatabase/website,056fe8a2462b2de7876ab3bd0315631d3871618e,https://github.com/neondatabase/website/commit/056fe8a2462b2de7876ab3bd0315631d3871618e,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"docs: add shouldWrap flag to branch expiration code blocks
+- Add shouldWrap to code blocks in branch expiration section
+- Prevents horizontal scrolling for long CLI commands
+- Follows existing pattern used elsewhere in the file
+
+Co-Authored-By: Daniel <daniel@neon.tech>",2025-08-07T15:41:31+00:00,295,,,,
+44,cursor,Zion-Holdings/zion.app,4f3a088e3e7270e13ddaf6e431cbe09f717a8400,https://github.com/Zion-Holdings/zion.app/commit/4f3a088e3e7270e13ddaf6e431cbe09f717a8400,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"chore(eslint): fix config syntax and expand ignores to exclude backup/disabled dirs; run lint/tests
+",2025-09-23T16:08:35+00:00,0,,,,
+45,cursor,Zion-Holdings/zion.app,f0f7cb0d8cbec4f02144b53a616113d2df23ee92,https://github.com/Zion-Holdings/zion.app/commit/f0f7cb0d8cbec4f02144b53a616113d2df23ee92,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"feat: Add revolutionary AI 2025-2030 breakthrough content and promotional banners
+- Create AI 2025 Ultimate Breakthrough Revolution page with 10,000% ROI case study
+- Add AI 2026 Future Predictions Breakthrough page with quantum-neural fusion predictions
+- Implement Quantum Computing Breakthroughs 2",2025-09-13T13:05:24+00:00,0,,,,
+46,claude,ethereum-optimism/optimism,f650849a9c593849b93007e14b1e826d81bdffa2,https://github.com/ethereum-optimism/optimism/commit/f650849a9c593849b93007e14b1e826d81bdffa2,coauthor,noreply@anthropic.com,coauthor_email,Maurelian,maurelian@protonmail.ch,coauthor,"feat: add placeholder functions for remaining TimelockGuard functionality
+- Add scheduleTransaction placeholder (Function 4)
+- Add checkPendingTransactions placeholder (Function 6)
+- Add rejectTransaction placeholder (Function 7)
+- Add rejectTransactionWithSignature placeholder (Function 8)
+- Add ca",2025-09-09T13:29:16-04:00,6369,,,,
+47,copilot,microsoftgraph/microsoft-graph-docs-contrib,1f8c402847b9d5f1feb80330adfe0110d9044111,https://github.com/microsoftgraph/microsoft-graph-docs-contrib/commit/1f8c402847b9d5f1feb80330adfe0110d9044111,coauthor,Copilot@users.noreply.github.com,coauthor_email,Wei-Chung Chen,wcchen101@gmail.com,coauthor,"Update api-reference/beta/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofiles.md
+Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",2025-10-27T13:35:05+08:00,121,,,,
+48,cursor,Zion-Holdings/zion.app,e9d2c2cfd779af3cb82ad772ee86efb2f2b8bbfe,https://github.com/Zion-Holdings/zion.app/commit/e9d2c2cfd779af3cb82ad772ee86efb2f2b8bbfe,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"feat: Add comprehensive January 2025 content and advertising system
+- Create new breakthrough content including quantum-neural fusion, synthetic consciousness AI, and autonomous enterprise mesh
+- Add 6 detailed enterprise case studies showcasing real-world AI transformations with 5.2B+ combined valu",2025-10-01T07:03:10+00:00,0,,,,
+49,gemini,warmcat/libwebsockets,d2d3d35b052cc635530aff35921145d399edc3d1,https://github.com/warmcat/libwebsockets/commit/d2d3d35b052cc635530aff35921145d399edc3d1,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Fix SChannel server credentials loading
+- Update lws_tls_schannel_cert_info_load to set CERT_KEY_SPEC_PROP_ID
+  to CERT_NCRYPT_KEY_SPEC for CNG keys. This prevents SChannel from
+  attempting to use legacy CAPI providers which causes SEC_E_NO_CREDENTIALS.
+- Keep the HCERTSTORE and NCRYPT_PROV_HANDLE ",2025-12-14T05:20:20+00:00,5185,,,,
+50,copilot,githubnext/gh-aw,bfbe18e6d2c20ee200c980655a041bad6cef28dc,https://github.com/githubnext/gh-aw/commit/bfbe18e6d2c20ee200c980655a041bad6cef28dc,author_email,Copilot@users.noreply.github.com,author_email,Copilot,198982749+Copilot@users.noreply.github.com,sole_author,"Add Tidy actions that format/lints/test/recomple after pushes to main to make sure it's always clean.
+* Initial plan
+
+* Create tidy.md agentic workflow to replace tidy.yml
+
+Co-authored-by: pelikhan <4175913+pelikhan@users.noreply.github.com>
+
+* Remove old tidy.yml workflow file and complete conversi",2025-09-26T04:14:38-07:00,0,,,,
+51,gemini,codenameone/CodenameOne,160afe88c01efd8d2a2a70033f50b0d819244629,https://github.com/codenameone/CodenameOne/commit/160afe88c01efd8d2a2a70033f50b0d819244629,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Refactor InPlaceEditViewTest to use callback and adapt harness
+Updated InPlaceEditViewNativeImpl (Android) to use direct imports (removing reflection) and a callback for result reporting.
+Added ReproductionCallback interface.
+Updated iOS stub and ObjC files to match the new signature.
+Adapted BaseTe",2025-12-12T11:21:41+00:00,1822,,,,
+52,copilot,camunda/camunda,652b82eb2afcb0bdbdbc17ed08b141cbf039001e,https://github.com/camunda/camunda/commit/652b82eb2afcb0bdbdbc17ed08b141cbf039001e,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"ci: add upload-to-release job for dry_run=false
+Co-authored-by: megglos <209518+megglos@users.noreply.github.com>",2025-12-07T21:11:55+00:00,4006,,,,
+53,devin,calcom/cal.com,f4be35dfaaf297fdbf72731316837b43af090ac6,https://github.com/calcom/cal.com/commit/f4be35dfaaf297fdbf72731316837b43af090ac6,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"refactor(webhooks): improve new webhook skeleton to match actual UI layout
+Co-Authored-By: pasquale@cal.com <pasquale@cal.com>",2026-02-09T14:50:56+00:00,0,,,,
+54,cursor,Zion-Holdings/zion.app,817b4d8e3d194e10799f90fa17512b3c82660910,https://github.com/Zion-Holdings/zion.app/commit/817b4d8e3d194e10799f90fa17512b3c82660910,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"fix: resolve Netlify build issues
+- Remove ES module configuration that was causing next.config.js conflicts
+- Install missing TypeScript dependencies (@types/react, @types/react-dom, @types/node, typescript)
+- Fix dependency installation issues with unrs-resolver by using --ignore-scripts flag
+- En",2025-09-21T06:27:26+00:00,0,,,,
+55,gemini,ryan112358/mbi,5b2a3474de4efb28864fe1e72800bd6decfd50ac,https://github.com/ryan112358/mbi/commit/5b2a3474de4efb28864fe1e72800bd6decfd50ac,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Update clique mapping functions to respect domain size
+- Updated `clique_mapping` and `reverse_clique_mapping` in `src/mbi/clique_utils.py` to accept an optional `domain` argument.
+- If `domain` is provided, cliques are mapped to the supporting maximal clique with the smallest domain size (product o",2026-02-03T00:12:02+00:00,110,,,,
+56,copilot,Open-JDBC-Proxy/ojp,97c9f32a3d4da4c9041afecbf3b7eb758b88becd,https://github.com/Open-JDBC-Proxy/ojp/commit/97c9f32a3d4da4c9041afecbf3b7eb758b88becd,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Disable multinode integration tests by default, enable via flag
+- Added system property check to disable multinode integration tests by default
+- Tests now only run when -Dmultinode.tests.enabled=true is set
+- Updated MultinodeIntegrationTest to skip setup/teardown when disabled
+- Updated MultinodeF",2025-11-03T21:02:33+00:00,172,,,,
+57,devin,team-mirai/marumie,5a450478146ea896caa1e1b26e9effde7579f808,https://github.com/team-mirai/marumie/commit/5a450478146ea896caa1e1b26e9effde7579f808,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"fix: 相対パスを絶対パスに変更 (monthly-aggregation.ts)
+Closes #1014
+
+Co-Authored-By: jun.ito@team-mir.ai <jujunjun110@gmail.com>",2026-01-02T13:07:12+00:00,660,,,,
+58,gemini,LMCache/LMCache,72e20180245f766fdeb965def6a2919026eba4d6,https://github.com/LMCache/LMCache/commit/72e20180245f766fdeb965def6a2919026eba4d6,coauthor,%gemini-code-assist%@%,coauthor_email,Jiayi Yao,82156730+YaoJiayi@users.noreply.github.com,coauthor,"[Misc] Improve S3 a bit (#1402)
+* improve S3
+
+Signed-off-by: YaoJiayi <120040070@link.cuhk.edu.cn>
+
+* improve S3
+
+Signed-off-by: YaoJiayi <120040070@link.cuhk.edu.cn>
+
+* Update examples/kv_cache_reuse/remote_backends/s3/README.md
+
+Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist",2025-08-20T20:49:38-07:00,6865,,,,
+59,copilot,bytebase/bytebase,4967fddd65d35935fd9b185a30c7e630b4b0f02c,https://github.com/bytebase/bytebase/commit/4967fddd65d35935fd9b185a30c7e630b4b0f02c,coauthor,Copilot@users.noreply.github.com,coauthor_email,Danny Xu,98006139+d-bytebase@users.noreply.github.com,coauthor,"chore: remove mongosh resource (#15884)
+* chore: remove mongosh resource
+
+* Update backend/component/config/profile.go
+
+Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>
+
+---------
+
+Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>
+Former-commit-id: 2f78791dd8b4",2025-04-17T15:20:17-07:00,13712,,,,
+60,gemini,Zion-Holdings/zion.app,dab0b742e08d8da712b5eacbe9b15aa1ea4999c2,https://github.com/Zion-Holdings/zion.app/commit/dab0b742e08d8da712b5eacbe9b15aa1ea4999c2,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"fix: Resolve Sentry _config TypeError by consolidating mock logic
+The client-side Sentry initialization in `sentry.ts` contained logic
+to use a super-basic inline mock if `SKIP_SENTRY_BUILD` or `CI`
+environment variables were true. This inline mock was too simplistic
+and lacked the necessary interna",2025-07-05T21:23:20+00:00,0,,,,
+61,claude,jdx/fnox,88c971ab1ac1f619c92bd9f9329e82294d6428c4,https://github.com/jdx/fnox/commit/88c971ab1ac1f619c92bd9f9329e82294d6428c4,coauthor,noreply@anthropic.com,coauthor_email,Dag Høidahl,dag@medthings.no,coauthor,"fix: improve AWS SDK error messages and enable SSO support (#173)
+## Summary
+
+This PR improves AWS SDK error handling and adds support for AWS SSO
+authentication.
+
+### Changes
+
+1. **Improved AWS SDK error messages** (26f0d1b)
+   - Add `format_aws_error()` helper to properly unwrap AWS SDK errors
+   ",2026-01-14T19:31:39+01:00,1180,,,,
+62,cursor,Zion-Holdings/zion.app,9a326501f058f930f6fad28fa3cc9837075d8f2a,https://github.com/Zion-Holdings/zion.app/commit/9a326501f058f930f6fad28fa3cc9837075d8f2a,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"content: add 4 new updates and advertise on homepage listings
+",2025-09-16T07:16:46+00:00,0,,,,
+63,copilot,microsoft/Generative-AI-for-beginners-dotnet,fac94d87d2935f33b2de4c7de11b6d8ea618d5dc,https://github.com/microsoft/Generative-AI-for-beginners-dotnet/commit/fac94d87d2935f33b2de4c7de11b6d8ea618d5dc,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Add official AzureSoraSDK repository links as requested
+Co-authored-by: elbruno <3533489+elbruno@users.noreply.github.com>",2025-06-11T16:33:29+00:00,2303,,,,
+64,copilot,xamarin/xamarin-macios,f5a5279274982c21b24a3f8bcc7ce6e393a42b33,https://github.com/xamarin/xamarin-macios/commit/f5a5279274982c21b24a3f8bcc7ce6e393a42b33,coauthor,Copilot@users.noreply.github.com,coauthor_email,Rolf Bjarne Kvinge,rolf@xamarin.com,coauthor,"[Foundation] Fix NSObjectData leak. (#24114)
+Every `NSObject` allocates native memory for `NSObjectData` via a `NSObjectDataHandle` critical handle. When the handle dies, the memory wasn't reclaimed because the `NSObjectDataHandle.IsInvalid` method was implemented incorrectly.
+
+Fixing this bug, lead",2025-12-05T14:16:16+01:00,2819,,,,
+65,devin,cosscom/coss,291437a77662548778720474c418b8a5390864ae,https://github.com/cosscom/coss/commit/291437a77662548778720474c418b8a5390864ae,coauthor,%+devin-ai-integration[bot]@users.noreply.github.com,coauthor_email,Pasquale Vitiello,pasqualevitiello@gmail.com,coauthor,"fix: adjusted class names in badge variants (#677)
+* fix: adjusted class names in badge variants
+
+* chore: rebuild registry after merge with main
+
+Co-Authored-By: pasquale@cal.com <pasqualevitiello@gmail.com>
+
+---------
+
+Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.git",2026-02-13T12:43:20+01:00,9337,,,,
+66,claude,expectedparrot/edsl,c236df54141604f3d1a3475309a25b8e15c9f52a,https://github.com/expectedparrot/edsl/commit/c236df54141604f3d1a3475309a25b8e15c9f52a,coauthor,noreply@anthropic.com,coauthor_email,John Horton,john.joseph.horton@gmail.com,coauthor,"Fix OutputWrapper to display Altair charts directly
+The _ipython_display_() method was wrapping charts in HTML() which
+doesn't preserve Altair's Vega-Lite spec properly. Now detects Altair
+charts and displays them directly, letting Altair handle its own
+display methods.
+
+Changes:
+- Check if chart is",2025-11-14T17:00:49-08:00,426,,,,
+67,claude,antiwork/gumroad,e6dc448877ce969c6ada5850e440d18f8db62e16,https://github.com/antiwork/gumroad/commit/e6dc448877ce969c6ada5850e440d18f8db62e16,coauthor,noreply@anthropic.com,coauthor_email,Gianfranco Piana,52470719+gianfrancopiana@users.noreply.github.com,coauthor,"Remove full-page skeleton flash on dashboard navigation (#3536)
+## Problem
+
+When navigating between dashboard sections (e.g., Products → Settings →
+Analytics) or switching tabs within a section, the entire `<main>`
+content is hidden and replaced with a generic skeleton loader. This
+causes page title",2026-02-12T19:05:38-03:00,8401,,,,
+68,cursor,Zion-Holdings/zion.app,31fb0d3c6eafd1d6a8bc98f207dd80b0676651cb,https://github.com/Zion-Holdings/zion.app/commit/31fb0d3c6eafd1d6a8bc98f207dd80b0676651cb,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Resolve merge conflicts in App.tsx and performanceOptimizer.ts
+- Fixed App.tsx to properly handle pageLoadMetrics return value
+- Merged performanceOptimizer.ts to use class-based singleton pattern
+- Resolved conflicts between functional and class-based implementations",2025-10-06T05:04:31+00:00,0,,,,
+69,devin,reown-com/reown-docs,68788f70aeef46e5a343c1650994d83d7664ed73,https://github.com/reown-com/reown-docs/commit/68788f70aeef46e5a343c1650994d83d7664ed73,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"Remove Early Access, Payments, Notifications sections and Sponsored Transactions from Svelte documentation
+Co-Authored-By: rohit@reown.com <rrohitramesh710@gmail.com>",2025-06-03T17:12:31+00:00,100,,,,
+70,copilot,scikit-learn/scikit-learn,7a049cd9d9ace088ec811d5de210d291ebe259be,https://github.com/scikit-learn/scikit-learn/commit/7a049cd9d9ace088ec811d5de210d291ebe259be,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Initial plan
+",2026-01-08T10:32:36+00:00,65020,,,,
+71,devin,theopenco/openllm,b36893b94417a1fc746ae8dd965d4322baf75de5,https://github.com/theopenco/openllm/commit/b36893b94417a1fc746ae8dd965d4322baf75de5,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"refactor: remove defaults from log schema non-metadata fields
+Co-Authored-By: Luca Steeb <contact@luca-steeb.com>",2025-05-22T23:39:49+00:00,861,,,,
+72,cursor,Zion-Holdings/zion.app,75c133214ff53de2915d13a354db23d683f0b3df,https://github.com/Zion-Holdings/zion.app/commit/75c133214ff53de2915d13a354db23d683f0b3df,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Merge remote-tracking branch 'origin/cursor/fix-errors-and-merge-to-main-1c33'
+",2025-10-25T18:04:28+00:00,0,,,,
+73,claude,pwafire/pwafire,8d913b7c4dea95f3f2927cba18110a9adb64d4a7,https://github.com/pwafire/pwafire/commit/8d913b7c4dea95f3f2927cba18110a9adb64d4a7,coauthor,noreply@anthropic.com,coauthor_email,Maye Edwin,mayedwine1@gmail.com,coauthor,"style(console) - refine modal with black/white/gray theme
+Update modal dialog styling for consistency:
+- Pure black background (#000)
+- Gray borders (#222, #333)
+- White text and accents
+- Minimal, clean design
+- Uppercase labels with letter-spacing
+- Subtle hover states (border highlights)
+- Succes",2026-02-15T13:42:57+03:00,207,,,,
+74,cursor,Zion-Holdings/zion.app,d5fcf1b41b0fa2a23ff03f8a66d6e0d4604ae285,https://github.com/Zion-Holdings/zion.app/commit/d5fcf1b41b0fa2a23ff03f8a66d6e0d4604ae285,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Fix merge conflict in src/index.css - accept local changes
+[2025-08-26 19:30:53]",2025-08-26T19:30:53+00:00,0,,,,
+75,claude,buger/probe,66ff29e534262066edd731c8e1aa38f82995cc31,https://github.com/buger/probe/commit/66ff29e534262066edd731c8e1aa38f82995cc31,coauthor,noreply@anthropic.com,coauthor_email,Leonid Bugaev,leonsbox@gmail.com,coauthor,"Fix critical 21x performance regression in ripgrep integration
+## Problem Analysis
+The ripgrep integration introduced a 21x performance regression (371ms → 8.10s) due to massive overengineering. The implementation was using ripgrep's full search pipeline (designed for CLI usage) instead of just leve",2025-07-28T15:55:49+03:00,450,,,,
+76,claude,elsbrock/hetzner-radar,12b2638961c15c7b3857d649b3adde5ddc32c740,https://github.com/elsbrock/hetzner-radar/commit/12b2638961c15c7b3857d649b3adde5ddc32c740,coauthor,noreply@anthropic.com,coauthor_email,Simon Elsbrock,simon@iodev.org,coauthor,"fix: resolve CI failures in dependency PRs
+- Update package-lock.json to sync with package.json (fixes npm ci failures)
+- Fix unused variable linting errors preventing builds
+- Add localStorage mocking for settings tests
+- Prefix unused variables with underscore to satisfy eslint
+
+This resolves the ",2025-09-24T21:34:52+02:00,259,,,,
+77,cursor,Zion-Holdings/zion.app,8da68738580e2e33791b7de89f0e32390db553da,https://github.com/Zion-Holdings/zion.app/commit/8da68738580e2e33791b7de89f0e32390db553da,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"feat(content): add Autonomous Finance OS 2026 blog and Autonomous Ops Platform 2026 guide; update content index and blog listing; refresh promotion banner; resolve homepage conflict
+",2025-09-15T07:12:28+00:00,0,,,,
+78,devin,antiwork/gumboard,87dd36b647456f107b1ce2eccff91679b171f227,https://github.com/antiwork/gumboard/commit/87dd36b647456f107b1ce2eccff91679b171f227,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,devin-ai-integration[bot],158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"Remove redundant linting workflow and fix TypeScript errors (#317)
+# Remove redundant linting workflow and fix TypeScript errors
+
+## Summary
+This PR addresses CI failures from the merged autofix workflow (#315) by
+completing an incomplete database field migration from `done` to
+`archivedAt` and remo",2025-08-12T12:07:03-04:00,165,,,,
+79,gemini,TheYkk/git-switcher,4a7102314e0c6cb176a1f4a846faa915cb30ff21,https://github.com/TheYkk/git-switcher/commit/4a7102314e0c6cb176a1f4a846faa915cb30ff21,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Refactor: Integrate Cobra CLI and update Go version
+This commit refactors the application to use the Cobra CLI framework and updates the Go version and dependencies.
+
+Key changes:
+- Updated Go version to 1.24 in `go.mod` and GitHub Actions.
+- Added `github.com/spf13/cobra` as a dependency.
+- Updated",2025-05-20T17:25:55+00:00,249,,,,
+80,cursor,Zion-Holdings/zion.app,92fedd9500a305106721754adfc1118af0a196b0,https://github.com/Zion-Holdings/zion.app/commit/92fedd9500a305106721754adfc1118af0a196b0,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Resolve merge conflicts - keep main branch content
+",2025-09-14T12:41:34+00:00,0,,,,
+81,copilot,WordPress/block-development-examples,90b3311df4f81df33fe63e863df831d6fb710e8f,https://github.com/WordPress/block-development-examples/commit/90b3311df4f81df33fe63e863df831d6fb710e8f,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Add --blocks-manifest flag to remaining 5 plugins and generate manifest files
+- Updated package.json build scripts for:
+  - interactivity-api-countdown-3cd73e
+  - interactivity-api-quiz-1835fa
+  - interactivity-router-2f43f8
+  - my-first-interactive-block
+  - post-meta-testimonial
+- Generated blocks",2025-11-03T21:45:34+00:00,320,,,,
+82,claude,JuliaLang/juliaup,b246276b156b3ba63372e86679f99245512c11ad,https://github.com/JuliaLang/juliaup/commit/b246276b156b3ba63372e86679f99245512c11ad,coauthor,noreply@anthropic.com,coauthor_email,Ian Butterworth,i.r.butterworth@gmail.com,coauthor,"Pin cross-rs i686-unknown-linux-gnu image to fix GLIBC_2.28 build failure (#1415)
+The cross-rs 0.2.5 Docker image for i686-unknown-linux-gnu ships glibc
+2.27, which is too old for modern Rust build scripts. This causes CI to
+fail with:
+  /lib/x86_64-linux-gnu/libc.so.6: version 'GLIBC_2.28' not foun",2026-02-07T22:21:33-05:00,1243,,,,
+83,gemini,warmcat/libwebsockets,e4ec0fdd767113f1de7ef4d68dd96710730bb7f3,https://github.com/warmcat/libwebsockets/commit/e4ec0fdd767113f1de7ef4d68dd96710730bb7f3,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Add initial SChannel support scaffolding
+- Introduce LWS_WITH_SCHANNEL CMake option.
+- Refactor lib/tls private headers to abstract lws_tls_conn/ctx types,
+  allowing for opaque SChannel types instead of OpenSSL typedefs.
+- Isolate OpenSSL header inclusion.
+- Create lib/tls/schannel/ directory with ",2025-12-10T11:27:46+00:00,5185,,,,
+84,claude,OpenAgentsInc/openagents,380cd0c730d4f527a19209d3cab0b112145b9128,https://github.com/OpenAgentsInc/openagents/commit/380cd0c730d4f527a19209d3cab0b112145b9128,coauthor,noreply@anthropic.com,coauthor_email,Christopher David,chris@openagents.com,coauthor,"Add test_dvm_service_with_relay to compute E2E tests
+Implements comprehensive DVM service workflow test that demonstrates:
+- Provider announces capabilities (NIP-89 handler info)
+- Customer creates and publishes job request (NIP-90)
+- Provider sends processing feedback
+- Provider generates and publi",2025-12-22T02:45:11-06:00,360,,,,
+85,copilot,github/github-mcp-server,64752fd0828c05dd265a0a17ac9646152c1aa856,https://github.com/github/github-mcp-server/commit/64752fd0828c05dd265a0a17ac9646152c1aa856,coauthor,Copilot@users.noreply.github.com,coauthor_email,JoannaaKL,joannaakl@github.com,coauthor,"Update README.md
+Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",2026-01-20T10:06:28+01:00,26801,,,,
+86,cursor,Zion-Holdings/zion.app,65e742a984f98ae891f22f2f17339e1232478199,https://github.com/Zion-Holdings/zion.app/commit/65e742a984f98ae891f22f2f17339e1232478199,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Merge PR #10925: Fix lint, push, and merge to main - Resolved all merge conflicts
+",2025-09-02T16:22:54+00:00,0,,,,
+87,claude,united-manufacturing-hub/united-manufacturing-hub,2b37b744643b68766398cf99c4e16ebab2881543,https://github.com/united-manufacturing-hub/united-manufacturing-hub/commit/2b37b744643b68766398cf99c4e16ebab2881543,coauthor,noreply@anthropic.com,coauthor_email,Jeremy Theocharis,jt@umh.app,coauthor,"fix(fsmv2/supervisor): convert Info/Debug to Infow/Debugw for structured logging
+Fixed formatting bugs where s.logger.Info() and s.logger.Debug() were called
+with multiple arguments. These should use Infow/Debugw for proper structured
+logging with key-value pairs.
+
+Changes:
+- Line 1211: Info → Infow",2025-11-25T14:46:58+01:00,348,,,,
+88,devin,calcom/cal.com,980f0081bfa947eaaf419c508fe0b9386910de27,https://github.com/calcom/cal.com/commit/980f0081bfa947eaaf419c508fe0b9386910de27,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"fix: set firstName for dsync user creation
+Derive firstName from the first word of the derived name when creating
+users via directory sync (dsync).
+
+Co-Authored-By: joe@cal.com <j.auyeung419@gmail.com>",2026-01-22T17:08:50+00:00,0,,,,
+89,gemini,rush86999/atomic,ae6961604f80d150eeeada556afb2330479ffd1e,https://github.com/rush86999/atomic/commit/ae6961604f80d150eeeada556afb2330479ffd1e,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"feat: add 100+ e2e integration tests and fix backend dependencies
+- Created `tests/e2e/api_coverage_1.spec.ts` with 100+ API endpoint tests.
+- Created `tests/e2e/comprehensive_backend.spec.ts` for detailed workflow integration testing.
+- Created `tests/e2e/extra_features.spec.ts` for feature connect",2026-01-03T12:44:30+00:00,696,,,,
+90,copilot,powersync-ja/powersync-service,05b9593cd5c29f57da5a0e58bbf6032db15c40c5,https://github.com/powersync-ja/powersync-service/commit/05b9593cd5c29f57da5a0e58bbf6032db15c40c5,coauthor,Copilot@users.noreply.github.com,coauthor_email,Ralf Kistner,ralf@journeyapps.com,coauthor,"Fix postgres op_id sequence intialization (#260)
+* Add failing test.
+
+* Add migration to fix the issue.
+
+* Add changeset.
+
+* Revert migration; check is_called instead.
+
+* Update .changeset/sixty-melons-bow.md
+
+Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>
+
+---------
+
+Co-author",2025-05-08T15:42:43+02:00,303,,,,
+91,claude,cozystack/cozystack,36836fd84e77a1234b21a7d86df665314490f90a,https://github.com/cozystack/cozystack/commit/36836fd84e77a1234b21a7d86df665314490f90a,coauthor,noreply@anthropic.com,coauthor_email,Aleksei Sviridkin,f@lex.la,coauthor,"[kubevirt-operator] Revert incorrect case change in VM alerts
+Revert PR #1770 which incorrectly changed status check from lowercase
+to uppercase. The actual metrics use lowercase:
+- kubevirt_vm_info uses status=""running"" (not ""Running"")
+- kubevirt_vmi_info uses phase=""running"" (not ""Running"")
+
+Verif",2026-01-05T17:35:56+03:00,1909,,,,
+92,cursor,Zion-Holdings/zion.app,1ab32a2784450704304f502509298f25c4df4514,https://github.com/Zion-Holdings/zion.app/commit/1ab32a2784450704304f502509298f25c4df4514,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"merge: resolve conflicts keeping yarn flow; remove package-lock
+",2025-09-07T12:26:16+00:00,0,,,,
+93,copilot,adamhathcock/sharpcompress,4a6e5232ae664b06f955ae7b775ce0520cc5a884,https://github.com/adamhathcock/sharpcompress/commit/4a6e5232ae664b06f955ae7b775ce0520cc5a884,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Add opt-in multi-threading support with SupportsMultiThreadedExtraction flag
+- Added IArchive.SupportsMultiThreadedExtraction property to indicate if multi-threading is supported
+- Added ReaderOptions.EnableMultiThreadedExtraction option to opt-in to multi-threading
+- Updated SeekableZipFilePart, Ta",2026-01-18T16:27:59+00:00,2512,,,,
+94,claude,probelabs/probe,2684796fc708b8f64a2508625139ff716b9adb55,https://github.com/probelabs/probe/commit/2684796fc708b8f64a2508625139ff716b9adb55,coauthor,noreply@anthropic.com,coauthor_email,Leonid Bugaev,leonsbox@gmail.com,coauthor,"Fix Docker workflow timing: Use build artifacts instead of releases
+- Add artifact upload step to build-and-release job
+- Modify Docker job to download artifacts instead of release files
+- Ensures binaries are available before Docker build starts
+- Fixes race condition where Docker job ran before re",2025-08-05T14:58:31+03:00,450,,,,
+95,claude,modu-ai/moai-adk,daa91971218d2c79861482ca622fa47f4440f534,https://github.com/modu-ai/moai-adk/commit/daa91971218d2c79861482ca622fa47f4440f534,coauthor,noreply@anthropic.com,coauthor_email,Goos Kim,email@goos.kim,coauthor,"📦 chore: Keep only docs/public in repository
+docs 폴더 중 public 에셋만 저장소에 포함합니다.
+
+변경 사항:
+- docs/* 제외 (.gitignore)
+- docs/public/ 포함 (이미지 및 아이콘)
+- 로컬에는 전체 문서 유지
+- Git에는 공개 에셋만 포함
+
+포함된 에셋:
+- Alfred 로고
+- MoAI-ADK CLI 스크린샷
+- 다크/라이트 모드 스크린샷
+- 아이콘 세트 (9개)
+
+🤖 Generated with [Claude Code](https://claude.com/cl",2025-10-03T16:47:02+09:00,721,,,,
+96,claude,SOVEREIGN-NET/The-Sovereign-Network,41058c193812e8d52d5071d3b6c8531e868d86d3,https://github.com/SOVEREIGN-NET/The-Sovereign-Network/commit/41058c193812e8d52d5071d3b6c8531e868d86d3,coauthor,noreply@anthropic.com,coauthor_email,Stephen Casino,scasino983@gmail.com,coauthor,"security: Add audit logging and remove redundant env var read
+Address Copilot review feedback and SonarCloud security hotspot:
+
+- Remove redundant ZHTP_DEVICE_NAME env var read in mod.rs (was being
+  read twice - once in mod.rs and once inside resolve_device_name)
+- Move AUDIT logging into resolve_d",2026-01-24T11:45:51-08:00,191,,,,
+97,gemini,netz98/n98-magerun2,27cde24759f861c5d0d65768e9eb0abf3ca7e36e,https://github.com/netz98/n98-magerun2/commit/27cde24759f861c5d0d65768e9eb0abf3ca7e36e,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"docs: remove duplicate concepts page
+The `docs/docs/concepts` directory was a duplicate and has been removed.
+The content was moved to other pages.
+
+- Removed the `docs/docs/concepts` directory.
+- Removed the ""Concepts"" section from the sidebar in `docs/sidebars.js`.
+- Fixed a broken link in `docs/d",2025-08-19T16:51:07+00:00,922,,,,
+98,copilot,Z3Prover/z3,3eb6825d5aaddd7530edbadb230579169d09e038,https://github.com/Z3Prover/z3/commit/3eb6825d5aaddd7530edbadb230579169d09e038,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Initial plan
+",2026-02-11T01:44:29+00:00,11899,,,,
+99,cursor,Zion-Holdings/zion.app,ce5b81c2dd7ece6aa07dd4584539732b2be80eff,https://github.com/Zion-Holdings/zion.app/commit/ce5b81c2dd7ece6aa07dd4584539732b2be80eff,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Resolve final merge conflict in layout.tsx
+",2025-10-28T08:16:23+00:00,0,,,,
+100,claude,simonw/tools,97092647b9f1ddf7f4a0e28dee4ef92d42084770,https://github.com/simonw/tools/commit/97092647b9f1ddf7f4a0e28dee4ef92d42084770,author_email,noreply@anthropic.com,author_email,Claude,noreply@anthropic.com,sole_author,"Use CORS-enabled URL for buildroot Linux image
+The i.copy.sh CDN blocks cross-origin requests from unknown origins.
+Switch to static.simonwillison.net which has proper CORS headers.",2026-01-06T19:51:48+00:00,1414,,,,
+101,cursor,Zion-Holdings/zion.app,8d1f594d0a5376b78a1a6f88457b9158637cb385,https://github.com/Zion-Holdings/zion.app/commit/8d1f594d0a5376b78a1a6f88457b9158637cb385,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Merge remote changes and resolve conflicts - Clean build maintained
+[2025-08-26 22:30:41]",2025-08-26T22:30:41+00:00,0,,,,
+102,devin,cloudflare/cloudflare-docs,049b8a06536780a5174d4cf3ddb9f318ad13824a,https://github.com/cloudflare/cloudflare-docs/commit/049b8a06536780a5174d4cf3ddb9f318ad13824a,coauthor,%+devin-ai-integration[bot]@users.noreply.github.com,coauthor_email,Pete Bacon Darwin,pete@bacondarwin.com,coauthor,"docs: add changelog entry for ctx.exports support in vitest-pool-workers (#27281)
+* docs: add changelog entry for ctx.exports support in vitest-pool-workers
+
+Co-Authored-By: pbacondarwin@cloudflare.com <pete@bacondarwin.com>
+
+* docs: add code examples for ctx.exports in vitest-pool-workers
+
+Co-Autho",2026-01-28T17:33:21+00:00,4374,,,,
+103,claude,onetimesecret/onetimesecret,56a5c1c0b286e478ffba898a60410f058d624b98,https://github.com/onetimesecret/onetimesecret/commit/56a5c1c0b286e478ffba898a60410f058d624b98,coauthor,noreply@anthropic.com,coauthor_email,delano,delano@onetimesecret.com,coauthor,"[#2258] Fix rake task name in usage message
+Correct vcr:billing:record_all to vcr:billing:rerecord in error message.
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>",2025-12-24T22:17:24-08:00,2698,,,,
+104,cursor,get-convex/agent,583816769efc8757ee375fdc25d0fb8e63e0a935,https://github.com/get-convex/agent/commit/583816769efc8757ee375fdc25d0fb8e63e0a935,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"feat(playground): Add raw messages view to show all thread messages separately
+- Add RawMessageItem component that displays individual messages with all their data
+  - Shows role, status, order, stepOrder, model, provider, usage, etc.
+  - Displays tool calls and tool results with badges
+  - Expandab",2026-01-24T02:28:46+00:00,273,,,,
+105,claude,ruvnet/claude-flow,92fbcdf5f197a85f1c52bf39a92c7ece1c115f9e,https://github.com/ruvnet/claude-flow/commit/92fbcdf5f197a85f1c52bf39a92c7ece1c115f9e,coauthor,noreply@anthropic.com,coauthor_email,rUv,ruv@ruv.net,coauthor,"Checkpoint: File edits
+Automatic checkpoint created by Claude Code
+- Branch: feature/agentic-qe-integration
+- Timestamp: 2026-01-23T18:38:11Z
+- Changes: 6 file(s)
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>",2026-01-23T18:38:11+00:00,13918,,,,
+106,copilot,OWASP/wrongsecrets,a880dab9d321bee4f62ba3ed8795c9717998a1b2,https://github.com/OWASP/wrongsecrets/commit/a880dab9d321bee4f62ba3ed8795c9717998a1b2,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Complete secret scanner comparison workflow with 7 tools and improved output handling
+Co-authored-by: commjoen <1457214+commjoen@users.noreply.github.com>",2025-07-27T06:34:40+00:00,1394,,,,
+107,gemini,rush86999/atomic,c878258f46ffa3477d6056987154d01f7a9cad76,https://github.com/rush86999/atomic/commit/c878258f46ffa3477d6056987154d01f7a9cad76,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"feat: Implement Microsoft Graph (Outlook Calendar & Email) Integration
+This commit introduces comprehensive Microsoft Graph integration, enabling you to connect your Microsoft accounts to manage Outlook calendar events and emails. This includes OAuth 2.0 authentication, secure token management, inte",2025-06-18T00:58:27+00:00,696,,,,
+108,copilot,thorek1/MacroModelling.jl,8bcbcc45b583e3529168d97723fcc7e3f25a349a,https://github.com/thorek1/MacroModelling.jl/commit/8bcbcc45b583e3529168d97723fcc7e3f25a349a,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Add documentation and examples for calibration tracking
+Co-authored-by: thorek1 <13523097+thorek1@users.noreply.github.com>",2025-10-06T23:53:05+00:00,132,,,,
+109,devin,567-labs/instructor,8ecba3d6a56310a4edc37c9dfd6b5efbf431c4dc,https://github.com/567-labs/instructor/commit/8ecba3d6a56310a4edc37c9dfd6b5efbf431c4dc,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,devin-ai-integration[bot],158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"fix: Move youtube.gif to docs/img and update navigation
+",2024-11-18T02:34:23+00:00,12349,,,,
+110,gemini,spellshift/realm,82dbb6514b672242108abded228cb4f9c87ececc,https://github.com/spellshift/realm/commit/82dbb6514b672242108abded228cb4f9c87ececc,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Fix typos and capitalization in config and UI text
+- Fix `SQLLite` -> `SQLite` in `tavern/config.go` and `tavern/config_test.go`.
+- Fix `Github` -> `GitHub` and `Gitlab` -> `GitLab` capitalization in `tavern/internal/www/src/pages/tomes/components/StepAddDeploymentKey.tsx`.
+- Fix `Github` -> `GitHub",2026-02-11T08:25:32+00:00,592,,,,
+111,devin,fern-api/fern,e0004a42c6fa9f3783b7dff73b844ab01232bb65,https://github.com/fern-api/fern/commit/e0004a42c6fa9f3783b7dff73b844ab01232bb65,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"fix: use declaration-level docs as fallback for auth scheme descriptions
+Co-Authored-By: will.kendall@buildwithfern.com <wpk235@gmail.com>",2026-02-06T15:03:25+00:00,3500,,,,
+112,cursor,Zion-Holdings/zion.app,a7942923fdd3ddb93f82f0e279298db4f3023ca2,https://github.com/Zion-Holdings/zion.app/commit/a7942923fdd3ddb93f82f0e279298db4f3023ca2,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"content: add 3 new articles and advertise via enhanced banners (2025-10-30)
+",2025-09-30T08:55:43+00:00,0,,,,
+113,devin,vlm-run/vlmrun-cookbook,dc580b7ea403e4d6a044962658536e36a8baa531,https://github.com/vlm-run/vlmrun-cookbook/commit/dc580b7ea403e4d6a044962658536e36a8baa531,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"Add Orion document understanding notebook to README
+Co-Authored-By: dinesh@vlm.run <dinesh@vlm.run>",2025-12-12T02:21:32+00:00,305,,,,
+114,gemini,Zion-Holdings/zion.app,050a28235c6ffc63c8934fc316a1cd00c9ec2550,https://github.com/Zion-Holdings/zion.app/commit/050a28235c6ffc63c8934fc316a1cd00c9ec2550,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"feat: Implement Stripe webhooks, LayerZero mock, add tests & CI scan, update docs
+- Implement Stripe webhook handlers for subscription lifecycle events (created, updated, deleted, payment_succeeded) in `server/routes/stripe.js`. Created `Subscription` model and updated `User` model.
+- Integrate mock",2025-06-26T23:22:22+00:00,0,,,,
+115,gemini,firebase/firebase-admin-node,7c6956ce71501fc24b571fe755c97fc94cdc2274,https://github.com/firebase/firebase-admin-node/commit/7c6956ce71501fc24b571fe755c97fc94cdc2274,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"feat(messaging): Add bandwidthConstrainedOk and restrictedSatelliteOk to AndroidConfig
+Adds two new optional boolean properties, `bandwidthConstrainedOk` and `restrictedSatelliteOk`, to the `AndroidConfig` type in the messaging API.
+
+This change includes:
+- Updating the `AndroidConfig` interface in ",2025-10-23T20:09:44+00:00,1723,,,,
+116,cursor,Zion-Holdings/zion.app,077a2fa17b232b3d3a40d862e1f5843c328ade76,https://github.com/Zion-Holdings/zion.app/commit/077a2fa17b232b3d3a40d862e1f5843c328ade76,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"feat: Add three cutting-edge AI articles and homepage promotion
+- Add Autonomous AI Resilience Systems article (.4B value, 99.99% uptime)
+- Add Quantum AI Supply Chain Optimization article (.7B savings, 97% accuracy)
+- Add Neuromorphic Decision Intelligence article (.7B value, sub-ms inference)
+- Cr",2025-10-01T05:23:06+00:00,0,,,,
+117,cursor,Zion-Holdings/zion.app,355a9fe3c164db6d65b7dc1d11820b8a2d656401,https://github.com/Zion-Holdings/zion.app/commit/355a9fe3c164db6d65b7dc1d11820b8a2d656401,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"feat: Add revolutionary AI content and promotional components for 2026-2030
+- Add 3 comprehensive blog posts covering AI trends 2026-2030, Quantum AI business revolution, and Neural Interfaces enterprise guide
+- Create promotional banner components for each new content piece with modern design and a",2025-09-14T17:33:43+00:00,0,,,,
+118,gemini,robolectric/robolectric,0cad7bbc682123d0316cead431a21ec855456fd4,https://github.com/robolectric/robolectric/commit/0cad7bbc682123d0316cead431a21ec855456fd4,coauthor,%gemini-code-assist%@%,coauthor_email,Devashishbasu,devashishbasu587@gmail.com,coauthor,"Make-fields-of-ShadowUIModeManager-static-for-context-level-instance
+1.Converted instance fields to static fields to ensure proper state management.
+2.add tests for the same in ShadowUiModeManagerTest.
+3.add tests for UiModeManager instance behavior across application and
+  activity contexts in Cont",2024-08-16T00:44:24+05:30,6000,,,,
+119,copilot,Adyen/adyen-node-api-library,9a2112913d2ea2e802105c6817d2d136da74a506,https://github.com/Adyen/adyen-node-api-library/commit/9a2112913d2ea2e802105c6817d2d136da74a506,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"fix: use npm ci consistently across all workflows
+Co-authored-by: gcatanese <1771700+gcatanese@users.noreply.github.com>",2025-12-19T10:27:35+00:00,129,,,,
+120,devin,team-mirai-volunteer/marumie,8977f1245c32a4b78121deb13336e5692b8dbbd3,https://github.com/team-mirai-volunteer/marumie/commit/8977f1245c32a4b78121deb13336e5692b8dbbd3,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"fix(admin): ミドルウェアでcodeパラメータを/loginにリダイレクト
+PKCEフローでSupabaseがルートURLにリダイレクトする場合でも
+codeパラメータを正しく処理できるように修正
+
+Co-Authored-By: jun.ito@team-mir.ai <jujunjun110@gmail.com>",2025-12-31T02:13:09+00:00,660,,,,
+121,devin,antiwork/flexile,c348d63b85d12f1c642d9cc8362ba432591007d5,https://github.com/antiwork/flexile/commit/c348d63b85d12f1c642d9cc8362ba432591007d5,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,devin-ai-integration[bot],158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"Add specs for CompanyUpdateEmailJob (#858)
+# Add specs for CompanyUpdateEmailJob
+
+## Summary
+This PR adds RSpec tests for `CompanyUpdateEmailJob`, which was
+previously missing test coverage. The job is responsible for sending
+company update emails to users via
+`CompanyUpdateMailer.update_published`.",2025-08-13T09:39:08-04:00,776,,,,
+122,cursor,Zion-Holdings/zion.app,8d1bf15742b35272ba063af737397d954c9d6df6,https://github.com/Zion-Holdings/zion.app/commit/8d1bf15742b35272ba063af737397d954c9d6df6,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Merge cursor/fix-netlify-build-and-merge-to-main-42d1: Fix Netlify build configuration for Vite React SPA
+",2025-09-18T22:37:05+00:00,0,,,,
+123,gemini,langgenius/dify,becabd84a9ac605af72312118311eb5b1db07d1f,https://github.com/langgenius/dify/commit/becabd84a9ac605af72312118311eb5b1db07d1f,coauthor,%gemini-code-assist%@%,coauthor_email,NeatGuyCoding,15627489+NeatGuyCoding@users.noreply.github.com,coauthor,"Fix typo in weaviate comment, improve time test precision, and add security tests for get-icon utility (#27919)
+Signed-off-by: NeatGuyCoding <15627489+NeatGuyCoding@users.noreply.github.com>
+Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>",2025-11-10T10:11:54+08:00,129289,,,,
+124,devin,crewAIInc/crewAI,ffb8bedf1bc26ee414ed99b215120c469684e4b7,https://github.com/crewAIInc/crewAI/commit/ffb8bedf1bc26ee414ed99b215120c469684e4b7,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"Fix #2551: Add Huggingface to provider list in CLI
+Co-Authored-By: Joe Moura <joao@crewai.com>",2025-04-09T10:55:31+00:00,43908,,,,
+125,gemini,rush86999/atomic,282fdd85afc23fd48c8b18f2b2226bd9e006157f,https://github.com/rush86999/atomic/commit/282fdd85afc23fd48c8b18f2b2226bd9e006157f,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"chore: Define SQL DDL for user_tokens table
+Defines the PostgreSQL schema for the `public.user_tokens` table, which is intended to store OAuth tokens and other service-specific authentication data for you. This table is crucial for enabling persistent authentication with third-party services like Go",2025-06-20T16:53:17+00:00,696,,,,
+126,copilot,open-metadata/OpenMetadata,66bf3f94e4f14347be9cd4e6d5f11ace3dfe2d22,https://github.com/open-metadata/OpenMetadata/commit/66bf3f94e4f14347be9cd4e6d5f11ace3dfe2d22,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Initial plan
+",2025-10-01T17:17:39+00:00,8669,,,,
+127,gemini,google-gemini/gemini-cli,723a067f556d986546693a6da1c4bedacc0ff34c,https://github.com/google-gemini/gemini-cli/commit/723a067f556d986546693a6da1c4bedacc0ff34c,author_email,gemini-cli-robot@google.com,author_email,gemini-cli-robot,gemini-cli-robot@google.com,sole_author,"chore(release): v0.25.0-nightly.20260110.b08b0d715
+",2026-01-10T00:38:58+00:00,94130,,,,
+128,gemini,nekomangaorg/Neko,1ff815fa081c49b5384b94b3577342c6212e3fb5,https://github.com/nekomangaorg/Neko/commit/1ff815fa081c49b5384b94b3577342c6212e3fb5,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Fix: Use ExistingPeriodicWorkPolicy.UPDATE for library update job (#2344)
+The library update job was not being correctly rescheduled due to the use of an incorrect `ExistingPeriodicWorkPolicy`.
+
+This commit replaces `ExistingPeriodicWorkPolicy.CANCEL_AND_REENQUEUE` with `ExistingPeriodicWorkPolicy.U",2025-09-25T13:34:54-04:00,2678,,,,
+129,gemini,googleapis/genai-toolbox,dea199ea3622305ee2988e1189aba8e56d3ff873,https://github.com/googleapis/genai-toolbox/commit/dea199ea3622305ee2988e1189aba8e56d3ff873,coauthor,%gemini-code-assist%@%,coauthor_email,Yuan325,Yuan325@users.noreply.github.com,coauthor,"deploy: docs: Updating dataplex docs to include new syntax for semantic search (#2165)
+## Description
+
+Dataplex.md is currently misaligned with the Dataplex backend, leading
+to failed search queries.
+
+## PR Checklist
+
+> Thank you for opening a Pull Request! Before submitting your PR, there
+are a
+> f",2025-12-31T07:30:58+00:00,12873,,,,
+130,cursor,Zion-Holdings/zion.app,689cb35b7d5dd2eb29f9a6a576122d2307732a89,https://github.com/Zion-Holdings/zion.app/commit/689cb35b7d5dd2eb29f9a6a576122d2307732a89,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Remove package-lock.json
+Co-authored-by: kleber <kleber@ziontechgroup.com>",2025-09-08T14:23:30+00:00,0,,,,
+131,devin,airbytehq/airbyte,94baf7cb0ee6b144332d7d5e0fdf7359c89608c2,https://github.com/airbytehq/airbyte/commit/94baf7cb0ee6b144332d7d5e0fdf7359c89608c2,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,devin-ai-integration[bot],158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"chore(source-azure-blob-storage): bump memory for check_connection to 4096Mi (do not merge) (#70316)
+Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.github.com>",2025-12-03T18:51:30+02:00,20675,,,,
+132,gemini,rush86999/atomic,8fd3d60e815e5bb3eb86dcbe54031abf624f2ed8,https://github.com/rush86999/atomic/commit/8fd3d60e815e5bb3eb86dcbe54031abf624f2ed8,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"feat: Refine LLM outputs and Notion page formatting
+Enhanced the live-meeting-worker's Notion export:
+
+- LLM Prompts: Refined prompts for decisions and action items to encourage more structured, line-separated bulleted list outputs.
+- Notion Formatting:
+    - Grouped AI-generated content under a mai",2025-07-04T20:58:17+00:00,696,,,,
+133,devin,ohhmm/openmind,7f23beab14e5bb4fcbf06d4acff929246bfb2370,https://github.com/ohhmm/openmind/commit/7f23beab14e5bb4fcbf06d4acff929246bfb2370,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,devin-ai-integration[bot],158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"fix: Reorder LevelDbCache implementation to match header declaration
+",2024-11-22T02:06:07+00:00,0,,,,
+134,devin,Infisical/infisical,a3a0bbb7cf8f53fcbeec5386f7fe6a706bc2946a,https://github.com/Infisical/infisical/commit/a3a0bbb7cf8f53fcbeec5386f7fe6a706bc2946a,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"fix: simplify toggle text to 'All' per PR feedback
+Co-Authored-By: Tony <dangtony98@gmail.com>",2026-01-25T20:53:19+00:00,24810,,,,
+135,claude,electric-sql/electric,0a5651fdd677a6ae339956a1011c988758e9bd53,https://github.com/electric-sql/electric/commit/0a5651fdd677a6ae339956a1011c988758e9bd53,coauthor,noreply@anthropic.com,coauthor_email,Kyle Mathews,mathews.kyle@gmail.com,coauthor,"Fix HTTP sync shape deprecation test (#3679)
+The ""should detect shape deprecation and restart syncing"" test was
+failing with `liveSSE=false` because it used `numRequests === 2` to
+trigger shape clearing. With HTTP long-polling, multiple requests happen
+quickly before the first up-to-date message is ",2026-01-06T15:09:12-07:00,9869,,,,
+136,devin,antiwork/gumroad,32263a6850da731d76aeef4b2b58c7d4e17bb408,https://github.com/antiwork/gumroad/commit/32263a6850da731d76aeef4b2b58c7d4e17bb408,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,devin-ai-integration[bot],158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"Update 'Crypto' to 'Cryptocurrency' in help article 191 (#367)
+",2025-06-19T11:15:51-04:00,8401,,,,
+137,copilot,Azure/azure-container-networking,2aa70b31ff4e09a0cc7e5b1c8579650cdb4c9fc2,https://github.com/Azure/azure-container-networking/commit/2aa70b31ff4e09a0cc7e5b1c8579650cdb4c9fc2,coauthor,Copilot@users.noreply.github.com,coauthor_email,sivakami-projects,126191544+sivakami-projects@users.noreply.github.com,coauthor,"Swiftv2 Long running cluster - test pipeline (#4099)
+* init swiftv2 pipeline for persistent tests on aks clusters.
+
+* Set default params.
+
+* Update pipeline.yaml for Azure Pipelines
+
+* long running pipeline infra setup.
+
+* Set depedencies for pipeline jobs.
+
+* template for long running cluster.
+
+* s",2025-11-05T11:30:44-08:00,421,,,,
+138,copilot,supervisely/supervisely,6bb5af47b2d55c88fa96ddf6d71965b1332e23a9,https://github.com/supervisely/supervisely/commit/6bb5af47b2d55c88fa96ddf6d71965b1332e23a9,coauthor,Copilot@users.noreply.github.com,coauthor_email,almaz,almazgimaev@gmail.com,coauthor,"Squashed commit of the following:
+commit 3e5a3081c7199a0c3f9a8e18ecadf74a5427c210
+Author: Sergey <57998637+GoldenAnpu@users.noreply.github.com>
+Date:   Thu May 8 18:27:19 2025 +0200
+
+    Update supervisely/api/project_api.py
+
+    Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>
+
+",2025-05-12T17:55:33+02:00,516,,,,
+139,copilot,microsoft/GitHub-Copilot-for-Azure,6d106e8c80316f6519a0a3fc4fdf3dd7efa924dc,https://github.com/microsoft/GitHub-Copilot-for-Azure/commit/6d106e8c80316f6519a0a3fc4fdf3dd7efa924dc,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Consolidate azure-functions into azure-prepare and azure-deploy
+Co-authored-by: kvenkatrajan <102772054+kvenkatrajan@users.noreply.github.com>",2026-02-03T17:54:57+00:00,109,,,,
+140,gemini,vllm-project/vllm-ascend,d31170496b68d715a0186d91194c4a6b869c1de8,https://github.com/vllm-project/vllm-ascend/commit/d31170496b68d715a0186d91194c4a6b869c1de8,coauthor,%gemini-code-assist%@%,coauthor_email,herizhen,59841270+herizhen@users.noreply.github.com,coauthor,"[doc]index display by category (#5852)
+### What this PR does / why we need it?
+upgrade tutorial doc index display by category
+
+### Does this PR introduce _any_ user-facing change?
+no
+
+### How was this patch tested?
+ut
+- vLLM version: v0.13.0
+- vLLM main:
+https://github.com/vllm-project/vllm/commit/2",2026-01-14T16:50:49+08:00,1672,,,,
+141,gemini,BasedHardware/omi,0e7ed87de50dae041b72c5a1771b4feedc429973,https://github.com/BasedHardware/omi/commit/0e7ed87de50dae041b72c5a1771b4feedc429973,coauthor,%gemini-code-assist%@%,coauthor_email,Mohammed Mohsin,59914433+mdmohsin7@users.noreply.github.com,coauthor,"Update backend/utils/other/storage.py
+Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>",2026-01-22T19:29:08+05:30,7654,,,,
+142,cursor,Zion-Holdings/zion.app,c1ce275cea5e72345a61f643d472f43eebfc1878,https://github.com/Zion-Holdings/zion.app/commit/c1ce275cea5e72345a61f643d472f43eebfc1878,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Aggressive merge resolution for origin/backup/sync-2025-08-18T04-10-08-354Z
+",2025-09-14T21:29:35+00:00,0,,,,
+143,copilot,WCY-dt/MrRSS,a2c312a2ddb36ed47e3442ea311030d38a828531,https://github.com/WCY-dt/MrRSS/commit/a2c312a2ddb36ed47e3442ea311030d38a828531,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Add nil checks for Media RSS extension maps to prevent panics
+Co-authored-by: WCY-dt <55525165+WCY-dt@users.noreply.github.com>",2025-12-07T11:53:33+00:00,1661,,,,
+144,gemini,bmaltais/kohya_ss,3a8b599ba9e43165af350c4a659b68ec23d0e357,https://github.com/bmaltais/kohya_ss/commit/3a8b599ba9e43165af350c4a659b68ec23d0e357,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Fix: Ensure main learning rate is used in LoRA training
+The GUI logic was preventing the main learning rate from being passed to the training script if text_encoder_lr or unet_lr was set. This caused issues with optimizers like Prodigy, which might default to a very small LR if the main LR isn't pro",2025-06-01T11:31:14+00:00,11976,,,,
+145,cursor,Zion-Holdings/zion.app,70d2bfa08e0244c13a56fb72add714d20c58e27c,https://github.com/Zion-Holdings/zion.app/commit/70d2bfa08e0244c13a56fb72add714d20c58e27c,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Resolve merge conflicts for cursor/enhance-app-with-new-services-and-futuristic-design-bcb4
+",2025-08-24T02:30:53+00:00,0,,,,
+146,devin,team-mirai/marumie,86cc3df7a267024916dfd42af786bb91ac2f5790,https://github.com/team-mirai/marumie/commit/86cc3df7a267024916dfd42af786bb91ac2f5790,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"feat: 第2段階 Transaction一覧とCounterpart表示を実装
+- Domain層: TransactionWithCounterpart型を定義
+- Infrastructure層: prisma-report-transaction.repositoryにCounterpart JOINクエリを追加
+- Presentation層: transactions-with-counterparts-loader.tsを作成
+- UI層: TanStack Tableを使用したTransactionWithCounterpartTableコンポーネントを作成
+- UI層: フ",2025-12-16T07:19:23+00:00,660,,,,
+147,claude,tuist/tuist,7b4c95323aa34a9697e305f3cf74cab6f73ca73b,https://github.com/tuist/tuist/commit/7b4c95323aa34a9697e305f3cf74cab6f73ca73b,coauthor,noreply@anthropic.com,coauthor_email,Marek Fořt,marekfort@me.com,coauthor,"fix(cli): fix `tuist version` producing no output on Linux (#9364)
+Co-authored-by: Claude Opus 4.6 <noreply@anthropic.com>",2026-02-06T11:26:01+01:00,5516,,,,
+148,devin,calcom/cal.com,cc1f0f67047ce69dde50a1fd53a561665037a3e0,https://github.com/calcom/cal.com/commit/cc1f0f67047ce69dde50a1fd53a561665037a3e0,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"feat: implement next-cycle billing for monthly seat-based plans
+- Add shouldUseNextCycleBilling method to BillingPeriodService
+- Update TeamBillingService.updateQuantity to use prorationBehavior: none for monthly plans
+- Add monthly-seat-billing feature flag to config
+- Add migration to seed the fea",2026-01-28T22:20:40+00:00,0,,,,
+149,copilot,ydb-platform/ydb,6b6afa748e6c25c67b222144092dd7c0217fd3fa,https://github.com/ydb-platform/ydb/commit/6b6afa748e6c25c67b222144092dd7c0217fd3fa,coauthor,Copilot@users.noreply.github.com,coauthor_email,Evgeniy Ivanov,eivanov89@ydb.tech,coauthor,"Run YDBD in docker with in --tiny-mode (#27759) (#28571)
+Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",2025-11-12T12:46:18+01:00,4672,,,,
+150,cursor,Zion-Holdings/zion.app,bb34ec2bdef0177ba0f6bc16b2a5fe89af50da1e,https://github.com/Zion-Holdings/zion.app/commit/bb34ec2bdef0177ba0f6bc16b2a5fe89af50da1e,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Fix merge conflict in performanceUtils.ts - resolved conflict markers and cleaned up code
+",2025-10-06T20:21:50+00:00,0,,,,
+151,gemini,simonepri/fitbit2garmin,70943b34acbe387c7c94cb06d17fd1e6513dde21,https://github.com/simonepri/fitbit2garmin/commit/70943b34acbe387c7c94cb06d17fd1e6513dde21,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"feat: Implement final round of bug fixes and UI polish
+This commit delivers a final set of features and UI improvements based on user feedback to complete and polish the application.
+
+Key Changes:
+- **Robust Time Tracking:**
+    - Per-task runtimes are now tracked using a periodic interval, making t",2025-09-24T23:02:39+00:00,105,,,,
+152,devin,ohhmm/openmind,4f9b641c97a15364434e488df0d144415370e747,https://github.com/ohhmm/openmind/commit/4f9b641c97a15364434e488df0d144415370e747,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,devin-ai-integration[bot],158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"fix: Restore mathematical operations and fix inheritance
+- Added back all mathematical operations and operator overloads
+- Added using base::Add to fix inheritance
+- Restored performance-critical methods
+- Maintains optimization improvements",2024-11-16T01:49:56+00:00,0,,,,
+153,claude,OpenAgentsInc/openagents,fc1c366e9e7a5e46ef9f125b43f9dc3983f277a0,https://github.com/OpenAgentsInc/openagents/commit/fc1c366e9e7a5e46ef9f125b43f9dc3983f277a0,coauthor,noreply@anthropic.com,coauthor_email,Christopher David,chris@openagents.com,coauthor,"Buffer GPT-OSS telemetry events
+Co-Authored-By: Claude <noreply@anthropic.com>
+
+Co-Authored-By: Autopilot <autopilot@openagents.com>",2026-01-03T15:00:25-06:00,360,,,,
+154,claude,Michael-A-Kuykendall/shimmy,cf8ad0648993b061962d71bbea9998ecc2b93121,https://github.com/Michael-A-Kuykendall/shimmy/commit/cf8ad0648993b061962d71bbea9998ecc2b93121,coauthor,noreply@anthropic.com,coauthor_email,Mike Kuykendall,michaelallenkuykendall@gmail.com,coauthor,"feat(moe): complete v1.7.0 MOE CPU offloading implementation (#97)
+* feat: MoE CPU offloading implementation with comprehensive testing framework
+
+- Successfully implemented CPU expert tensor offloading for MoE models
+- Validated across 3 different MoE architectures (GPT-OSS 20B, Phi-3.5-MoE 41.9B, ",2025-10-09T22:45:48-05:00,3664,,,,
+155,copilot,opf/openproject,a07acabbbbd278872e3da04cb60d97f8cb033aa6,https://github.com/opf/openproject/commit/a07acabbbbd278872e3da04cb60d97f8cb033aa6,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Initial plan
+",2025-12-15T19:57:47+00:00,14357,,,,
+156,devin,crewAIInc/crewAI,a304c9573b88116cd949c9139c8e4c11e003f665,https://github.com/crewAIInc/crewAI/commit/a304c9573b88116cd949c9139c8e4c11e003f665,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"feat: Add feedback validation and error handling
+- Add FeedbackProcessingError for feedback handling
+- Add validation for empty and long feedback messages
+- Add test coverage for edge cases
+
+Co-Authored-By: Joe Moura <joao@crewai.com>",2025-02-12T19:54:02+00:00,43908,,,,
+157,cursor,Zion-Holdings/zion.app,8d5dec5f4003e9c224c317830c066c1d8f790aa0,https://github.com/Zion-Holdings/zion.app/commit/8d5dec5f4003e9c224c317830c066c1d8f790aa0,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Merge branch 'temp-merge-63i3ty-codex/fix-talent-profile-rendering-issues'
+",2025-08-23T23:59:08+00:00,0,,,,
+158,devin,juicyllama/llana,930bae5ed392a5f5d75e01cf8642fb008326dd3c,https://github.com/juicyllama/llana/commit/930bae5ed392a5f5d75e01cf8642fb008326dd3c,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"feat: Improve error handling with standardized error responses
+Co-Authored-By: andy@juicyllama.com <andy@juicyllama.com>",2025-05-24T15:46:50+00:00,203,,,,
+159,copilot,SkBlaz/py3plex,d1e28b31448072d873cbc609aaaa6e3922bcff8d,https://github.com/SkBlaz/py3plex/commit/d1e28b31448072d873cbc609aaaa6e3922bcff8d,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Remove trailing whitespace from all Python files
+Co-authored-by: SkBlaz <10035780+SkBlaz@users.noreply.github.com>",2025-11-20T19:31:04+00:00,180,,,,
+160,copilot,Infinite-Chess/infinitechess.org,6d31a919c9049060db6a910b8d362ae03cb0e4b7,https://github.com/Infinite-Chess/infinitechess.org/commit/6d31a919c9049060db6a910b8d362ae03cb0e4b7,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Initial plan
+",2026-02-08T12:33:20+00:00,257,,,,
+161,cursor,Zion-Holdings/zion.app,3ad993e4f68e31c639b2b55e584b64d1662ff8d2,https://github.com/Zion-Holdings/zion.app/commit/3ad993e4f68e31c639b2b55e584b64d1662ff8d2,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Resolve merge conflicts in src/App.jsx
+[2025-08-31 22:27:04]",2025-08-31T22:25:10+00:00,0,,,,
+162,cursor,Zion-Holdings/zion.app,3c91b20128c3968b6f6db0e8f2fca64885ea1bde,https://github.com/Zion-Holdings/zion.app/commit/3c91b20128c3968b6f6db0e8f2fca64885ea1bde,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Fix build errors and resolve merge conflicts
+- Fixed merge conflicts in app/page.tsx and component files
+- Removed React Router dependencies and converted to Next.js routing
+- Fixed Navigation and Footer components to use Next.js Link
+- Resolved authentication context errors in team page
+- Updated l",2025-10-23T23:10:17+00:00,0,,,,
+163,cursor,Zion-Holdings/zion.app,942aa5e4ec760771309e7fd71729f19c2d010726,https://github.com/Zion-Holdings/zion.app/commit/942aa5e4ec760771309e7fd71729f19c2d010726,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"test(ci): restrict Jest to smoke suite and add smoke test; ensure build passes
+[2025-09-22 20:44:15]",2025-09-22T20:44:13+00:00,0,,,,
+164,cursor,Zion-Holdings/zion.app,c037bb6d185b91d22ca7bf9887cad231b8a895aa,https://github.com/Zion-Holdings/zion.app/commit/c037bb6d185b91d22ca7bf9887cad231b8a895aa,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Comprehensive app analysis and navigation improvements
+- Added all missing routes to App.tsx (25+ pages)
+- Enhanced Navigation component with dropdown menu for services
+- Improved Footer with comprehensive link organization
+- Updated Sidebar with categorized navigation sections
+- Fixed all broken li",2025-10-15T16:29:00+00:00,0,,,,
+165,cursor,Zion-Holdings/zion.app,4fce2dbdb9877289a58142a64c5b3153da609f50,https://github.com/Zion-Holdings/zion.app/commit/4fce2dbdb9877289a58142a64c5b3153da609f50,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Clean up build issues: remove duplicate JS files, fix imports, create NotFound page
+",2025-08-24T21:26:25+00:00,0,,,,
+166,devin,drivly/ai,c6cbb75c74f24dc55eed166bed3c66073a22e2b1,https://github.com/drivly/ai/commit/c6cbb75c74f24dc55eed166bed3c66073a22e2b1,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"docs: add workflows.do tutorial using book creation example
+Co-Authored-By: Nathan Clevenger <nateclev@gmail.com>",2025-03-31T14:45:57+00:00,0,,,,
+167,copilot,microsoft/genaiscript,84c22d3677c7ff3350c13b94548f776eefcde24e,https://github.com/microsoft/genaiscript/commit/84c22d3677c7ff3350c13b94548f776eefcde24e,author_email,Copilot@users.noreply.github.com,author_email,Copilot,198982749+Copilot@users.noreply.github.com,sole_author,"Initial plan
+",2025-08-11T19:40:40+00:00,2871,,,,
+168,claude,OpenAgentsInc/openagents,ccea48c59a29854a5bd5dcb1201ea9f71f64ab62,https://github.com/OpenAgentsInc/openagents/commit/ccea48c59a29854a5bd5dcb1201ea9f71f64ab62,coauthor,noreply@anthropic.com,coauthor_email,Christopher David,chris@openagents.com,coauthor,"feat: Implement smooth hand tracking with custom rendering (#1155)
+* feat: Implement smooth hand tracking with custom rendering
+
+- Add HandSmoother class with exponential moving average and velocity estimation
+- Add HandRenderer class with anti-aliased custom rendering
+- Replace MediaPipe's direct d",2025-07-24T06:13:32-05:00,360,,,,
+169,cursor,Zion-Holdings/zion.app,ec9e2a6c8f68a41bfa7c257a19426c37a8bc9fd6,https://github.com/Zion-Holdings/zion.app/commit/ec9e2a6c8f68a41bfa7c257a19426c37a8bc9fd6,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"merge: Resolve conflicts and integrate new content from cursor/create-and-deploy-new-content-c1cb
+",2025-09-14T15:51:30+00:00,0,,,,
+170,devin,airbytehq/airbyte-platform,4f39bcc803d61093a9a8939a20bb6a3db7db0729,https://github.com/airbytehq/airbyte-platform/commit/4f39bcc803d61093a9a8939a20bb6a3db7db0729,coauthor,%+devin-ai-integration[bot]@users.noreply.github.com,coauthor_email,Catherine Noll,clnoll@users.noreply.github.com,coauthor,"chore: add region & dataplane endpoints to the public API (#15710)
+Also gives patch semantics to the dataplane-related update endpoints
+
+Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.github.com>
+Co-authored-by: bryce@airbyte.io <bryce@airbyte.io>
+Co-authored-by: Bryce G",2025-03-28T10:50:32-04:00,292,,,,
+171,claude,evstack/ev-node,2fcecc69cc2e4b88bdf8270310f1899de5213ed3,https://github.com/evstack/ev-node/commit/2fcecc69cc2e4b88bdf8270310f1899de5213ed3,coauthor,%+claude[bot]@users.noreply.github.com,coauthor_email,Marko,marko@baricevic.me,coauthor,"feat: Add GetSequencerInfo RPC to ConfigService (#2608)
+Add a new RPC method to the ConfigService that allows querying
+sequencer information like public key and address. This provides
+a more convenient way to access sequencer info without needing
+to drill down through StoreService/GetBlock.
+
+Changes",2025-08-27T10:16:46+02:00,363,,,,
+172,gemini,acoliver/gemini-cli,b11fab6c003e870e7485f71defa63f92282be3f6,https://github.com/acoliver/gemini-cli/commit/b11fab6c003e870e7485f71defa63f92282be3f6,coauthor,%gemini-code-assist%@%,coauthor_email,JAYADITYA,96861162+JayadityaGit@users.noreply.github.com,coauthor,"feat: add Pro Quota Dialog (#7094)
+Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+Co-authored-by: Jacob Richman <jacob314@gmail.com>
+(cherry picked from commit a63e67823def9f91256f1619b57a8c570a72b351)",2025-08-29T04:19:43+05:30,633,,,,
+173,gemini,rush86999/atom,8bba93921d449f0106c62af0bc128c9b6df5fae2,https://github.com/rush86999/atom/commit/8bba93921d449f0106c62af0bc128c9b6df5fae2,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Add dashboard feature
+",2025-07-29T22:06:30+00:00,696,,,,
+174,gemini,googleads/google-ads-python,f4a430c872e4fe6162d19159dc865b0fc9091c63,https://github.com/googleads/google-ads-python/commit/f4a430c872e4fe6162d19159dc865b0fc9091c63,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Fix import errors in basic_operations tests
+This commit resolves ModuleNotFoundErrors and ImportErrors encountered when running the newly added test suites in `examples/basic_operations/tests/`.
+
+The tests were failing because the import paths for the modules under test were not correctly resolved w",2025-06-02T18:33:42+00:00,651,,,,
+175,copilot,microsoft/vscode,8d120c4ffadb1745ab57c1e260bc63653fde3fd8,https://github.com/microsoft/vscode/commit/8d120c4ffadb1745ab57c1e260bc63653fde3fd8,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Refine findMatches wrapper implementation based on code review
+Co-authored-by: joaomoreno <22350+joaomoreno@users.noreply.github.com>",2026-01-12T20:04:55+00:00,181581,,,,
+176,gemini,gen-cli/gen-cli,0ce89392b8d4b6a4af4eef132ac5ae6de86ac25e,https://github.com/gen-cli/gen-cli/commit/0ce89392b8d4b6a4af4eef132ac5ae6de86ac25e,coauthor,%gemini-code-assist%@%,coauthor_email,Jenna Inouye,jinouye@google.com,coauthor,"Docs: add documentation for .geminiignore (#5123)
+Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>",2025-07-29T20:36:26-07:00,143,,,,
+177,claude,panaversity/ai-native-software-development,3519a39df6f49500555f941dad2c44119516fdd8,https://github.com/panaversity/ai-native-software-development/commit/3519a39df6f49500555f941dad2c44119516fdd8,coauthor,noreply@anthropic.com,coauthor_email,mjunaidca,mr.junaidshaukat@gmail.com,coauthor,"refactor(panaversity-fs): Replace registry.yaml with dynamic book discovery
+BREAKING CHANGE: list_books now scans books/ directory instead of registry.yaml
+
+Previously, list_books required a manually-managed registry.yaml file.
+Now it dynamically discovers books by scanning subdirectories under book",2025-11-25T10:19:48+05:00,127,,,,
+178,gemini,QwenLM/qwen-code,8f8082fe3da9e1972f8b8226c68fa14e326a3d8a,https://github.com/QwenLM/qwen-code/commit/8f8082fe3da9e1972f8b8226c68fa14e326a3d8a,coauthor,%gemini-code-assist%@%,coauthor_email,Arya Gummadi,aryagummadi@google.com,coauthor,"feat: add file change tracking to session metrics (#6094)
+Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+Co-authored-by: Jacob Richman <jacob314@gmail.com>",2025-08-18T22:57:53-07:00,18312,,,,
+179,devin,drivly/ai,5eceeaf43960e4b7d802d3f207be725d57b0989e,https://github.com/drivly/ai/commit/5eceeaf43960e4b7d802d3f207be725d57b0989e,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"fix: resolve merge conflicts and fix eslint-config import path in payload-hooks-queue
+Co-Authored-By: Nathan Clevenger <nateclev@gmail.com>",2025-04-06T12:31:52+00:00,0,,,,
+180,claude,speakeasy-api/gram,9e06bd0ec0fcd2badc7f0e8c4109ce9e4a2735ee,https://github.com/speakeasy-api/gram/commit/9e06bd0ec0fcd2badc7f0e8c4109ce9e4a2735ee,coauthor,noreply@anthropic.com,coauthor_email,Walker Lockard,walker@speakeasy.com,coauthor,"chore: update api to accomodate changes to user oauth token index (#1485)
+<!-- devin-review-badge-begin -->
+
+---
+
+<a href=""https://app.devin.ai/review/speakeasy-api/gram/pull/1485"">
+  <picture>
+<source media=""(prefers-color-scheme: dark)""
+srcset=""https://static.devin.ai/assets/gh-open-in-devin-revie",2026-02-04T08:01:02-06:00,207,,,,
+181,claude,microsoft/TypeAgent,ea66752a7ec5d899a81309bd9cfcfadf757a507d,https://github.com/microsoft/TypeAgent/commit/ea66752a7ec5d899a81309bd9cfcfadf757a507d,coauthor,noreply@anthropic.com,coauthor_email,steveluc,steveluc@users.noreply.github.com,coauthor,"Fix repo policy issues - trademark format and package.json script order
+- Use exact trademark text format with proper line breaks
+- Sort package.json scripts alphabetically
+
+Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>",2026-01-16T23:33:40-08:00,610,,,,
+182,gemini,theovilardo/PixelPlayer,e00b021a8ea02aec6f2fc9ec61337655ef2c5b2d,https://github.com/theovilardo/PixelPlayer/commit/e00b021a8ea02aec6f2fc9ec61337655ef2c5b2d,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Fix: Corrige errores en MusicRepositoryImpl y actualiza interfaz.
+- Asegura que MusicRepository.getMusicByGenre devuelva Flow.
+- Elimina referencias activas a código obsoleto (getPermittedSongReferences, etc.) en MusicRepositoryImpl.
+- Confirma la correcta inyección y uso de userPreferencesRepositor",2025-06-26T16:08:05+00:00,2749,,,,
+183,devin,calcom/cal.com,badd0de33c27e15c2f5d5e8593f5be7a64d6f0fb,https://github.com/calcom/cal.com/commit/badd0de33c27e15c2f5d5e8593f5be7a64d6f0fb,coauthor,%+devin-ai-integration[bot]@users.noreply.github.com,coauthor_email,Omar López,zomars@me.com,coauthor,"fix: resolve circular dependency in getUserAvailability by extracting getPeriodStartDatesBetween utility (#22913)
+Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.github.com>",2025-08-05T23:10:38-07:00,0,,,,
+184,cursor,Zion-Holdings/zion.app,69ada331b78bb8ba83b2cbbd3bf94a4a436230e4,https://github.com/Zion-Holdings/zion.app/commit/69ada331b78bb8ba83b2cbbd3bf94a4a436230e4,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"Merge new AI services and blockchain solutions into main branch - Resolved merge conflicts in Footer and MainNavigation - Added AI Autonomous Research Assistant, AI Financial Trading Platform, and Blockchain Enterprise Solutions - Enhanced navigation with new service links
+[2025-08-31 03:44:08]",2025-08-31T03:43:23+00:00,0,,,,
+185,copilot,stephendade/Rpanion-server,d078303ccc399c6499e74f755c674e40a95763f4,https://github.com/stephendade/Rpanion-server/commit/d078303ccc399c6499e74f755c674e40a95763f4,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Update CHANGELOG and improve RTSP pipeline handling
+Co-authored-by: stephendade <1731976+stephendade@users.noreply.github.com>",2025-10-13T10:01:08+00:00,177,,,,
+186,copilot,Azure/azure-mcp,5800bcaab8d2b85071c4dd1f5fcd4fa30bb8e1b6,https://github.com/Azure/azure-mcp/commit/5800bcaab8d2b85071c4dd1f5fcd4fa30bb8e1b6,author_email,Copilot@users.noreply.github.com,author_email,Copilot,198982749+Copilot@users.noreply.github.com,sole_author,"Fix subscription parameter handling in Azure MCP service methods (#878)
+* Initial plan
+
+* Fix AppConfig service subscription parameter handling
+
+Co-authored-by: jongio <2163001+jongio@users.noreply.github.com>
+
+* Fix Redis and start Storage service subscription parameter handling
+
+Co-authored-by: jo",2025-08-07T15:09:09+00:00,1202,,,,
+187,devin,liam-hq/liam,4845bdb5ecb0e13fad52bb4dbb6ec569a7bdd5c6,https://github.com/liam-hq/liam/commit/4845bdb5ecb0e13fad52bb4dbb6ec569a7bdd5c6,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"🧪 Update schema-bench test to expect gpt-5 model
+- Fix failing test expectation in openaiExecutor.test.ts
+- Update model expectation from o4-mini to gpt-5
+- Completes GPT-5 migration for all agent packages
+
+Co-Authored-By: unknown <>",2025-08-13T02:25:23+00:00,4694,,,,
+188,copilot,githubnext/agentics,475d83d3511afb28a9c911834bd24f517763a14f,https://github.com/githubnext/agentics/commit/475d83d3511afb28a9c911834bd24f517763a14f,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Add 10 Review & Quality Team agents with specialized review capabilities
+Co-authored-by: pelikhan <4175913+pelikhan@users.noreply.github.com>",2025-07-30T11:04:28+00:00,262,,,,
+189,devin,fern-api/fern,366f114b30c705b3bca9b380df36248d3a91672c,https://github.com/fern-api/fern/commit/366f114b30c705b3bca9b380df36248d3a91672c,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"test(typescript): add extra-properties fixture with snake_case property (buggy output before fix)
+Co-Authored-By: judah@buildwithfern.com <jsklan.development@gmail.com>",2026-01-07T18:42:27+00:00,3500,,,,
+190,devin,antiwork/helper,1ead97dc9525a8f4ee5821531c84ed47c127f097,https://github.com/antiwork/helper/commit/1ead97dc9525a8f4ee5821531c84ed47c127f097,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,devin-ai-integration[bot],158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"Add keyboard shortcuts j/k for conversation navigation (#506)
+# Add keyboard shortcuts j/k for conversation navigation
+
+This PR adds global keyboard shortcuts to navigate between conversations
+in the Helper inbox:
+
+- **j** - Move to next conversation (`moveToNextConversation`)
+- **k** - Move to prev",2025-06-13T21:01:19+01:00,656,,,,
+191,copilot,JuliaMolSim/DFTK.jl,544ac7da72e9a1c644f6fd706449b4f7d37bc9ee,https://github.com/JuliaMolSim/DFTK.jl/commit/544ac7da72e9a1c644f6fd706449b4f7d37bc9ee,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Add 2D Green's function example with Makie plots
+- Create green_functions_2d.jl with 2D periodic potential
+- Panel 1: Imaginary part of G(x,y;E) in 3×3 cells (heatmap)
+- Panel 2: First eigenvalue heatmap with E contour and h(k) quiver plot
+- Uses random-looking periodic potential: V(x,y) = V0*[cos(2",2026-01-15T16:48:24+00:00,511,,,,
+192,copilot,LorenFrankLab/spyglass,46d59d654e1e2ec5377c37481c0809b7a915b409,https://github.com/LorenFrankLab/spyglass/commit/46d59d654e1e2ec5377c37481c0809b7a915b409,coauthor,Copilot@users.noreply.github.com,coauthor_email,Eric Denovellis,edeno@users.noreply.github.com,coauthor,"LFP improvements (#1280)
+* Insert within a transaction and validate parameters
+
+* Handle case where MAD is 0, inf, or NaN
+
+* Remove comment
+
+* Add back deleted code
+
+* Remove unused import
+
+* Revert back
+
+* Add back checks and insertion with atomicity
+
+* Non-pandas version
+
+* Add in transaction prot",2025-04-23T21:59:05-04:00,107,,,,
+193,claude,xorq-labs/xorq,a45227fb42f12b1848b6909fcbe1d6d6638180b1,https://github.com/xorq-labs/xorq/commit/a45227fb42f12b1848b6909fcbe1d6d6638180b1,coauthor,noreply@anthropic.com,coauthor_email,Hussain Sultan,hussainz@gmail.com,coauthor,"Add baseball lineup optimizer pipeline
+Implements comprehensive batting lineup optimization using xorq:
+- Player profile clustering (power, contact, speed, balanced)
+- Lineup position modeling with expected runs calculation
+- Sabermetric-based lineup optimizer
+- Full xorq catalog with composable exp",2026-01-18T08:20:44-05:00,485,,,,
+194,devin,liam-hq/liam,b91a374263adde863301b4ddf5de2479570a0706,https://github.com/liam-hq/liam/commit/b91a374263adde863301b4ddf5de2479570a0706,author_email,%+devin-ai-integration[bot]@users.noreply.github.com,author_email_like,Devin AI,158243242+devin-ai-integration[bot]@users.noreply.github.com,sole_author,"chore: add changeset for docs update
+Co-Authored-By: hirotaka.miyagi@route06.co.jp <hirotaka.miyagi@route06.co.jp>",2025-02-21T04:21:29+00:00,4694,,,,
+195,claude,tediousjs/tedious,069708dccfa21a151590e9acfb4479fb09aa3da3,https://github.com/tediousjs/tedious/commit/069708dccfa21a151590e9acfb4479fb09aa3da3,author_email,noreply@anthropic.com,author_email,Claude,noreply@anthropic.com,sole_author,"fix: use US_VARCHAR for KeyPath in CekTable parsing
+Per MS-TDS specification, KeyPath in EncryptionKeyValue should be
+US_VARCHAR (2-byte length prefix) instead of B_VARCHAR (1-byte length
+prefix). This allows for key paths longer than 255 characters, which
+is common for Azure Key Vault URLs.
+
+- Upda",2025-12-21T22:46:36+00:00,1611,,,,
+196,gemini,Zion-Holdings/zion.app,72bdc434279e880f1b5a47deb7cdfc96df838bdc,https://github.com/Zion-Holdings/zion.app/commit/72bdc434279e880f1b5a47deb7cdfc96df838bdc,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Here's a summary of the fix I've implemented:
+The Talent Directory page was showing an ""empty"" message before it had finished loading the data. This happened because the initial setup of the data fetching process made it seem like there was no talent data, even though it was still trying to get it.
+",2025-06-18T21:32:05+00:00,0,,,,
+197,gemini,AI-Hypercomputer/maxtext,2ade134e082dd98708e4414f8f693595dd36f1e3,https://github.com/AI-Hypercomputer/maxtext/commit/2ade134e082dd98708e4414f8f693595dd36f1e3,author_email,%+google-labs-jules[bot]@users.noreply.github.com,author_email_like,google-labs-jules[bot],161369871+google-labs-jules[bot]@users.noreply.github.com,sole_author,"Optimize page management in MaxText inference.
+This commit introduces several optimizations to `MaxText/inference/page_manager.py`
+to improve performance during page allocation and deallocation for paged attention.
+
+Key changes:
+- `_find_next_free_page_index`: Refined to remove a redundant `jnp.any`",2025-05-22T19:20:07+00:00,2137,,,,
+198,copilot,apache/pulsar,2d6ef6f288b7a105c59c176f59d5b3705d106e1b,https://github.com/apache/pulsar/commit/2d6ef6f288b7a105c59c176f59d5b3705d106e1b,coauthor,Copilot@users.noreply.github.com,coauthor_email,Zixuan Liu,nodeces@gmail.com,coauthor,"[fix][broker] Fix httpProxyTimeout config (#25223)
+Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",2026-02-06T20:28:25+08:00,15085,,,,
+199,cursor,Zion-Holdings/zion.app,ee15ed2ad0c37654782fe9015520da6d19d92eb9,https://github.com/Zion-Holdings/zion.app/commit/ee15ed2ad0c37654782fe9015520da6d19d92eb9,author_email,cursoragent@cursor.com,author_email,Cursor Agent,cursoragent@cursor.com,sole_author,"feat: Enhance navigation structure and fix orphaned routes
+- Added comprehensive AI & Analytics services to header navigation
+- Enhanced Cloud & DevOps section with API Monitoring and MLOps Pipeline
+- Expanded Cybersecurity section with AI Cybersecurity Suite and SOC2 Compliance
+- Added new Micro Sa",2025-08-29T10:50:10+00:00,0,,,,
+200,copilot,Azure/azure-rest-api-specs,41a6d1fb257c4c38b53c0a4ecff9b0d09c6d5464,https://github.com/Azure/azure-rest-api-specs/commit/41a6d1fb257c4c38b53c0a4ecff9b0d09c6d5464,author_email,Copilot@users.noreply.github.com,author_email,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,sole_author,"Initial plan
+",2025-10-21T16:25:51+00:00,3003,,,,

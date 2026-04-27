@@ -1,6 +1,6 @@
 {
-  "_generated_at": "2026-04-27T05:41:04Z",
-  "_elapsed_seconds": 0.0,
+  "_generated_at": "2026-04-27T06:23:57Z",
+  "_elapsed_seconds": 2.6,
   "_repos_scanned": 2,
   "totals": {
     "repos": 2,
@@ -358,45 +358,38 @@
     }
   ],
   "by_role": {
-    "unknown": {
-      "commits": 74,
-      "issues": 163,
-      "issues_fixed": 224,
-      "issues_high": 49,
-      "issues_security": 9,
-      "issues_per_commit": 2.2,
-      "net_debt": -61,
-      "files_analyzed": 100,
-      "files_per_commit": 1.35,
-      "issues_per_file": 1.63,
-      "high_per_file": 0.49,
-      "security_per_file": 0.09,
-      "zero_issue_commits": 50,
-      "zero_issue_pct": 67.6,
-      "fix_rate": 137.4,
+    "sole_author": {
+      "commits": 26,
+      "issues": 115,
+      "issues_fixed": 201,
+      "issues_high": 36,
+      "issues_security": 6,
+      "issues_per_commit": 4.42,
+      "net_debt": -86,
+      "files_analyzed": 26,
+      "files_per_commit": 1.0,
+      "issues_per_file": 4.42,
+      "high_per_file": 1.3846,
+      "security_per_file": 0.2308,
+      "zero_issue_commits": 15,
+      "zero_issue_pct": 57.7,
+      "fix_rate": 174.8,
       "by_severity": {
-        "low": 70,
-        "medium": 44,
-        "high": 49
+        "high": 36,
+        "low": 48,
+        "medium": 31
       },
       "by_type": {
-        "pylint": 106,
-        "eslint": 48,
-        "security": 9
+        "pylint": 76,
+        "eslint": 33,
+        "security": 6
       },
       "by_language": {
-        "python": 114,
-        "typescript": 27,
-        "javascript": 22
+        "python": 82,
+        "typescript": 16,
+        "javascript": 17
       },
       "top_rules": [
-        {
-          "name": "raise-missing-from",
-          "count": 11,
-          "high": 0,
-          "medium": 11,
-          "low": 0
-        },
         {
           "name": "broad-exception-caught",
           "count": 8,
@@ -405,10 +398,10 @@
           "low": 0
         },
         {
-          "name": "@typescript-eslint/no-unused-vars",
-          "count": 4,
+          "name": "raise-missing-from",
+          "count": 6,
           "high": 0,
-          "medium": 4,
+          "medium": 6,
           "low": 0
         },
         {
@@ -420,13 +413,6 @@
         },
         {
           "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
-          "count": 2,
-          "high": 0,
-          "medium": 2,
-          "low": 0
-        },
-        {
-          "name": "B608",
           "count": 2,
           "high": 0,
           "medium": 2,
@@ -461,6 +447,138 @@
           "low": 0
         },
         {
+          "name": "@typescript-eslint/no-unused-vars",
+          "count": 1,
+          "high": 0,
+          "medium": 1,
+          "low": 0
+        }
+      ],
+      "by_tool": {
+        "claude": {
+          "commits": 4,
+          "issues_total": 31,
+          "issues_per_commit_mean": 7.75,
+          "issues_per_commit_median": 10,
+          "files_analyzed": 5,
+          "files_per_commit": 1.25,
+          "issues_per_file": 6.2,
+          "zero_issue_pct": 25.0
+        },
+        "copilot": {
+          "commits": 21,
+          "issues_total": 84,
+          "issues_per_commit_mean": 4.0,
+          "issues_per_commit_median": 0,
+          "files_analyzed": 21,
+          "files_per_commit": 1.0,
+          "issues_per_file": 4.0,
+          "zero_issue_pct": 61.9
+        },
+        "cursor": {
+          "commits": 1,
+          "issues_total": 0,
+          "issues_per_commit_mean": 0.0,
+          "issues_per_commit_median": 0,
+          "files_analyzed": 0,
+          "files_per_commit": 0.0,
+          "issues_per_file": 0,
+          "zero_issue_pct": 100.0
+        }
+      },
+      "time_series": [
+        {
+          "month": "2025-08",
+          "commits": 1,
+          "issues": 17,
+          "high_issues": 17
+        },
+        {
+          "month": "2025-09",
+          "commits": 2,
+          "issues": 0,
+          "high_issues": 0
+        },
+        {
+          "month": "2025-10",
+          "commits": 3,
+          "issues": 14,
+          "high_issues": 13
+        },
+        {
+          "month": "2025-11",
+          "commits": 1,
+          "issues": 0,
+          "high_issues": 0
+        },
+        {
+          "month": "2025-12",
+          "commits": 13,
+          "issues": 36,
+          "high_issues": 0
+        },
+        {
+          "month": "2026-01",
+          "commits": 6,
+          "issues": 48,
+          "high_issues": 6
+        }
+      ]
+    },
+    "coauthor": {
+      "commits": 48,
+      "issues": 48,
+      "issues_fixed": 23,
+      "issues_high": 13,
+      "issues_security": 3,
+      "issues_per_commit": 1.0,
+      "net_debt": 25,
+      "files_analyzed": 74,
+      "files_per_commit": 1.54,
+      "issues_per_file": 0.65,
+      "high_per_file": 0.1757,
+      "security_per_file": 0.0405,
+      "zero_issue_commits": 35,
+      "zero_issue_pct": 72.9,
+      "fix_rate": 47.9,
+      "by_severity": {
+        "low": 22,
+        "medium": 13,
+        "high": 13
+      },
+      "by_type": {
+        "pylint": 30,
+        "eslint": 15,
+        "security": 3
+      },
+      "by_language": {
+        "python": 32,
+        "typescript": 11,
+        "javascript": 5
+      },
+      "top_rules": [
+        {
+          "name": "raise-missing-from",
+          "count": 5,
+          "high": 0,
+          "medium": 5,
+          "low": 0
+        },
+        {
+          "name": "@typescript-eslint/no-unused-vars",
+          "count": 3,
+          "high": 0,
+          "medium": 3,
+          "low": 0
+        },
+        {
+          "name": "B608",
+          "count": 2,
+          "high": 0,
+          "medium": 2,
+          "low": 0
+        },
+        {
           "name": "too-many-function-args",
           "count": 1,
           "high": 1,
@@ -491,34 +609,34 @@
       ],
       "by_tool": {
         "claude": {
-          "commits": 17,
-          "issues_total": 36,
-          "issues_per_commit_mean": 2.12,
+          "commits": 13,
+          "issues_total": 5,
+          "issues_per_commit_mean": 0.38,
           "issues_per_commit_median": 0,
-          "files_analyzed": 13,
-          "files_per_commit": 0.76,
-          "issues_per_file": 2.77,
-          "zero_issue_pct": 76.5
+          "files_analyzed": 8,
+          "files_per_commit": 0.62,
+          "issues_per_file": 0.62,
+          "zero_issue_pct": 92.3
         },
         "copilot": {
-          "commits": 39,
-          "issues_total": 96,
-          "issues_per_commit_mean": 2.46,
+          "commits": 18,
+          "issues_total": 12,
+          "issues_per_commit_mean": 0.67,
           "issues_per_commit_median": 0,
-          "files_analyzed": 39,
+          "files_analyzed": 18,
           "files_per_commit": 1.0,
-          "issues_per_file": 2.46,
-          "zero_issue_pct": 66.7
+          "issues_per_file": 0.67,
+          "zero_issue_pct": 72.2
         },
         "cursor": {
-          "commits": 18,
+          "commits": 17,
           "issues_total": 31,
-          "issues_per_commit_mean": 1.72,
+          "issues_per_commit_mean": 1.82,
           "issues_per_commit_median": 0,
           "files_analyzed": 48,
-          "files_per_commit": 2.67,
+          "files_per_commit": 2.82,
           "issues_per_file": 0.65,
-          "zero_issue_pct": 61.1
+          "zero_issue_pct": 58.8
         }
       },
       "time_series": [
@@ -542,39 +660,27 @@
         },
         {
           "month": "2025-08",
-          "commits": 13,
-          "issues": 22,
-          "high_issues": 21
-        },
-        {
-          "month": "2025-09",
-          "commits": 2,
-          "issues": 0,
-          "high_issues": 0
+          "commits": 12,
+          "issues": 5,
+          "high_issues": 4
         },
         {
           "month": "2025-10",
-          "commits": 5,
-          "issues": 17,
-          "high_issues": 13
-        },
-        {
-          "month": "2025-11",
-          "commits": 1,
-          "issues": 0,
+          "commits": 2,
+          "issues": 3,
           "high_issues": 0
         },
         {
           "month": "2025-12",
-          "commits": 18,
-          "issues": 43,
+          "commits": 5,
+          "issues": 7,
           "high_issues": 1
         },
         {
           "month": "2026-01",
-          "commits": 9,
-          "issues": 50,
-          "high_issues": 6
+          "commits": 3,
+          "issues": 2,
+          "high_issues": 0
         },
         {
           "month": "2026-02",
@@ -602,19 +708,19 @@
         "zero_issue_pct": 76.5,
         "zero_issue_commits": 13,
         "repos": 0,
-        "sole_author_commits": 0,
-        "coauthor_commits": 0,
-        "sole_author_issues": 0,
-        "coauthor_issues": 0,
-        "sole_issues_per_commit": 0,
-        "co_issues_per_commit": 0,
-        "sole_issues_per_file": 0,
-        "co_issues_per_file": 0,
-        "sole_files_per_commit": 0,
-        "co_files_per_commit": 0,
-        "sole_issues_per_commit_median": 0,
+        "sole_author_commits": 4,
+        "coauthor_commits": 13,
+        "sole_author_issues": 31,
+        "coauthor_issues": 5,
+        "sole_issues_per_commit": 7.75,
+        "co_issues_per_commit": 0.38,
+        "sole_issues_per_file": 6.2,
+        "co_issues_per_file": 0.62,
+        "sole_files_per_commit": 1.25,
+        "co_files_per_commit": 0.62,
+        "sole_issues_per_commit_median": 10,
         "co_issues_per_commit_median": 0,
-        "pct_sole_author": 0.0,
+        "pct_sole_author": 23.5,
         "actionable_issues": 4,
         "repos_with_code": 1,
         "actionable_files": 13,
@@ -645,19 +751,19 @@
         "zero_issue_pct": 66.7,
         "zero_issue_commits": 26,
         "repos": 1,
-        "sole_author_commits": 0,
-        "coauthor_commits": 0,
-        "sole_author_issues": 0,
-        "coauthor_issues": 0,
-        "sole_issues_per_commit": 0,
-        "co_issues_per_commit": 0,
-        "sole_issues_per_file": 0,
-        "co_issues_per_file": 0,
-        "sole_files_per_commit": 0,
-        "co_files_per_commit": 0,
+        "sole_author_commits": 21,
+        "coauthor_commits": 18,
+        "sole_author_issues": 84,
+        "coauthor_issues": 12,
+        "sole_issues_per_commit": 4.0,
+        "co_issues_per_commit": 0.67,
+        "sole_issues_per_file": 4.0,
+        "co_issues_per_file": 0.67,
+        "sole_files_per_commit": 1.0,
+        "co_files_per_commit": 1.0,
         "sole_issues_per_commit_median": 0,
         "co_issues_per_commit_median": 0,
-        "pct_sole_author": 0.0,
+        "pct_sole_author": 53.8,
         "actionable_issues": 27,
         "repos_with_code": 1,
         "actionable_files": 39,
@@ -688,19 +794,19 @@
         "zero_issue_pct": 61.1,
         "zero_issue_commits": 11,
         "repos": 1,
-        "sole_author_commits": 0,
-        "coauthor_commits": 0,
+        "sole_author_commits": 1,
+        "coauthor_commits": 17,
         "sole_author_issues": 0,
-        "coauthor_issues": 0,
-        "sole_issues_per_commit": 0,
-        "co_issues_per_commit": 0,
+        "coauthor_issues": 31,
+        "sole_issues_per_commit": 0.0,
+        "co_issues_per_commit": 1.82,
         "sole_issues_per_file": 0,
-        "co_issues_per_file": 0,
-        "sole_files_per_commit": 0,
-        "co_files_per_commit": 0,
+        "co_issues_per_file": 0.65,
+        "sole_files_per_commit": 0.0,
+        "co_files_per_commit": 2.82,
         "sole_issues_per_commit_median": 0,
         "co_issues_per_commit_median": 0,
-        "pct_sole_author": 0.0,
+        "pct_sole_author": 5.6,
         "actionable_issues": 7,
         "repos_with_code": 1,
         "actionable_files": 48,
@@ -1210,7 +1316,7 @@
         "repo": "superagent-ai/superagent",
         "commit": "46695d14622a",
         "tool": "claude",
-        "author_role": "unknown",
+        "author_role": "sole_author",
         "issues": 17,
         "high": 17,
         "security": 0,
@@ -1220,7 +1326,7 @@
         "repo": "superagent-ai/superagent",
         "commit": "0473257e206d",
         "tool": "claude",
-        "author_role": "unknown",
+        "author_role": "sole_author",
         "issues": 10,
         "high": 9,
         "security": 0,
@@ -1230,7 +1336,7 @@
         "repo": "superagent-ai/superagent",
         "commit": "708e7f510515",
         "tool": "cursor",
-        "author_role": "unknown",
+        "author_role": "coauthor",
         "issues": 8,
         "high": 8,
         "security": 0,
@@ -1240,7 +1346,7 @@
         "repo": "microsoft/data-formulator",
         "commit": "d8549c0c8c13",
         "tool": "copilot",
-        "author_role": "unknown",
+        "author_role": "sole_author",
         "issues": 31,
         "high": 5,
         "security": 4,
@@ -1250,7 +1356,7 @@
         "repo": "superagent-ai/superagent",
         "commit": "8d0e011e7831",
         "tool": "claude",
-        "author_role": "unknown",
+        "author_role": "coauthor",
         "issues": 5,
         "high": 4,
         "security": 1,
@@ -1260,7 +1366,7 @@
         "repo": "microsoft/data-formulator",
         "commit": "f611d1fafca3",
         "tool": "copilot",
-        "author_role": "unknown",
+        "author_role": "sole_author",
         "issues": 14,
         "high": 1,
         "security": 2,
@@ -1270,7 +1376,7 @@
         "repo": "microsoft/data-formulator",
         "commit": "8b0545072dbf",
         "tool": "copilot",
-        "author_role": "unknown",
+        "author_role": "sole_author",
         "issues": 22,
         "high": 0,
         "security": 0,
@@ -1280,7 +1386,7 @@
         "repo": "microsoft/data-formulator",
         "commit": "4451f2543248",
         "tool": "copilot",
-        "author_role": "unknown",
+        "author_role": "sole_author",
         "issues": 8,
         "high": 0,
         "security": 0,
@@ -1290,7 +1396,7 @@
         "repo": "superagent-ai/superagent",
         "commit": "5f004c3b6331",
         "tool": "cursor",
-        "author_role": "unknown",
+        "author_role": "coauthor",
         "issues": 6,
         "high": 0,
         "security": 0,
@@ -1300,7 +1406,7 @@
         "repo": "superagent-ai/superagent",
         "commit": "f1690722f9ff",
         "tool": "cursor",
-        "author_role": "unknown",
+        "author_role": "coauthor",
         "issues": 5,
         "high": 0,
         "security": 0,
@@ -1310,7 +1416,7 @@
         "repo": "superagent-ai/superagent",
         "commit": "2398fc482615",
         "tool": "cursor",
-        "author_role": "unknown",
+        "author_role": "coauthor",
         "issues": 5,
         "high": 0,
         "security": 0,
@@ -1320,7 +1426,7 @@
         "repo": "superagent-ai/superagent",
         "commit": "d12a6279357e",
         "tool": "cursor",
-        "author_role": "unknown",
+        "author_role": "coauthor",
         "issues": 5,
         "high": 0,
         "security": 0,
@@ -1341,11 +1447,11 @@
         "stars": 14828,
         "language": "TypeScript",
         "github_url": "https://github.com/microsoft/data-formulator",
-        "issues_sole_author": 0,
-        "issues_coauthor": 0,
-        "fixed_sole_author": 0,
-        "fixed_coauthor": 0,
-        "pct_sole": 0.0
+        "issues_sole_author": 84,
+        "issues_coauthor": 12,
+        "fixed_sole_author": 38,
+        "fixed_coauthor": 7,
+        "pct_sole": 87.5
       },
       {
         "name": "superagent-ai/superagent",
@@ -1360,11 +1466,11 @@
         "stars": 6408,
         "language": "TypeScript",
         "github_url": "https://github.com/superagent-ai/superagent",
-        "issues_sole_author": 0,
-        "issues_coauthor": 0,
-        "fixed_sole_author": 0,
-        "fixed_coauthor": 0,
-        "pct_sole": 0.0
+        "issues_sole_author": 31,
+        "issues_coauthor": 36,
+        "fixed_sole_author": 163,
+        "fixed_coauthor": 16,
+        "pct_sole": 46.3
       }
     ],
     "repos_zero_issues": 0,
@@ -1382,11 +1488,11 @@
         "stars": 14828,
         "language": "TypeScript",
         "github_url": "https://github.com/microsoft/data-formulator",
-        "issues_sole_author": 0,
-        "issues_coauthor": 0,
-        "fixed_sole_author": 0,
-        "fixed_coauthor": 0,
-        "pct_sole": 0.0
+        "issues_sole_author": 84,
+        "issues_coauthor": 12,
+        "fixed_sole_author": 38,
+        "fixed_coauthor": 7,
+        "pct_sole": 87.5
       },
       {
         "name": "superagent-ai/superagent",
@@ -1401,11 +1507,11 @@
         "stars": 6408,
         "language": "TypeScript",
         "github_url": "https://github.com/superagent-ai/superagent",
-        "issues_sole_author": 0,
-        "issues_coauthor": 0,
-        "fixed_sole_author": 0,
-        "fixed_coauthor": 0,
-        "pct_sole": 0.0
+        "issues_sole_author": 31,
+        "issues_coauthor": 36,
+        "fixed_sole_author": 163,
+        "fixed_coauthor": 16,
+        "pct_sole": 46.3
       }
     ]
   },
@@ -1885,19 +1991,19 @@
         "zero_issue_pct": 76.5,
         "zero_issue_commits": 13,
         "repos": 0,
-        "sole_author_commits": 0,
-        "coauthor_commits": 0,
-        "sole_author_issues": 0,
-        "coauthor_issues": 0,
-        "sole_issues_per_commit": 0,
-        "co_issues_per_commit": 0,
-        "sole_issues_per_file": 0,
-        "co_issues_per_file": 0,
-        "sole_files_per_commit": 0,
-        "co_files_per_commit": 0,
-        "sole_issues_per_commit_median": 0,
+        "sole_author_commits": 4,
+        "coauthor_commits": 13,
+        "sole_author_issues": 31,
+        "coauthor_issues": 5,
+        "sole_issues_per_commit": 7.75,
+        "co_issues_per_commit": 0.38,
+        "sole_issues_per_file": 6.2,
+        "co_issues_per_file": 0.62,
+        "sole_files_per_commit": 1.25,
+        "co_files_per_commit": 0.62,
+        "sole_issues_per_commit_median": 10,
         "co_issues_per_commit_median": 0,
-        "pct_sole_author": 0.0,
+        "pct_sole_author": 23.5,
         "actionable_issues": 4,
         "repos_with_code": 1,
         "actionable_files": 13,
@@ -1928,19 +2034,19 @@
         "zero_issue_pct": 66.7,
         "zero_issue_commits": 26,
         "repos": 1,
-        "sole_author_commits": 0,
-        "coauthor_commits": 0,
-        "sole_author_issues": 0,
-        "coauthor_issues": 0,
-        "sole_issues_per_commit": 0,
-        "co_issues_per_commit": 0,
-        "sole_issues_per_file": 0,
-        "co_issues_per_file": 0,
-        "sole_files_per_commit": 0,
-        "co_files_per_commit": 0,
+        "sole_author_commits": 21,
+        "coauthor_commits": 18,
+        "sole_author_issues": 84,
+        "coauthor_issues": 12,
+        "sole_issues_per_commit": 4.0,
+        "co_issues_per_commit": 0.67,
+        "sole_issues_per_file": 4.0,
+        "co_issues_per_file": 0.67,
+        "sole_files_per_commit": 1.0,
+        "co_files_per_commit": 1.0,
         "sole_issues_per_commit_median": 0,
         "co_issues_per_commit_median": 0,
-        "pct_sole_author": 0.0,
+        "pct_sole_author": 53.8,
         "actionable_issues": 27,
         "repos_with_code": 1,
         "actionable_files": 39,
@@ -1971,19 +2077,19 @@
         "zero_issue_pct": 61.1,
         "zero_issue_commits": 11,
         "repos": 1,
-        "sole_author_commits": 0,
-        "coauthor_commits": 0,
+        "sole_author_commits": 1,
+        "coauthor_commits": 17,
         "sole_author_issues": 0,
-        "coauthor_issues": 0,
-        "sole_issues_per_commit": 0,
-        "co_issues_per_commit": 0,
+        "coauthor_issues": 31,
+        "sole_issues_per_commit": 0.0,
+        "co_issues_per_commit": 1.82,
         "sole_issues_per_file": 0,
-        "co_issues_per_file": 0,
-        "sole_files_per_commit": 0,
-        "co_files_per_commit": 0,
+        "co_issues_per_file": 0.65,
+        "sole_files_per_commit": 0.0,
+        "co_files_per_commit": 2.82,
         "sole_issues_per_commit_median": 0,
         "co_issues_per_commit_median": 0,
-        "pct_sole_author": 0.0,
+        "pct_sole_author": 5.6,
         "actionable_issues": 7,
         "repos_with_code": 1,
         "actionable_files": 48,
@@ -2374,15 +2480,15 @@
         }
       },
       "by_tool": {
-        "cursor": {
-          "total": 11,
-          "surviving": 2,
-          "rate": 0.1818
-        },
         "copilot": {
           "total": 27,
           "surviving": 12,
           "rate": 0.4444
+        },
+        "cursor": {
+          "total": 11,
+          "surviving": 2,
+          "rate": 0.1818
         }
       },
       "top_surviving_rules": [
@@ -2809,45 +2915,38 @@
       }
     },
     "by_role": {
-      "unknown": {
-        "commits": 74,
-        "issues": 163,
-        "issues_fixed": 224,
-        "issues_high": 49,
-        "issues_security": 9,
-        "issues_per_commit": 2.2,
-        "net_debt": -61,
-        "files_analyzed": 100,
-        "files_per_commit": 1.35,
-        "issues_per_file": 1.63,
-        "high_per_file": 0.49,
-        "security_per_file": 0.09,
-        "zero_issue_commits": 50,
-        "zero_issue_pct": 67.6,
-        "fix_rate": 137.4,
+      "sole_author": {
+        "commits": 26,
+        "issues": 115,
+        "issues_fixed": 201,
+        "issues_high": 36,
+        "issues_security": 6,
+        "issues_per_commit": 4.42,
+        "net_debt": -86,
+        "files_analyzed": 26,
+        "files_per_commit": 1.0,
+        "issues_per_file": 4.42,
+        "high_per_file": 1.3846,
+        "security_per_file": 0.2308,
+        "zero_issue_commits": 15,
+        "zero_issue_pct": 57.7,
+        "fix_rate": 174.8,
         "by_severity": {
-          "low": 70,
-          "medium": 44,
-          "high": 49
+          "high": 36,
+          "low": 48,
+          "medium": 31
         },
         "by_type": {
-          "pylint": 106,
-          "eslint": 48,
-          "security": 9
+          "pylint": 76,
+          "eslint": 33,
+          "security": 6
         },
         "by_language": {
-          "python": 114,
-          "typescript": 27,
-          "javascript": 22
+          "python": 82,
+          "typescript": 16,
+          "javascript": 17
         },
         "top_rules": [
-          {
-            "name": "raise-missing-from",
-            "count": 11,
-            "high": 0,
-            "medium": 11,
-            "low": 0
-          },
           {
             "name": "broad-exception-caught",
             "count": 8,
@@ -2856,10 +2955,10 @@
             "low": 0
           },
           {
-            "name": "@typescript-eslint/no-unused-vars",
-            "count": 4,
+            "name": "raise-missing-from",
+            "count": 6,
             "high": 0,
-            "medium": 4,
+            "medium": 6,
             "low": 0
           },
           {
@@ -2871,13 +2970,6 @@
           },
           {
             "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
-            "count": 2,
-            "high": 0,
-            "medium": 2,
-            "low": 0
-          },
-          {
-            "name": "B608",
             "count": 2,
             "high": 0,
             "medium": 2,
@@ -2912,6 +3004,138 @@
             "low": 0
           },
           {
+            "name": "@typescript-eslint/no-unused-vars",
+            "count": 1,
+            "high": 0,
+            "medium": 1,
+            "low": 0
+          }
+        ],
+        "by_tool": {
+          "claude": {
+            "commits": 4,
+            "issues_total": 31,
+            "issues_per_commit_mean": 7.75,
+            "issues_per_commit_median": 10,
+            "files_analyzed": 5,
+            "files_per_commit": 1.25,
+            "issues_per_file": 6.2,
+            "zero_issue_pct": 25.0
+          },
+          "copilot": {
+            "commits": 21,
+            "issues_total": 84,
+            "issues_per_commit_mean": 4.0,
+            "issues_per_commit_median": 0,
+            "files_analyzed": 21,
+            "files_per_commit": 1.0,
+            "issues_per_file": 4.0,
+            "zero_issue_pct": 61.9
+          },
+          "cursor": {
+            "commits": 1,
+            "issues_total": 0,
+            "issues_per_commit_mean": 0.0,
+            "issues_per_commit_median": 0,
+            "files_analyzed": 0,
+            "files_per_commit": 0.0,
+            "issues_per_file": 0,
+            "zero_issue_pct": 100.0
+          }
+        },
+        "time_series": [
+          {
+            "month": "2025-08",
+            "commits": 1,
+            "issues": 17,
+            "high_issues": 17
+          },
+          {
+            "month": "2025-09",
+            "commits": 2,
+            "issues": 0,
+            "high_issues": 0
+          },
+          {
+            "month": "2025-10",
+            "commits": 3,
+            "issues": 14,
+            "high_issues": 13
+          },
+          {
+            "month": "2025-11",
+            "commits": 1,
+            "issues": 0,
+            "high_issues": 0
+          },
+          {
+            "month": "2025-12",
+            "commits": 13,
+            "issues": 36,
+            "high_issues": 0
+          },
+          {
+            "month": "2026-01",
+            "commits": 6,
+            "issues": 48,
+            "high_issues": 6
+          }
+        ]
+      },
+      "coauthor": {
+        "commits": 48,
+        "issues": 48,
+        "issues_fixed": 23,
+        "issues_high": 13,
+        "issues_security": 3,
+        "issues_per_commit": 1.0,
+        "net_debt": 25,
+        "files_analyzed": 74,
+        "files_per_commit": 1.54,
+        "issues_per_file": 0.65,
+        "high_per_file": 0.1757,
+        "security_per_file": 0.0405,
+        "zero_issue_commits": 35,
+        "zero_issue_pct": 72.9,
+        "fix_rate": 47.9,
+        "by_severity": {
+          "low": 22,
+          "medium": 13,
+          "high": 13
+        },
+        "by_type": {
+          "pylint": 30,
+          "eslint": 15,
+          "security": 3
+        },
+        "by_language": {
+          "python": 32,
+          "typescript": 11,
+          "javascript": 5
+        },
+        "top_rules": [
+          {
+            "name": "raise-missing-from",
+            "count": 5,
+            "high": 0,
+            "medium": 5,
+            "low": 0
+          },
+          {
+            "name": "@typescript-eslint/no-unused-vars",
+            "count": 3,
+            "high": 0,
+            "medium": 3,
+            "low": 0
+          },
+          {
+            "name": "B608",
+            "count": 2,
+            "high": 0,
+            "medium": 2,
+            "low": 0
+          },
+          {
             "name": "too-many-function-args",
             "count": 1,
             "high": 1,
@@ -2942,34 +3166,34 @@
         ],
         "by_tool": {
           "claude": {
-            "commits": 17,
-            "issues_total": 36,
-            "issues_per_commit_mean": 2.12,
+            "commits": 13,
+            "issues_total": 5,
+            "issues_per_commit_mean": 0.38,
             "issues_per_commit_median": 0,
-            "files_analyzed": 13,
-            "files_per_commit": 0.76,
-            "issues_per_file": 2.77,
-            "zero_issue_pct": 76.5
+            "files_analyzed": 8,
+            "files_per_commit": 0.62,
+            "issues_per_file": 0.62,
+            "zero_issue_pct": 92.3
           },
           "copilot": {
-            "commits": 39,
-            "issues_total": 96,
-            "issues_per_commit_mean": 2.46,
+            "commits": 18,
+            "issues_total": 12,
+            "issues_per_commit_mean": 0.67,
             "issues_per_commit_median": 0,
-            "files_analyzed": 39,
+            "files_analyzed": 18,
             "files_per_commit": 1.0,
-            "issues_per_file": 2.46,
-            "zero_issue_pct": 66.7
+            "issues_per_file": 0.67,
+            "zero_issue_pct": 72.2
           },
           "cursor": {
-            "commits": 18,
+            "commits": 17,
             "issues_total": 31,
-            "issues_per_commit_mean": 1.72,
+            "issues_per_commit_mean": 1.82,
             "issues_per_commit_median": 0,
             "files_analyzed": 48,
-            "files_per_commit": 2.67,
+            "files_per_commit": 2.82,
             "issues_per_file": 0.65,
-            "zero_issue_pct": 61.1
+            "zero_issue_pct": 58.8
           }
         },
         "time_series": [
@@ -2993,39 +3217,27 @@
           },
           {
             "month": "2025-08",
-            "commits": 13,
-            "issues": 22,
-            "high_issues": 21
-          },
-          {
-            "month": "2025-09",
-            "commits": 2,
-            "issues": 0,
-            "high_issues": 0
+            "commits": 12,
+            "issues": 5,
+            "high_issues": 4
           },
           {
             "month": "2025-10",
-            "commits": 5,
-            "issues": 17,
-            "high_issues": 13
-          },
-          {
-            "month": "2025-11",
-            "commits": 1,
-            "issues": 0,
+            "commits": 2,
+            "issues": 3,
             "high_issues": 0
           },
           {
             "month": "2025-12",
-            "commits": 18,
-            "issues": 43,
+            "commits": 5,
+            "issues": 7,
             "high_issues": 1
           },
           {
             "month": "2026-01",
-            "commits": 9,
-            "issues": 50,
-            "high_issues": 6
+            "commits": 3,
+            "issues": 2,
+            "high_issues": 0
           },
           {
             "month": "2026-02",
